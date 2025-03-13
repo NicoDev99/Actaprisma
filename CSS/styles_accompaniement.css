@@ -1,0 +1,186 @@
+/* Accompaniment Section */
+#accompaniment {
+    margin: 100px 50px;
+    padding-top: 50px;
+}
+
+.accompaniment-header {
+    margin-bottom: 60px;
+}
+
+.accompaniment-header h1 {
+    font-family: "Gothic A1", sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: #0f293d;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.accompaniment-header hr {
+    height: 1px;
+    background-color: #0f293d;
+    border: none;
+}
+
+.accompaniment-intro {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.accompaniment-intro p {
+    font-family: "Gothic A1", sans-serif;
+    font-size: 22px;
+    line-height: 1.6;
+    color: #0f293d;
+    margin-bottom: 10px;
+}
+
+.accompaniment-intro .brand {
+    font-weight: 600;
+}
+
+.accompaniment-intro .bold {
+    font-weight: 600;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+    max-width: 1920px;
+}
+
+.service-card h2 {
+    font-family: "Gothic A1", sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.service-card.political h2 {
+    background-color: #A6E2E5;
+    padding: 20px 0px;
+    color: black;
+}
+
+.service-card.startups h2 {
+    background-color: #48C5D5;
+    padding: 20px 0px;
+    color: black;
+}
+
+.service-card.sports h2 {
+    background-color: #215ca8;
+    color: white;
+}
+
+.card-content {
+    padding: 0 20px;
+    padding-top: 20px;
+    min-height: 225px;
+}
+
+.service-card.political .card-content {
+    background-color: rgba(166, 226, 229, 0.3);
+}
+
+.service-card.startups .card-content {
+    background-color: rgba(76, 185, 211, 0.3);
+}
+
+.service-card.sports .card-content {
+    background-color: rgba(33, 92, 168, 0.3);
+}
+
+.card-content p {
+    font-family: "Gothic A1", sans-serif;
+    font-size: 22px;
+    color: #0f293d;
+}
+
+.card-content .bold {
+    font-weight: 600;
+}
+
+.card-button {
+    display: block;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #0f293d;
+    border-radius: 30px;
+    font-family: "Gothic A1", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f293d;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card-button:hover {
+    background-color: #0f293d;
+    color: white;
+}
+
+.card-button svg {
+    color: #4cb9d3;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 5px;
+}
+
+.card-button:hover svg {
+    color: white;
+}
+
+/* Media Queries for Accompaniment Section */
+@media (max-width: 1500px) {
+    .card-content {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 1250px) {
+    #accompaniment {
+        margin: 60px 20px;
+    }
+
+    .accompaniment-header h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .accompaniment-intro p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-button {
+        justify-content: center;
+        text-align: center;
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .service-card h2 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+}
