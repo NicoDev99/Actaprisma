@@ -256,78 +256,18 @@ section#vision .highlight {
         max-width: none;
         margin-left: 50px;
     }
-}
 
-@media (max-width: 768px) {
-    .vision-title {
-        font-size: 36px;
-        text-align: center;
-        padding-right: 0;
-    }
-    
-    .blue-box h2,
-    h3 {
-        font-size: 20px;
-    }
-    
-    .description,
-    .bold-text p {
-        font-size: 14px;
-    }
-    
-    .cta-button {
-        font-size: 14px;
-        padding: 10px 20px;
-    }
-    
-    .triangle-logo {
-        left: -85%;
-        width: 140%;
-    }
-    
-    .content-container {
-        margin: 0 auto;
-        padding: 50px 20px;
+    .vision-container {
+        margin: 0 25px;
     }
 }
-
-@media (max-width: 480px) {
-    .content-container {
-        padding: 30px 15px;
-        margin: 0 auto;
-    }
-    
-    .vision-title {
-        font-size: 28px;
-    }
-    
-    .blue-box h2,
-    h3 {
-        font-size: 18px;
-    }
-    
-    .description,
-    .bold-text p {
-        font-size: 13px;
-    }
-    
-    .cta-button {
-        font-size: 13px;
-        padding: 8px 16px;
-    }
-    
-    .triangle-logo {
-        left: -120%;
-        width: 200%;
-    }
-} 
 
 @media (max-width: 1600px) {
     div.explanations {
         gap: 100px;
     }
 }
-
+ 
 @media (max-width: 1250px) {
     section#vision {
         margin: 50px 20px;
@@ -354,6 +294,10 @@ section#vision .highlight {
 
     div.logo {
         display: none;
+    }
+
+    .text {
+        text-align: justify;
     }
 
     .vision-content {
@@ -386,12 +330,76 @@ section#vision .highlight {
     }
 }
 
-@media(max-width: 600px) {
-    a.button_diagnostic {
-        width: 100%;
-        font-size: 17px;
+@media (max-width: 768px) {
+    div.nav-header {
+        margin: 5px;
     }
 
+    .vision-content {
+        margin-top: 40px;
+        padding: 0;
+    }
+
+    .blue-banner {
+        padding: 20px;
+    }
+
+    .button-control {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .vision-title {
+        font-size: 36px;
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .blue-box h2,
+    h3 {
+        font-size: 20px;
+    }
+    
+    .description,
+    .bold-text p {
+        font-size: 15px;
+        text-align: justify;
+    }
+    
+    .button-container {
+        text-align: center;
+    }
+
+    .cta-button {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    
+    .triangle-logo {
+        left: -85%;
+        width: 140%;
+    }
+    
+    .content-container {
+        margin: 0 auto;
+        padding: 0 !important;
+    }
+
+    a.button_diagnostic {
+        width: 100%;
+        font-size: 15px;
+        transition: all 0.3s ease;
+    }
+
+    a.button_diagnostic:hover {
+        background-color: #f5f5f5;
+    }
+}
+
+@media(max-width: 600px) {
     a.button_diagnostic svg {
         display: none;
     }
@@ -412,27 +420,33 @@ section#vision .highlight {
         text-align: center;
         padding: 7px 0px;
     }
-
-    a.button_diagnostic {
-        width: 100%;
-        font-size: 14px;
-    }
 }
 
-@media (max-width: 768px) {
-    .vision-content {
-        margin-top: 40px;
+@media (max-width: 480px) {
+    .content-container {
+        padding: 30px 15px;
+        margin: 0 auto;
+    }
+    
+    .vision-title {
+        font-size: 28px;
+    }
+    
+    .blue-box h2, h3 {
+        font-size: 18px;
+    }
+    
+    .cta-button {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+    
+    .triangle-logo {
+        left: -120%;
+        width: 200%;
     }
 
-    .blue-banner {
-        padding: 20px;
-    }
-
-    .button-control {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-        padding: 12px 20px;
-        font-size: 16px;
+    a.button_diagnostic {
+        font-size: 10px;
     }
 }
