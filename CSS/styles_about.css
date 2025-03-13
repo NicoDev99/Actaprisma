@@ -1,4 +1,8 @@
 section#about {
+    position: relative;
+}
+
+section#about .intro_container {
     display: flex;
     margin: 0px 50px;
     margin-top: 200px;
@@ -6,6 +10,7 @@ section#about {
     align-items: center;
 }
 
+/* Intro */
 /* Left Section */
 section#about .logo-container {
     text-align: center;
@@ -93,6 +98,126 @@ section#about .avec {
     font-size: 1.3rem;
 }
 
+/* Text */
+/* Quote */
+.quote {
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 200;
+    position: relative;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.quote-start, .quote-end {
+    color: #4BBFC9;
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.quote-start {
+    position: absolute;
+    top: -49px;
+    left: -58px;
+}
+
+.quote-end {
+    position: absolute;
+    right: -10px;
+}
+
+.quote-text {
+    font-size: 35px;
+}
+
+/* Container */
+.text_container {
+    display: flex;
+    margin: 0px 50px;
+    align-items: center;
+}
+
+/* Left Section */
+.text_container .left-section {
+    flex: 1;
+    position: relative;
+    padding-right: 40px;
+}
+
+.founder-info h2 {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 42px;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.text_container .title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 200;
+}
+
+.text_container .divider {
+    width: 330px;
+    height: 1px;
+    background-color: #ccc;
+}
+
+/* Right Section */
+.text_container .right-section {
+    flex: 25;
+    padding-left: 40px;
+    text-align: left !important;
+}
+
+.text_container .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.text_container .highlight.blue {
+    background-color: #1a75cf;
+    color: white;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+.text_container .social {
+    font-size: 20px;
+    font-style: italic;
+    color: #666;
+    margin: 40px 0;
+}
+
+.text_container .cta-button {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 15px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 800;
+}
+
+.text_container svg {
+    color: #4BBFC9;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+section#about img.books-logo {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: -266px;
+    left: 49px;
+    opacity: 0.2;
+}
+
 @media (max-width: 1400px) {
     .logo {
         width: 350px !important;
@@ -102,15 +227,50 @@ section#about .avec {
     .content {
         max-width: 100% !important;
     }
+
+    .quote {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .text_container {
+        display: block;
+    }
+
+    .text_container .left-section {
+        padding-right: 0;
+    }
+
+    .founder-info {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .founder-info .divider {
+        margin: 0 auto;
+    }
+
+    .text_container .right-section {
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 1000px) {
     section#about{
         display: block;
     }
+
+    section#about .intro_container {
+        display: block;
+    }
     
     .logo {
         display: none;
+    }
+
+    .quote {
+        max-width: 400px;
     }
 }
 
@@ -131,3 +291,31 @@ section#about .avec {
         font-size: 1.0rem;
     }
 } 
+
+@media (max-width: 600px) {
+    .quote {
+        max-width: 300px;
+    }
+
+    .quote-start, .quote-end {
+        font-size: 80px;
+    }
+
+    .quote-text {
+        font-size: 30px;
+    }
+
+    .right-section .content .description {
+        font-size: 17px !important;
+    }
+
+    .right-section .content .social {
+        font-size: 14px;
+    }
+
+    .right-section .content .cta-button {   
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+}
+
