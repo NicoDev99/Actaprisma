@@ -1,6 +1,7 @@
 /* Accompaniment Section */
 section#accompaniment {
     margin: 0 50px;
+    margin-top: 100px;
 }
 
 .accompaniment-header {
@@ -301,12 +302,11 @@ div.challenge .content {
 
 @media (max-width: 1250px) {
     section#accompaniment {
-        margin: 60px 20px;
+        margin-top: 0;
     }
 
     .accompaniment-header h1 {
         font-size: 34px;
-        text-align: center;
     }
 
     .service-cards {
@@ -366,6 +366,10 @@ div.challenge .content {
 @media (max-width: 768px) {
     section#accompaniment {
         margin: 0 20px;
+    }
+
+    .accompaniment-header h1 {
+        text-align: center;
     }
 
     .card-button {

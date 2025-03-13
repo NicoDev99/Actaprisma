@@ -4,7 +4,7 @@ section#contact {
     position: relative;
     overflow: hidden;
     margin-top: 300px;
-    padding: 150px 0;
+    padding-top: 150px;
 }
 
 .form-container {
@@ -126,6 +126,7 @@ section#contact .triangle {
     
     .form-row {
         flex-direction: column;
+        gap: 0 !important;
     }
     
     .half-width {

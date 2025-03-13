@@ -142,7 +142,10 @@ section#about .avec {
 .text_container .left-section {
     flex: 1;
     position: relative;
-    padding-right: 40px;
+}
+
+.founder-info {
+    text-align: center;
 }
 
 .founder-info h2 {
@@ -160,7 +163,6 @@ section#about .avec {
 }
 
 .text_container .divider {
-    width: 330px;
     height: 1px;
     background-color: #ccc;
 }
@@ -201,6 +203,7 @@ section#about .avec {
     transition: all 0.3s ease;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 800;
+    text-align: center;
 }
 
 .text_container svg {
@@ -213,7 +216,7 @@ section#about img.books-logo {
     width: 500px;
     height: 500px;
     position: absolute;
-    bottom: -266px;
+    bottom: -370px;
     left: 49px;
     opacity: 0.2;
 }
@@ -237,6 +240,12 @@ section#about img.books-logo {
     }
 }
 
+@media(max-width: 1250px) {
+    .section-title{
+        font-size: 34px !important;
+    }
+}
+
 @media (max-width: 1200px) {
     .text_container {
         display: block;
@@ -253,6 +262,7 @@ section#about img.books-logo {
 
     .founder-info .divider {
         margin: 0 auto;
+        width: 330px;
     }
 
     .text_container .right-section {
@@ -281,9 +291,22 @@ section#about img.books-logo {
 
 @media (max-width: 768px) {
     section#about .section-title {
-        font-size: 2.0rem;;
+        font-size: 2.0rem;
+        text-align: center;
     }
 
+    section#about .header {
+        margin-bottom: 0px;
+    }
+
+    section#about .content {
+        margin-top: 50px;
+    }
+
+    section#about .right-section {
+        text-align: left !important;
+    }
+        
     section#about .intro-title {
         font-size: 1.8rem;
     }
@@ -294,6 +317,7 @@ section#about img.books-logo {
 
     section#about .avec {
         font-size: 1.0rem;
+        text-align: left !important;
     }
 } 
 
@@ -308,6 +332,10 @@ section#about img.books-logo {
 
     .quote-text {
         font-size: 30px;
+    }
+
+    .founder-info .divider {
+        width: auto !important;
     }
 
     .right-section .content .description {

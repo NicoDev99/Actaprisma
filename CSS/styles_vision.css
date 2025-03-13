@@ -130,7 +130,6 @@ div.center-button {
 }
 
 .content-container {
-    font-family: 'Gothic A1', sans-serif;
     position: relative;
     z-index: 1;
     max-width: 1100px;
@@ -138,6 +137,7 @@ div.center-button {
 }
 
 .vision-title {
+    font-family: 'Gothic A1', sans-serif;
     color: #4a2c0c;
     font-size: 42px;
     font-weight: 400;
@@ -167,12 +167,14 @@ div.center-button {
     color: white;
     font-size: 40px;
     font-weight: 400;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 h3 {
     color: #4a2c0c;
     font-size: 30px;
     font-weight: 400;
+    font-family: 'Gothic A1', sans-serif;
     margin-bottom: 20px;
 }
 
@@ -182,6 +184,7 @@ h3 {
     line-height: 1.6;
     margin-bottom: 20px;
     font-weight: 300;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 section#vision .highlight {
@@ -199,6 +202,7 @@ section#vision .highlight {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 .button-container {
@@ -230,16 +234,8 @@ section#vision .highlight {
 
 /* Media Queries */
 @media (max-width: 1640px) {
-    .triangle-logo {
-        display: none;  
-    }
-
     .content-container {
-        max-width: none;
-    }
-
-    .vision-container {
-        margin: 0 !important;
+        max-width: 900px;
     }
 }
 
@@ -250,10 +246,26 @@ section#vision .highlight {
 }
  
 @media (max-width: 1250px) {
-    section#vision {
-        margin: 50px 20px;
+    .triangle-logo {
+        display: none;  
     }
 
+    .vision-title {
+        font-size: 34px;
+    }
+
+    .vision-container {
+        margin: 0 50px;
+    }
+
+    .content-container {
+        max-width: none !important;
+    }
+
+    .content-container {
+        max-width: 800px;
+    }
+    
     nav {
         display: block;
     }
@@ -363,11 +375,6 @@ section#vision .highlight {
         left: -85%;
         width: 140%;
     }
-    
-    .content-container {
-        margin: 0 auto;
-        padding: 0 !important;
-    }
 }
 
 @media (max-width: 540px) {
@@ -387,12 +394,7 @@ section#vision .highlight {
     }
 }
 
-@media (max-width: 480px) {
-    .content-container {
-        padding: 30px 15px;
-        margin: 0 auto;
-    }
-    
+@media (max-width: 480px) {    
     .vision-title {
         font-size: 28px;
     }
