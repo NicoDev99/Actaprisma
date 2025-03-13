@@ -1,0 +1,133 @@
+section#about {
+    display: flex;
+    margin: 0px 50px;
+    margin-top: 200px;
+    gap: 100px;
+    align-items: center;
+}
+
+/* Left Section */
+section#about .logo-container {
+    text-align: center;
+}
+
+section#about .logo {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+/* Right Section */
+section#about .right-section {
+    text-align: right;
+}
+
+section#about .header {
+    margin-bottom: 3rem;
+}
+
+section#about .section-title {
+    text-align: right;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+section#about .divider {
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 10px;
+}
+
+section#about .content {
+    max-width: 80%;
+    margin: 0 0 0 auto;
+    margin-top: 100px;
+}
+
+section#about .intro-title {
+    font-size: 2.3rem;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+section#about .description {
+    font-family: 'Gothic A1', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #555;
+}
+
+section#about .concept {
+    font-family: 'Gothic A1', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #555;
+}
+
+section#about .arrow {
+    color: #333;
+    font-weight: bold;
+}
+
+section#about .highlight.blue {
+    background-color: #1a75cf;
+    color: white;
+    padding: 2px 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+section#about .avec {
+    font-family: 'Gothic A1', sans-serif;
+    text-align: right;
+    margin: 1rem 0;
+    color: #555;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 1400px) {
+    .logo {
+        width: 350px !important;
+        height: 220px !important;
+    }
+
+    .content {
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    section#about{
+        display: block;
+    }
+    
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    section#about .section-title {
+        font-size: 2.0rem;;
+    }
+
+    section#about .intro-title {
+        font-size: 1.8rem;
+    }
+    
+    section#about .concept {
+        font-size: 1.0rem;
+    }
+
+    section#about .avec {
+        font-size: 1.0rem;
+    }
+} 
