@@ -178,7 +178,11 @@ section#challenges .content {
 }
 
 @media (max-width: 880px) {
-    .content {
+    section#challenges {
+        margin-top: 100px;
+    }
+
+    section#challenges .content {
         display: block;
     }
 
