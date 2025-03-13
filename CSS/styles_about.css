@@ -231,6 +231,10 @@ section#about img.books-logo {
     .quote {
         max-width: 800px;
     }
+
+    .books-logo {
+        display: none;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -263,6 +267,7 @@ section#about img.books-logo {
 
     section#about .intro_container {
         display: block;
+        margin-top: 100px;
     }
     
     .logo {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/styles_accompaniement.css">
     <link rel="stylesheet" href="CSS/styles_challenges.css">
     <link rel="stylesheet" href="CSS/styles_about.css">
+    <link rel="stylesheet" href="CSS/styles_contact.css">
     <title>Actaprisma</title>
 </head>
 <body>
@@ -325,6 +326,62 @@
         </div>
 
         <img src="IMG/Books.png" alt="Books Logo" class="books-logo">
+    </section>
+
+    <section id="contact">
+        <div class="form-container">
+            <h1>CONTACT</h1>
+            <div class="separator"></div>
+            
+            <form>
+                <div class="form-group">
+                    <input type="text" id="project" placeholder="* Votre projet est :">
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="organization" placeholder="* Nom de l'organisation :">
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="role" placeholder="* Votre rôle dans l'organisation :">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <input type="text" id="lastname" placeholder="* Votre nom :">
+                    </div>
+                    
+                    <div class="form-group half-width">
+                        <input type="text" id="firstname" placeholder="* Votre prénom :">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="* Votre adresse mail :">
+                </div>
+                
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Votre numéro de téléphone :" class="light-bg">
+                </div>
+                
+                <div class="form-group">
+                    <textarea id="message" placeholder="Quelques éléments à partager ?" class="light-bg"></textarea>
+                </div>
+                
+                <div class="required-fields">
+                    * Mentions obligatoires
+                </div>
+
+                <div class="submit-button-container">
+                    <input type="submit" value="Envoyer" class="submit-button">
+                </div>
+            </form>
+        </div>
+
+        <div class="triangle">
+            <img src="IMG/Triangles.png" alt="Triangle bleu dégradé" class="triangle-image">
+        </div>
+
     </section>
 
 
