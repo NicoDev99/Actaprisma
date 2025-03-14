@@ -9,10 +9,10 @@ section#accompaniment {
 }
 
 .accompaniment-header h1 {
-    font-family: "Gothic A1", sans-serif;
+    font-family: "Gotham", sans-serif;
     font-size: 48px;
     font-weight: 300;
-    color: #0f293d;
+    color: black;
     margin-bottom: 15px;
     text-align: right;
 }
@@ -30,10 +30,11 @@ section#accompaniment {
 }
 
 .accompaniment-intro p {
-    font-family: "Gothic A1", sans-serif;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
     font-size: 22px;
     line-height: 1.6;
-    color: #0f293d;
+    color: black;
     margin-bottom: 10px;
 }
 
@@ -53,9 +54,9 @@ section#accompaniment {
 }
 
 .service-card h2 {
-    font-family: "Gothic A1", sans-serif;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
     font-size: 32px;
-    font-weight: 200;
     color: white;
     margin: 0;
     text-align: center;
@@ -97,16 +98,17 @@ section#accompaniment {
 }
 
 .card-content p {
-    font-family: "Gothic A1", sans-serif;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
     font-size: 22px;
-    color: #0f293d;
+    color: black;
 }
 
 .card-content .bold {
     font-weight: 600;
 }
 
-.button-container {
+section#accompaniment .button-container {
     margin-top: 40px;
     text-align: center;
 }
@@ -115,11 +117,12 @@ section#accompaniment {
     display: inline-flex;
     align-items: center;
     background-color: white;
-    color: #4a2c0c;
+    color: black;
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 30px;
     font-size: 22px;
+    font-family: "Gotham", sans-serif;
     font-weight: bold;
     transition: all 0.3s ease;
     border: 1px solid #ccc;
@@ -158,7 +161,7 @@ div.challenge img.books-logo {
 }
 
 div.challenge .header h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Gotham', sans-serif;
     font-size: 2.2rem;
     font-weight: 300;
     color: #333;
@@ -179,7 +182,8 @@ div.challenge .content {
     width: 25%;
     padding: 20px;
     position: relative;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 300;
     text-align: center;
 }
 

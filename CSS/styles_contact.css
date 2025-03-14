@@ -14,17 +14,17 @@ section#contact {
 }
 
 section#contact h1 {
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Gotham', sans-serif;
     text-align: center;
     font-size: 32px;
-    font-weight: normal;
+    font-weight: 300;
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
 
 section#contact .separator {
     height: 1px;
-    background-color: #000;
+    background-color: black;
     width: 100%;
     margin: 0 auto 40px;
 }
@@ -66,8 +66,8 @@ section#contact .submit-button {
     background-color: #48C5D5;
     border: none;
     cursor: pointer;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 800;
+    font-family: 'Gotham', sans-serif;
+    font-weight: bold;
     margin-top: 20px;
     color: white;
 }

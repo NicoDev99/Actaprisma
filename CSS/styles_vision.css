@@ -32,7 +32,7 @@ nav ul li a {
     text-transform: uppercase;
     border: 1px solid #0f293d;
     padding: 7px 12px;
-    font-family: "Gothic A1", sans-serif;
+    font-family: "Gotham", sans-serif;
     font-weight: 300;
 }
 
@@ -65,22 +65,22 @@ div.text {
 
 div.text h1 {
     font-size: 70px;
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 200;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
     margin-bottom: 50px;
 }
 
 div.text h2 {
     font-size: 33px;
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 200;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
     margin-top: 25px;
 }
 
 div.text h3 {
     font-size: 22px;
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 200;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
 }
 
 div.text h3 span {
@@ -137,10 +137,10 @@ div.center-button {
 }
 
 .vision-title {
-    font-family: 'Gothic A1', sans-serif;
-    color: #4a2c0c;
+    font-family: 'Gotham', sans-serif;
+    color: black;
     font-size: 42px;
-    font-weight: 400;
+    font-weight: 300;
     text-align: right;
     margin-bottom: 10px;
     padding-right: 20px;
@@ -150,7 +150,7 @@ div.center-button {
 .separator {
     border: none;
     height: 1px;
-    background-color: #4a2c0c;
+    background-color: black;
     margin: 20px 0 40px;
 }
 
@@ -166,25 +166,25 @@ div.center-button {
 .blue-box h2 {
     color: white;
     font-size: 40px;
-    font-weight: 400;
-    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
+    font-family: 'Gotham', sans-serif;
 }
 
 h3 {
     color: #4a2c0c;
     font-size: 30px;
-    font-weight: 400;
-    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
+    font-family: 'Gotham', sans-serif;
     margin-bottom: 20px;
 }
 
 .description {
-    color: #4a2c0c;
+    color: black;
     font-size: 22px;
     line-height: 1.6;
     margin-bottom: 20px;
     font-weight: 300;
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Gotham', sans-serif;
 }
 
 section#vision .highlight {
@@ -198,14 +198,14 @@ section#vision .highlight {
 }
 
 .bold-text p {
-    color: #4a2c0c;
+    color: black;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 5px;
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Gotham', sans-serif;
 }
 
-.button-container {
+section#vision .button-container {
     margin-top: 40px;
 }
 
@@ -213,7 +213,7 @@ section#vision .highlight {
     display: inline-flex;
     align-items: center;
     background-color: white;
-    color: #4a2c0c;
+    color: black;
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 30px;
@@ -221,6 +221,8 @@ section#vision .highlight {
     font-weight: bold;
     transition: all 0.3s ease;
     border: 1px solid #ccc;
+    font-family: "Gotham", sans-serif;
+    font-weight: bold;
 }
 
 .cta-button:hover {
