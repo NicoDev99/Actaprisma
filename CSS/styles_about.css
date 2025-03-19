@@ -227,7 +227,7 @@ section#about img.books-logo {
 }
 
 @media (max-width: 1400px) {
-    .logo {
+    section#about .logo {
         width: 350px !important;
         height: 220px !important;
     }
@@ -285,7 +285,7 @@ section#about img.books-logo {
         margin-top: 100px;
     }
     
-    .logo {
+    section#about .logo {
         display: none;
     }
 

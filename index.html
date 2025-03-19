@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="CSS/styles_accompaniement.css">
     <link rel="stylesheet" href="CSS/styles_about.css">
     <link rel="stylesheet" href="CSS/styles_contact.css">
+
+    <!-- External libraries -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
     <title>Actaprisma</title>
 </head>
 <body>
@@ -18,12 +23,20 @@
                     <img src="IMG/Logo.png" alt="Actaprisma Logo" width="300px" height="180px">
                 </div>
         
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        
                 <ul>
+                    <img src="IMG/Logo.png" alt="Actaprisma Logo" width="170px" height="100px">
                     <li><a href="#vision" class="nav-link">Vision</a></li>
                     <li><a href="#accompaniment" class="nav-link">Acccompagnement</a></li>
                     <li><a href="#about" class="nav-link">A propos</a></li>
                     <li><a href="#" class="free_resources nav-link">Ressources gratuites</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><button class="lang-toggle">🇬🇧</button></li>
                 </ul>
             </nav>
 
@@ -31,7 +44,8 @@
 
             <div class="explanations">
                 <div class="text">
-                    <h1>Vous avez un objectif ?</h1>
+                    <!-- Typing animation for the main title "vous avez un objectif ?" -->
+                    <h1><span class="typing-title"></span></h1> 
 
                     <h2>Nous aussi :</h2>
                     <h3>Vous aider à <span>être compris</span> pour performer sur vos cibles
@@ -40,12 +54,13 @@
                     <h2>Comment ?</h2>
                     <h3>En cultivant votre authenticité et en augmentant la <span>perception</span>
                         de ce que vous êtes. Nous vous donnons toutes les clés
-                        de <span>maîtrise de votre image.</span> Vous aurez des <span class="highlight">résultats.</span> Et vite.</h3>
+                        de <span>maîtrise de votre image.</span> Vous aurez des <span class="highlight animated-highlight">résultats.</span> Et vite.</h3>
                 </div>
 
                 <div class="logo">
-                    <img src="IMG/Books.png" alt="Books Logo" width="450px" height="450px" class="logo_books">
-                    <img src="IMG/Triangles.png" alt="Triangles Logo" width="382px" height="330px" class="logo_triangles">
+                    <!-- <img src="IMG/Books.png" alt="Books Logo" width="450px" height="450px" class="logo_books">
+                    <img src="IMG/Triangles.png" alt="Triangles Logo" width="382px" height="330px" class="logo_triangles"> -->
+                    <img src="IMG/Logo_without_text.png" alt="Logo without text" width="450px" height="450px" class="logo_without_text">
                 </div>
             </div>
 
@@ -57,6 +72,8 @@
                     </svg>
                 </a>
             </div>
+
+            <div class="menu-overlay"></div>
         </div>
 
         <div class="vision-container">

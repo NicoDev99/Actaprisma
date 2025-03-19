@@ -1,4 +1,3 @@
-
 /* Section Vision */
 section#vision {
     position: relative;
@@ -20,10 +19,16 @@ nav {
 nav ul {
     display: flex;
     gap: 30px;
+    align-items: center;
+}
+
+nav ul img {
+    display: none;
 }
 
 nav ul li {
     list-style-type: none;
+    height: fit-content;
 }
 
 nav ul li a {
@@ -45,6 +50,38 @@ nav ul li a.free_resources {
     color: white;
     background-color: #215ca8;
     border: none;
+}
+
+button.lang-toggle {
+    background-color: transparent;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+}
+
+.hamburger-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #0f293d;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Body style when menu is open */
+body.menu-open {
+    overflow: hidden;
 }
 
 section#vision hr {
@@ -94,14 +131,8 @@ div.logo {
     margin-top: 50px;
 }
 
-div.logo img.logo_books {
-    position: absolute;
-}
-
-div.logo img.logo_triangles {
-    position: absolute;
-    left: 54px;
-    bottom: 159px;
+div.logo img {
+    animation: fadeInUp 1.5s;
 }
 
 div.center-button {
@@ -171,7 +202,7 @@ div.center-button {
 }
 
 h3 {
-    color: #4a2c0c;
+    color: black;
     font-size: 30px;
     font-weight: 300;
     font-family: 'Gotham', sans-serif;
@@ -187,10 +218,21 @@ h3 {
     font-family: 'Gotham', sans-serif;
 }
 
-section#vision .highlight {
-    color: #1a5da0;
-    font-weight: 600;
-    font-weight: bold;
+.highlight {
+    position: relative;
+    display: inline-block;
+    background-color: #0063A1;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 2px;
+}
+
+.animated-highlight {
+    background-color: transparent;
+    background-image: linear-gradient(to right, #0063A1 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    animation: highlightSlide 0.8s ease-out forwards;
 }
 
 .bold-text {
@@ -235,6 +277,87 @@ section#vision .button-container {
 }
 
 /* Media Queries */
+@media (max-width: 1350px) {
+    .hamburger-menu {
+        display: flex;
+    }
+    
+    nav {
+        position: relative;
+    }
+    
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -320px; /* Start off-screen */
+        width: 320px;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 150px;
+        transition: right 0.3s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 90;
+    }
+
+    nav ul img {
+        display: block;
+    }
+
+    nav ul.active {
+        right: 0; /* Slide in from right */
+    }
+    
+    nav ul li {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    /* Active hamburger styles */
+    .hamburger-menu.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger-menu.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .hamburger-menu.active {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    /* Overlay when menu is active */
+    .menu-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 80;
+        transition: opacity 0.3s ease;
+    }
+    
+    .menu-overlay.active {
+        display: block;
+    }
+}
+
 @media (max-width: 1640px) {
     .content-container {
         max-width: 900px;
@@ -267,28 +390,15 @@ section#vision .button-container {
     .content-container {
         max-width: 800px;
     }
-    
-    nav {
-        display: block;
-    }
-
-    nav div img {
-        display: block;
-        margin: 0 auto;
-    }
-
-    nav ul {
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 50px;
-    }
-
-    div.text h1 {
-        text-align: center;
-    }
 
     div.logo {
-        display: none;
+        width: 300px;
+        height: 300px;
+    }
+
+    div.logo img {
+        width: 300px;
+        height: 300px;
     }
 
     .text {
@@ -325,9 +435,16 @@ section#vision .button-container {
     }
 }
 
+@media (max-width: 970px) {
+    div.logo {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
-    div.nav-header {
-        margin: 5px;
+    nav div img {
+        width: 130px;
+        height: 80px;
     }
 
     .vision-content {
@@ -379,21 +496,20 @@ section#vision .button-container {
     }
 }
 
-@media (max-width: 540px) {
-    nav ul {
-        display: block;
-    }
-
-    nav ul li {
-        margin: 25px 0px;
-    }
-
-    nav ul li a {
-        display: block;
-        width: 100%;
+@media (max-width: 600px) {
+    div.text h1 {
         text-align: center;
-        padding: 7px 0px;
+        font-size: 45px;
     }
+
+    div.text h2 {
+        font-size: 30px;
+    }
+
+    div.text h3 {
+        font-size: 17px;
+    }
+        
 }
 
 @media (max-width: 480px) {    
@@ -413,5 +529,15 @@ section#vision .button-container {
     .triangle-logo {
         left: -120%;
         width: 200%;
+    }
+}
+
+/* Highlight animation */
+@keyframes highlightSlide {
+    0% {
+        background-position: right bottom;
+    }
+    100% {
+        background-position: left bottom;
     }
 }
