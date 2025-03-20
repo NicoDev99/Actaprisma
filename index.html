@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- External libraries -->
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -56,7 +59,7 @@
                 <div class="logo">
                     <!-- <img src="IMG/Books.png" alt="Books Logo" width="450px" height="450px" class="logo_books">
                     <img src="IMG/Triangles.png" alt="Triangles Logo" width="382px" height="330px" class="logo_triangles"> -->
-                    <img src="IMG/Logo_without_text.png" alt="Logo without text" width="450px" height="450px" class="logo_without_text">
+                    <img src="IMG/Logo_without_text.png" alt="Logo without text" width="450px" height="450px" class="logo_without_text" data-aos="fade-up">
                 </div>
             </div>
 
@@ -75,7 +78,7 @@
         <div class="vision-container">
 
             <!-- Logo triangulaire -->
-            <img src="IMG/Triangles.png" alt="Actaprisma Logo" class="triangle-logo">
+            <img src="IMG/Triangles.png" alt="Actaprisma Logo" class="triangle-logo" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease" data-aos-once="true">
             
             <div class="content-container">
                 <h1 class="vision-title">VISION</h1>
@@ -106,7 +109,7 @@
                     </p>
                     
                     <p class="description">
-                        Pour faire simple, nous vous permettons de <span class="highlight">transcender votre simple « proposition de valeur »
+                        Pour faire simple, nous vous permettons de <span class="blue-color">transcender votre simple « proposition de valeur »
                         pour augmenter l'engagement de vos cibles et le respect des publics élargis.</span>
                     </p>
                     
@@ -404,5 +407,19 @@
 
 
     <script src="JS/script.js"></script>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialiser AOS
+        AOS.init({
+            offset: 200, // décalage (en px) depuis le point de déclenchement original
+            delay: 0, // pas de délai initial
+            duration: 1000, // durée par défaut, mais sera écrasée par l'attribut data-aos-duration
+            easing: 'ease', // fonction d'accélération par défaut
+            once: true, // garantit que l'animation ne se produit qu'une seule fois (équivalent à "forwards")
+            mirror: false, // ne pas inverser les animations lors du défilement vers le haut
+            anchorPlacement: 'top-bottom' // déclenche quand le haut de l'élément atteint le bas de la fenêtre
+        });
+    </script>
 </body>
 </html>

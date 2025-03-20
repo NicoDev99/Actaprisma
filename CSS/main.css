@@ -139,14 +139,26 @@ section#vision div.explanations .text h3 {
 section#vision div.explanations .text h3 span {
   font-weight: bold;
 }
+section#vision div.explanations .text .highlight {
+  position: relative;
+  display: inline-block;
+  background-color: #0063A1;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+section#vision div.explanations .text .highlight.animated-highlight {
+  background-color: transparent;
+  background-image: linear-gradient(to right, #0063A1 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  animation: highlightSlide 0.8s ease-out forwards;
+}
 section#vision div.explanations .logo {
   width: 450px;
   height: 450px;
   position: relative;
   margin-top: 50px;
-}
-section#vision div.explanations .logo img {
-  animation: fadeInUp 1.5s;
 }
 section#vision .vision-container {
   position: relative;
@@ -157,12 +169,15 @@ section#vision .vision-container {
 }
 section#vision .vision-container .triangle-logo {
   position: absolute;
-  left: -65%;
+  left: -68%;
   bottom: 0;
   width: 100%;
   z-index: 0;
-  opacity: 0.95;
   pointer-events: none;
+  /* Pour une fin d'animation avec opacity: 0.95 comme dans notre @keyframes original */
+}
+section#vision .vision-container .triangle-logo[data-aos=fade-up].aos-animate {
+  opacity: 0.95;
 }
 section#vision .vision-container .content-container {
   position: relative;
@@ -177,7 +192,6 @@ section#vision .vision-container .content-container .vision-title {
   font-weight: 300;
   text-align: right;
   margin-bottom: 10px;
-  padding-right: 20px;
   letter-spacing: 1px;
 }
 section#vision .vision-container .content-container .separator {
@@ -195,7 +209,7 @@ section#vision .vision-container .content-container .vision-content .blue-box {
 }
 section#vision .vision-container .content-container .vision-content .blue-box h2 {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
   font-family: "Gotham", sans-serif;
 }
@@ -208,33 +222,23 @@ section#vision .vision-container .content-container .vision-content h3 {
 }
 section#vision .vision-container .content-container .vision-content .description {
   color: black;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
   font-weight: 300;
   font-family: "Gotham", sans-serif;
+  text-align: justify;
 }
-section#vision .vision-container .content-container .vision-content .highlight {
-  position: relative;
-  display: inline-block;
-  background-color: #0063A1;
-  color: white;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-section#vision .vision-container .content-container .vision-content .highlight.animated-highlight {
-  background-color: transparent;
-  background-image: linear-gradient(to right, #0063A1 50%, transparent 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  animation: highlightSlide 0.8s ease-out forwards;
+section#vision .vision-container .content-container .vision-content .description .blue-color {
+  color: #0063A1;
+  font-weight: bold;
 }
 section#vision .vision-container .content-container .vision-content .bold-text {
   margin: 30px 0;
 }
 section#vision .vision-container .content-container .vision-content .bold-text p {
   color: black;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 5px;
   font-family: "Gotham", sans-serif;
@@ -340,7 +344,7 @@ section#vision .arrow-icon {
     display: block;
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
   section#vision div.explanations .logo {
     width: 300px;
     height: 300px;
@@ -371,7 +375,6 @@ section#vision .arrow-icon {
   section#vision .vision-container .content-container .blue-box h2,
   section#vision .vision-container .content-container h3 {
     font-size: 20px;
-    text-align: center;
   }
   section#vision .vision-container .content-container .description,
   section#vision .vision-container .content-container .bold-text p {
@@ -402,6 +405,9 @@ section#vision .arrow-icon {
   section#vision div.explanations .logo {
     display: none;
   }
+  section#vision div.explanations .text > *:not(:first-child) {
+    text-align: justify;
+  }
 }
 @media screen and (max-width: 768px) {
   section#vision div.nav-header {
@@ -410,6 +416,9 @@ section#vision .arrow-icon {
   section#vision div.nav-header nav div img {
     width: 130px;
     height: 80px;
+  }
+  section#vision .vision-container {
+    padding: 50px 0px;
   }
   section#vision .vision-container .vision-title {
     font-size: 36px;
