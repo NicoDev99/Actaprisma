@@ -172,7 +172,7 @@ section#vision {
     .vision-container {
         position: relative;
         overflow: hidden;
-        margin-right: 50px;
+        margin-right: 100px;
         padding: 150px 0px;
 
         /* Logo triangulaire */
@@ -238,7 +238,6 @@ section#vision {
                 .description {
                     color: black;
                     font-size: 20px;
-                    line-height: 1.6;
                     margin-bottom: 20px;
                     font-weight: 300;
                     font-family: 'Gotham', sans-serif;
@@ -420,7 +419,7 @@ section#vision {
         }
         
         .vision-container {
-            margin: 0 50px;
+            margin: 0 100px;
             
             .triangle-logo {
                 display: none;  
@@ -512,6 +511,8 @@ section#vision {
         
         .vision-container {
             padding: 50px 0px;
+            margin: 0 50px;
+
             .vision-title {
                 font-size: 36px;
                 text-align: center;
@@ -524,6 +525,11 @@ section#vision {
             }
             
             .content-container {
+                .vision-title {
+                    font-size: 28px;
+                    text-align: center;
+                }
+
                 .vision-content {
                     margin-top: 40px;
                     padding: 0;

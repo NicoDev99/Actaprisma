@@ -163,7 +163,7 @@ section#vision div.explanations .logo {
 section#vision .vision-container {
   position: relative;
   overflow: hidden;
-  margin-right: 50px;
+  margin-right: 100px;
   padding: 150px 0px;
   /* Logo triangulaire */
 }
@@ -223,7 +223,6 @@ section#vision .vision-container .content-container .vision-content h3 {
 section#vision .vision-container .content-container .vision-content .description {
   color: black;
   font-size: 20px;
-  line-height: 1.6;
   margin-bottom: 20px;
   font-weight: 300;
   font-family: "Gotham", sans-serif;
@@ -357,7 +356,7 @@ section#vision .arrow-icon {
     text-align: justify;
   }
   section#vision .vision-container {
-    margin: 0 50px;
+    margin: 0 100px;
   }
   section#vision .vision-container .triangle-logo {
     display: none;
@@ -419,6 +418,7 @@ section#vision .arrow-icon {
   }
   section#vision .vision-container {
     padding: 50px 0px;
+    margin: 0 50px;
   }
   section#vision .vision-container .vision-title {
     font-size: 36px;
@@ -428,6 +428,10 @@ section#vision .arrow-icon {
   section#vision .vision-container .triangle-logo {
     left: -85%;
     width: 140%;
+  }
+  section#vision .vision-container .content-container .vision-title {
+    font-size: 28px;
+    text-align: center;
   }
   section#vision .vision-container .content-container .vision-content {
     margin-top: 40px;
@@ -523,18 +527,13 @@ section#vision .arrow-icon {
 }
 /* Accompaniment Section */
 section#accompaniment {
-  margin: 0 50px;
+  margin: 0 100px;
   margin-top: 100px;
 }
-section#accompaniment .button-container {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.accompaniment-header {
+section#accompaniment .accompaniment-header {
   margin-bottom: 60px;
 }
-.accompaniment-header h1 {
+section#accompaniment .accompaniment-header h1 {
   font-family: "Gotham", sans-serif;
   font-size: 48px;
   font-weight: 300;
@@ -542,18 +541,17 @@ section#accompaniment .button-container {
   margin-bottom: 15px;
   text-align: right;
 }
-.accompaniment-header hr {
+section#accompaniment .accompaniment-header hr {
   height: 1px;
-  background-color: #0f293d;
+  background-color: black;
   border: none;
 }
-
-.accompaniment-intro {
+section#accompaniment .accompaniment-intro {
   max-width: 1200px;
   margin: 0 auto 60px;
   text-align: center;
 }
-.accompaniment-intro p {
+section#accompaniment .accompaniment-intro p {
   font-family: "Gotham", sans-serif;
   font-weight: 300;
   font-size: 22px;
@@ -561,21 +559,34 @@ section#accompaniment .button-container {
   color: black;
   margin-bottom: 10px;
 }
-.accompaniment-intro .brand {
+section#accompaniment .accompaniment-intro .brand {
   font-weight: 600;
 }
-.accompaniment-intro .bold {
+section#accompaniment .accompaniment-intro .bold {
   font-weight: 600;
 }
-
-.service-cards {
+section#accompaniment .service-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 75px;
-  max-width: 1920px;
 }
-
-.service-card h2 {
+section#accompaniment .service-cards .service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+section#accompaniment .service-cards .service-card > div:first-child {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+section#accompaniment .service-cards .service-card .card-header {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#accompaniment .service-cards .service-card .card-header h2 {
   font-family: "Gotham", sans-serif;
   font-weight: 300;
   font-size: 32px;
@@ -583,76 +594,102 @@ section#accompaniment .button-container {
   margin: 0;
   text-align: center;
 }
-.service-card.political h2 {
-  background-color: #A6E2E5;
-  padding: 20px 0px;
-  color: black;
+section#accompaniment .service-cards .service-card .card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
-.service-card.political .card-content {
-  background-color: rgba(166, 226, 229, 0.3);
-}
-.service-card.startups h2 {
-  background-color: #48C5D5;
-  padding: 20px 0px;
-  color: black;
-}
-.service-card.startups .card-content {
-  background-color: rgba(76, 185, 211, 0.3);
-}
-.service-card.sports h2 {
-  background-color: #215ca8;
-  color: white;
-}
-.service-card.sports .card-content {
-  background-color: rgba(33, 92, 168, 0.3);
-}
-
-.card-content {
-  padding: 0 20px;
-  padding-top: 20px;
-  min-height: 225px;
-}
-.card-content p {
+section#accompaniment .service-cards .service-card .card-content p {
   font-family: "Gotham", sans-serif;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 18px;
   color: black;
+  margin-bottom: 8px;
 }
-.card-content .bold {
+section#accompaniment .service-cards .service-card .card-content .bold {
   font-weight: 600;
 }
-
-.card-button {
+section#accompaniment .service-cards .service-card .button-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+section#accompaniment .service-cards .service-card .button-container .card-button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   background-color: white;
   color: black;
   text-decoration: none;
-  padding: 12px 25px;
+  padding: 15px 20px;
   border-radius: 30px;
-  font-size: 22px;
+  font-size: 16px;
   font-family: "Gotham", sans-serif;
   font-weight: bold;
   transition: all 0.3s ease;
   border: 1px solid #ccc;
+  width: calc(100% - 40px);
+  position: relative;
+  height: 25px;
 }
-.card-button:hover {
+section#accompaniment .service-cards .service-card .button-container .card-button:hover {
   background-color: #f5f5f5;
 }
-.card-button svg {
-  margin-left: 10px;
-  color: #7ecad6;
+section#accompaniment .service-cards .service-card .button-container .card-button svg {
+  position: absolute;
+  right: 10px;
 }
-
-/* Challenges */
-div.challenge {
+section#accompaniment .service-cards .service-card.political .card-header {
+  background-color: #A6E2E5;
+}
+section#accompaniment .service-cards .service-card.political .card-header h2 {
+  color: black;
+}
+section#accompaniment .service-cards .service-card.political .card-content {
+  background-color: rgba(166, 226, 229, 0.3);
+}
+section#accompaniment .service-cards .service-card.political .card-button svg {
+  color: #A6E2E5;
+}
+section#accompaniment .service-cards .service-card.startups .card-header {
+  background-color: #48C5D5;
+}
+section#accompaniment .service-cards .service-card.startups .card-header h2 {
+  color: black;
+}
+section#accompaniment .service-cards .service-card.startups .card-content {
+  background-color: rgba(76, 185, 211, 0.3);
+}
+section#accompaniment .service-cards .service-card.startups .card-button {
+  font-size: 14px;
+}
+section#accompaniment .service-cards .service-card.startups .card-button svg {
+  color: #48C5D5;
+  top: calc(50% - 12px);
+}
+section#accompaniment .service-cards .service-card.sports .card-header {
+  background-color: #215ca8;
+}
+section#accompaniment .service-cards .service-card.sports .card-header h2 {
+  color: white;
+}
+section#accompaniment .service-cards .service-card.sports .card-content {
+  background-color: rgba(33, 92, 168, 0.3);
+}
+section#accompaniment .service-cards .service-card.sports .card-button svg {
+  color: #215ca8;
+}
+section#accompaniment .challenge {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
   margin-top: 300px;
   position: relative;
 }
-div.challenge img.books-logo {
+section#accompaniment .challenge img.books-logo {
   width: 500px;
   height: 500px;
   position: absolute;
@@ -660,28 +697,63 @@ div.challenge img.books-logo {
   right: -150px;
   opacity: 0.2;
 }
-div.challenge .header {
+section#accompaniment .challenge .header {
   margin-bottom: 60px;
 }
-div.challenge .header h1 {
+section#accompaniment .challenge .header h1 {
   font-family: "Gotham", sans-serif;
   font-size: 2.2rem;
   font-weight: 300;
   color: #333;
 }
-div.challenge .content {
+section#accompaniment .challenge .content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
 }
-div.challenge .content h2 {
+section#accompaniment .challenge .content .left-column, section#accompaniment .challenge .content .right-column {
+  width: 25%;
+  padding: 20px;
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+section#accompaniment .challenge .content .left-column h2, section#accompaniment .challenge .content .right-column h2 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 50px;
   color: #333;
 }
-div.challenge .content h2.proactive::after {
+section#accompaniment .challenge .content .left-column ul, section#accompaniment .challenge .content .right-column ul {
+  list-style: none;
+}
+section#accompaniment .challenge .content .left-column ul li, section#accompaniment .challenge .content .right-column ul li {
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 20px;
+}
+section#accompaniment .challenge .content .left-column .triangle-marker, section#accompaniment .challenge .content .right-column .triangle-marker {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 25px solid #8DD8D8;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+section#accompaniment .challenge .content .left-column .triangle-marker.dark, section#accompaniment .challenge .content .right-column .triangle-marker.dark {
+  border-top-color: #0A3B5B;
+}
+section#accompaniment .challenge .content .left-column .round, section#accompaniment .challenge .content .right-column .round {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+}
+section#accompaniment .challenge .content .left-column h2.proactive::after {
   content: "";
   position: absolute;
   top: 75px;
@@ -690,7 +762,7 @@ div.challenge .content h2.proactive::after {
   height: 1px;
   background-color: black;
 }
-div.challenge .content h2.proactive::before {
+section#accompaniment .challenge .content .left-column h2.proactive::before {
   content: "";
   position: absolute;
   top: 113px;
@@ -701,7 +773,12 @@ div.challenge .content h2.proactive::before {
   transform: rotate(30deg);
   z-index: 1;
 }
-div.challenge .content h2.crisis::after {
+section#accompaniment .challenge .content .left-column .round {
+  top: 150px;
+  right: -236px;
+  z-index: 1;
+}
+section#accompaniment .challenge .content .right-column h2.crisis::after {
   content: "";
   position: absolute;
   top: 300px;
@@ -710,7 +787,7 @@ div.challenge .content h2.crisis::after {
   height: 100px;
   background-color: black;
 }
-div.challenge .content h2.crisis::before {
+section#accompaniment .challenge .content .right-column h2.crisis::before {
   content: "";
   position: absolute;
   top: 275px;
@@ -721,138 +798,94 @@ div.challenge .content h2.crisis::before {
   transform: rotate(60deg);
   z-index: 1;
 }
-div.challenge .content ul {
-  list-style: none;
-}
-div.challenge .content li {
-  margin-bottom: 15px;
-  font-weight: 300;
-  font-size: 20px;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.left-column, .right-column {
-  width: 25%;
-  padding: 20px;
-  position: relative;
-  font-family: "Gotham", sans-serif;
-  font-weight: 300;
-  text-align: center;
-}
-
-.left-column .round {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  border: 1px solid black;
-  position: absolute;
-  top: 150px;
-  right: -236px;
-  z-index: 1;
-}
-
-.right-column .round {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  border: 1px solid black;
-  position: absolute;
+section#accompaniment .challenge .content .right-column .round {
   top: 648px;
   right: 583px;
   z-index: 1;
 }
-
-.center-column {
+section#accompaniment .challenge .content .center-column {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-
-.triangle-image {
+section#accompaniment .challenge .content .center-column .triangle-image {
   width: 1000px;
   height: 750px;
 }
 
-.triangle-marker {
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 25px solid #8DD8D8;
-  margin: 0 auto;
-  margin-bottom: 15px;
-}
-.triangle-marker.dark {
-  border-top-color: #0A3B5B;
+.bold {
+  font-weight: 700;
 }
 
-/* Media Queries for Accompaniment Section */
-@media (max-width: 1500px) {
-  .card-content {
-    min-height: 300px;
-  }
-}
 @media (max-width: 1250px) {
   section#accompaniment {
     margin-top: 0;
   }
-  .accompaniment-header h1 {
+  section#accompaniment .accompaniment-header h1 {
     font-size: 34px;
   }
-  .service-cards {
+  section#accompaniment .service-cards {
     grid-template-columns: 1fr;
     gap: 50px;
     max-width: 500px;
     margin: 0 auto;
   }
-  .accompaniment-intro p {
+  section#accompaniment .accompaniment-intro p {
     font-size: 18px;
   }
-  .round {
+  section#accompaniment .challenge .content h2.proactive::after, section#accompaniment .challenge .content h2.proactive::before, section#accompaniment .challenge .content h2.crisis::after, section#accompaniment .challenge .content h2.crisis::before {
     display: none;
   }
-  .content h2.proactive::after, .content h2.proactive::before, .content h2.crisis::after, .content h2.crisis::before {
+  section#accompaniment .challenge .content .left-column .round, section#accompaniment .challenge .content .right-column .round {
     display: none;
   }
 }
 @media (max-width: 880px) {
-  div.challenge {
+  section#accompaniment .challenge {
     margin-top: 100px;
   }
-  div.challenge .content {
+  section#accompaniment .challenge .content {
     display: block;
   }
-  .left-column, .right-column {
+  section#accompaniment .challenge .content .left-column, section#accompaniment .challenge .content .right-column {
     width: auto;
   }
-  .triangle-image {
+  section#accompaniment .challenge .content .center-column .triangle-image {
     display: none;
   }
 }
 @media (max-width: 768px) {
   section#accompaniment {
-    margin: 0 20px;
+    margin: 0 50px;
+    margin-top: 50px;
   }
-  .accompaniment-header h1 {
+  section#accompaniment .accompaniment-header h1 {
+    font-size: 24px;
     text-align: center;
   }
-  .card-button {
+  section#accompaniment .accompaniment-intro p {
+    font-size: 15px;
+  }
+  section#accompaniment .service-cards {
+    display: block;
+  }
+  section#accompaniment .service-cards .service-card {
+    margin-bottom: 50px;
+  }
+  section#accompaniment .service-cards .service-card h2 {
+    font-size: 20px;
+    padding: 15px;
+  }
+  section#accompaniment .service-cards .service-card .card-content {
+    padding: 20px;
+  }
+  section#accompaniment .card-button {
     justify-content: center;
     text-align: center;
     font-size: 13px;
     padding: 12px 20px;
-  }
-  .service-card h2 {
-    font-size: 20px;
-    padding: 15px;
-  }
-  .card-content {
-    padding: 20px;
   }
 }
 section#about {
