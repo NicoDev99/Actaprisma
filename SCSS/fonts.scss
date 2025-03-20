@@ -1,8 +1,9 @@
+// Fonts
 @font-face {
     font-family: 'Gotham';
     src: url('../FONTS/Gotham-Bold.ttf') format('truetype');
     font-weight: bold;
-    font-style: normal;;
+    font-style: normal;
 }
 
 @font-face {
@@ -17,17 +18,4 @@
     src: url("../FONTS/Dune_Rise.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
-}
-
-* {
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    max-width: 1920px;
-    display: block;
-    margin: 0 auto;
-    overflow-x: hidden;
 }

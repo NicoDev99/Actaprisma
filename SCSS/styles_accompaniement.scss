@@ -1,0 +1,396 @@
+/* Accompaniment Section */
+section#accompaniment {
+    margin: 0 50px;
+    margin-top: 100px;
+
+    .button-container {
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+.accompaniment-header {
+    margin-bottom: 60px;
+
+    h1 {
+        font-family: "Gotham", sans-serif;
+        font-size: 48px;
+        font-weight: 300;
+        color: black;
+        margin-bottom: 15px;
+        text-align: right;
+    }
+
+    hr {
+        height: 1px;
+        background-color: #0f293d;
+        border: none;
+    }
+}
+
+.accompaniment-intro {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    text-align: center;
+
+    p {
+        font-family: "Gotham", sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 1.6;
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    .brand {
+        font-weight: 600;
+    }
+
+    .bold {
+        font-weight: 600;
+    }
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+    max-width: 1920px;
+}
+
+.service-card {
+    h2 {
+        font-family: "Gotham", sans-serif;
+        font-weight: 300;
+        font-size: 32px;
+        color: white;
+        margin: 0;
+        text-align: center;
+    }
+
+    &.political {
+        h2 {
+            background-color: #A6E2E5;
+            padding: 20px 0px;
+            color: black;
+        }
+
+        .card-content {
+            background-color: rgba(166, 226, 229, 0.3);
+        }
+    }
+
+    &.startups {
+        h2 {
+            background-color: #48C5D5;
+            padding: 20px 0px;
+            color: black;
+        }
+
+        .card-content {
+            background-color: rgba(76, 185, 211, 0.3);
+        }
+    }
+
+    &.sports {
+        h2 {
+            background-color: #215ca8;
+            color: white;
+        }
+
+        .card-content {
+            background-color: rgba(33, 92, 168, 0.3);
+        }
+    }
+}
+
+.card-content {
+    padding: 0 20px;
+    padding-top: 20px;
+    min-height: 225px;
+
+    p {
+        font-family: "Gotham", sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+        color: black;
+    }
+
+    .bold {
+        font-weight: 600;
+    }
+}
+
+.card-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 22px;
+    font-family: "Gotham", sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 1px solid #ccc;
+
+    &:hover {
+        background-color: #f5f5f5;
+    }
+
+    svg {
+        margin-left: 10px;
+        color: #7ecad6;
+    }
+}
+
+/* Challenges */
+
+div.challenge {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    margin-top: 300px;
+    position: relative;
+
+    img.books-logo {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: -300px;
+        right: -150px;
+        opacity: 0.2;
+    }
+
+    .header {
+        margin-bottom: 60px;
+
+        h1 {
+            font-family: 'Gotham', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 300;
+            color: #333;
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 50px;
+            color: #333;
+
+            &.proactive {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 75px;
+                    right: -100px;
+                    width: 100px;
+                    height: 1px;
+                    background-color: black;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 113px;
+                    right: -240px;
+                    width: 150px;
+                    height: 1px;
+                    background-color: black;
+                    transform: rotate(30deg);
+                    z-index: 1;
+                }
+            }
+
+            &.crisis {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 300px;
+                    right: 150px;
+                    width: 1px;
+                    height: 100px;
+                    background-color: black;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 275px;
+                    right: 367px;
+                    width: 1px;
+                    height: 500px;
+                    background-color: black;
+                    transform: rotate(60deg);
+                    z-index: 1;
+                }
+            }
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 15px;
+            font-weight: 300;
+            font-size: 20px;
+        }
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.left-column, .right-column {
+    width: 25%;
+    padding: 20px;
+    position: relative;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.left-column .round {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 150px;
+    right: -236px;
+    z-index: 1;
+}
+
+.right-column .round {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 648px;
+    right: 583px;
+    z-index: 1;
+}
+
+.center-column {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.triangle-image {
+    width: 1000px;
+    height: 750px;
+}
+
+.triangle-marker {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid #8DD8D8;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+    &.dark {
+        border-top-color: #0A3B5B;
+    }
+}
+
+/* Media Queries for Accompaniment Section */
+@media (max-width: 1500px) {
+    .card-content {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 1250px) {
+    section#accompaniment {
+        margin-top: 0;
+    }
+
+    .accompaniment-header h1 {
+        font-size: 34px;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .accompaniment-intro p {
+        font-size: 18px;
+    }
+
+    .round {
+        display: none;
+    }
+
+    .content {
+        h2 {
+            &.proactive, &.crisis {
+                &::after, &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    div.challenge {
+        margin-top: 100px;
+
+        .content {
+            display: block;
+        }
+    }
+
+    .left-column, .right-column {
+        width: auto;
+    }
+
+    .triangle-image {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    section#accompaniment {
+        margin: 0 20px;
+    }
+
+    .accompaniment-header h1 {
+        text-align: center;
+    }
+
+    .card-button {
+        justify-content: center;
+        text-align: center;
+        font-size: 13px;
+        padding: 12px 20px;
+    }
+
+    .service-card h2 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+} 

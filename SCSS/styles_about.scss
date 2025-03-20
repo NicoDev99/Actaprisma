@@ -1,0 +1,362 @@
+section#about {
+    position: relative;
+
+    .intro_container {
+        display: flex;
+        margin: 0px 50px;
+        margin-top: 200px;
+        gap: 100px;
+        align-items: center;
+    }
+
+    /* Intro */
+    /* Left Section */
+    .logo-container {
+        text-align: center;
+    }
+
+    .logo {
+        width: 500px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    /* Right Section */
+    .right-section {
+        text-align: right;
+    }
+
+    .header {
+        margin-bottom: 3rem;
+    }
+
+    .section-title {
+        text-align: right;
+        font-family: 'Gotham', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: black;
+    }
+
+    .divider {
+        height: 1px;
+        background-color: #ccc;
+        margin-top: 10px;
+    }
+
+    .content {
+        max-width: 80%;
+        margin: 0 0 0 auto;
+        margin-top: 100px;
+    }
+
+    .intro-title {
+        font-size: 2.3rem;
+        font-family: 'Gotham', sans-serif;
+        font-weight: 300;
+        color: black;
+        margin-bottom: 2rem;
+        line-height: 1.3;
+    }
+
+    .description {
+        font-family: 'Gotham', sans-serif;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        color: black;
+    }
+
+    .concept {
+        font-family: 'Gotham', sans-serif;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        color: black;
+    }
+
+    .arrow {
+        color: #333;
+        font-weight: bold;
+    }
+
+    .highlight.blue {
+        background-color: #1a75cf;
+        color: white;
+        padding: 2px 5px;
+    }
+
+    .avec {
+        font-family: 'Gotham', sans-serif;
+        font-weight: 300;
+        text-align: right;
+        margin: 1rem 0;
+        color: black;
+        font-size: 1.3rem;
+    }
+
+    img.books-logo {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        bottom: -370px;
+        left: 49px;
+        opacity: 0.2;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Text */
+/* Quote */
+.quote {
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 150px;
+
+    &-start, &-end {
+        color: #4BBFC9;
+        font-size: 120px;
+        font-weight: bold;
+    }
+
+    &-start {
+        position: absolute;
+        top: -49px;
+        left: -58px;
+    }
+
+    &-end {
+        position: absolute;
+        right: -10px;
+    }
+
+    &-text {
+        font-size: 35px;
+    }
+}
+
+/* Container */
+.text_container {
+    display: flex;
+    margin: 0px 50px;
+    align-items: center;
+
+    /* Left Section */
+    .left-section {
+        flex: 1;
+        position: relative;
+    }
+
+    .title {
+        font-size: 30px;
+        margin-bottom: 10px;
+        font-family: 'Gotham', sans-serif;
+        font-weight: 300;
+    }
+
+    .divider {
+        height: 1px;
+        background-color: #ccc;
+    }
+
+    /* Right Section */
+    .right-section {
+        flex: 25;
+        padding-left: 40px;
+        text-align: left !important;
+    }
+
+    .description {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: black;
+    }
+
+    .highlight.blue {
+        background-color: #1a75cf;
+        color: white;
+        padding: 2px 5px;
+        font-weight: bold;
+    }
+
+    .social {
+        font-family: 'Gotham', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        font-style: italic;
+        color: #666;
+        margin: 40px 0;
+    }
+
+    .cta-button {
+        border: 1px solid #ccc;
+        border-radius: 30px;
+        padding: 15px 50px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'Gotham', sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    svg {
+        color: #4BBFC9;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+}
+
+.founder-info {
+    text-align: center;
+
+    h2 {
+        font-family: 'Gotham', sans-serif;
+        font-size: 42px;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1400px) {
+    section#about .logo {
+        width: 350px !important;
+        height: 220px !important;
+    }
+
+    .content {
+        max-width: 100% !important;
+    }
+
+    .quote {
+        max-width: 800px;
+    }
+
+    .books-logo {
+        display: none;
+    }
+}
+
+@media(max-width: 1250px) {
+    .section-title {
+        font-size: 34px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .text_container {
+        display: block;
+
+        .left-section {
+            padding-right: 0;
+        }
+
+        .right-section {
+            padding-left: 0;
+        }
+    }
+
+    .founder-info {
+        text-align: center;
+        margin-top: 100px;
+
+        .divider {
+            margin: 0 auto;
+            width: 330px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    section#about {
+        display: block;
+
+        .intro_container {
+            display: block;
+            margin-top: 100px;
+        }
+        
+        .logo {
+            display: none;
+        }
+    }
+
+    .quote {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    section#about {
+        .section-title {
+            font-size: 2.0rem;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 0px;
+        }
+
+        .content {
+            margin-top: 50px;
+        }
+
+        .right-section {
+            text-align: left !important;
+        }
+            
+        .intro-title {
+            font-size: 1.8rem;
+        }
+        
+        .concept {
+            font-size: 1.0rem;
+        }
+
+        .avec {
+            font-size: 1.0rem;
+            text-align: left !important;
+        }
+    }
+} 
+
+@media (max-width: 600px) {
+    .quote {
+        max-width: 300px;
+
+        &-start, &-end {
+            font-size: 80px;
+        }
+
+        &-text {
+            font-size: 30px;
+        }
+    }
+
+    .founder-info .divider {
+        width: auto !important;
+    }
+
+    .right-section .content {
+        .description {
+            font-size: 17px !important;
+        }
+
+        .social {
+            font-size: 14px;
+        }
+
+        .cta-button {   
+            font-size: 10px;
+            padding: 10px 30px;
+        }
+    }
+} 

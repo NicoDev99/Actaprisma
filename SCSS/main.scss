@@ -1,0 +1,23 @@
+@use 'fonts';
+@use 'vision';
+@use 'styles_accompaniement';
+@use 'styles_about';
+@use 'styles_contact'; 
+
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+body {
+    max-width: 1920px;
+    display: block;
+    margin: 0 auto;
+    overflow-x: hidden;
+} 
+
+/* Body style when menu is open */
+body.menu-open {
+    overflow: hidden;
+}
