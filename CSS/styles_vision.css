@@ -5,7 +5,7 @@ section#vision {
 
 /* Header */
 div.nav-header {
-    margin: 50px;
+    margin: 50px 100px;
 }
 
 nav {
@@ -138,7 +138,6 @@ div.logo img {
 div.center-button {
     display: block;
     text-align: center;
-    margin-top: 50px;
 }
 
 /* Content */
@@ -369,6 +368,22 @@ section#vision .button-container {
         gap: 100px;
     }
 }
+
+@media (max-width: 1400px) {
+    div.logo {
+        width: 400px;
+        height: 400px;
+    }
+
+    img.logo_without_text {
+        width: 400px;
+        height: 400px;
+    }
+
+    .center-button {
+        margin-top: 50px;
+    }
+}
  
 @media (max-width: 1250px) {
     .triangle-logo {
@@ -401,7 +416,7 @@ section#vision .button-container {
         height: 300px;
     }
 
-    .text {
+    .text::not(:first-child) {
         text-align: justify;
     }
 
@@ -435,13 +450,17 @@ section#vision .button-container {
     }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1050px) {
     div.logo {
         display: none;
     }
 }
 
 @media (max-width: 768px) {
+    div.nav-header {
+        margin: 50px;
+    }
+
     nav div img {
         width: 130px;
         height: 80px;
@@ -498,7 +517,6 @@ section#vision .button-container {
 
 @media (max-width: 600px) {
     div.text h1 {
-        text-align: center;
         font-size: 45px;
     }
 
@@ -508,6 +526,24 @@ section#vision .button-container {
 
     div.text h3 {
         font-size: 17px;
+    }
+
+    .vision-title {
+        font-size: 28px;
+    }
+    
+    .blue-box h2, h3 {
+        font-size: 18px;
+    }
+    
+    .cta-button {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+    
+    .triangle-logo {
+        left: -120%;
+        width: 200%;
     }
         
 }
