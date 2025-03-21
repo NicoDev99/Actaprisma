@@ -1,14 +1,14 @@
 @use 'fonts';
 @use 'vision';
 @use 'accompaniement';
-@use 'styles_about';
+@use 'about';
 @use 'styles_contact'; 
 
 * {
     border: none;
     padding: 0;
     margin: 0;
-  }
+}
   
 body {
     max-width: 1920px;

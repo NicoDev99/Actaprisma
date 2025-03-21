@@ -851,6 +851,9 @@ section#accompaniment .challenge .content .center-column .triangle-image {
   section#accompaniment .challenge {
     margin-top: 50px;
   }
+  section#accompaniment .challenge img.books-logo {
+    display: none;
+  }
   section#accompaniment .challenge .content {
     display: block;
   }
@@ -917,32 +920,29 @@ section#accompaniment .challenge .content .center-column .triangle-image {
 }
 section#about {
   position: relative;
-  /* Intro */
-  /* Left Section */
-  /* Right Section */
 }
 section#about .intro_container {
   display: flex;
-  margin: 0px 50px;
-  margin-top: 200px;
+  margin: 0px 100px;
+  margin-top: 100px;
   gap: 100px;
   align-items: center;
 }
-section#about .logo-container {
+section#about .intro_container .left-section .logo-container {
   text-align: center;
 }
-section#about .logo {
+section#about .intro_container .left-section .logo-container .logo {
   width: 500px;
   height: 300px;
   margin-bottom: 20px;
 }
-section#about .right-section {
+section#about .intro_container .right-section {
   text-align: right;
 }
-section#about .header {
+section#about .intro_container .right-section .header {
   margin-bottom: 3rem;
 }
-section#about .section-title {
+section#about .intro_container .right-section .header .section-title {
   text-align: right;
   font-family: "Gotham", sans-serif;
   font-size: 2.5rem;
@@ -950,17 +950,16 @@ section#about .section-title {
   letter-spacing: 2px;
   color: black;
 }
-section#about .divider {
+section#about .intro_container .right-section .header .divider {
   height: 1px;
   background-color: #ccc;
   margin-top: 10px;
 }
-section#about .content {
+section#about .intro_container .right-section .content {
   max-width: 80%;
   margin: 0 0 0 auto;
-  margin-top: 100px;
 }
-section#about .intro-title {
+section#about .intro_container .right-section .content .intro-title {
   font-size: 2.3rem;
   font-family: "Gotham", sans-serif;
   font-weight: 300;
@@ -968,30 +967,25 @@ section#about .intro-title {
   margin-bottom: 2rem;
   line-height: 1.3;
 }
-section#about .description {
+section#about .intro_container .right-section .content .description {
   font-family: "Gotham", sans-serif;
   font-weight: 300;
   margin-bottom: 1rem;
   font-size: 1.3rem;
   color: black;
 }
-section#about .concept {
+section#about .intro_container .right-section .content .concept {
   font-family: "Gotham", sans-serif;
   font-weight: 300;
   margin-bottom: 1rem;
   font-size: 1.3rem;
   color: black;
 }
-section#about .arrow {
+section#about .intro_container .right-section .content .concept .arrow {
   color: #333;
   font-weight: bold;
 }
-section#about .highlight.blue {
-  background-color: #1a75cf;
-  color: white;
-  padding: 2px 5px;
-}
-section#about .avec {
+section#about .intro_container .right-section .content .avec {
   font-family: "Gotham", sans-serif;
   font-weight: 300;
   text-align: right;
@@ -999,87 +993,82 @@ section#about .avec {
   color: black;
   font-size: 1.3rem;
 }
-section#about img.books-logo {
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  bottom: -370px;
-  left: 49px;
-  opacity: 0.2;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-/* Text */
-/* Quote */
-.quote {
+section#about .quote {
   font-family: "Gotham", sans-serif;
   font-weight: 300;
   position: relative;
   text-align: center;
   max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
   margin-top: 150px;
 }
-.quote-start, .quote-end {
+section#about .quote-start {
   color: #4BBFC9;
   font-size: 120px;
   font-weight: bold;
-}
-.quote-start {
   position: absolute;
-  top: -49px;
-  left: -58px;
+  top: -69px;
+  left: -20px;
 }
-.quote-end {
+section#about .quote-text {
+  font-size: 32px;
+}
+section#about .quote-end {
+  color: #4BBFC9;
+  font-size: 120px;
+  font-weight: bold;
   position: absolute;
-  right: -10px;
+  right: -20px;
+  top: 10px;
 }
-.quote-text {
-  font-size: 35px;
-}
-
-/* Container */
-.text_container {
+section#about .text_container {
   display: flex;
-  margin: 0px 50px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
   align-items: center;
-  /* Left Section */
-  /* Right Section */
+  gap: 150px;
 }
-.text_container .left-section {
-  flex: 1;
+section#about .text_container .left-section {
+  flex: 10;
   position: relative;
 }
-.text_container .title {
-  font-size: 30px;
+section#about .text_container .left-section .founder-info h2 {
+  font-family: "Gotham", sans-serif;
+  font-size: 38px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+section#about .text_container .left-section .founder-info .title {
+  font-size: 25px;
   margin-bottom: 10px;
   font-family: "Gotham", sans-serif;
   font-weight: 300;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  width: fit-content;
 }
-.text_container .divider {
-  height: 1px;
-  background-color: #ccc;
+section#about .text_container .right-section {
+  flex: 15;
+  text-align: left;
 }
-.text_container .right-section {
-  flex: 25;
-  padding-left: 40px;
-  text-align: left !important;
+section#about .text_container .right-section .content {
+  font-family: "Gotham", sans-serif;
+  font-weight: 300;
 }
-.text_container .description {
+section#about .text_container .right-section .content .description {
   font-size: 16px;
   margin-bottom: 20px;
   color: black;
 }
-.text_container .highlight.blue {
+section#about .text_container .right-section .content .description .highlight.blue {
   background-color: #1a75cf;
   color: white;
   padding: 2px 5px;
   font-weight: bold;
 }
-.text_container .social {
+section#about .text_container .right-section .content .social {
   font-family: "Gotham", sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -1087,7 +1076,7 @@ section#about img.books-logo {
   color: #666;
   margin: 40px 0;
 }
-.text_container .cta-button {
+section#about .text_container .right-section .content .cta-button {
   border: 1px solid #ccc;
   border-radius: 30px;
   padding: 15px 50px;
@@ -1097,60 +1086,95 @@ section#about img.books-logo {
   font-family: "Gotham", sans-serif;
   font-weight: bold;
   text-align: center;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
 }
-.text_container svg {
+section#about .text_container .right-section .content .cta-button svg {
   color: #4BBFC9;
   font-weight: bold;
   margin-left: 10px;
 }
-
-.founder-info {
-  text-align: center;
+section#about img.books-logo {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  bottom: -370px;
+  left: 49px;
+  opacity: 0.2;
 }
-.founder-info h2 {
-  font-family: "Gotham", sans-serif;
-  font-size: 42px;
-  font-weight: 300;
-  margin-bottom: 5px;
+section#about .highlight.blue {
+  background-color: #1a75cf;
+  color: white;
+  padding: 2px 5px;
+}
+section#about .bold {
+  font-weight: bold;
 }
 
 @media (max-width: 1400px) {
-  section#about .logo {
-    width: 350px !important;
-    height: 220px !important;
+  section#about .intro_container .left-section .logo-container .logo {
+    width: 350px;
+    height: 220px;
   }
-  .content {
+  section#about .intro_container .right-section .content {
     max-width: 100% !important;
   }
-  .quote {
-    max-width: 800px;
-  }
-  .books-logo {
+  section#about .challenge img.books-logo {
     display: none;
   }
 }
 @media (max-width: 1250px) {
-  .section-title {
-    font-size: 34px !important;
+  section#about .intro_container .right-section .header .section-title {
+    font-size: 34px;
+  }
+  section#about .intro_container .right-section .content .intro-title {
+    font-size: 28px;
+  }
+  section#about .intro_container .right-section .content .description {
+    font-size: 18px;
+  }
+  section#about .intro_container .right-section .content .avec {
+    font-size: 18px;
+  }
+  section#about .intro_container .right-section .content .concept {
+    font-size: 18px;
   }
 }
 @media (max-width: 1200px) {
-  .text_container {
-    display: block;
+  section#about .intro_container .left-section .logo-container .logo {
+    width: 310px;
+    height: 180px;
   }
-  .text_container .left-section {
+  section#about .text_container {
+    display: block;
+    margin-top: 50px;
+  }
+  section#about .text_container .left-section {
     padding-right: 0;
   }
-  .text_container .right-section {
+  section#about .text_container .left-section .founder-info {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  section#about .text_container .left-section .founder-info .title {
+    margin: 0 auto;
+  }
+  section#about .text_container .right-section {
     padding-left: 0;
   }
-  .founder-info {
-    text-align: center;
-    margin-top: 100px;
+  section#about .text_container .right-section .content {
+    text-align: justify;
   }
-  .founder-info .divider {
+  section#about .text_container .right-section .content .cta-button {
+    display: flex;
+    width: fit-content;
     margin: 0 auto;
-    width: 330px;
+    text-align: center;
+  }
+  section#about img.books-logo {
+    display: none;
   }
 }
 @media (max-width: 1000px) {
@@ -1161,58 +1185,68 @@ section#about img.books-logo {
     display: block;
     margin-top: 100px;
   }
-  section#about .logo {
+  section#about .intro_container .left-section .logo-container .logo {
     display: none;
   }
-  .quote {
-    max-width: 400px;
+  section#about .quote {
+    max-width: 600px;
+  }
+  section#about .quote .quote-end {
+    top: 70px;
   }
 }
 @media (max-width: 768px) {
-  section#about .section-title {
-    font-size: 2rem;
-    text-align: center;
-  }
-  section#about .header {
-    margin-bottom: 0px;
-  }
-  section#about .content {
+  section#about .intro_container {
+    margin: 0px 50px;
     margin-top: 50px;
   }
-  section#about .right-section {
-    text-align: left !important;
+  section#about .intro_container .right-section .header {
+    margin-bottom: 0px;
   }
-  section#about .intro-title {
+  section#about .intro_container .right-section .header .section-title {
+    font-size: 24px;
+    text-align: center;
+  }
+  section#about .intro_container .content {
+    margin-top: 50px;
+    text-align: justify;
+  }
+  section#about .intro_container .content .intro-title {
     font-size: 1.8rem;
+    text-align: left;
+    margin-top: 30px;
   }
-  section#about .concept {
+  section#about .intro_container .content .concept {
     font-size: 1rem;
   }
-  section#about .avec {
+  section#about .intro_container .content .avec {
     font-size: 1rem;
     text-align: left !important;
+  }
+  section#about .quote .quote-start, section#about .quote .quote-end {
+    font-size: 80px;
+  }
+  section#about .quote .quote-end {
+    top: 28px;
+  }
+  section#about .quote .quote-text {
+    font-size: 20px;
   }
 }
 @media (max-width: 600px) {
-  .quote {
-    max-width: 300px;
-  }
-  .quote-start, .quote-end {
-    font-size: 80px;
-  }
-  .quote-text {
+  section#about .text_container .left-section .founder-info h2 {
     font-size: 30px;
   }
-  .founder-info .divider {
-    width: auto !important;
+  section#about .text_container .left-section .founder-info .title {
+    font-size: 20px;
   }
-  .right-section .content .description {
+  section#about .text_container .right-section .content .description {
     font-size: 17px !important;
   }
-  .right-section .content .social {
+  section#about .text_container .right-section .content .social {
     font-size: 14px;
   }
-  .right-section .content .cta-button {
+  section#about .text_container .right-section .content .cta-button {
     font-size: 10px;
     padding: 10px 30px;
   }
