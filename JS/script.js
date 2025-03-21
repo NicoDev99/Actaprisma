@@ -47,9 +47,40 @@ document.addEventListener("DOMContentLoaded", function () {
         autoInsertCss: true
     };
     
-    // Start the typing animation
+    // Start the typing animation for the main title
     if (document.querySelector('.typing-title')) {
         new Typed('.typing-title', typingOptions);
+    }
+
+    // Initialize Typed.js for the quote in the about section
+    const quoteTypingOptions = {
+        strings: ['Votre image est un actif sur lequel capitaliser pour atteindre vos ambitions.'],
+        typeSpeed: 0,
+        backSpeed: 0,
+        startDelay: 500,
+        loop: false,
+        showCursor: false,
+        autoInsertCss: true
+    };
+
+    // Create an intersection observer for the quote element
+    const quoteObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            // If the quote is in the viewport
+            if (entry.isIntersecting && !entry.target.hasAttribute('data-typed-initialized')) {
+                // Start the typing animation for the quote
+                new Typed(entry.target, quoteTypingOptions);
+                // Mark the element as initialized to prevent re-initialization
+                entry.target.setAttribute('data-typed-initialized', 'true');
+            }
+        });
+    }, { threshold: 0.5 });
+
+    // Observe the quote element
+    const quoteElement = document.querySelector('.quote-text');
+    if (quoteElement) {
+        quoteElement.innerHTML = '';  // Clear existing content for Typed.js to work
+        quoteObserver.observe(quoteElement);
     }
 
     const observer = new IntersectionObserver(entries => {

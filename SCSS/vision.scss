@@ -143,19 +143,21 @@ section#vision {
             }
 
             .highlight {
-                position: relative;
-                display: inline-block;
                 background-color: #0063A1;
                 color: white;
-                padding: 2px 6px;
-                border-radius: 2px;
-        
+                padding: 2px 5px;
+
                 &.animated-highlight {
                     background-color: transparent;
                     background-image: linear-gradient(to right, #0063A1 50%, transparent 50%);
                     background-size: 200% 100%;
                     background-position: right bottom;
-                    animation: highlightSlide 0.8s ease-out forwards;
+                    
+                    animation: none;
+                    
+                    &.aos-animate {
+                        animation: highlightSlide 0.8s ease-out forwards;
+                    }
                 }
             }
         }

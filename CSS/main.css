@@ -140,18 +140,18 @@ section#vision div.explanations .text h3 span {
   font-weight: bold;
 }
 section#vision div.explanations .text .highlight {
-  position: relative;
-  display: inline-block;
   background-color: #0063A1;
   color: white;
-  padding: 2px 6px;
-  border-radius: 2px;
+  padding: 2px 5px;
 }
 section#vision div.explanations .text .highlight.animated-highlight {
   background-color: transparent;
   background-image: linear-gradient(to right, #0063A1 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: right bottom;
+  animation: none;
+}
+section#vision div.explanations .text .highlight.animated-highlight.aos-animate {
   animation: highlightSlide 0.8s ease-out forwards;
 }
 section#vision div.explanations .logo {
@@ -921,6 +921,14 @@ section#accompaniment .challenge .content .center-column .triangle-image {
 section#about {
   position: relative;
 }
+@keyframes highlightSlide {
+  0% {
+    background-position: right bottom;
+  }
+  100% {
+    background-position: left bottom;
+  }
+}
 section#about .intro_container {
   display: flex;
   margin: 0px 100px;
@@ -1062,12 +1070,6 @@ section#about .text_container .right-section .content .description {
   margin-bottom: 20px;
   color: black;
 }
-section#about .text_container .right-section .content .description .highlight.blue {
-  background-color: #1a75cf;
-  color: white;
-  padding: 2px 5px;
-  font-weight: bold;
-}
 section#about .text_container .right-section .content .social {
   font-family: "Gotham", sans-serif;
   font-weight: 300;
@@ -1096,6 +1098,9 @@ section#about .text_container .right-section .content .cta-button svg {
   font-weight: bold;
   margin-left: 10px;
 }
+section#about .text_container .right-section .content .cta-button:hover {
+  background-color: #f5f5f5;
+}
 section#about img.books-logo {
   width: 500px;
   height: 500px;
@@ -1108,6 +1113,16 @@ section#about .highlight.blue {
   background-color: #1a75cf;
   color: white;
   padding: 2px 5px;
+}
+section#about .highlight.blue.animated-highlight {
+  background-color: transparent;
+  background-image: linear-gradient(to right, #1a75cf 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  animation: none;
+}
+section#about .highlight.blue.animated-highlight.aos-animate {
+  animation: highlightSlide 0.8s ease-out forwards;
 }
 section#about .bold {
   font-weight: bold;

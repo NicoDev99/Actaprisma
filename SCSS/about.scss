@@ -2,6 +2,16 @@
 section#about {
     position: relative;
 
+    // Animation highlight
+    @keyframes highlightSlide {
+        0% {
+            background-position: right bottom;
+        }
+        100% {
+            background-position: left bottom;
+        }
+    }
+
     // Container d'introduction
     .intro_container {
         display: flex;
@@ -174,13 +184,6 @@ section#about {
                     font-size: 16px;
                     margin-bottom: 20px;
                     color: black;
-
-                    .highlight.blue {
-                        background-color: #1a75cf;
-                        color: white;
-                        padding: 2px 5px;
-                        font-weight: bold;
-                    }
                 }
 
                 .social {
@@ -212,6 +215,10 @@ section#about {
                         font-weight: bold;
                         margin-left: 10px;
                     }
+
+                    &:hover {
+                        background-color: #f5f5f5;
+                    }
                 }
             }
         }
@@ -232,6 +239,21 @@ section#about {
         background-color: #1a75cf;
         color: white;
         padding: 2px 5px;
+
+        &.animated-highlight {
+            background-color: transparent;
+            background-image: linear-gradient(to right, #1a75cf 50%, transparent 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            
+            // Pas d'animation au chargement
+            animation: none;
+            
+            // Animation uniquement quand AOS active l'élément
+            &.aos-animate {
+                animation: highlightSlide 0.8s ease-out forwards;
+            }
+        }
     }
 
     .bold {
