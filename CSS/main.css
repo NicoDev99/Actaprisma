@@ -169,7 +169,7 @@ section#vision .vision-container {
 }
 section#vision .vision-container .triangle-logo {
   position: absolute;
-  left: -68%;
+  left: -70%;
   bottom: 0;
   width: 100%;
   z-index: 0;
@@ -1262,7 +1262,7 @@ section#about .bold {
     font-size: 14px;
   }
   section#about .text_container .right-section .content .cta-button {
-    font-size: 10px;
+    font-size: 14px;
     padding: 10px 30px;
   }
 }
@@ -1380,12 +1380,52 @@ section#contact .triangle img {
   section#contact .form-container {
     width: 100%;
   }
+  section#contact .form-container h1 {
+    font-size: 24px;
+  }
   section#contact .form-container form .form-row {
     flex-direction: column;
     gap: 0 !important;
   }
   section#contact .form-container form .form-row .half-width {
     width: 100%;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Gotham", sans-serif;
+  font-weight: 300;
+  color: black;
+  padding: 25px 0;
+  margin: 0 25px;
+  margin-top: 100px;
+  border-top: 1px solid black;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+footer div a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 880px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  footer div {
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer p {
+    margin: 0;
   }
 }
 * {
