@@ -2,14 +2,14 @@
 @use 'vision';
 @use 'accompaniement';
 @use 'about';
-@use 'styles_contact'; 
+@use 'contact'; 
 
 * {
     border: none;
     padding: 0;
     margin: 0;
 }
-  
+
 body {
     max-width: 1920px;
     display: block;
