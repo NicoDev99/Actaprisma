@@ -819,6 +819,17 @@ section#accompaniment .challenge .content .center-column .triangle-image {
   font-weight: 700;
 }
 
+@media (max-width: 1460px) {
+  section#accompaniment .challenge .content .left-column, section#accompaniment .challenge .content .right-column {
+    padding: 0;
+  }
+  section#accompaniment .challenge .content h2.proactive::after, section#accompaniment .challenge .content h2.proactive::before, section#accompaniment .challenge .content h2.crisis::after, section#accompaniment .challenge .content h2.crisis::before {
+    display: none;
+  }
+  section#accompaniment .challenge .content .left-column .round, section#accompaniment .challenge .content .right-column .round {
+    display: none;
+  }
+}
 @media (max-width: 1250px) {
   section#accompaniment {
     margin-top: 0;
@@ -835,16 +846,10 @@ section#accompaniment .challenge .content .center-column .triangle-image {
   section#accompaniment .accompaniment-intro p {
     font-size: 18px;
   }
-  section#accompaniment .challenge .content h2.proactive::after, section#accompaniment .challenge .content h2.proactive::before, section#accompaniment .challenge .content h2.crisis::after, section#accompaniment .challenge .content h2.crisis::before {
-    display: none;
-  }
-  section#accompaniment .challenge .content .left-column .round, section#accompaniment .challenge .content .right-column .round {
-    display: none;
-  }
 }
-@media (max-width: 880px) {
+@media (max-width: 1050px) {
   section#accompaniment .challenge {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   section#accompaniment .challenge .content {
     display: block;
@@ -853,7 +858,16 @@ section#accompaniment .challenge .content .center-column .triangle-image {
     width: auto;
   }
   section#accompaniment .challenge .content .center-column .triangle-image {
-    display: none;
+    display: block;
+  }
+  section#accompaniment .challenge .content .center-column {
+    width: auto;
+    margin: 50px 0;
+  }
+  section#accompaniment .challenge .content .center-column .triangle-image {
+    display: block;
+    width: 450px;
+    height: 350px;
   }
 }
 @media (max-width: 768px) {
@@ -886,6 +900,19 @@ section#accompaniment .challenge .content .center-column .triangle-image {
     text-align: center;
     font-size: 13px;
     padding: 12px 20px;
+  }
+}
+@media (max-width: 480px) {
+  section#accompaniment .service-cards .service-card.political h2, section#accompaniment .service-cards .service-card.startups h2, section#accompaniment .service-cards .service-card.sports h2 {
+    font-size: 24px;
+  }
+  section#accompaniment .challenge .header h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  section#accompaniment .challenge .content .center-column .triangle-image {
+    width: 350px;
+    height: 250px;
   }
 }
 section#about {
