@@ -1240,10 +1240,10 @@ section#about .text_container .right-section .content .cta-button:hover {
   background-color: #f5f5f5;
 }
 section#about img.books-logo {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   position: absolute;
-  bottom: -300px;
+  bottom: -150px;
   left: 150px;
   opacity: 0.2;
 }
@@ -1409,7 +1409,7 @@ section#contact {
   display: flex;
   position: relative;
   overflow: hidden;
-  margin-top: 300px;
+  margin-top: 50px;
   padding-top: 150px;
 }
 section#contact .form-container {
@@ -1491,7 +1491,7 @@ section#contact .triangle img {
 @media (max-width: 1350px) {
   section#contact {
     padding: 0;
-    margin-top: 400px;
+    margin-top: 200px;
   }
   section#contact .form-container {
     width: 60%;

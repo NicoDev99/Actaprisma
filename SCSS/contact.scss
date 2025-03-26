@@ -3,7 +3,7 @@ section#contact {
     display: flex;
     position: relative;
     overflow: hidden;
-    margin-top: 300px;
+    margin-top: 50px;
     padding-top: 150px;
 
     // Conteneur du formulaire
@@ -106,7 +106,7 @@ section#contact {
 @media (max-width: 1350px) {
     section#contact {
         padding: 0;
-        margin-top: 400px;
+        margin-top: 200px;
 
         .form-container {
             width: 60%;
