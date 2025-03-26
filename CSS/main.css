@@ -26,11 +26,7 @@ section#vision {
 section#vision div.nav-header {
   margin: 50px 100px;
 }
-section#vision div.nav-header hr {
-  height: 1px;
-  background-color: #0f293d;
-}
-section#vision div.nav-header nav {
+section#vision div.nav-header div.scrolled nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -38,7 +34,7 @@ section#vision div.nav-header nav {
   margin-bottom: 30px;
   /* Hamburger menu styles */
 }
-section#vision div.nav-header nav .hamburger-menu {
+section#vision div.nav-header div.scrolled nav .hamburger-menu {
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -48,7 +44,7 @@ section#vision div.nav-header nav .hamburger-menu {
   z-index: 100;
   position: relative;
 }
-section#vision div.nav-header nav .hamburger-menu span {
+section#vision div.nav-header div.scrolled nav .hamburger-menu span {
   display: block;
   height: 3px;
   width: 100%;
@@ -56,33 +52,33 @@ section#vision div.nav-header nav .hamburger-menu span {
   border-radius: 3px;
   transition: all 0.3s ease;
 }
-section#vision div.nav-header nav .hamburger-menu.active {
+section#vision div.nav-header div.scrolled nav .hamburger-menu.active {
   position: absolute;
   top: 0;
   right: 0;
 }
-section#vision div.nav-header nav .hamburger-menu.active span:nth-child(1) {
+section#vision div.nav-header div.scrolled nav .hamburger-menu.active span:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
 }
-section#vision div.nav-header nav .hamburger-menu.active span:nth-child(2) {
+section#vision div.nav-header div.scrolled nav .hamburger-menu.active span:nth-child(2) {
   opacity: 0;
 }
-section#vision div.nav-header nav .hamburger-menu.active span:nth-child(3) {
+section#vision div.nav-header div.scrolled nav .hamburger-menu.active span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
 }
-section#vision div.nav-header nav ul {
+section#vision div.nav-header div.scrolled nav ul {
   display: flex;
   gap: 30px;
   align-items: center;
 }
-section#vision div.nav-header nav ul img {
+section#vision div.nav-header div.scrolled nav ul img {
   display: none;
 }
-section#vision div.nav-header nav ul li {
+section#vision div.nav-header div.scrolled nav ul li {
   list-style-type: none;
   height: fit-content;
 }
-section#vision div.nav-header nav ul li a {
+section#vision div.nav-header div.scrolled nav ul li a {
   text-decoration: none;
   color: #0f293d;
   text-transform: uppercase;
@@ -91,19 +87,23 @@ section#vision div.nav-header nav ul li a {
   font-family: "Gotham", sans-serif;
   font-weight: 300;
 }
-section#vision div.nav-header nav ul li a.active {
+section#vision div.nav-header div.scrolled nav ul li a.active {
   color: white;
   background-color: #0f293d;
 }
-section#vision div.nav-header nav ul li a.free_resources {
+section#vision div.nav-header div.scrolled nav ul li a.free_resources {
   color: white;
   background-color: #215ca8;
   border: none;
 }
-section#vision div.nav-header nav ul li button.lang-toggle {
+section#vision div.nav-header div.scrolled nav ul li button.lang-toggle {
   background-color: transparent;
   font-size: 22px;
   cursor: pointer;
+}
+section#vision div.nav-header div.scrolled hr {
+  height: 1px;
+  background-color: #0f293d;
 }
 section#vision div.nav-header div.center-button {
   display: block;
@@ -307,13 +307,13 @@ section#vision .arrow-icon {
   }
 }
 @media screen and (max-width: 1350px) {
-  section#vision div.nav-header nav {
+  section#vision div.nav-header div nav {
     position: relative;
   }
-  section#vision div.nav-header nav .hamburger-menu {
+  section#vision div.nav-header div nav .hamburger-menu {
     display: flex;
   }
-  section#vision div.nav-header nav ul {
+  section#vision div.nav-header div nav ul {
     position: fixed;
     top: 0;
     right: -350px;
@@ -327,18 +327,18 @@ section#vision .arrow-icon {
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     z-index: 90;
   }
-  section#vision div.nav-header nav ul img {
+  section#vision div.nav-header div nav ul img {
     display: block;
   }
-  section#vision div.nav-header nav ul.active {
+  section#vision div.nav-header div nav ul.active {
     right: 0;
   }
-  section#vision div.nav-header nav ul li {
+  section#vision div.nav-header div nav ul li {
     width: 100%;
     margin: 10px 0;
     text-align: center;
   }
-  section#vision div.nav-header nav ul li a {
+  section#vision div.nav-header div nav ul li a {
     margin: 0 20px;
     display: block;
   }
@@ -585,6 +585,9 @@ section#accompaniment .service-cards .service-card .card-header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 20px;
+  cursor: pointer;
+  position: relative;
 }
 section#accompaniment .service-cards .service-card .card-header h2 {
   font-family: "Gotham", sans-serif;
@@ -594,21 +597,28 @@ section#accompaniment .service-cards .service-card .card-header h2 {
   margin: 0;
   text-align: center;
 }
+section#accompaniment .service-cards .service-card .card-header .arrow-icon {
+  font-size: 20px;
+  color: inherit;
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 20px;
+}
 section#accompaniment .service-cards .service-card .card-content {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-section#accompaniment .service-cards .service-card .card-content p {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  padding: 0 20px;
   font-family: "Gotham", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  color: black;
-  margin-bottom: 8px;
 }
-section#accompaniment .service-cards .service-card .card-content .bold {
-  font-weight: 600;
+section#accompaniment .service-cards .service-card.expanded .card-content {
+  max-height: 500px;
+  opacity: 1;
+  padding: 20px;
+}
+section#accompaniment .service-cards .service-card.expanded .arrow-icon {
+  transform: rotate(180deg);
 }
 section#accompaniment .service-cards .service-card .button-container {
   width: 100%;
@@ -647,6 +657,10 @@ section#accompaniment .service-cards .service-card.political .card-header {
 }
 section#accompaniment .service-cards .service-card.political .card-header h2 {
   color: black;
+  padding: 0 20px;
+}
+section#accompaniment .service-cards .service-card.political .card-header .arrow-icon {
+  color: black;
 }
 section#accompaniment .service-cards .service-card.political .card-content {
   background-color: rgba(166, 226, 229, 0.3);
@@ -657,7 +671,7 @@ section#accompaniment .service-cards .service-card.political .card-button svg {
 section#accompaniment .service-cards .service-card.startups .card-header {
   background-color: #48C5D5;
 }
-section#accompaniment .service-cards .service-card.startups .card-header h2 {
+section#accompaniment .service-cards .service-card.startups .card-header h2, section#accompaniment .service-cards .service-card.startups .card-header .arrow-icon {
   color: black;
 }
 section#accompaniment .service-cards .service-card.startups .card-content {
@@ -673,7 +687,7 @@ section#accompaniment .service-cards .service-card.startups .card-button svg {
 section#accompaniment .service-cards .service-card.sports .card-header {
   background-color: #215ca8;
 }
-section#accompaniment .service-cards .service-card.sports .card-header h2 {
+section#accompaniment .service-cards .service-card.sports .card-header h2, section#accompaniment .service-cards .service-card.sports .card-header .arrow-icon {
   color: white;
 }
 section#accompaniment .service-cards .service-card.sports .card-content {
@@ -694,7 +708,7 @@ section#accompaniment .challenge img.books-logo {
   height: 500px;
   position: absolute;
   top: -300px;
-  right: -150px;
+  right: -330px;
   opacity: 0.2;
 }
 section#accompaniment .challenge .header {
@@ -1102,11 +1116,11 @@ section#about .text_container .right-section .content .cta-button:hover {
   background-color: #f5f5f5;
 }
 section#about img.books-logo {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   position: absolute;
-  bottom: -370px;
-  left: 49px;
+  bottom: -300px;
+  left: 150px;
   opacity: 0.2;
 }
 section#about .highlight.blue {

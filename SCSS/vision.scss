@@ -6,99 +6,111 @@ section#vision {
     div.nav-header {
         margin: 50px 100px;
 
-        hr {
-            height: 1px;
-            background-color: #0f293d;
-        }
+        div.scrolled {
+            // position: fixed;
+            // top: 0;
+            // left: 0;
+            // right: 0;
+            // background-color: white;
+            // z-index: 1000;
+            // padding: 0 100px;
+            // transition: all 0.3s ease;
+            // box-shadow: none;
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            align-items: center;
-            margin-bottom: 30px;
-
-            /* Hamburger menu styles */
-            .hamburger-menu {
-                display: none;
-                flex-direction: column;
+            nav {
+                display: flex;
                 justify-content: space-between;
-                width: 30px;
-                height: 21px;
-                cursor: pointer;
-                z-index: 100;
-                position: relative;
-
-                span {
-                    display: block;
-                    height: 3px;
-                    width: 100%;
-                    background-color: #0f293d;
-                    border-radius: 3px;
-                    transition: all 0.3s ease;
-                }
-
-                &.active {
+                flex-wrap: wrap;
+                align-items: center;
+                margin-bottom: 30px;
+    
+                /* Hamburger menu styles */
+                .hamburger-menu {
+                    display: none;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 30px;
+                    height: 21px;
+                    cursor: pointer;
+                    z-index: 100;
+                    position: relative;
+    
                     span {
-                        &:nth-child(1) {
-                            transform: translateY(9px) rotate(45deg);
+                        display: block;
+                        height: 3px;
+                        width: 100%;
+                        background-color: #0f293d;
+                        border-radius: 3px;
+                        transition: all 0.3s ease;
+                    }
+    
+                    &.active {
+                        span {
+                            &:nth-child(1) {
+                                transform: translateY(9px) rotate(45deg);
+                            }
+                            
+                            &:nth-child(2) {
+                                opacity: 0;
+                            }
+                            
+                            &:nth-child(3) {
+                                transform: translateY(-9px) rotate(-45deg);
+                            }
                         }
-                        
-                        &:nth-child(2) {
-                            opacity: 0;
+    
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+    
+                ul {
+                    display: flex;
+                    gap: 30px;
+                    align-items: center;
+    
+                    img {
+                        display: none;
+                    }
+    
+                    li {
+                        list-style-type: none;
+                        height: fit-content;
+    
+                        a {
+                            text-decoration: none;
+                            color: #0f293d;
+                            text-transform: uppercase;
+                            border: 1px solid #0f293d;
+                            padding: 7px 12px;
+                            font-family: "Gotham", sans-serif;
+                            font-weight: 300;
+    
+                            &.active {
+                                color: white;
+                                background-color: #0f293d;
+                            }
+    
+                            &.free_resources {
+                                color: white;
+                                background-color: #215ca8;
+                                border: none;
+                            }
                         }
-                        
-                        &:nth-child(3) {
-                            transform: translateY(-9px) rotate(-45deg);
+    
+                        button.lang-toggle {
+                            background-color: transparent;
+                            font-size: 22px;
+                            cursor: pointer;
                         }
                     }
-
-                    position: absolute;
-                    top: 0;
-                    right: 0;
                 }
             }
 
-            ul {
-                display: flex;
-                gap: 30px;
-                align-items: center;
-
-                img {
-                    display: none;
-                }
-
-                li {
-                    list-style-type: none;
-                    height: fit-content;
-
-                    a {
-                        text-decoration: none;
-                        color: #0f293d;
-                        text-transform: uppercase;
-                        border: 1px solid #0f293d;
-                        padding: 7px 12px;
-                        font-family: "Gotham", sans-serif;
-                        font-weight: 300;
-
-                        &.active {
-                            color: white;
-                            background-color: #0f293d;
-                        }
-
-                        &.free_resources {
-                            color: white;
-                            background-color: #215ca8;
-                            border: none;
-                        }
-                    }
-
-                    button.lang-toggle {
-                        background-color: transparent;
-                        font-size: 22px;
-                        cursor: pointer;
-                    }
-                }
+            hr {
+                height: 1px;
+                background-color: #0f293d;
             }
         }
 
@@ -311,6 +323,10 @@ section#vision {
         margin-left: 10px;
         color: #7ecad6;
     }
+
+    // .scrolled {
+    //     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    // }
 }
 
 /* Media Queries */
@@ -356,44 +372,49 @@ section#vision {
 
 @media screen and (max-width: 1350px) {   
     section#vision {
+        
         div.nav-header {
-            nav {
-                position: relative;
 
-                .hamburger-menu {
-                    display: flex;
-                }
+            div {
 
-                ul {
-                    position: fixed;
-                    top: 0;
-                    right: -350px;
-                    width: 350px;
-                    height: 100vh;
-                    background-color: white;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    padding-top: 150px;
-                    transition: right 0.3s ease-in-out;
-                    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-                    z-index: 90;
-
-                    img {
-                        display: block;
+                nav {
+                    position: relative;
+    
+                    .hamburger-menu {
+                        display: flex;
                     }
-
-                    &.active {
-                        right: 0;
-                    }
-                    
-                    li {
-                        width: 100%;
-                        margin: 10px 0;
-                        text-align: center;
-
-                        a {
-                            margin: 0 20px;
+    
+                    ul {
+                        position: fixed;
+                        top: 0;
+                        right: -350px;
+                        width: 350px;
+                        height: 100vh;
+                        background-color: white;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        padding-top: 150px;
+                        transition: right 0.3s ease-in-out;
+                        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                        z-index: 90;
+    
+                        img {
                             display: block;
+                        }
+    
+                        &.active {
+                            right: 0;
+                        }
+                        
+                        li {
+                            width: 100%;
+                            margin: 10px 0;
+                            text-align: center;
+    
+                            a {
+                                margin: 0 20px;
+                                display: block;
+                            }
                         }
                     }
                 }

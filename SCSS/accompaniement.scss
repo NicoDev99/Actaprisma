@@ -70,6 +70,9 @@ section#accompaniment {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                padding: 0 20px;
+                cursor: pointer;
+                position: relative;
 
                 h2 {
                     font-family: "Gotham", sans-serif;
@@ -79,25 +82,35 @@ section#accompaniment {
                     margin: 0;
                     text-align: center;
                 }
+
+                .arrow-icon {
+                    font-size: 20px;
+                    color: inherit;
+                    transition: transform 0.3s ease;
+                    position: absolute;
+                    right: 20px;
+                }
             }
 
             // Contenu des cartes
             .card-content {
-                padding: 20px;
-                display: flex;
-                flex-direction: column;
-                flex-grow: 1;
+                max-height: 0;
+                overflow: hidden;
+                transition: all 0.3s ease-out;
+                opacity: 0;
+                padding: 0 20px;
+                font-family: "Gotham", sans-serif;
+            }
 
-                p {
-                    font-family: "Gotham", sans-serif;
-                    font-weight: 300;
-                    font-size: 18px;
-                    color: black;
-                    margin-bottom: 8px;
+            &.expanded {
+                .card-content {
+                    max-height: 500px;
+                    opacity: 1;
+                    padding: 20px;
                 }
 
-                .bold {
-                    font-weight: 600;
+                .arrow-icon {
+                    transform: rotate(180deg);
                 }
             }
 
@@ -146,7 +159,13 @@ section#accompaniment {
                     
                     h2 {
                         color: black;
+                        padding: 0 20px;
                     }
+
+                    .arrow-icon {
+                        color: black;
+                    }
+                    
                 }
 
                 .card-content {
@@ -165,7 +184,7 @@ section#accompaniment {
                 .card-header {
                     background-color: #48C5D5;
                     
-                    h2 {
+                    h2, .arrow-icon {
                         color: black;
                     }
                 }
@@ -189,7 +208,7 @@ section#accompaniment {
                 .card-header {
                     background-color: #215ca8;
                     
-                    h2 {
+                    h2, .arrow-icon {
                         color: white;
                     }
                 }
@@ -221,7 +240,7 @@ section#accompaniment {
             height: 500px;
             position: absolute;
             top: -300px;
-            right: -150px;
+            right: -330px;
             opacity: 0.2;
         }
 

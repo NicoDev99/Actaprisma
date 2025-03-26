@@ -110,4 +110,14 @@ document.addEventListener("DOMContentLoaded", function () {
             // Here you would add code to change the website content to French
         }
     });
+
+    // Gestion de l'expansion des cartes
+    const cardHeaders = document.querySelectorAll('.card-header');
+    
+    cardHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const card = this.closest('.service-card');
+            card.classList.toggle('expanded');
+        });
+    });
 });
