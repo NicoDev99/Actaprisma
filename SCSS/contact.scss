@@ -29,6 +29,29 @@ section#contact {
             margin: 0 auto 40px;
         }
 
+        // Message de statut du formulaire
+        .form-status {
+            padding: 10px 15px;
+            margin-bottom: 40px;
+            border-radius: 5px;
+            text-align: center;
+            display: none;
+            
+            &.success {
+                display: block;
+                background-color: rgba(76, 175, 80, 0.2);
+                color: #4CAF50;
+                border: 1px solid #4CAF50;
+            }
+            
+            &.error {
+                display: block;
+                background-color: rgba(255, 76, 76, 0.2);
+                color: #ff4c4c;
+                border: 1px solid #ff4c4c;
+            }
+        }
+
         // Formulaire
         form {
             .form-group {
@@ -54,6 +77,28 @@ section#contact {
                 font-size: 14px;
                 outline: none;
                 box-sizing: border-box;
+                
+                &:focus {
+                    border-color: #48C5D5;
+                }
+                
+                &.error {
+                    border-color: #ff4c4c;
+                }
+            }
+
+            input[type="tel"] {
+                margin-bottom: 20px;
+            }
+
+            // Messages d'erreur
+            .error-message {
+                color: #ff4c4c;
+                font-size: 12px;
+                margin-top: 5px;
+                display: block;
+                padding-left: 15px;
+                min-height: 18px;
             }
 
             textarea {
@@ -86,6 +131,19 @@ section#contact {
                 font-weight: bold;
                 margin-top: 20px;
                 color: white;
+                padding: 15px;
+                border-radius: 25px;
+                width: 100%;
+                transition: background-color 0.3s ease;
+                
+                &:hover {
+                    background-color: darken(#48C5D5, 10%);
+                }
+                
+                &:disabled {
+                    background-color: #cccccc;
+                    cursor: not-allowed;
+                }
             }
         }
     }
@@ -93,7 +151,7 @@ section#contact {
     // Triangle décoratif
     .triangle {
         position: absolute;
-        top: 85px;
+        bottom: 0;
         right: -500px;
 
         img {
@@ -109,7 +167,7 @@ section#contact {
         margin-top: 200px;
 
         .form-container {
-            width: 60%;
+            width: 50%;
             margin-left: 0;
         }
     }

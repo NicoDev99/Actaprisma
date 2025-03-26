@@ -12,6 +12,18 @@
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin
+            emailjs.init("cCr6-0XJI7sXEct6U");
+        })();
+    </script>
+    
+    <!-- Traductions -->
+    <script src="JS/translations.js"></script>
+    
     <title>Actaprisma</title>
 </head>
 <body>
@@ -395,50 +407,59 @@
 
     <section id="contact">
         <div class="form-container">
-            <h1>CONTACT</h1>
+            <h1 data-i18n="contact_title">CONTACT</h1>
             <div class="separator"></div>
             
-            <form>
+            <div id="form-status" class="form-status"></div>
+            
+            <form id="contact-form">
                 <div class="form-group">
-                    <input type="text" id="project" placeholder="* Votre projet est :">
+                    <input type="text" id="project" name="project" data-i18n-placeholder="project_placeholder" placeholder="* Votre projet est :" required>
+                    <span class="error-message" id="project-error"></span>
                 </div>
                 
                 <div class="form-group">
-                    <input type="text" id="organization" placeholder="* Nom de l'organisation :">
+                    <input type="text" id="organization" name="organization" data-i18n-placeholder="organization_placeholder" placeholder="* Nom de l'organisation :" required>
+                    <span class="error-message" id="organization-error"></span>
                 </div>
                 
                 <div class="form-group">
-                    <input type="text" id="role" placeholder="* Votre rôle dans l'organisation :">
+                    <input type="text" id="role" name="role" data-i18n-placeholder="role_placeholder" placeholder="* Votre rôle dans l'organisation :" required>
+                    <span class="error-message" id="role-error"></span>
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group half-width">
-                        <input type="text" id="lastname" placeholder="* Votre nom :">
+                        <input type="text" id="lastname" name="lastname" data-i18n-placeholder="lastname_placeholder" placeholder="* Votre nom :" required>
+                        <span class="error-message" id="lastname-error"></span>
                     </div>
                     
                     <div class="form-group half-width">
-                        <input type="text" id="firstname" placeholder="* Votre prénom :">
+                        <input type="text" id="firstname" name="firstname" data-i18n-placeholder="firstname_placeholder" placeholder="* Votre prénom :" required>
+                        <span class="error-message" id="firstname-error"></span>
                     </div>
                 </div>
                 
                 <div class="form-group">
-                    <input type="email" id="email" placeholder="* Votre adresse mail :">
+                    <input type="email" id="email" name="email" data-i18n-placeholder="email_placeholder" placeholder="* Votre adresse mail :" required>
+                    <span class="error-message" id="email-error"></span>
                 </div>
                 
                 <div class="form-group">
-                    <input type="tel" id="phone" placeholder="Votre numéro de téléphone :" class="light-bg">
+                    <input type="tel" id="phone" name="phone" data-i18n-placeholder="phone_placeholder" placeholder="Votre numéro de téléphone :" class="light-bg">
                 </div>
                 
                 <div class="form-group">
-                    <textarea id="message" placeholder="Quelques éléments à partager ?" class="light-bg"></textarea>
+                    <textarea id="message" name="message" data-i18n-placeholder="message_placeholder" placeholder="* Quelques éléments à partager ?" class="light-bg" required></textarea>
+                    <span class="error-message" id="message-error"></span>
                 </div>
                 
-                <div class="required-fields">
+                <div class="required-fields" data-i18n="required_fields">
                     * Mentions obligatoires
                 </div>
 
                 <div class="submit-button-container">
-                    <input type="submit" value="Envoyer" class="submit-button">
+                    <button type="submit" class="submit-button" data-i18n="submit_button">Envoyer</button>
                 </div>
             </form>
         </div>

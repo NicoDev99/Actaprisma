@@ -223,4 +223,142 @@ document.addEventListener("DOMContentLoaded", function () {
             card.classList.toggle('expanded');
         });
     });
+
+    // Gestion du formulaire de contact
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+    
+    if (contactForm) {
+        const requiredFields = contactForm.querySelectorAll('[required]');
+        const errorMessages = {
+            'fr': {
+                required: 'Ce champ est obligatoire',
+                email: 'Veuillez entrer une adresse email valide'
+            },
+            'en': {
+                required: 'This field is required',
+                email: 'Please enter a valid email address'
+            },
+            'es': {
+                required: 'Este campo es obligatorio',
+                email: 'Por favor, introduce una dirección de correo electrónico válida'
+            },
+            'pt': {
+                required: 'Este campo é obrigatório',
+                email: 'Por favor, insira um endereço de e-mail válido'
+            }
+        };
+        
+        // Valider un champ et afficher les erreurs
+        const validateField = (field) => {
+            const errorElement = document.getElementById(`${field.id}-error`);
+            
+            if (!errorElement) return true;
+            
+            if (field.required && field.value.trim() === '') {
+                errorElement.textContent = errorMessages[currentLang]?.required || errorMessages['fr'].required;
+                field.classList.add('error');
+                return false;
+            }
+            
+            if (field.type === 'email' && field.value.trim() !== '') {
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(field.value)) {
+                    errorElement.textContent = errorMessages[currentLang]?.email || errorMessages['fr'].email;
+                    field.classList.add('error');
+                    return false;
+                }
+            }
+            
+            errorElement.textContent = '';
+            field.classList.remove('error');
+            return true;
+        };
+        
+        // Valider tous les champs et soumettre le formulaire
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Réinitialiser le statut du formulaire
+            formStatus.className = 'form-status';
+            formStatus.textContent = '';
+            formStatus.style.display = 'none';
+            
+            // Valider tous les champs requis
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!validateField(field)) {
+                    isValid = false;
+                }
+            });
+            
+            if (!isValid) return;
+            
+            // Désactiver le bouton d'envoi pendant la soumission
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.disabled = true;
+            
+            // Afficher un indicateur de chargement
+            submitButton.textContent = '...';
+            
+            // Préparer les données du formulaire
+            const formData = {
+                project: contactForm.project.value,
+                organization: contactForm.organization.value,
+                role: contactForm.role.value,
+                lastname: contactForm.lastname.value,
+                firstname: contactForm.firstname.value,
+                email: contactForm.email.value,
+                phone: contactForm.phone.value,
+                message: contactForm.message.value
+            };
+            
+            // Envoyer le formulaire via EmailJS
+            emailjs.send('service_lg8fbh9', 'template_czs3jtk', formData)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    
+                    // Afficher le message de succès
+                    formStatus.className = 'form-status success';
+                    formStatus.textContent = translations[currentLang]?.form_success || translations['fr'].form_success;
+                    formStatus.style.display = 'block';
+                    
+                    // Réinitialiser le formulaire
+                    contactForm.reset();
+                    
+                    // Réactiver le bouton d'envoi
+                    submitButton.disabled = false;
+                    submitButton.textContent = originalText;
+                    
+                    // Faire défiler vers le message de succès
+                    formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    
+                    // Afficher le message d'erreur
+                    formStatus.className = 'form-status error';
+                    formStatus.textContent = translations[currentLang]?.form_error || translations['fr'].form_error;
+                    formStatus.style.display = 'block';
+                    
+                    // Réactiver le bouton d'envoi
+                    submitButton.disabled = false;
+                    submitButton.textContent = originalText;
+                });
+        });
+        
+        // Valider les champs en temps réel
+        requiredFields.forEach(field => {
+            field.addEventListener('blur', function() {
+                validateField(this);
+            });
+            
+            field.addEventListener('input', function() {
+                if (this.classList.contains('error')) {
+                    validateField(this);
+                }
+            });
+        });
+    }
 });

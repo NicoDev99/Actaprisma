@@ -1440,6 +1440,25 @@ section#contact .form-container .separator {
   width: 100%;
   margin: 0 auto 40px;
 }
+section#contact .form-container .form-status {
+  padding: 10px 15px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  text-align: center;
+  display: none;
+}
+section#contact .form-container .form-status.success {
+  display: block;
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+}
+section#contact .form-container .form-status.error {
+  display: block;
+  background-color: rgba(255, 76, 76, 0.2);
+  color: #ff4c4c;
+  border: 1px solid #ff4c4c;
+}
 section#contact .form-container form .form-group {
   margin-bottom: 20px;
 }
@@ -1459,6 +1478,23 @@ section#contact .form-container form input, section#contact .form-container form
   font-size: 14px;
   outline: none;
   box-sizing: border-box;
+}
+section#contact .form-container form input:focus, section#contact .form-container form textarea:focus {
+  border-color: #48C5D5;
+}
+section#contact .form-container form input.error, section#contact .form-container form textarea.error {
+  border-color: #ff4c4c;
+}
+section#contact .form-container form input[type=tel] {
+  margin-bottom: 20px;
+}
+section#contact .form-container form .error-message {
+  color: #ff4c4c;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+  padding-left: 15px;
+  min-height: 18px;
 }
 section#contact .form-container form textarea {
   height: 120px;
@@ -1485,10 +1521,21 @@ section#contact .form-container form .submit-button {
   font-weight: bold;
   margin-top: 20px;
   color: white;
+  padding: 15px;
+  border-radius: 25px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+section#contact .form-container form .submit-button:hover {
+  background-color: rgb(43.68, 173.68, 190.32);
+}
+section#contact .form-container form .submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
 section#contact .triangle {
   position: absolute;
-  top: 85px;
+  bottom: 0;
   right: -500px;
 }
 section#contact .triangle img {
@@ -1502,7 +1549,7 @@ section#contact .triangle img {
     margin-top: 200px;
   }
   section#contact .form-container {
-    width: 60%;
+    width: 50%;
     margin-left: 0;
   }
 }
