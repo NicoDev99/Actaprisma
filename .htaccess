@@ -1,0 +1,5 @@
+# Permettre de traiter les URL avec /EN comme une page réelle
+RewriteEngine On
+
+# Si l'URL se termine par /EN, rediriger vers le même URL sans /EN mais en gardant le marqueur EN
+RewriteRule ^(.*)\/EN$ $1 [L,QSA] 

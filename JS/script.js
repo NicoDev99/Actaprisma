@@ -104,6 +104,12 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Détecter la langue du navigateur
     const getBrowserLanguage = () => {
+        // Vérifier d'abord l'URL pour détecter la langue
+        const path = window.location.pathname;
+        if (path.endsWith('/EN')) {
+            return 'en';
+        }
+        
         const browserLang = navigator.language || navigator.userLanguage;
         console.log(navigator.language);
         // Extraire juste le code de langue principal (avant le tiret s'il y en a un)
@@ -134,10 +140,152 @@ document.addEventListener("DOMContentLoaded", function () {
                 flag.classList.toggle('active', flag.getAttribute('data-lang') === lang);
             });
         }
+        
+        // Mettre à jour les éléments de texte traduits
+        updatePageContent(lang);
+    };
+    
+    // Fonction pour mettre à jour l'URL en fonction de la langue
+    const updateUrlForLanguage = (lang) => {
+        const currentPath = window.location.pathname;
+        let newPath;
+        
+        if (lang === 'en') {
+            // Si l'URL ne se termine pas déjà par /EN, l'ajouter
+            if (!currentPath.endsWith('/EN')) {
+                // Si l'URL se termine par un slash, ajouter juste "EN"
+                if (currentPath.endsWith('/')) {
+                    newPath = currentPath + 'EN';
+                } else {
+                    newPath = currentPath + '/EN';
+                }
+            } else {
+                // L'URL est déjà correcte
+                return;
+            }
+        } else {
+            // Pour toutes les autres langues, revenir à l'URL sans /EN
+            if (currentPath.endsWith('/EN')) {
+                newPath = currentPath.substring(0, currentPath.length - 3);
+            } else {
+                // L'URL est déjà correcte
+                return;
+            }
+        }
+        
+        // Mettre à jour l'URL sans recharger la page
+        window.history.pushState({ lang: lang }, '', newPath);
+    };
+    
+    // Fonction pour mettre à jour le contenu de la page en fonction de la langue
+    const updatePageContent = (lang) => {
+        // Parcourir tous les éléments avec un attribut data-i18n
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (translations[lang] && translations[lang][key]) {
+                // Vérifier si c'est un bouton avec un span à l'intérieur
+                if (element.classList.contains('cta-button') || element.classList.contains('card-button')) {
+                    const spanElement = element.querySelector('span');
+                    if (spanElement) {
+                        spanElement.innerHTML = translations[lang][key];
+                    } else {
+                        element.innerHTML = translations[lang][key];
+                    }
+                } else {
+                    element.innerHTML = translations[lang][key];
+                }
+            }
+        });
+        
+        // Mettre à jour les listes
+        // Liste Communication proactive
+        const proactiveList = document.querySelector('.left-column ul');
+        if (proactiveList && translations[lang] && translations[lang].proactive_list) {
+            proactiveList.innerHTML = '';
+            translations[lang].proactive_list.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = item;
+                proactiveList.appendChild(li);
+            });
+        }
+        
+        // Liste Communication de crise
+        const crisisList = document.querySelector('.right-column ul');
+        if (crisisList && translations[lang] && translations[lang].crisis_list) {
+            crisisList.innerHTML = '';
+            translations[lang].crisis_list.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = item;
+                crisisList.appendChild(li);
+            });
+        }
+        
+        // Mettre à jour les placeholders des champs de formulaire
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+            const key = element.getAttribute('data-i18n-placeholder');
+            if (translations[lang] && translations[lang][key]) {
+                element.placeholder = translations[lang][key];
+            }
+        });
+        
+        // Mettre à jour le titre de la page
+        if (lang === 'en') {
+            document.title = "Actaprisma - Your image, your success";
+        } else {
+            document.title = "Actaprisma";
+        }
+        
+        // Mettre à jour l'animation Typed.js pour le titre principal
+        const typingElement = document.querySelector('.typing-title');
+        if (typingElement) {
+            const typingText = translations[lang]?.main_title || translations['fr'].main_title;
+            
+            // Supprimer l'instance existante si elle existe
+            if (typingElement._typed) {
+                typingElement._typed.destroy();
+            }
+            
+            // Créer une nouvelle instance avec le texte traduit
+            typingElement._typed = new Typed(typingElement, {
+                strings: [typingText],
+                typeSpeed: 50,
+                backSpeed: 0,
+                startDelay: 300,
+                loop: false,
+                showCursor: true,
+                cursorChar: '|',
+                autoInsertCss: true
+            });
+        }
+        
+        // Mettre à jour la citation avec le texte traduit
+        const quoteElement = document.querySelector('.quote-text');
+        if (quoteElement && !quoteElement.hasAttribute('data-typed-initialized')) {
+            const quoteText = translations[lang]?.quote || translations['fr'].quote;
+            
+            // Créer une nouvelle instance Typed.js avec le texte traduit
+            new Typed(quoteElement, {
+                strings: [quoteText],
+                typeSpeed: 40,
+                backSpeed: 0,
+                startDelay: 500,
+                loop: false,
+                showCursor: false,
+                autoInsertCss: true
+            });
+            
+            quoteElement.setAttribute('data-typed-initialized', 'true');
+        }
     };
     
     // Initialiser l'interface avec la langue détectée
     updateUIForLanguage(currentLang);
+    
+    // Si l'URL a /EN mais currentLang n'est pas 'en', ou inversement, mettre à jour l'URL
+    if ((window.location.pathname.endsWith('/EN') && currentLang !== 'en') || 
+        (!window.location.pathname.endsWith('/EN') && currentLang === 'en')) {
+        updateUrlForLanguage(currentLang);
+    }
     
     // Ajouter une classe au body pour indiquer la langue active
     document.body.setAttribute('data-lang', currentLang);
@@ -170,6 +318,9 @@ document.addEventListener("DOMContentLoaded", function () {
             // Mettre à jour l'interface
             updateUIForLanguage(currentLang);
             
+            // Mettre à jour l'URL en fonction de la langue sélectionnée
+            updateUrlForLanguage(currentLang);
+            
             // Update class on body
             document.body.setAttribute('data-lang', currentLang);
             
@@ -200,8 +351,14 @@ document.addEventListener("DOMContentLoaded", function () {
             // Mettre à jour l'interface
             updateUIForLanguage(currentLang);
             
+            // Mettre à jour l'URL en fonction de la langue sélectionnée
+            updateUrlForLanguage(currentLang);
+            
             // Update class on body
             document.body.setAttribute('data-lang', currentLang);
+            
+            // Close menu immediately if not in burger menu
+            langMenu.classList.remove('active');
             
             // Here you would add code to change the website content based on the selected language
             console.log(`Language changed to: ${currentLang} (from burger menu)`);
