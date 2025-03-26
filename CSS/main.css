@@ -1186,14 +1186,22 @@ section#about .text_container .left-section .founder-info h2 {
   font-weight: 300;
   margin-bottom: 5px;
 }
-section#about .text_container .left-section .founder-info .title {
-  font-size: 25px;
-  margin-bottom: 10px;
-  font-family: "Gotham", sans-serif;
-  font-weight: 300;
+section#about .text_container .left-section .founder-info .logo-container {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
   width: fit-content;
+}
+section#about .text_container .left-section .founder-info .logo-container .title {
+  font-size: 25px;
+  font-family: "Gotham", sans-serif;
+  font-weight: 300;
+}
+section#about .text_container .left-section .founder-info .logo-container img {
+  width: 150px;
+  height: 16px;
 }
 section#about .text_container .right-section {
   flex: 15;
@@ -1311,7 +1319,7 @@ section#about .bold {
     text-align: center;
     margin-bottom: 50px;
   }
-  section#about .text_container .left-section .founder-info .title {
+  section#about .text_container .left-section .founder-info .logo-container {
     margin: 0 auto;
   }
   section#about .text_container .right-section {
