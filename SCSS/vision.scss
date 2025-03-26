@@ -6,113 +6,185 @@ section#vision {
     div.nav-header {
         margin: 50px 100px;
 
-        div.scrolled {
-            // position: fixed;
-            // top: 0;
-            // left: 0;
-            // right: 0;
-            // background-color: white;
-            // z-index: 1000;
-            // padding: 0 100px;
-            // transition: all 0.3s ease;
-            // box-shadow: none;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 30px;
 
-            nav {
-                display: flex;
+            /* Hamburger menu styles */
+            .hamburger-menu {
+                display: none;
+                flex-direction: column;
                 justify-content: space-between;
-                flex-wrap: wrap;
-                align-items: center;
-                margin-bottom: 30px;
-    
-                /* Hamburger menu styles */
-                .hamburger-menu {
-                    display: none;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    width: 30px;
-                    height: 21px;
-                    cursor: pointer;
-                    z-index: 100;
-                    position: relative;
-    
-                    span {
-                        display: block;
-                        height: 3px;
-                        width: 100%;
-                        background-color: #0f293d;
-                        border-radius: 3px;
-                        transition: all 0.3s ease;
-                    }
-    
-                    &.active {
-                        span {
-                            &:nth-child(1) {
-                                transform: translateY(9px) rotate(45deg);
-                            }
-                            
-                            &:nth-child(2) {
-                                opacity: 0;
-                            }
-                            
-                            &:nth-child(3) {
-                                transform: translateY(-9px) rotate(-45deg);
-                            }
-                        }
-    
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                    }
+                width: 30px;
+                height: 21px;
+                cursor: pointer;
+                z-index: 100;
+                position: relative;
+
+                span {
+                    display: block;
+                    height: 3px;
+                    width: 100%;
+                    background-color: #0f293d;
+                    border-radius: 3px;
+                    transition: all 0.3s ease;
                 }
-    
-                ul {
-                    display: flex;
-                    gap: 30px;
-                    align-items: center;
-    
-                    img {
-                        display: none;
-                    }
-    
-                    li {
-                        list-style-type: none;
-                        height: fit-content;
-    
-                        a {
-                            text-decoration: none;
-                            color: #0f293d;
-                            text-transform: uppercase;
-                            border: 1px solid #0f293d;
-                            padding: 7px 12px;
-                            font-family: "Gotham", sans-serif;
-                            font-weight: 300;
-    
-                            &.active {
-                                color: white;
-                                background-color: #0f293d;
-                            }
-    
-                            &.free_resources {
-                                color: white;
-                                background-color: #215ca8;
-                                border: none;
-                            }
+
+                &.active {
+                    span {
+                        &:nth-child(1) {
+                            transform: translateY(9px) rotate(45deg);
                         }
-    
+                        
+                        &:nth-child(2) {
+                            opacity: 0;
+                        }
+                        
+                        &:nth-child(3) {
+                            transform: translateY(-9px) rotate(-45deg);
+                        }
+                    }
+
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            ul {
+                display: flex;
+                gap: 30px;
+                align-items: center;
+
+                img {
+                    display: none;
+                }
+
+                li {
+                    list-style-type: none;
+                    height: fit-content;
+
+                    a {
+                        text-decoration: none;
+                        color: #0f293d;
+                        text-transform: uppercase;
+                        border: 1px solid #0f293d;
+                        padding: 7px 12px;
+                        font-family: "Gotham", sans-serif;
+                        font-weight: 300;
+
+                        &.active {
+                            color: white;
+                            background-color: #0f293d;
+                        }
+
+                        &.free_resources {
+                            color: white;
+                            background-color: #215ca8;
+                            border: none;
+                        }
+                    }
+
+                    &.lang-buttons {
+                        display: flex;
+                        gap: 5px;
+
                         button.lang-toggle {
                             background-color: transparent;
                             font-size: 22px;
                             cursor: pointer;
+                            padding: 5px;
+                            border: none;
+                            transition: transform 0.2s ease;
+                            opacity: 0.5;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+
+                            &.active {
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    &.lang-dropdown {
+                        position: relative;
+
+                        .burger-lang-options {
+                            display: none;
+                        }
+
+                        button.lang-toggle {
+                            background-color: transparent;
+                            font-size: 22px;
+                            cursor: pointer;
+                            padding: 5px;
+                            border: none;
+                            transition: transform 0.2s ease;
+                            opacity: 0.5;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+
+                            &.active {
+                                opacity: 1;
+                            }
+                        }
+
+                        .lang-menu {
+                            position: absolute;
+                            top: 100%;
+                            right: 0;
+                            background-color: white;
+                            border: 1px solid #0f293d;
+                            border-radius: 4px;
+                            padding: 5px 0;
+                            min-width: 150px;
+                            display: none;
+                            z-index: 1000;
+                            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+                            &.active {
+                                display: block;
+                            }
+
+                            .lang-option {
+                                display: block;
+                                width: 100%;
+                                padding: 8px 15px;
+                                text-align: left;
+                                background: none;
+                                border: none;
+                                font-size: 16px;
+                                cursor: pointer;
+                                transition: background-color 0.2s ease;
+                                font-family: "Gotham", sans-serif;
+                                color: #0f293d;
+
+                                &:hover {
+                                    background-color: #f5f5f5;
+                                }
+
+                                &.active {
+                                    background-color: #e9ecef;
+                                }
+                            }
                         }
                     }
                 }
             }
-
-            hr {
-                height: 1px;
-                background-color: #0f293d;
-            }
         }
+
+        hr {
+            height: 1px;
+            background-color: #0f293d;
+        }
+        
 
         div.center-button {
             display: block;
@@ -372,49 +444,111 @@ section#vision {
 
 @media screen and (max-width: 1350px) {   
     section#vision {
-        
         div.nav-header {
+            nav {
+                position: relative;
 
-            div {
+                .hamburger-menu {
+                    display: flex;
+                }
 
-                nav {
-                    position: relative;
-    
-                    .hamburger-menu {
-                        display: flex;
+                ul {
+                    position: fixed;
+                    top: 0;
+                    right: -350px;
+                    width: 350px;
+                    height: 100vh;
+                    background-color: white;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    padding-top: 125px;
+                    transition: right 0.3s ease-in-out;
+                    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                    z-index: 90;
+
+                    img {
+                        display: block;
                     }
-    
-                    ul {
-                        position: fixed;
-                        top: 0;
-                        right: -350px;
-                        width: 350px;
-                        height: 100vh;
-                        background-color: white;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        padding-top: 150px;
-                        transition: right 0.3s ease-in-out;
-                        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-                        z-index: 90;
-    
-                        img {
-                            display: block;
-                        }
-    
-                        &.active {
-                            right: 0;
-                        }
+
+                    &.active {
+                        right: 0;
                         
-                        li {
-                            width: 100%;
-                            margin: 10px 0;
-                            text-align: center;
-    
-                            a {
-                                margin: 0 20px;
-                                display: block;
+                        .lang-dropdown {
+                            // Cacher le bouton de langue normal et le menu déroulant
+                            .lang-toggle, .lang-menu {
+                                display: none !important;
                             }
+                            
+                            // Afficher les options de langue du burger menu
+                            .burger-lang-options {
+                                display: block;
+                                width: 100%;
+                                margin-top: 20px;
+                                
+                                h3 {
+                                    width: 100%;
+                                    text-align: center;
+                                    margin-bottom: 15px;
+                                    font-family: "Gotham", sans-serif;
+                                    font-weight: 300;
+                                    color: #0f293d;
+                                    font-size: 18px;
+                                    border-top: 1px solid #eee;
+                                    padding-top: 15px;
+                                }
+                                
+                                .lang-flags {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: center;
+                                    gap: 20px;
+                                    padding: 0 20px;
+                                    
+                                    .lang-flag {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        background: none;
+                                        border: none;
+                                        padding: 10px;
+                                        cursor: pointer;
+                                        transition: transform 0.2s ease;
+                                        width: 80px;
+                                        text-align: center;
+                                        
+                                        &:hover {
+                                            transform: scale(1.1);
+                                        }
+                                        
+                                        &.active {
+                                            color: #215ca8;
+                                            font-weight: bold;
+                                        }
+                                        
+                                        .flag {
+                                            font-size: 28px;
+                                            margin-bottom: 8px;
+                                        }
+                                        
+                                        .country {
+                                            font-size: 14px;
+                                            font-family: "Gotham", sans-serif;
+                                            color: #0f293d;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    li {
+                        width: 100%;
+                        margin: 5px 0;
+                        text-align: center;
+
+                        a {
+                            margin: 0 20px;
+                            display: block;
                         }
                     }
                 }

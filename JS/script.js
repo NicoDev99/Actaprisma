@@ -96,19 +96,122 @@ document.addEventListener("DOMContentLoaded", function () {
     sections.forEach(section => observer.observe(section));
     
     // Language toggle functionality
+    const langDropdown = document.querySelector('.lang-dropdown');
     const langToggle = document.querySelector('.lang-toggle');
-    let currentLang = 'fr'; // Default language is French
-
-    langToggle.addEventListener('click', function() {
-        if (currentLang === 'fr') {
-            currentLang = 'en';
-            langToggle.textContent = '🇫🇷';
-            // Here you would add code to change the website content to English
-        } else {
-            currentLang = 'fr';
-            langToggle.textContent = '🇬🇧';
-            // Here you would add code to change the website content to French
+    const langMenu = document.querySelector('.lang-menu');
+    const langOptions = document.querySelectorAll('.lang-option');
+    const langFlags = document.querySelectorAll('.lang-flag');
+    
+    // Détecter la langue du navigateur
+    const getBrowserLanguage = () => {
+        const browserLang = navigator.language || navigator.userLanguage;
+        console.log(navigator.language);
+        // Extraire juste le code de langue principal (avant le tiret s'il y en a un)
+        const langCode = browserLang.split('-')[0].toLowerCase();
+        
+        // Vérifier si la langue est supportée, sinon utiliser le français par défaut
+        const supportedLangs = ['fr', 'en', 'es', 'pt'];
+        return supportedLangs.includes(langCode) ? langCode : 'fr';
+    };
+    
+    // Définir la langue par défaut en fonction de la langue du navigateur
+    let currentLang = getBrowserLanguage();
+    
+    // Mettre à jour l'interface pour refléter la langue par défaut
+    const updateUIForLanguage = (lang) => {
+        // Mettre à jour le bouton de langue principal
+        const selectedOption = document.querySelector(`.lang-option[data-lang="${lang}"]`);
+        if (selectedOption) {
+            langToggle.textContent = selectedOption.textContent.split(' ')[0];
+            
+            // Mettre à jour les classes actives pour les options du menu déroulant
+            langOptions.forEach(opt => {
+                opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
+            });
+            
+            // Mettre à jour les classes actives pour les drapeaux du menu burger
+            langFlags.forEach(flag => {
+                flag.classList.toggle('active', flag.getAttribute('data-lang') === lang);
+            });
         }
+    };
+    
+    // Initialiser l'interface avec la langue détectée
+    updateUIForLanguage(currentLang);
+    
+    // Ajouter une classe au body pour indiquer la langue active
+    document.body.setAttribute('data-lang', currentLang);
+
+    // Toggle menu on click when not in burger menu
+    langToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        // Ne pas ouvrir le menu si on est en mode burger
+        if (window.innerWidth > 1350) {
+            langMenu.classList.toggle('active');
+        }
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!langDropdown.contains(e.target)) {
+            langMenu.classList.remove('active');
+        }
+    });
+
+    // Handle language selection for dropdown menu
+    langOptions.forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const selectedLang = this.getAttribute('data-lang');
+            
+            // Update current language
+            currentLang = selectedLang;
+            
+            // Mettre à jour l'interface
+            updateUIForLanguage(currentLang);
+            
+            // Update class on body
+            document.body.setAttribute('data-lang', currentLang);
+            
+            // Close menu immediately if not in burger menu
+            langMenu.classList.remove('active');
+            
+            // Here you would add code to change the website content based on the selected language
+            console.log(`Language changed to: ${currentLang}`);
+            
+            // Si on est dans le burger menu, fermer le menu
+            if (hamburgerMenu.classList.contains('active')) {
+                hamburgerMenu.classList.remove('active');
+                navMenu.classList.remove('active');
+                menuOverlay.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+        });
+    });
+
+    // Handle language selection for burger menu flags
+    langFlags.forEach(flag => {
+        flag.addEventListener('click', function() {
+            const selectedLang = this.getAttribute('data-lang');
+            
+            // Update current language
+            currentLang = selectedLang;
+            
+            // Mettre à jour l'interface
+            updateUIForLanguage(currentLang);
+            
+            // Update class on body
+            document.body.setAttribute('data-lang', currentLang);
+            
+            // Here you would add code to change the website content based on the selected language
+            console.log(`Language changed to: ${currentLang} (from burger menu)`);
+            
+            // Fermer le menu burger
+            hamburgerMenu.classList.remove('active');
+            navMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        });
     });
 
     // Gestion de l'expansion des cartes

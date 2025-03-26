@@ -26,7 +26,7 @@ section#vision {
 section#vision div.nav-header {
   margin: 50px 100px;
 }
-section#vision div.nav-header div.scrolled nav {
+section#vision div.nav-header nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -34,7 +34,7 @@ section#vision div.nav-header div.scrolled nav {
   margin-bottom: 30px;
   /* Hamburger menu styles */
 }
-section#vision div.nav-header div.scrolled nav .hamburger-menu {
+section#vision div.nav-header nav .hamburger-menu {
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -44,7 +44,7 @@ section#vision div.nav-header div.scrolled nav .hamburger-menu {
   z-index: 100;
   position: relative;
 }
-section#vision div.nav-header div.scrolled nav .hamburger-menu span {
+section#vision div.nav-header nav .hamburger-menu span {
   display: block;
   height: 3px;
   width: 100%;
@@ -52,33 +52,33 @@ section#vision div.nav-header div.scrolled nav .hamburger-menu span {
   border-radius: 3px;
   transition: all 0.3s ease;
 }
-section#vision div.nav-header div.scrolled nav .hamburger-menu.active {
+section#vision div.nav-header nav .hamburger-menu.active {
   position: absolute;
   top: 0;
   right: 0;
 }
-section#vision div.nav-header div.scrolled nav .hamburger-menu.active span:nth-child(1) {
+section#vision div.nav-header nav .hamburger-menu.active span:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
 }
-section#vision div.nav-header div.scrolled nav .hamburger-menu.active span:nth-child(2) {
+section#vision div.nav-header nav .hamburger-menu.active span:nth-child(2) {
   opacity: 0;
 }
-section#vision div.nav-header div.scrolled nav .hamburger-menu.active span:nth-child(3) {
+section#vision div.nav-header nav .hamburger-menu.active span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
 }
-section#vision div.nav-header div.scrolled nav ul {
+section#vision div.nav-header nav ul {
   display: flex;
   gap: 30px;
   align-items: center;
 }
-section#vision div.nav-header div.scrolled nav ul img {
+section#vision div.nav-header nav ul img {
   display: none;
 }
-section#vision div.nav-header div.scrolled nav ul li {
+section#vision div.nav-header nav ul li {
   list-style-type: none;
   height: fit-content;
 }
-section#vision div.nav-header div.scrolled nav ul li a {
+section#vision div.nav-header nav ul li a {
   text-decoration: none;
   color: #0f293d;
   text-transform: uppercase;
@@ -87,21 +87,91 @@ section#vision div.nav-header div.scrolled nav ul li a {
   font-family: "Gotham", sans-serif;
   font-weight: 300;
 }
-section#vision div.nav-header div.scrolled nav ul li a.active {
+section#vision div.nav-header nav ul li a.active {
   color: white;
   background-color: #0f293d;
 }
-section#vision div.nav-header div.scrolled nav ul li a.free_resources {
+section#vision div.nav-header nav ul li a.free_resources {
   color: white;
   background-color: #215ca8;
   border: none;
 }
-section#vision div.nav-header div.scrolled nav ul li button.lang-toggle {
+section#vision div.nav-header nav ul li.lang-buttons {
+  display: flex;
+  gap: 5px;
+}
+section#vision div.nav-header nav ul li.lang-buttons button.lang-toggle {
   background-color: transparent;
   font-size: 22px;
   cursor: pointer;
+  padding: 5px;
+  border: none;
+  transition: transform 0.2s ease;
+  opacity: 0.5;
 }
-section#vision div.nav-header div.scrolled hr {
+section#vision div.nav-header nav ul li.lang-buttons button.lang-toggle:hover {
+  transform: scale(1.1);
+}
+section#vision div.nav-header nav ul li.lang-buttons button.lang-toggle.active {
+  opacity: 1;
+}
+section#vision div.nav-header nav ul li.lang-dropdown {
+  position: relative;
+}
+section#vision div.nav-header nav ul li.lang-dropdown .burger-lang-options {
+  display: none;
+}
+section#vision div.nav-header nav ul li.lang-dropdown button.lang-toggle {
+  background-color: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  transition: transform 0.2s ease;
+  opacity: 0.5;
+}
+section#vision div.nav-header nav ul li.lang-dropdown button.lang-toggle:hover {
+  transform: scale(1.1);
+}
+section#vision div.nav-header nav ul li.lang-dropdown button.lang-toggle.active {
+  opacity: 1;
+}
+section#vision div.nav-header nav ul li.lang-dropdown .lang-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #0f293d;
+  border-radius: 4px;
+  padding: 5px 0;
+  min-width: 150px;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+section#vision div.nav-header nav ul li.lang-dropdown .lang-menu.active {
+  display: block;
+}
+section#vision div.nav-header nav ul li.lang-dropdown .lang-menu .lang-option {
+  display: block;
+  width: 100%;
+  padding: 8px 15px;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: "Gotham", sans-serif;
+  color: #0f293d;
+}
+section#vision div.nav-header nav ul li.lang-dropdown .lang-menu .lang-option:hover {
+  background-color: #f5f5f5;
+}
+section#vision div.nav-header nav ul li.lang-dropdown .lang-menu .lang-option.active {
+  background-color: #e9ecef;
+}
+section#vision div.nav-header hr {
   height: 1px;
   background-color: #0f293d;
 }
@@ -307,13 +377,13 @@ section#vision .arrow-icon {
   }
 }
 @media screen and (max-width: 1350px) {
-  section#vision div.nav-header div nav {
+  section#vision div.nav-header nav {
     position: relative;
   }
-  section#vision div.nav-header div nav .hamburger-menu {
+  section#vision div.nav-header nav .hamburger-menu {
     display: flex;
   }
-  section#vision div.nav-header div nav ul {
+  section#vision div.nav-header nav ul {
     position: fixed;
     top: 0;
     right: -350px;
@@ -322,23 +392,77 @@ section#vision .arrow-icon {
     background-color: white;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 150px;
+    padding-top: 125px;
     transition: right 0.3s ease-in-out;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     z-index: 90;
   }
-  section#vision div.nav-header div nav ul img {
+  section#vision div.nav-header nav ul img {
     display: block;
   }
-  section#vision div.nav-header div nav ul.active {
+  section#vision div.nav-header nav ul.active {
     right: 0;
   }
-  section#vision div.nav-header div nav ul li {
+  section#vision div.nav-header nav ul.active .lang-dropdown .lang-toggle, section#vision div.nav-header nav ul.active .lang-dropdown .lang-menu {
+    display: none !important;
+  }
+  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options {
+    display: block;
     width: 100%;
-    margin: 10px 0;
+    margin-top: 20px;
+  }
+  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
+    color: #0f293d;
+    font-size: 18px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+  }
+  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 80px;
     text-align: center;
   }
-  section#vision div.nav-header div nav ul li a {
+  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag:hover {
+    transform: scale(1.1);
+  }
+  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag.active {
+    color: #215ca8;
+    font-weight: bold;
+  }
+  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag .flag {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag .country {
+    font-size: 14px;
+    font-family: "Gotham", sans-serif;
+    color: #0f293d;
+  }
+  section#vision div.nav-header nav ul li {
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+  }
+  section#vision div.nav-header nav ul li a {
     margin: 0 20px;
     display: block;
   }
