@@ -35,22 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Initialize Typed.js for the main title
-    const typingOptions = {
-        strings: ['Vous avez <br /> un objectif ?'],
-        typeSpeed: 50,
-        backSpeed: 0,
-        startDelay: 300,
-        loop: false,
-        showCursor: true,
-        cursorChar: '|',
-        autoInsertCss: true
-    };
-    
-    // Start the typing animation for the main title
-    if (document.querySelector('.typing-title')) {
-        new Typed('.typing-title', typingOptions);
-    }
+    // Initialize Typed.js for the main title - on ne l'initialise pas ici mais dans updatePageContent
+    // pour éviter la double initialisation
+    const typingElement = document.querySelector('.typing-title');
 
     // Initialize Typed.js for the quote in the about section
     const quoteTypingOptions = {
@@ -108,6 +95,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const path = window.location.pathname;
         if (path.endsWith('/EN')) {
             return 'en';
+        } else if (path.endsWith('/ES')) {
+            return 'es';
+        } else if (path.endsWith('/PT')) {
+            return 'pt';
         }
         
         const browserLang = navigator.language || navigator.userLanguage;
@@ -150,31 +141,48 @@ document.addEventListener("DOMContentLoaded", function () {
         const currentPath = window.location.pathname;
         let newPath;
         
-        if (lang === 'en') {
-            // Si l'URL ne se termine pas déjà par /EN, l'ajouter
-            if (!currentPath.endsWith('/EN')) {
-                // Si l'URL se termine par un slash, ajouter juste "EN"
-                if (currentPath.endsWith('/')) {
-                    newPath = currentPath + 'EN';
-                } else {
-                    newPath = currentPath + '/EN';
-                }
-            } else {
-                // L'URL est déjà correcte
-                return;
-            }
-        } else {
-            // Pour toutes les autres langues, revenir à l'URL sans /EN
-            if (currentPath.endsWith('/EN')) {
-                newPath = currentPath.substring(0, currentPath.length - 3);
-            } else {
-                // L'URL est déjà correcte
-                return;
-            }
+        // Supprimer d'abord tous les suffixes de langue existants
+        let basePath = currentPath;
+        if (basePath.endsWith('/EN')) {
+            basePath = basePath.substring(0, basePath.length - 3);
+        } else if (basePath.endsWith('/ES')) {
+            basePath = basePath.substring(0, basePath.length - 3);
+        } else if (basePath.endsWith('/PT')) {
+            basePath = basePath.substring(0, basePath.length - 3);
         }
         
-        // Mettre à jour l'URL sans recharger la page
-        window.history.pushState({ lang: lang }, '', newPath);
+        // Maintenant ajouter le suffixe approprié pour la langue sélectionnée
+        if (lang === 'en') {
+            // Si l'URL se termine par un slash, ajouter juste "EN"
+            if (basePath.endsWith('/')) {
+                newPath = basePath + 'EN';
+            } else {
+                newPath = basePath + '/EN';
+            }
+        } else if (lang === 'es') {
+            // Si l'URL se termine par un slash, ajouter juste "ES"
+            if (basePath.endsWith('/')) {
+                newPath = basePath + 'ES';
+            } else {
+                newPath = basePath + '/ES';
+            }
+        } else if (lang === 'pt') {
+            // Si l'URL se termine par un slash, ajouter juste "PT"
+            if (basePath.endsWith('/')) {
+                newPath = basePath + 'PT';
+            } else {
+                newPath = basePath + '/PT';
+            }
+        } else {
+            // Pour le français et les autres langues, utiliser le chemin de base
+            newPath = basePath;
+        }
+        
+        // Si le nouveau chemin est différent du chemin actuel, mettre à jour l'URL
+        if (newPath !== currentPath) {
+            // Mettre à jour l'URL sans recharger la page
+            window.history.pushState({ lang: lang }, '', newPath);
+        }
     };
     
     // Fonction pour mettre à jour le contenu de la page en fonction de la langue
@@ -231,12 +239,15 @@ document.addEventListener("DOMContentLoaded", function () {
         // Mettre à jour le titre de la page
         if (lang === 'en') {
             document.title = "Actaprisma - Your image, your success";
+        } else if (lang === 'es') {
+            document.title = "Actaprisma - Su imagen, su éxito";
+        } else if (lang === 'pt') {
+            document.title = "Actaprisma - A sua imagem, o seu sucesso";
         } else {
             document.title = "Actaprisma";
         }
         
         // Mettre à jour l'animation Typed.js pour le titre principal
-        const typingElement = document.querySelector('.typing-title');
         if (typingElement) {
             const typingText = translations[lang]?.main_title || translations['fr'].main_title;
             
@@ -244,6 +255,12 @@ document.addEventListener("DOMContentLoaded", function () {
             if (typingElement._typed) {
                 typingElement._typed.destroy();
             }
+            
+            // S'assurer que tous les curseurs existants sont supprimés avant de créer une nouvelle instance
+            const cursors = document.querySelectorAll('.typed-cursor');
+            cursors.forEach(cursor => {
+                cursor.remove();
+            });
             
             // Créer une nouvelle instance avec le texte traduit
             typingElement._typed = new Typed(typingElement, {
@@ -281,9 +298,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialiser l'interface avec la langue détectée
     updateUIForLanguage(currentLang);
     
-    // Si l'URL a /EN mais currentLang n'est pas 'en', ou inversement, mettre à jour l'URL
+    // Si l'URL a /EN, /ES ou /PT mais currentLang ne correspond pas, mettre à jour l'URL
     if ((window.location.pathname.endsWith('/EN') && currentLang !== 'en') || 
-        (!window.location.pathname.endsWith('/EN') && currentLang === 'en')) {
+        (window.location.pathname.endsWith('/ES') && currentLang !== 'es') ||
+        (window.location.pathname.endsWith('/PT') && currentLang !== 'pt') ||
+        (!window.location.pathname.endsWith('/EN') && 
+         !window.location.pathname.endsWith('/ES') && 
+         !window.location.pathname.endsWith('/PT') && 
+         (currentLang === 'en' || currentLang === 'es' || currentLang === 'pt'))) {
         updateUrlForLanguage(currentLang);
     }
     
