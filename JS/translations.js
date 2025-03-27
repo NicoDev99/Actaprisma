@@ -89,7 +89,9 @@ const translations = {
         // Footer
         "copyright": "© 2025 Actaprisma. Tous droits réservés.",
         "legal_notice": "Mentions légales",
-        "privacy_policy": "Politique de confidentialité"
+        "terms_of_sale": "Conditions Générales de Vente",
+        "privacy_policy": "Politique de confidentialité",
+        "copyright_extended": "ACTAPRISMA® est une marque déposée. © 2025. Tous droits réservés."
     },
     "en": {
         // Navigation
@@ -180,7 +182,9 @@ const translations = {
         // Footer
         "copyright": "© 2025 Actaprisma. All rights reserved.",
         "legal_notice": "Legal Notice",
-        "privacy_policy": "Privacy Policy"
+        "terms_of_sale": "Terms and Conditions of Sale",
+        "privacy_policy": "Privacy Policy",
+        "copyright_extended": "ACTAPRISMA® is a registered trademark. © 2025. All rights reserved."
     },
     "es": {
         // Navigation
@@ -271,7 +275,9 @@ const translations = {
         // Footer
         "copyright": "© 2025 Actaprisma. Todos los derechos reservados.",
         "legal_notice": "Aviso legal",
-        "privacy_policy": "Política de privacidad"
+        "terms_of_sale": "Condiciones Generales de Venta",
+        "privacy_policy": "Política de privacidad",
+        "copyright_extended": "ACTAPRISMA® es una marca registrada. © 2025. Todos los derechos reservados."
     },
     "pt": {
         // Navigation
@@ -362,7 +368,9 @@ const translations = {
         // Footer
         "copyright": "© 2025 Actaprisma. Todos os direitos reservados.",
         "legal_notice": "Aviso legal",
-        "privacy_policy": "Política de privacidade"
+        "terms_of_sale": "Condições Gerais de Venda",
+        "privacy_policy": "Política de privacidade",
+        "copyright_extended": "ACTAPRISMA® é uma marca registada. © 2025. Todos os direitos reservados."
     }
 };
 
