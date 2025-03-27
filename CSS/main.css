@@ -16,17 +16,11 @@
   font-weight: 300;
   font-style: normal;
 }
-/* Section Vision */
-section#vision {
-  position: relative;
-  /* Header */
-  /* Content */
-  /* Overlay when menu is active */
-}
-section#vision div.nav-header {
+/* Header styles */
+div.nav-header {
   margin: 50px 100px;
 }
-section#vision div.nav-header nav {
+div.nav-header nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -34,7 +28,7 @@ section#vision div.nav-header nav {
   margin-bottom: 30px;
   /* Hamburger menu styles */
 }
-section#vision div.nav-header nav .hamburger-menu {
+div.nav-header nav .hamburger-menu {
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -44,7 +38,7 @@ section#vision div.nav-header nav .hamburger-menu {
   z-index: 100;
   position: relative;
 }
-section#vision div.nav-header nav .hamburger-menu span {
+div.nav-header nav .hamburger-menu span {
   display: block;
   height: 3px;
   width: 100%;
@@ -52,33 +46,33 @@ section#vision div.nav-header nav .hamburger-menu span {
   border-radius: 3px;
   transition: all 0.3s ease;
 }
-section#vision div.nav-header nav .hamburger-menu.active {
+div.nav-header nav .hamburger-menu.active {
   position: absolute;
   top: 0;
   right: 0;
 }
-section#vision div.nav-header nav .hamburger-menu.active span:nth-child(1) {
+div.nav-header nav .hamburger-menu.active span:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
 }
-section#vision div.nav-header nav .hamburger-menu.active span:nth-child(2) {
+div.nav-header nav .hamburger-menu.active span:nth-child(2) {
   opacity: 0;
 }
-section#vision div.nav-header nav .hamburger-menu.active span:nth-child(3) {
+div.nav-header nav .hamburger-menu.active span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
 }
-section#vision div.nav-header nav ul {
+div.nav-header nav ul {
   display: flex;
   gap: 30px;
   align-items: center;
 }
-section#vision div.nav-header nav ul img {
+div.nav-header nav ul img {
   display: none;
 }
-section#vision div.nav-header nav ul li {
+div.nav-header nav ul li {
   list-style-type: none;
   height: fit-content;
 }
-section#vision div.nav-header nav ul li a {
+div.nav-header nav ul li a {
   text-decoration: none;
   color: #0f293d;
   text-transform: uppercase;
@@ -87,20 +81,20 @@ section#vision div.nav-header nav ul li a {
   font-family: "Gotham", sans-serif;
   font-weight: 300;
 }
-section#vision div.nav-header nav ul li a.active {
+div.nav-header nav ul li a.active {
   color: white;
   background-color: #0f293d;
 }
-section#vision div.nav-header nav ul li a.free_resources {
+div.nav-header nav ul li a.free_resources {
   color: white;
   background-color: #215ca8;
   border: none;
 }
-section#vision div.nav-header nav ul li.lang-buttons {
+div.nav-header nav ul li.lang-buttons {
   display: flex;
   gap: 5px;
 }
-section#vision div.nav-header nav ul li.lang-buttons button.lang-toggle {
+div.nav-header nav ul li.lang-buttons button.lang-toggle {
   background-color: transparent;
   font-size: 22px;
   cursor: pointer;
@@ -109,19 +103,19 @@ section#vision div.nav-header nav ul li.lang-buttons button.lang-toggle {
   transition: transform 0.2s ease;
   opacity: 0.5;
 }
-section#vision div.nav-header nav ul li.lang-buttons button.lang-toggle:hover {
+div.nav-header nav ul li.lang-buttons button.lang-toggle:hover {
   transform: scale(1.1);
 }
-section#vision div.nav-header nav ul li.lang-buttons button.lang-toggle.active {
+div.nav-header nav ul li.lang-buttons button.lang-toggle.active {
   opacity: 1;
 }
-section#vision div.nav-header nav ul li.lang-dropdown {
+div.nav-header nav ul li.lang-dropdown {
   position: relative;
 }
-section#vision div.nav-header nav ul li.lang-dropdown .burger-lang-options {
+div.nav-header nav ul li.lang-dropdown .burger-lang-options {
   display: none;
 }
-section#vision div.nav-header nav ul li.lang-dropdown button.lang-toggle {
+div.nav-header nav ul li.lang-dropdown button.lang-toggle {
   background-color: transparent;
   font-size: 22px;
   cursor: pointer;
@@ -130,13 +124,13 @@ section#vision div.nav-header nav ul li.lang-dropdown button.lang-toggle {
   transition: transform 0.2s ease;
   opacity: 0.5;
 }
-section#vision div.nav-header nav ul li.lang-dropdown button.lang-toggle:hover {
+div.nav-header nav ul li.lang-dropdown button.lang-toggle:hover {
   transform: scale(1.1);
 }
-section#vision div.nav-header nav ul li.lang-dropdown button.lang-toggle.active {
+div.nav-header nav ul li.lang-dropdown button.lang-toggle.active {
   opacity: 1;
 }
-section#vision div.nav-header nav ul li.lang-dropdown .lang-menu {
+div.nav-header nav ul li.lang-dropdown .lang-menu {
   position: absolute;
   top: 100%;
   right: 0;
@@ -149,10 +143,10 @@ section#vision div.nav-header nav ul li.lang-dropdown .lang-menu {
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-section#vision div.nav-header nav ul li.lang-dropdown .lang-menu.active {
+div.nav-header nav ul li.lang-dropdown .lang-menu.active {
   display: block;
 }
-section#vision div.nav-header nav ul li.lang-dropdown .lang-menu .lang-option {
+div.nav-header nav ul li.lang-dropdown .lang-menu .lang-option {
   display: block;
   width: 100%;
   padding: 8px 15px;
@@ -165,19 +159,188 @@ section#vision div.nav-header nav ul li.lang-dropdown .lang-menu .lang-option {
   font-family: "Gotham", sans-serif;
   color: #0f293d;
 }
-section#vision div.nav-header nav ul li.lang-dropdown .lang-menu .lang-option:hover {
+div.nav-header nav ul li.lang-dropdown .lang-menu .lang-option:hover {
   background-color: #f5f5f5;
 }
-section#vision div.nav-header nav ul li.lang-dropdown .lang-menu .lang-option.active {
+div.nav-header nav ul li.lang-dropdown .lang-menu .lang-option.active {
   background-color: #e9ecef;
 }
-section#vision div.nav-header hr {
+div.nav-header hr {
   height: 1px;
   background-color: #0f293d;
 }
-section#vision div.nav-header div.center-button {
+div.nav-header div.center-button {
   display: block;
   text-align: center;
+}
+
+/* Menu overlay styles */
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 80;
+  transition: opacity 0.3s ease;
+}
+.menu-overlay.active {
+  display: block;
+}
+
+/* CTA button styles */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 1px solid #ccc;
+  font-family: "Gotham", sans-serif;
+  font-weight: bold;
+}
+.cta-button:hover {
+  background-color: #f5f5f5;
+}
+
+.arrow-icon {
+  margin-left: 10px;
+  color: #7ecad6;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1400px) {
+  div.nav-header .center-button {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  div.nav-header nav {
+    position: relative;
+  }
+  div.nav-header nav .hamburger-menu {
+    display: flex;
+  }
+  div.nav-header nav ul {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 125px;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 90;
+  }
+  div.nav-header nav ul img {
+    display: block;
+  }
+  div.nav-header nav ul.active {
+    right: 0;
+  }
+  div.nav-header nav ul.active .lang-dropdown .lang-toggle, div.nav-header nav ul.active .lang-dropdown .lang-menu {
+    display: none !important;
+  }
+  div.nav-header nav ul.active .lang-dropdown .burger-lang-options {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  div.nav-header nav ul.active .lang-dropdown .burger-lang-options h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
+    color: #0f293d;
+    font-size: 18px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+  }
+  div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 80px;
+    text-align: center;
+  }
+  div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag:hover {
+    transform: scale(1.1);
+  }
+  div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag.active {
+    color: #215ca8;
+    font-weight: bold;
+  }
+  div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag .flag {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag .country {
+    font-size: 14px;
+    font-family: "Gotham", sans-serif;
+    color: #0f293d;
+  }
+  div.nav-header nav ul li {
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+  }
+  div.nav-header nav ul li a {
+    margin: 0 20px;
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  div.nav-header {
+    margin: 50px;
+  }
+  div.nav-header nav div img {
+    width: 130px;
+    height: 80px;
+  }
+  .cta-button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cta-button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cta-button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+/* Section Vision */
+section#vision {
+  position: relative;
+  /* Content */
 }
 section#vision div.explanations {
   display: flex;
@@ -315,42 +478,6 @@ section#vision .vision-container .content-container .vision-content .bold-text p
 section#vision .vision-container .content-container .button-container {
   margin-top: 40px;
 }
-section#vision .menu-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 80;
-  transition: opacity 0.3s ease;
-}
-section#vision .menu-overlay.active {
-  display: block;
-}
-section#vision .cta-button {
-  display: inline-flex;
-  align-items: center;
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  padding: 12px 25px;
-  border-radius: 30px;
-  font-size: 20px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  border: 1px solid #ccc;
-  font-family: "Gotham", sans-serif;
-  font-weight: bold;
-}
-section#vision .cta-button:hover {
-  background-color: #f5f5f5;
-}
-section#vision .arrow-icon {
-  margin-left: 10px;
-  color: #7ecad6;
-}
 
 /* Media Queries */
 @media screen and (max-width: 1640px) {
@@ -371,100 +498,6 @@ section#vision .arrow-icon {
   section#vision div.explanations .logo img.logo_without_text {
     width: 400px;
     height: 400px;
-  }
-  section#vision div.nav-header .center-button {
-    margin-top: 50px;
-  }
-}
-@media screen and (max-width: 1350px) {
-  section#vision div.nav-header nav {
-    position: relative;
-  }
-  section#vision div.nav-header nav .hamburger-menu {
-    display: flex;
-  }
-  section#vision div.nav-header nav ul {
-    position: fixed;
-    top: 0;
-    right: -350px;
-    width: 350px;
-    height: 100vh;
-    background-color: white;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 125px;
-    transition: right 0.3s ease-in-out;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-    z-index: 90;
-  }
-  section#vision div.nav-header nav ul img {
-    display: block;
-  }
-  section#vision div.nav-header nav ul.active {
-    right: 0;
-  }
-  section#vision div.nav-header nav ul.active .lang-dropdown .lang-toggle, section#vision div.nav-header nav ul.active .lang-dropdown .lang-menu {
-    display: none !important;
-  }
-  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options {
-    display: block;
-    width: 100%;
-    margin-top: 20px;
-  }
-  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options h3 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
-    font-family: "Gotham", sans-serif;
-    font-weight: 300;
-    color: #0f293d;
-    font-size: 18px;
-    border-top: 1px solid #eee;
-    padding-top: 15px;
-  }
-  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 0 20px;
-  }
-  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: none;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-    width: 80px;
-    text-align: center;
-  }
-  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag:hover {
-    transform: scale(1.1);
-  }
-  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag.active {
-    color: #215ca8;
-    font-weight: bold;
-  }
-  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag .flag {
-    font-size: 28px;
-    margin-bottom: 8px;
-  }
-  section#vision div.nav-header nav ul.active .lang-dropdown .burger-lang-options .lang-flags .lang-flag .country {
-    font-size: 14px;
-    font-family: "Gotham", sans-serif;
-    color: #0f293d;
-  }
-  section#vision div.nav-header nav ul li {
-    width: 100%;
-    margin: 5px 0;
-    text-align: center;
-  }
-  section#vision div.nav-header nav ul li a {
-    margin: 0 20px;
-    display: block;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -533,13 +566,6 @@ section#vision .arrow-icon {
   }
 }
 @media screen and (max-width: 768px) {
-  section#vision div.nav-header {
-    margin: 50px;
-  }
-  section#vision div.nav-header nav div img {
-    width: 130px;
-    height: 80px;
-  }
   section#vision .vision-container {
     padding: 50px 0px;
     margin: 0 50px;
@@ -588,10 +614,6 @@ section#vision .arrow-icon {
     padding: 12px 20px;
     font-size: 16px;
   }
-  section#vision .cta-button {
-    font-size: 15px;
-    padding: 10px 20px;
-  }
 }
 @media screen and (max-width: 600px) {
   section#vision div.explanations .text h1 {
@@ -616,10 +638,6 @@ section#vision .arrow-icon {
     left: -120%;
     width: 200%;
   }
-  section#vision .cta-button {
-    font-size: 13px;
-    padding: 8px 16px;
-  }
 }
 @media screen and (max-width: 480px) {
   section#vision .vision-container .content-container .vision-title {
@@ -634,10 +652,6 @@ section#vision .arrow-icon {
   section#vision .vision-container .triangle-logo {
     left: -120%;
     width: 200%;
-  }
-  section#vision .cta-button {
-    font-size: 13px;
-    padding: 8px 16px;
   }
 }
 /* Highlight animation */

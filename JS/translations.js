@@ -91,7 +91,48 @@ const translations = {
         "legal_notice": "Mentions légales",
         "terms_of_sale": "Conditions Générales de Vente",
         "privacy_policy": "Politique de confidentialité",
-        "copyright_extended": "ACTAPRISMA® est une marque déposée. © 2025. Tous droits réservés."
+        "copyright_extended": "ACTAPRISMA® est une marque déposée. © 2025. Tous droits réservés.",
+
+        // Terms (CGV) page
+        "terms_title": "CONDITIONS GÉNÉRALES DE VENTE (CGV)",
+        "return_home": "Retour à l'accueil",
+        "terms_section_1": "1. Présentation",
+        "terms_section_2": "2. Produits et services proposés",
+        "terms_section_3": "3. Commande et paiement",
+        "terms_section_4": "4. Absence de droit de rétractation",
+        "terms_section_5": "5. Politique de remboursement",
+        "terms_section_6": "6. Propriété intellectuelle et conditions d'utilisation spécifiques",
+        "terms_section_7": "7. Responsabilité",
+        "terms_section_8": "8. Protection des données personnelles",
+        "terms_section_9": "9. Droit applicable et litiges",
+        "terms_section_10": "10. Promotions et évolution des prix",
+        
+        "terms_content_1": "Les présentes Conditions Générales de Vente (CGV) régissent les ventes de produits numériques proposées par ACTAPRISMA, entreprise individuelle immatriculée sous le SIRET 90409160000026, dont le siège social est situé au 6 chemin des petits plans, 06800 Cagnes-sur-Mer, France.",
+        "terms_email": "Email de contact : ",
+        
+        "terms_content_2": "ACTAPRISMA propose des ressources numériques sous la forme de fichiers PDF, formations en ligne et contenus exclusifs, notamment le programme \"Startup Authority System\" comprenant :",
+        "terms_content_2_item1": "Un kit de ressources stratégiques pour startups.",
+        "terms_content_2_item2": "Des webinaires exclusifs.",
+        "terms_content_2_item3": "Une heure de consulting offerte.",
+        "terms_content_2_item4": "Un atelier LIVE \"The Two Sentences Formula\".",
+        
+        "terms_content_3_item1": "Les commandes sont effectuées directement sur le site internet actaprisma.com.",
+        "terms_content_3_item2": "Les paiements sont sécurisés et peuvent être effectués via Stripe, PayPal et carte bancaire.",
+        "terms_content_3_item3": "Une fois le paiement validé, l'acheteur reçoit un accès immédiat aux ressources numériques.",
+        
+        "terms_content_4": "Conformément à l'article L221-28 du Code de la consommation, le droit de rétractation ne s'applique pas aux contenus numériques fournis immédiatement après l'achat et sans support matériel. En validant l'achat, le client renonce expressément à son droit de rétractation.",
+        
+        "terms_content_5": "Aucun remboursement ne sera effectué après l'achat des produits numériques, ceux-ci étant considérés comme consommés dès leur accès.",
+        
+        "terms_content_6": "Tous les contenus proposés par ACTAPRISMA sont protégés par le droit d'auteur et restent la propriété exclusive de l'éditeur. Toute reproduction, modification, revente, partage, distribution, diffusion publique, adaptation ou exploitation commerciale, sous quelque forme que ce soit, est strictement interdite sans autorisation écrite préalable d'ACTAPRISMA. Toute violation fera l'objet de poursuites judiciaires.",
+        
+        "terms_content_7": "ACTAPRISMA ne saurait être tenu responsable des éventuels dommages liés à l'utilisation des produits numériques, notamment en cas d'erreur d'interprétation ou d'échec dans l'application des stratégies conseillées.",
+        
+        "terms_content_8": "Les informations collectées lors de l'achat sont traitées conformément à la Politique de Confidentialité disponible sur le site.",
+        
+        "terms_content_9": "Les présentes CGV sont régies par le droit français. En cas de litige, une solution amiable sera privilégiée. À défaut d'accord, les tribunaux compétents seront ceux de Nice.",
+        
+        "terms_content_10": "Le tarif promotionnel de 97 euros est une offre à durée limitée. Si l'acheteur ne profite pas de l'offre immédiatement, le prix du produit augmentera progressivement par paliers successifs de +30 % : 126 euros, puis 163 euros, 212 euros, 276 euros, et enfin 358 euros. Chaque augmentation sera annoncée par email aux acheteurs potentiels. ACTAPRISMA se réserve le droit d'ajuster les tarifs et promotions à sa discrétion."
     },
     "en": {
         // Navigation
@@ -184,7 +225,48 @@ const translations = {
         "legal_notice": "Legal Notice",
         "terms_of_sale": "Terms and Conditions of Sale",
         "privacy_policy": "Privacy Policy",
-        "copyright_extended": "ACTAPRISMA® is a registered trademark. © 2025. All rights reserved."
+        "copyright_extended": "ACTAPRISMA® is a registered trademark. © 2025. All rights reserved.",
+
+        // Terms (CGV) page
+        "terms_title": "TERMS AND CONDITIONS OF SALE",
+        "return_home": "Back to home",
+        "terms_section_1": "1. Presentation",
+        "terms_section_2": "2. Products and Services",
+        "terms_section_3": "3. Orders and Payment",
+        "terms_section_4": "4. No Right of Withdrawal",
+        "terms_section_5": "5. Refund Policy",
+        "terms_section_6": "6. Intellectual Property and Specific Terms of Use",
+        "terms_section_7": "7. Liability",
+        "terms_section_8": "8. Data Protection",
+        "terms_section_9": "9. Applicable Law and Disputes",
+        "terms_section_10": "10. Promotions and Price Evolution",
+        
+        "terms_content_1": "These Terms and Conditions of Sale govern the sales of digital products offered by ACTAPRISMA, a sole proprietorship registered under SIRET number 90409160000026, with its registered office at 6 chemin des petits plans, 06800 Cagnes-sur-Mer, France.",
+        "terms_email": "Contact email: ",
+        
+        "terms_content_2": "ACTAPRISMA offers digital resources in the form of PDF files, online training, and exclusive content, including the \"Startup Authority System\" program, which includes:",
+        "terms_content_2_item1": "A strategic resource kit for startups.",
+        "terms_content_2_item2": "Exclusive webinars.",
+        "terms_content_2_item3": "One hour of free consulting.",
+        "terms_content_2_item4": "A LIVE workshop \"The Two Sentences Formula\".",
+        
+        "terms_content_3_item1": "Orders are placed directly on the actaprisma.com website.",
+        "terms_content_3_item2": "Payments are secure and can be made via Stripe, PayPal, and credit card.",
+        "terms_content_3_item3": "Once payment is validated, the buyer receives immediate access to the digital resources.",
+        
+        "terms_content_4": "In accordance with Article L221-28 of the French Consumer Code, the right of withdrawal does not apply to digital content provided immediately after purchase and without physical support. By validating the purchase, the customer expressly waives their right of withdrawal.",
+        
+        "terms_content_5": "No refund will be made after the purchase of digital products, as they are considered consumed as soon as they are accessed.",
+        
+        "terms_content_6": "All content offered by ACTAPRISMA is protected by copyright and remains the exclusive property of the publisher. Any reproduction, modification, resale, sharing, distribution, public dissemination, adaptation, or commercial exploitation, in any form whatsoever, is strictly prohibited without prior written authorization from ACTAPRISMA. Any violation will be subject to legal proceedings.",
+        
+        "terms_content_7": "ACTAPRISMA cannot be held responsible for any damages related to the use of digital products, particularly in case of misinterpretation or failure in the application of the recommended strategies.",
+        
+        "terms_content_8": "Information collected during purchase is processed in accordance with the Privacy Policy available on the website.",
+        
+        "terms_content_9": "These Terms and Conditions are governed by French law. In case of dispute, an amicable solution will be preferred. Failing agreement, the competent courts will be those of Nice, France.",
+        
+        "terms_content_10": "The promotional rate of 97 euros is a limited-time offer. If the buyer does not take advantage of the offer immediately, the product price will increase progressively in successive steps of +30%: 126 euros, then 163 euros, 212 euros, 276 euros, and finally 358 euros. Each increase will be announced by email to potential buyers. ACTAPRISMA reserves the right to adjust rates and promotions at its discretion."
     },
     "es": {
         // Navigation
@@ -203,12 +285,12 @@ const translations = {
         "diagnostic_btn": "¿Quiere un diagnóstico para su proyecto?",
         
         "vision_title": "VISIÓN",
-        "comm_question": "¿Ha oído la frase «hay que comunicar»?",
+        "comm_question": "¿Ha oído la frase \"hay que comunicar\"?",
         "comm_response": "Nosotros también. Pero, ¿para qué?",
         "comm_desc_1": "Comunicar es materializar su identidad, su concepto, su visión. Es elegir los canales adecuados y amplificar su mensaje con precisión.",
         "comm_desc_2": "En ACTAPRISMA, le ayudamos a definir y estructurar su imagen para que conserve el control y la exprese con impacto.",
         "comm_desc_3": "Desarrollamos el potencial de su identidad para generar un beneficio emocional en su audiencia, crear un sentimiento de pertenencia e identificación y, al mismo tiempo, delimitar estratégicamente su campo de soberanía y su territorio ideológico.",
-        "comm_desc_4": "Não se trata apenas de uma «proposta de valor», mas de <span class='blue-color'>transcendê-la. O nosso objetivo: maximizar o envolvimento do seu público e reforçar a sua legitimidade no espaço público.</span>",
+        "comm_desc_4": "Não se trata apenas de uma \"proposta de valor\", mas de <span class='blue-color'>transcendê-la. O nosso objetivo: maximizar o envolvimento do seu público e reforçar a sua legitimidade no espaço público.</span>",
         "goal_text_1": "Su ambición es nuestro motor.",
         "goal_text_2": "Le escuchamos con precisión, analizamos o seu posicionamento e damos-lhe respostas concretas.",
         "goal_text_3": "Le ayudamos a convertirse en una referencia.",
@@ -277,7 +359,48 @@ const translations = {
         "legal_notice": "Aviso legal",
         "terms_of_sale": "Condiciones Generales de Venta",
         "privacy_policy": "Política de privacidad",
-        "copyright_extended": "ACTAPRISMA® es una marca registrada. © 2025. Todos los derechos reservados."
+        "copyright_extended": "ACTAPRISMA® es una marca registrada. © 2025. Todos los derechos reservados.",
+
+        // Terms (CGV) page
+        "terms_title": "CONDICIONES GENERALES DE VENTA",
+        "return_home": "Volver al inicio",
+        "terms_section_1": "1. Presentación",
+        "terms_section_2": "2. Productos y servicios ofrecidos",
+        "terms_section_3": "3. Pedido y pago",
+        "terms_section_4": "4. Ausencia de derecho de desistimiento",
+        "terms_section_5": "5. Política de reembolso",
+        "terms_section_6": "6. Propiedad intelectual y condiciones específicas de uso",
+        "terms_section_7": "7. Responsabilidad",
+        "terms_section_8": "8. Protección de datos personales",
+        "terms_section_9": "9. Ley aplicable y litigios",
+        "terms_section_10": "10. Promociones y evolución de precios",
+        
+        "terms_content_1": "Las presentes Condiciones Generales de Venta (CGV) rigen las ventas de productos digitales ofrecidos por ACTAPRISMA, empresa individual registrada con el número SIRET 90409160000026, con domicilio social en 6 chemin des petits plans, 06800 Cagnes-sur-Mer, Francia.",
+        "terms_email": "Correo electrónico de contacto: ",
+        
+        "terms_content_2": "ACTAPRISMA ofrece recursos digitales en forma de archivos PDF, formaciones en línea y contenidos exclusivos, especialmente el programa \"Startup Authority System\" que incluye:",
+        "terms_content_2_item1": "Un kit de recursos estratégicos para startups.",
+        "terms_content_2_item2": "Webinarios exclusivos.",
+        "terms_content_2_item3": "Una hora de consultoría gratuita.",
+        "terms_content_2_item4": "Un taller EN VIVO \"The Two Sentences Formula\".",
+        
+        "terms_content_3_item1": "Los pedidos se realizan directamente en el sitio web actaprisma.com.",
+        "terms_content_3_item2": "Los pagos son seguros y pueden realizarse a través de Stripe, PayPal y tarjeta bancaria.",
+        "terms_content_3_item3": "Una vez validado el pago, el comprador recibe acceso inmediato a los recursos digitales.",
+        
+        "terms_content_4": "De conformidad con el artículo L221-28 del Código de Consumo francés, el derecho de desistimiento no se aplica a los contenidos digitales proporcionados inmediatamente después de la compra y sin soporte material. Al validar la compra, el cliente renuncia expresamente a su derecho de desistimiento.",
+        
+        "terms_content_5": "No se efectuará ningún reembolso después de la compra de los productos digitales, ya que se consideran consumidos desde el momento en que se accede a ellos.",
+        
+        "terms_content_6": "Todos los contenidos ofrecidos por ACTAPRISMA están protegidos por derechos de autor y siguen siendo propiedad exclusiva del editor. Cualquier reproducción, modificación, reventa, uso compartido, distribución, difusión pública, adaptación o explotación comercial, bajo cualquier forma, está estrictamente prohibida sin la autorización previa por escrito de ACTAPRISMA. Cualquier violación será objeto de acciones legales.",
+        
+        "terms_content_7": "ACTAPRISMA no se hace responsable de los posibles daños relacionados con el uso de los productos digitales, especialmente en caso de error de interpretación o fracaso en la aplicación de las estrategias recomendadas.",
+        
+        "terms_content_8": "La información recogida durante la compra se trata de acuerdo con la Política de Privacidad disponible en el sitio web.",
+        
+        "terms_content_9": "Las presentes Condiciones Generales de Venta se rigen por la legislación francesa. En caso de litigio, se preferirá una solución amistosa. En caso de desacuerdo, los tribunales competentes serán los de Niza, Francia.",
+        
+        "terms_content_10": "La tarifa promocional de 97 euros es una oferta por tiempo limitado. Si el comprador no aprovecha la oferta inmediatamente, el precio del producto aumentará progresivamente en intervalos sucesivos del +30%: 126 euros, luego 163 euros, 212 euros, 276 euros y finalmente 358 euros. Cada aumento se anunciará por correo electrónico a los compradores potenciales. ACTAPRISMA se reserva el derecho de ajustar las tarifas y promociones a su discreción."
     },
     "pt": {
         // Navigation
@@ -294,18 +417,6 @@ const translations = {
         "subtitle_2": "Como o conseguimos?",
         "method_text": "Cultivamos a sua autenticidade e amplificamos a <span>perceção</span> do seu valor. Damos-lhe todas as chaves para <span>dominar a sua imagem.</span> <span class='highlight animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>Resultados</span> garantidos.",
         "diagnostic_btn": "Quer um diagnóstico para o seu projeto?",
-        
-        "vision_title": "VISÃO",
-        "comm_question": "Já ouviu a expressão «é preciso comunicar»?",
-        "comm_response": "Nós também. Mas... para quê?",
-        "comm_desc_1": "Comunicar é materializar a sua identidade, o seu conceito, a sua visão. É escolher os canais certos e amplificar a sua mensagem com precisão.",
-        "comm_desc_2": "Na ACTAPRISMA, ajudamo-lo a definir e estruturar a sua imagem para que mantenha o controlo e a expresse com impacto.",
-        "comm_desc_3": "Desenvolvemos o potencial da sua identidade para gerar um benefício emocional no seu público, criar um sentimento de pertença e identificação e, ao mesmo tempo, delimitar estrategicamente o seu campo de soberania e o seu território ideológico.",
-        "comm_desc_4": "Não se trata apenas de uma «proposta de valor», mas de <span class='blue-color'>transcendê-la. O nosso objetivo: maximizar o envolvimento do seu público e reforçar a sua legitimidade no espaço público.</span>",
-        "goal_text_1": "A sua ambição é o nosso motor.",
-        "goal_text_2": "Ouvimo-lo com precisão, analisamos o seu posicionamento e damos-lhe respostas concretas.",
-        "goal_text_3": "Ajudamo-lo a tornar-se uma referência.",
-        "image_mastery_btn": "Quer gerir melhor a sua imagem?",
         
         // Section Accompagnement
         "accompaniment_title": "CONSULTORIA",
@@ -370,7 +481,48 @@ const translations = {
         "legal_notice": "Aviso legal",
         "terms_of_sale": "Condições Gerais de Venda",
         "privacy_policy": "Política de privacidade",
-        "copyright_extended": "ACTAPRISMA® é uma marca registada. © 2025. Todos os direitos reservados."
+        "copyright_extended": "ACTAPRISMA® é uma marca registada. © 2025. Todos os direitos reservados.",
+
+        // Terms (CGV) page
+        "terms_title": "CONDIÇÕES GERAIS DE VENDA",
+        "return_home": "Voltar à página inicial",
+        "terms_section_1": "1. Apresentação",
+        "terms_section_2": "2. Produtos e serviços oferecidos",
+        "terms_section_3": "3. Pedido e pagamento",
+        "terms_section_4": "4. Ausência do direito de retratação",
+        "terms_section_5": "5. Política de reembolso",
+        "terms_section_6": "6. Propriedade intelectual e condições específicas de utilização",
+        "terms_section_7": "7. Responsabilidade",
+        "terms_section_8": "8. Proteção de dados pessoais",
+        "terms_section_9": "9. Lei aplicável e litígios",
+        "terms_section_10": "10. Promoções e evolução de preços",
+        
+        "terms_content_1": "As presentes Condições Gerais de Venda (CGV) regem as vendas de produtos digitais oferecidos pela ACTAPRISMA, empresa individual registada com o número SIRET 90409160000026, com sede em 6 chemin des petits plans, 06800 Cagnes-sur-Mer, França.",
+        "terms_email": "Email de contato: ",
+        
+        "terms_content_2": "ACTAPRISMA oferece recursos digitais sob a forma de ficheiros PDF, webinars exclusivos e conteúdos exclusivos, incluindo o programa \"Startup Authority System\" que inclui:",
+        "terms_content_2_item1": "Um kit de recursos estratégicos para startups.",
+        "terms_content_2_item2": "Webinarios exclusivos.",
+        "terms_content_2_item3": "Uma hora de consultoria gratuita.",
+        "terms_content_2_item4": "Um workshop ao vivo \"The Two Sentences Formula\".",
+        
+        "terms_content_3_item1": "Os pedidos são feitos diretamente no site actaprisma.com.",
+        "terms_content_3_item2": "Os pagamentos são seguros e podem ser feitos via Stripe, PayPal e cartão de crédito.",
+        "terms_content_3_item3": "Uma vez que o pagamento é validado, o comprador recebe imediatamente acesso aos recursos digitais.",
+        
+        "terms_content_4": "Conforme ao artigo L221-28 do Código de Consumo, o direito de retratação não se aplica a conteúdos digitais fornecidos imediatamente após a compra e sem suporte material. Ao validar a compra, o cliente renuncia expressamente ao seu direito de retratação.",
+        
+        "terms_content_5": "Nenhum reembolso será concedido após a compra de produtos digitais, eles sendo considerados consumidos no momento do acesso.",
+        
+        "terms_content_6": "Todos os conteúdos oferecidos por ACTAPRISMA estão protegidos por direitos de autor e permanecem a propriedade exclusiva do editor. Qualquer reprodução, modificação, venda, compartilhamento, distribuição, difusão pública, adaptação ou exploração comercial, sob qualquer forma, é estritamente proibida sem autorização escrita prévia da ACTAPRISMA. Qualquer violação será objeto de ações judiciais.",
+        
+        "terms_content_7": "A ACTAPRISMA não pode ser responsabilizada por quaisquer danos eventuais decorrentes do uso dos produtos digitais, incluindo em caso de erro de interpretação ou falha na aplicação das estratégias recomendadas.",
+        
+        "terms_content_8": "As informações recolhidas no momento da compra são processadas de acordo com a Política de Confidencialidade disponível no site.",
+        
+        "terms_content_9": "As presentes CGV são regidas pela lei francesa. Em caso de litígio, uma solução amistosa será privilegiada. Caso não haja acordo, os tribunais competentes serão os de Nice.",
+        
+        "terms_content_10": "O tarifário promocional de 97 euros é uma oferta de tempo limitado. Se o comprador não se beneficiar da oferta imediatamente, o preço do produto aumentará progressivamente por etapas sucessivas de +30 % : 126 euros, depois 163 euros, 212 euros, 276 euros, e finalmente 358 euros. Cada aumento será anunciado por e-mail aos potenciais compradores. A ACTAPRISMA reserva-se o direito de ajustar os preços e promoções à sua discreção."
     }
 };
 

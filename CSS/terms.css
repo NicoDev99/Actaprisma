@@ -1,0 +1,110 @@
+/* CSS spécifique pour la page des conditions générales de vente */
+
+.terms-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: "Gotham", sans-serif;
+}
+
+.terms-title {
+    color: #0F283D;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.terms-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.terms-section {
+    margin-bottom: 30px;
+}
+
+.terms-section h2 {
+    color: #0F283D;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.terms-section p, .terms-section li {
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.terms-section ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.terms-section a {
+    color: #0F283D;
+    text-decoration: underline;
+}
+
+.terms-section a:hover {
+    color: #3498db;
+}
+
+.back-home {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    color: white;
+    background-color: #0F283D;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.back-button svg {
+    margin-left: 10px;
+}
+
+.back-button:hover {
+    background-color: #1a4c76;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .terms-title {
+        font-size: 28px;
+    }
+    
+    .terms-section h2 {
+        font-size: 20px;
+    }
+    
+    .terms-section p, .terms-section li {
+        font-size: 14px;
+    }
+    
+    .terms-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .terms-title {
+        font-size: 24px;
+    }
+    
+    .terms-container {
+        margin: 30px auto;
+    }
+} 
