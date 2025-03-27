@@ -22,7 +22,7 @@ const translations = {
         "comm_desc_1": "Communiquer, c'est matérialiser publiquement son identité / son concept / son idée, choisir les moyens d'expression et d'amplification adaptés à son positionnement.",
         "comm_desc_2": "Chez ACTAPRISMA, nous vous aidons à définir le cadre de votre image pour en conserver le contrôle et pour l'exprimer avec panache.",
         "comm_desc_3": "Nous développons le potentiel de votre identité pour créer un bénéfice émotionnel chez vos cibles, un sentiment d'appartenance et d'identification, tout en délimitant habilement votre champs de souveraineté et votre territoire idéologique.",
-        "comm_desc_4": "Pour faire simple, nous vous permettons de <span class='blue-color'>transcender votre simple « proposition de valeur » pour augmenter l'engagement de vos cibles et le respect des publics élargis.</span>",
+        "comm_desc_4": "Pour faire simple, nous vous permettons de <span class='blue-color'>transcender votre simple « proposition de valeur » pour augmenter l'engagement de vos cibles et le respect des publics élargis.",
         "goal_text_1": "Votre objectif est notre moteur.",
         "goal_text_2": "Nous sommes à l'écoute de vos besoins et précis dans nos réponses.",
         "goal_text_3": "Nous comprenons qui vous êtes et vous servons de tremplin pour vous faire rayonner.",
@@ -132,7 +132,43 @@ const translations = {
         
         "terms_content_9": "Les présentes CGV sont régies par le droit français. En cas de litige, une solution amiable sera privilégiée. À défaut d'accord, les tribunaux compétents seront ceux de Nice.",
         
-        "terms_content_10": "Le tarif promotionnel de 97 euros est une offre à durée limitée. Si l'acheteur ne profite pas de l'offre immédiatement, le prix du produit augmentera progressivement par paliers successifs de +30 % : 126 euros, puis 163 euros, 212 euros, 276 euros, et enfin 358 euros. Chaque augmentation sera annoncée par email aux acheteurs potentiels. ACTAPRISMA se réserve le droit d'ajuster les tarifs et promotions à sa discrétion."
+        "terms_content_10": "Le tarif promotionnel de 97 euros est une offre à durée limitée. Si l'acheteur ne profite pas de l'offre immédiatement, le prix du produit augmentera progressivement par paliers successifs de +30 % : 126 euros, puis 163 euros, 212 euros, 276 euros, et enfin 358 euros. Chaque augmentation sera annoncée par email aux acheteurs potentiels. ACTAPRISMA se réserve le droit d'ajuster les tarifs et promotions à sa discrétion.",
+
+        // Legal page
+        "legal_title": "MENTIONS LÉGALES",
+        "legal_section_1": "1. Informations Générales",
+        "legal_content_1": "Le site internet ACTAPRISMA est édité par ACTAPRISMA, entreprise individuelle immatriculée sous le SIRET 90409160000026, dont le siège social est situé au 6 chemin des petits plans, 06800 Cagnes-sur-Mer, France.",
+        "legal_director": "Directeur de la publication : ",
+        "legal_director_name": "Manon GAZIELLO",
+        "legal_contact": "Email de contact : ",
+
+        "legal_section_2": "2. Hébergement",
+        "legal_content_2": "Le site ACTAPRISMA est hébergé par o2switch, société à responsabilité limitée (SARL) au capital de 100 000 euros, immatriculée sous le SIRET 510 909 80700024, dont le siège social est situé à :",
+        "legal_host_name": "o2switch",
+        "legal_host_address": "222 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, France",
+        "legal_host_email": "Email de contact : support@o2switch.fr",
+        "legal_host_phone": "Téléphone : 04 44 44 60 40",
+        "legal_host_desc": "L'hébergeur assure la maintenance et la sécurité des serveurs nécessaires à l'exploitation du site ACTAPRISMA.",
+
+        "legal_section_3": "3. Propriété intellectuelle",
+        "legal_content_3": "L'ensemble du contenu présent sur le site ACTAPRISMA, incluant de manière non limitative les textes, graphismes, logos, images, vidéos et icônes, est protégé au titre du droit d'auteur et de la propriété intellectuelle. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site est interdite, sauf autorisation écrite préalable d'ACTAPRISMA.",
+
+        "legal_section_4": "4. Responsabilités",
+        "legal_content_4_1": "ACTAPRISMA s'efforce de fournir des informations aussi précises que possible sur son site internet. Toutefois, l'éditeur ne pourra être tenu responsable des omissions, des inexactitudes et des carences dans la mise à jour.",
+        "legal_content_4_2": "Le site ACTAPRISMA est accessible 24h/24 et 7j/7, sauf interruption pour maintenance ou problème technique. L'éditeur ne pourra être tenu responsable des interruptions et défaillances liées à Internet, aux services d'hébergement ou à tout événement hors de son contrôle.",
+
+        "legal_section_5": "5. Données personnelles et Cookies",
+        "legal_content_5_1": "Le site ACTAPRISMA collecte certaines données personnelles via :",
+        "legal_content_5_2": "• Le formulaire de contact (Nom, Prénom, Email, Nom de l'entreprise, Mission/Poste, téléphone et message optionnels)",
+        "legal_content_5_3": "• L'accès aux ressources gratuites et payantes (Nom, Prénom, Email, Nom de l'entreprise, Mission/Poste)",
+        "legal_content_5_4": "• Des outils d'analyse et de suivi (Google Analytics, Microsoft Clarity, Facebook Pixel, et LinkedIn Pixel)",
+        "legal_content_5_5": "L'utilisateur peut consulter la Politique de Confidentialité pour plus de détails sur l'utilisation des données et la gestion des cookies.",
+
+        "legal_section_6": "6. Liens hypertextes",
+        "legal_content_6": "Le site ACTAPRISMA peut contenir des liens vers des sites externes. L'éditeur ne saurait être tenu responsable du contenu de ces sites tiers ni des conséquences de leur consultation.",
+
+        "legal_section_7": "7. Droit applicable",
+        "legal_content_7": "Tout litige en relation avec l'utilisation du site ACTAPRISMA est soumis au droit français. En cas de litige, les tribunaux français seront seuls compétents."
     },
     "en": {
         // Navigation
@@ -258,15 +294,51 @@ const translations = {
         
         "terms_content_5": "No refund will be made after the purchase of digital products, as they are considered consumed as soon as they are accessed.",
         
-        "terms_content_6": "All content offered by ACTAPRISMA is protected by copyright and remains the exclusive property of the publisher. Any reproduction, modification, resale, sharing, distribution, public dissemination, adaptation, or commercial exploitation, in any form whatsoever, is strictly prohibited without prior written authorization from ACTAPRISMA. Any violation will be subject to legal proceedings.",
+        "terms_content_6": "Todos los contenidos ofrecidos por ACTAPRISMA están protegidos por derechos de autor y permanecen la propiedad exclusiva del editor. Cualquier reproducción, modificación, venta, compartimiento, distribución, difusión pública, adaptación o explotación comercial, bajo cualquier forma, está estrictamente prohibido sin autorización escrita prévia de ACTAPRISMA. Cualquier violación será objeto de acciones judiciales.",
         
-        "terms_content_7": "ACTAPRISMA cannot be held responsible for any damages related to the use of digital products, particularly in case of misinterpretation or failure in the application of the recommended strategies.",
+        "terms_content_7": "ACTAPRISMA no puede ser responsable de daños eventuales relacionados con el uso de productos digitales, especialmente en caso de malentendido o falla en la aplicación de las estrategias recomendadas.",
         
-        "terms_content_8": "Information collected during purchase is processed in accordance with the Privacy Policy available on the website.",
+        "terms_content_8": "Las informaciones recopiladas en el momento de la compra se procesan de acuerdo con la Política de Confidencialidad disponible en el sitio.",
         
         "terms_content_9": "These Terms and Conditions are governed by French law. In case of dispute, an amicable solution will be preferred. Failing agreement, the competent courts will be those of Nice, France.",
         
-        "terms_content_10": "The promotional rate of 97 euros is a limited-time offer. If the buyer does not take advantage of the offer immediately, the product price will increase progressively in successive steps of +30%: 126 euros, then 163 euros, 212 euros, 276 euros, and finally 358 euros. Each increase will be announced by email to potential buyers. ACTAPRISMA reserves the right to adjust rates and promotions at its discretion."
+        "terms_content_10": "The promotional rate of 97 euros is a limited-time offer. If the buyer does not take advantage of the offer immediately, the product price will increase progressively in successive steps of +30%: 126 euros, then 163 euros, 212 euros, 276 euros, and finally 358 euros. Each increase will be announced by email to potential buyers. ACTAPRISMA reserves the right to adjust rates and promotions at its discretion.",
+
+        // Legal page
+        "legal_title": "LEGAL NOTICE",
+        "legal_section_1": "1. General Information",
+        "legal_content_1": "The ACTAPRISMA website is published by ACTAPRISMA, a sole proprietorship registered under SIRET number 90409160000026, with its registered office at 6 chemin des petits plans, 06800 Cagnes-sur-Mer, France.",
+        "legal_director": "Publication Director: ",
+        "legal_director_name": "Manon GAZIELLO",
+        "legal_contact": "Contact email: ",
+
+        "legal_section_2": "2. Hosting",
+        "legal_content_2": "The ACTAPRISMA site is hosted by o2switch, a limited liability company (SARL) with a capital of 100,000 euros, registered under SIRET 510 909 80700024, with its registered office at:",
+        "legal_host_name": "o2switch",
+        "legal_host_address": "222 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, France",
+        "legal_host_email": "Email de contact : support@o2switch.fr",
+        "legal_host_phone": "Phone: 04 44 44 60 40",
+        "legal_host_desc": "The host ensures the maintenance and security of the servers necessary for the operation of the ACTAPRISMA site.",
+
+        "legal_section_3": "3. Intellectual Property",
+        "legal_content_3": "All content on the ACTAPRISMA site, including but not limited to text, graphics, logos, images, videos, and icons, is protected under copyright and intellectual property law. Any reproduction, representation, modification, publication, adaptation of all or part of the site's elements is prohibited without prior written authorization from ACTAPRISMA.",
+
+        "legal_section_4": "4. Liabilities",
+        "legal_content_4_1": "ACTAPRISMA strives to provide information as accurate as possible on its website. However, the publisher cannot be held responsible for omissions, inaccuracies, and deficiencies in updates.",
+        "legal_content_4_2": "The ACTAPRISMA site is accessible 24/7, except during maintenance or technical issues. The publisher cannot be held responsible for interruptions and failures related to the Internet, hosting services, or any event beyond its control.",
+
+        "legal_section_5": "5. Personal Data and Cookies",
+        "legal_content_5_1": "The ACTAPRISMA site collects certain personal data via:",
+        "legal_content_5_2": "• The contact form (Last Name, First Name, Email, Company Name, Mission/Position, optional phone and message)",
+        "legal_content_5_3": "• Access to free and paid resources (Last Name, First Name, Email, Company Name, Mission/Position)",
+        "legal_content_5_4": "• Analysis and tracking tools (Google Analytics, Microsoft Clarity, Facebook Pixel, and LinkedIn Pixel)",
+        "legal_content_5_5": "Users can consult the Privacy Policy for more details on data use and cookie management.",
+
+        "legal_section_6": "6. Hyperlinks",
+        "legal_content_6": "The ACTAPRISMA site may contain links to external sites. The publisher cannot be held responsible for the content of these third-party sites or the consequences of visiting them.",
+
+        "legal_section_7": "7. Applicable Law",
+        "legal_content_7": "Any dispute related to the use of the ACTAPRISMA site is subject to French law. In case of dispute, French courts will have exclusive jurisdiction."
     },
     "es": {
         // Navigation
@@ -290,11 +362,11 @@ const translations = {
         "comm_desc_1": "Comunicar es materializar su identidad, su concepto, su visión. Es elegir los canales adecuados y amplificar su mensaje con precisión.",
         "comm_desc_2": "En ACTAPRISMA, le ayudamos a definir y estructurar su imagen para que conserve el control y la exprese con impacto.",
         "comm_desc_3": "Desarrollamos el potencial de su identidad para generar un beneficio emocional en su audiencia, crear un sentimiento de pertenencia e identificación y, al mismo tiempo, delimitar estratégicamente su campo de soberanía y su territorio ideológico.",
-        "comm_desc_4": "Não se trata apenas de uma \"proposta de valor\", mas de <span class='blue-color'>transcendê-la. O nosso objetivo: maximizar o envolvimento do seu público e reforçar a sua legitimidade no espaço público.</span>",
+        "comm_desc_4": "Simplemente, le ayudamos a <span class='blue-color'>ir más allá de una simple \"propuesta de valor\" para maximizar el compromiso de su audiencia y reforzar su legitimidad en el espacio público.</span>",
         "goal_text_1": "Su ambición es nuestro motor.",
-        "goal_text_2": "Le escuchamos con precisión, analizamos o seu posicionamento e damos-lhe respostas concretas.",
+        "goal_text_2": "Le escuchamos con precisión, analizamos su posicionamiento y le damos respuestas concretas.",
         "goal_text_3": "Le ayudamos a convertirse en una referencia.",
-        "image_mastery_btn": "¿Quiere gestionar melhor a sua imagem?",
+        "image_mastery_btn": "¿Quiere gestionar mejor su imagen?",
         
         // Section Accompagnement
         "accompaniment_title": "CONSULTORÍA",
@@ -302,7 +374,7 @@ const translations = {
         
         // Cartes de services
         "political_title": "ESFERA POLÍTICA",
-        "political_desc": "Estamos a su disposición para <span class='bold'>analizar su posicionamiento actual, sus áreas de mejora</span> en función de la opinión pública y los mecanismos que lhe permitirão alcançar plenamente os seus objetivos.",
+        "political_desc": "Estamos a su disposición para <span class='bold'>analizar su posicionamiento actual, sus áreas de mejora</span> en función de la opinión pública y los mecanismos que le permitirán alcanzar plenamente sus objetivos.",
         "political_btn": "¡Hablemos!",
         
         "startups_title": "STARTUPS",
@@ -310,38 +382,38 @@ const translations = {
         "startups_btn": "¡Impulse su proyecto ahora mismo con sus herramientas gratuitas!",
         
         "sports_title": "ORGANIZACIONES<br />DEPORTIVAS",
-        "sports_desc": "<p class='bold'>¿Quiere convertir su organización en una marca fuerte, capaz de atraer seguidores fieles y socios estratégicos?</p><p>Le acompañamos en el crecimiento exponencial de su entidad y en la consolidación de su liderazgo, potenciando aquello que la convierte en una fuerza de evolución.</p>",
+        "sports_desc": "<p class='bold'>¿Quiere transformar su organización en una marca fuerte, capaz de atraer seguidores fieles y socios estratégicos?</p><p>Le acompañamos en el crecimiento exponencial de su entidad y en la consolidación de su liderazgo, potenciando aquello que la convierte en una fuerza de evolución.</p>",
         "sports_btn": "¡Hablemos!",
         
         // Section Défi
         "challenge_header": "Sea cual sea el momento, le ayudamos a afrontar sus<br>desafíos de <span class='bold'>comunicación</span>",
         "proactive_title": "Comunicación proactiva",
-        "proactive_list": ["Capte la atención", "Despierte el interés", "Genere adhesión", "Aumente el compromiso"],
+        "proactive_list": ["Capte la atención", "Desperte el interés", "Genere adhesión", "Aumente el compromiso"],
         "crisis_title": "Comunicación de crisis",
-        "crisis_list": ["Controle el relato", "Gestione los impactos", "Restaure la confianza", "Proteja su reputación"],
+        "crisis_list": ["Controle la narrativa", "Gestione los impactos", "Restaure la confianza", "Proteja su reputación"],
         
         // Section À propos
-        "about_title": "SOBRE NÓS",
+        "about_title": "QUIÉNES SOMOS",
         "intro_title": "¿Qué mejor introducción que el origen de nuestro nombre?",
-        "intro_text": "ACTAPRISMA es la fusión de dos conceptos clave:",
+        "intro_text": "ACTAPRISMA es la fusión de dos conceptos:",
         "concept_1": "<span class='arrow'>►</span> El del prisma de Newton, <span class='highlight blue bold'>prisma</span> en latín, aquel que revela y hace perceptible una verdad, <span class='highlight blue animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>preserva la autenticidad y extrae lo sublime.</span>",
         "with_text": "con",
-        "concept_2": "<span class='arrow'>►</span> La difusión mediática y multicanal, representada por los <span class='highlight blue bold'>acta</span> diurna, el ancestro de los periódicos y la primera fuente de información escrita a gran escala. Una ilustración de <span class='highlight blue animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>cómo la historia recuerda la suya.</span>",
+        "concept_2": "<span class='arrow'>►</span> La difusión mediática y multicanal, representada por los <span class='highlight blue bold'>acta</span> diurna, el ancestro de los periódicos y la primera fuente de información escrita a gran escala. Una ilustración de <span class='highlight blue animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>cómo la historia retiene la suya.</span>",
         "quote": "Su imagen es un activo—un recurso estratégico que debe aprovechar para alcanzar sus ambiciones.",
         "founder": "Manon Gaziello,",
         "founder_title": "fundadora de",
         "about_desc_1": "ACTAPRISMA es una estructura creada para usted y sus proyectos, diseñada para adaptarse a sus desafíos y resolver sus problemáticas de comunicación.",
-        "about_desc_2": "Soy licenciada en Relaciones Públicas y Lobbying, con un certificado en Negociación Internacional (European Legislative and Policy Process) y ganadora del Premio Emmanuele Gazzo en Sciences Po Aix, France.",
-        "about_desc_3": "Antes de fundar ACTAPRISMA, fui directora de comunicación y relaciones públicas en una startup emergente del sector tech y trabajé en gabinetes políticos, agencias y clubes deportivos profesionales.",
-        "about_desc_4": "En términos concretos, esto significa que he estudiado en profundidad las estrategias que <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>convierten la imagen en un verdadero motor de rendimiento.</span>",
-        "about_desc_5": "Cada actor posee una identidad única y compleja. ACTAPRISMA le ofrece <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>soluciones estratégicas</span> para dar visibilidad a los aspectos clave de esa identidad y garantizar su éxito.",
-        "social_text": "Ponte en contacto: Medium - LinkedIn",
+        "about_desc_2": "Soy licenciada en Relaciones Públicas y Lobbying, con un certificado en Negociación Internacional (European Legislative and Policy Process) y fui distinguida con el Premio Emmanuele Gazzo por Sciences Po Aix, Francia.",
+        "about_desc_3": "Antes de fundar ACTAPRISMA, fui Directora de Comunicación y Relaciones Públicas en una startup tecnológica emergente y acumulé experiencia en gabinetes políticos, agencias y clubes deportivos profesionales.",
+        "about_desc_4": "En la práctica, esto significa que he estudiado en profundidad las técnicas que <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>posicionan la imagen como un motor esencial de rendimiento e impacto.</span>",
+        "about_desc_5": "Cada stakeholder posee una identidad compleja. ACTAPRISMA ofrece <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>soluciones estratégicas eficaces</span> para destacar los aspectos más valiosos de esa identidad y garantizar su éxito.",
+        "social_text": "Conéctese conmigo en redes sociales: Medium - LinkedIn",
         
         // Section Contact
         "contact_title": "CONTACTO",
         "project_placeholder": "* Su proyecto es:",
         "organization_placeholder": "* Nombre de la organización:",
-        "role_placeholder": "* Su rol en la organización:",
+        "role_placeholder": "* Su cargo en la organización:",
         "lastname_placeholder": "* Su apellido:",
         "firstname_placeholder": "* Su nombre:",
         "email_placeholder": "* Su correo electrónico:",
@@ -349,10 +421,10 @@ const translations = {
         "message_placeholder": "¿Algún detalle para compartir?",
         "required_fields": "* Campos obligatorios",
         "submit_button": "Enviar",
-        "form_success": "Su mensaje ha sido enviado con éxito. Le responderemos lo antes posible.",
-        "form_error": "Se ha producido un error al enviar el mensaje. Por favor, inténtelo de nuevo.",
+        "form_success": "Su mensaje ha sido enviado con éxito. Responderemos lo antes posible.",
+        "form_error": "Ocurrió un error al enviar el mensaje. Por favor, inténtelo de nuevo.",
         "field_required": "Este campo es obligatorio",
-        "email_invalid": "Por favor, introduce una dirección de correo electrónico válida",
+        "email_invalid": "Por favor, introduzca una dirección de correo electrónico válida",
         
         // Footer
         "copyright": "© 2025 Actaprisma. Todos los derechos reservados.",
@@ -363,7 +435,7 @@ const translations = {
 
         // Terms (CGV) page
         "terms_title": "CONDICIONES GENERALES DE VENTA",
-        "return_home": "Volver al inicio",
+        "return_home": "Volver a la página inicial",
         "terms_section_1": "1. Presentación",
         "terms_section_2": "2. Productos y servicios ofrecidos",
         "terms_section_3": "3. Pedido y pago",
@@ -375,32 +447,68 @@ const translations = {
         "terms_section_9": "9. Ley aplicable y litigios",
         "terms_section_10": "10. Promociones y evolución de precios",
         
-        "terms_content_1": "Las presentes Condiciones Generales de Venta (CGV) rigen las ventas de productos digitales ofrecidos por ACTAPRISMA, empresa individual registrada con el número SIRET 90409160000026, con domicilio social en 6 chemin des petits plans, 06800 Cagnes-sur-Mer, Francia.",
-        "terms_email": "Correo electrónico de contacto: ",
+        "terms_content_1": "Las presentes Condiciones Generales de Venta (CGV) rigen las ventas de productos digitales ofrecidos por ACTAPRISMA, empresa individual registrada con el número SIRET 90409160000026, con sede en 6 chemin des petits plans, 06800 Cagnes-sur-Mer, Francia.",
+        "terms_email": "Email de contacto: ",
         
-        "terms_content_2": "ACTAPRISMA ofrece recursos digitales en forma de archivos PDF, formaciones en línea y contenidos exclusivos, especialmente el programa \"Startup Authority System\" que incluye:",
+        "terms_content_2": "ACTAPRISMA ofrece recursos digitales en forma de archivos PDF, webinars exclusivos y contenidos exclusivos, incluyendo el programa \"Startup Authority System\" que incluye:",
         "terms_content_2_item1": "Un kit de recursos estratégicos para startups.",
         "terms_content_2_item2": "Webinarios exclusivos.",
         "terms_content_2_item3": "Una hora de consultoría gratuita.",
-        "terms_content_2_item4": "Un taller EN VIVO \"The Two Sentences Formula\".",
+        "terms_content_2_item4": "Un taller en vivo \"The Two Sentences Formula\".",
         
         "terms_content_3_item1": "Los pedidos se realizan directamente en el sitio web actaprisma.com.",
-        "terms_content_3_item2": "Los pagos son seguros y pueden realizarse a través de Stripe, PayPal y tarjeta bancaria.",
+        "terms_content_3_item2": "Los pagos son seguros y pueden realizarse a través de Stripe, PayPal y tarjeta de crédito.",
         "terms_content_3_item3": "Una vez validado el pago, el comprador recibe acceso inmediato a los recursos digitales.",
         
-        "terms_content_4": "De conformidad con el artículo L221-28 del Código de Consumo francés, el derecho de desistimiento no se aplica a los contenidos digitales proporcionados inmediatamente después de la compra y sin soporte material. Al validar la compra, el cliente renuncia expresamente a su derecho de desistimiento.",
+        "terms_content_4": "De acuerdo con el artículo L221-28 del Código de Consumo, el derecho de desistimiento no se aplica a contenidos digitales proporcionados inmediatamente después de la compra y sin soporte material. Al validar la compra, el cliente renuncia expresamente a su derecho de desistimiento.",
         
-        "terms_content_5": "No se efectuará ningún reembolso después de la compra de los productos digitales, ya que se consideran consumidos desde el momento en que se accede a ellos.",
+        "terms_content_5": "No se concederá ningún reembolso tras la compra de productos digitales, considerándose consumidos en el momento del acceso.",
         
-        "terms_content_6": "Todos los contenidos ofrecidos por ACTAPRISMA están protegidos por derechos de autor y siguen siendo propiedad exclusiva del editor. Cualquier reproducción, modificación, reventa, uso compartido, distribución, difusión pública, adaptación o explotación comercial, bajo cualquier forma, está estrictamente prohibida sin la autorización previa por escrito de ACTAPRISMA. Cualquier violación será objeto de acciones legales.",
+        "terms_content_6": "Todos los contenidos ofrecidos por ACTAPRISMA están protegidos por derechos de autor y permanecen como propiedad exclusiva del editor. Cualquier reproducción, modificación, venta, compartición, distribución, difusión pública, adaptación o explotación comercial, bajo cualquier forma, está estrictamente prohibida sin autorización escrita previa de ACTAPRISMA. Cualquier violación será objeto de acciones judiciales.",
         
-        "terms_content_7": "ACTAPRISMA no se hace responsable de los posibles daños relacionados con el uso de los productos digitales, especialmente en caso de error de interpretación o fracaso en la aplicación de las estrategias recomendadas.",
+        "terms_content_7": "ACTAPRISMA no puede ser responsable de eventuales daños relacionados con el uso de los productos digitales, especialmente en caso de error de interpretación o fallo en la aplicación de las estrategias recomendadas.",
         
-        "terms_content_8": "La información recogida durante la compra se trata de acuerdo con la Política de Privacidad disponible en el sitio web.",
+        "terms_content_8": "La información recopilada en el momento de la compra se procesa de acuerdo con la Política de Confidencialidad disponible en el sitio.",
         
-        "terms_content_9": "Las presentes Condiciones Generales de Venta se rigen por la legislación francesa. En caso de litigio, se preferirá una solución amistosa. En caso de desacuerdo, los tribunales competentes serán los de Niza, Francia.",
+        "terms_content_9": "Las presentes CGV se rigen por la ley francesa. En caso de litigio, se preferirá una solución amistosa. En caso de desacuerdo, los tribunales competentes serán los de Niza.",
         
-        "terms_content_10": "La tarifa promocional de 97 euros es una oferta por tiempo limitado. Si el comprador no aprovecha la oferta inmediatamente, el precio del producto aumentará progresivamente en intervalos sucesivos del +30%: 126 euros, luego 163 euros, 212 euros, 276 euros y finalmente 358 euros. Cada aumento se anunciará por correo electrónico a los compradores potenciales. ACTAPRISMA se reserva el derecho de ajustar las tarifas y promociones a su discreción."
+        "terms_content_10": "La tarifa promocional de 97 euros es una oferta por tiempo limitado. Si el comprador no aprovecha la oferta inmediatamente, el precio del producto aumentará progresivamente en etapas sucesivas de +30%: 126 euros, luego 163 euros, 212 euros, 276 euros y finalmente 358 euros. Cada aumento será anunciado por correo electrónico a los potenciales compradores. ACTAPRISMA se reserva el derecho de ajustar las tarifas y promociones a su discreción.",
+
+        // Legal page
+        "legal_title": "AVISO LEGAL",
+        "legal_section_1": "1. Información General",
+        "legal_content_1": "El sitio web ACTAPRISMA es editado por ACTAPRISMA, empresa individual registrada con el número SIRET 90409160000026, con sede en 6 chemin des petits plans, 06800 Cagnes-sur-Mer, Francia.",
+        "legal_director": "Director de publicación: ",
+        "legal_director_name": "Manon GAZIELLO",
+        "legal_contact": "Email de contacto: ",
+
+        "legal_section_2": "2. Alojamiento",
+        "legal_content_2": "El sitio ACTAPRISMA está alojado por o2switch, sociedad de responsabilidad limitada (SARL) con un capital de 100.000 euros, registrada bajo el SIRET 510 909 80700024, con sede en:",
+        "legal_host_name": "o2switch",
+        "legal_host_address": "222 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, Francia",
+        "legal_host_email": "Email de contacto: support@o2switch.fr",
+        "legal_host_phone": "Teléfono: 04 44 44 60 40",
+        "legal_host_desc": "El proveedor de alojamiento garantiza el mantenimiento y la seguridad de los servidores necesarios para el funcionamiento del sitio ACTAPRISMA.",
+
+        "legal_section_3": "3. Propiedad Intelectual",
+        "legal_content_3": "Todo el contenido presente en el sitio ACTAPRISMA, incluyendo pero no limitado a textos, gráficos, logotipos, imágenes, videos e iconos, está protegido por derechos de autor y propiedad intelectual. Cualquier reproducción, representación, modificación, publicación o adaptación de todo o parte de los elementos del sitio está prohibida sin autorización previa por escrito de ACTAPRISMA.",
+
+        "legal_section_4": "4. Responsabilidades",
+        "legal_content_4_1": "ACTAPRISMA se esfuerza por proporcionar información lo más precisa posible en su sitio web. Sin embargo, el editor no podrá ser considerado responsable de omisiones, inexactitudes y deficiencias en la actualización.",
+        "legal_content_4_2": "El sitio ACTAPRISMA está accesible las 24 horas del día, los 7 días de la semana, excepto durante interrupciones por mantenimiento o problemas técnicos. El editor no podrá ser considerado responsable de interrupciones y fallos relacionados con Internet, servicios de alojamiento o cualquier evento fuera de su control.",
+
+        "legal_section_5": "5. Datos Personales y Cookies",
+        "legal_content_5_1": "El sitio ACTAPRISMA recopila ciertos datos personales a través de:",
+        "legal_content_5_2": "• El formulario de contacto (Apellido, Nombre, Email, Nombre de la empresa, Misión/Cargo, teléfono y mensaje opcionales)",
+        "legal_content_5_3": "• El acceso a recursos gratuitos y de pago (Apellido, Nombre, Email, Nombre de la empresa, Misión/Cargo)",
+        "legal_content_5_4": "• Herramientas de análisis y seguimiento (Google Analytics, Microsoft Clarity, Facebook Pixel y LinkedIn Pixel)",
+        "legal_content_5_5": "El usuario puede consultar la Política de Privacidad para más detalles sobre el uso de los datos y la gestión de cookies.",
+
+        "legal_section_6": "6. Enlaces de Hipertexto",
+        "legal_content_6": "El sitio ACTAPRISMA puede contener enlaces a sitios externos. El editor no se hace responsable del contenido de estos sitios de terceros ni de las consecuencias de su consulta.",
+
+        "legal_section_7": "7. Ley Aplicable",
+        "legal_content_7": "Cualquier litigio relacionado con el uso del sitio ACTAPRISMA está sujeto a la legislación francesa. En caso de litigio, los tribunales franceses serán los únicos competentes."
     },
     "pt": {
         // Navigation
@@ -436,7 +544,7 @@ const translations = {
         "sports_btn": "Fale connosco!",
         
         // Section Défi
-        "challenge_header": "Independentemente do momento, ajudamo-lo a enfrentar os<br>seus desafios de <span class='bold'>comunicação</span>",
+        "challenge_header": "Independentemente do momento, ajudamo-lo a enfrentar os<br>seus desafíos de <span class='bold'>comunicação</span>",
         "proactive_title": "Comunicação proativa",
         "proactive_list": ["Capte a atenção", "Desperte o interesse", "Gere adesão", "Aumente o envolvimento"],
         "crisis_title": "Comunicação de crise",
@@ -489,7 +597,7 @@ const translations = {
         "terms_section_1": "1. Apresentação",
         "terms_section_2": "2. Produtos e serviços oferecidos",
         "terms_section_3": "3. Pedido e pagamento",
-        "terms_section_4": "4. Ausência do direito de retratação",
+        "terms_section_4": "4. Ausência de direito de retratação",
         "terms_section_5": "5. Política de reembolso",
         "terms_section_6": "6. Propriedade intelectual e condições específicas de utilização",
         "terms_section_7": "7. Responsabilidade",
@@ -522,11 +630,47 @@ const translations = {
         
         "terms_content_9": "As presentes CGV são regidas pela lei francesa. Em caso de litígio, uma solução amistosa será privilegiada. Caso não haja acordo, os tribunais competentes serão os de Nice.",
         
-        "terms_content_10": "O tarifário promocional de 97 euros é uma oferta de tempo limitado. Se o comprador não se beneficiar da oferta imediatamente, o preço do produto aumentará progressivamente por etapas sucessivas de +30 % : 126 euros, depois 163 euros, 212 euros, 276 euros, e finalmente 358 euros. Cada aumento será anunciado por e-mail aos potenciais compradores. A ACTAPRISMA reserva-se o direito de ajustar os preços e promoções à sua discreção."
+        "terms_content_10": "O tarifário promocional de 97 euros é uma oferta de tempo limitado. Se o comprador não se beneficiar da oferta imediatamente, o preço do produto aumentará progressivamente por etapas sucessivas de +30 % : 126 euros, depois 163 euros, 212 euros, 276 euros, e finalmente 358 euros. Cada aumento será anunciado por e-mail aos potenciais compradores. A ACTAPRISMA reserva-se o direito de ajustar os preços e promoções à sua discreção.",
+
+        // Legal page
+        "legal_title": "AVISO LEGAL",
+        "legal_section_1": "1. Informações Gerais",
+        "legal_content_1": "O site ACTAPRISMA é editado pela ACTAPRISMA, empresa individual registrada com o número SIRET 90409160000026, com sede em 6 chemin des petits plans, 06800 Cagnes-sur-Mer, França.",
+        "legal_director": "Diretor de publicação: ",
+        "legal_director_name": "Manon GAZIELLO",
+        "legal_contact": "Email de contato: ",
+
+        "legal_section_2": "2. Hospedagem",
+        "legal_content_2": "O site ACTAPRISMA é hospedado pela o2switch, sociedade de responsabilidade limitada (SARL) com capital de 100.000 euros, registrada sob o SIRET 510 909 80700024, com sede em:",
+        "legal_host_name": "o2switch",
+        "legal_host_address": "222 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, França",
+        "legal_host_email": "Email de contato: support@o2switch.fr",
+        "legal_host_phone": "Telefone: 04 44 44 60 40",
+        "legal_host_desc": "O provedor de hospedagem garante a manutenção e segurança dos servidores necessários para o funcionamento do site ACTAPRISMA.",
+
+        "legal_section_3": "3. Propriedade Intelectual",
+        "legal_content_3": "Todo o conteúdo presente no site ACTAPRISMA, incluindo, mas não limitado a textos, gráficos, logotipos, imagens, vídeos e ícones, está protegido por direitos autorais e propriedade intelectual. Qualquer reprodução, representação, modificação, publicação ou adaptação de todo ou parte dos elementos do site é proibida, sem autorização prévia por escrito da ACTAPRISMA.",
+
+        "legal_section_4": "4. Responsabilidades",
+        "legal_content_4_1": "ACTAPRISMA se esforça para fornecer informações o mais precisas possíveis em seu site. No entanto, o editor não poderá ser responsabilizado por omissões, imprecisões e falhas na atualização.",
+        "legal_content_4_2": "O site ACTAPRISMA está acessível 24 horas por dia, 7 dias por semana, exceto por interrupções para manutenção ou problemas técnicos. O editor não poderá ser responsabilizado por interrupções e falhas relacionadas à Internet, serviços de hospedagem ou qualquer evento fora de seu controle.",
+
+        "legal_section_5": "5. Dados Pessoais e Cookies",
+        "legal_content_5_1": "O site ACTAPRISMA coleta certos dados pessoais através de:",
+        "legal_content_5_2": "• O formulário de contato (Sobrenome, Nome, Email, Nome da empresa, Missão/Cargo, telefone e mensagem opcionais)",
+        "legal_content_5_3": "• O acesso a recursos gratuitos e pagos (Sobrenome, Nome, Email, Nome da empresa, Missão/Cargo)",
+        "legal_content_5_4": "• Ferramentas de análise e rastreamento (Google Analytics, Microsoft Clarity, Facebook Pixel e LinkedIn Pixel)",
+        "legal_content_5_5": "O usuário pode consultar a Política de Privacidade para mais detalhes sobre o uso dos dados e a gestão de cookies.",
+
+        "legal_section_6": "6. Links de Hipertexto",
+        "legal_content_6": "O site ACTAPRISMA pode conter links para sites externos. O editor não se responsabiliza pelo conteúdo desses sites de terceiros nem pelas consequências de sua consulta.",
+
+        "legal_section_7": "7. Lei Aplicável",
+        "legal_content_7": "Qualquer litígio relacionado ao uso do site ACTAPRISMA está sujeito à legislação francesa. Em caso de litígio, os tribunais franceses serão os únicos competentes."
     }
 };
 
-// Exporter les traductions pour les rendre disponibles
+// Exporter as traduções para torná-las disponíveis
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = translations;
 } 

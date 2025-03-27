@@ -1,4 +1,4 @@
-/* CSS spécifique pour la page des conditions générales de vente */
+/* Styles pour les pages de conditions générales et mentions légales */
 
 .terms-container {
     max-width: 1200px;
@@ -24,34 +24,34 @@
 
 .terms-section {
     margin-bottom: 30px;
-}
 
-.terms-section h2 {
-    color: #0F283D;
-    margin-bottom: 15px;
-    font-size: 24px;
-    font-weight: 600;
-}
+    h2 {
+        color: #0F283D;
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: 600;
+    }
 
-.terms-section p, .terms-section li {
-    color: #333;
-    line-height: 1.8;
-    margin-bottom: 15px;
-    font-size: 16px;
-}
+    p, li {
+        color: #333;
+        line-height: 1.8;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
 
-.terms-section ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
+    ul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
 
-.terms-section a {
-    color: #0F283D;
-    text-decoration: underline;
-}
+    a {
+        color: #0F283D;
+        text-decoration: underline;
 
-.terms-section a:hover {
-    color: #3498db;
+        &:hover {
+            color: #3498db;
+        }
+    }
 }
 
 .back-home {
@@ -70,14 +70,14 @@
     border-radius: 30px;
     font-weight: 600;
     transition: background-color 0.3s ease;
-}
 
-.back-button svg {
-    margin-left: 10px;
-}
+    svg {
+        margin-left: 10px;
+    }
 
-.back-button:hover {
-    background-color: #1a4c76;
+    &:hover {
+        background-color: #1a4c76;
+    }
 }
 
 /* Responsive design */
@@ -86,12 +86,14 @@
         font-size: 28px;
     }
     
-    .terms-section h2 {
-        font-size: 20px;
-    }
-    
-    .terms-section p, .terms-section li {
-        font-size: 14px;
+    .terms-section {
+        h2 {
+            font-size: 20px;
+        }
+        
+        p, li {
+            font-size: 14px;
+        }
     }
     
     .terms-content {
