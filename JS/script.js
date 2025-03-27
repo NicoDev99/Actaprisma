@@ -1,6 +1,63 @@
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav-link");
+    const navElement = document.querySelector(".nav-header nav");
+
+    // Gestion du header fixe lors du défilement
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 100) {
+            navElement.classList.add("fixed");
+        } else {
+            navElement.classList.remove("fixed");
+        }
+    });
+
+    // Ajouter un comportement de défilement fluide pour les liens de navigation internes
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Vérifier si le lien pointe vers une ancre sur la page actuelle
+            const href = this.getAttribute('href');
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                
+                // Retirer la classe active de tous les liens de navigation
+                navLinks.forEach(navLink => {
+                    navLink.classList.remove('active');
+                });
+                
+                // Ajouter la classe active au lien cliqué
+                this.classList.add('active');
+                
+                const targetSection = document.querySelector(href);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+
+    // Mettre à jour la classe active lors du défilement
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => {
+                    if (link.getAttribute("href") === `#${entry.target.id}`) {
+                        // Retirer la classe active de tous les liens de navigation
+                        navLinks.forEach(navLink => {
+                            navLink.classList.remove('active');
+                        });
+                        // Ajouter la classe active au lien correspondant à la section visible
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, { threshold: 0.5 });
+
+    sections.forEach(section => observer.observe(section));
 
     // Hamburger menu functionality
     const hamburgerMenu = document.querySelector('.hamburger-menu');
@@ -50,38 +107,33 @@ document.addEventListener("DOMContentLoaded", function () {
         autoInsertCss: true
     };
 
-    // Create an intersection observer for the quote element
-    const quoteObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            // If the quote is in the viewport
-            if (entry.isIntersecting && !entry.target.hasAttribute('data-typed-initialized')) {
-                // Start the typing animation for the quote
-                new Typed(entry.target, quoteTypingOptions);
-                // Mark the element as initialized to prevent re-initialization
-                entry.target.setAttribute('data-typed-initialized', 'true');
-            }
-        });
-    }, { threshold: 0.5 });
-
-    // Observe the quote element
-    const quoteElement = document.querySelector('.quote-text');
-    if (quoteElement) {
-        quoteElement.innerHTML = '';  // Clear existing content for Typed.js to work
-        quoteObserver.observe(quoteElement);
-    }
-
-    const observer = new IntersectionObserver(entries => {
+    // Observe the about section to trigger the quote animation when it enters the viewport
+    const aboutObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                navLinks.forEach(link => {
-                    link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
-                });
+                const quoteElement = document.querySelector('.quote-text');
+                if (quoteElement && !quoteElement.hasAttribute('data-typed-initialized')) {
+                    // Clear existing content for Typed.js to work properly
+                    quoteElement.innerHTML = '';
+                    // Get the quote in the current language
+                    const quoteText = translations[currentLang]?.quote || translations['fr'].quote;
+                    // Update the strings in the options
+                    quoteTypingOptions.strings = [quoteText];
+                    // Start the typing animation for the quote
+                    new Typed(quoteElement, quoteTypingOptions);
+                    // Mark the element as initialized to prevent re-initialization
+                    quoteElement.setAttribute('data-typed-initialized', 'true');
+                }
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.2 });
 
-    sections.forEach(section => observer.observe(section));
-    
+    // Observe the about section
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+        aboutObserver.observe(aboutSection);
+    }
+
     // Language toggle functionality
     const langDropdown = document.querySelector('.lang-dropdown');
     const langToggle = document.querySelector('.lang-toggle');
@@ -275,23 +327,11 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
         
-        // Mettre à jour la citation avec le texte traduit
+        // Reset the quote initialization flag when language changes
         const quoteElement = document.querySelector('.quote-text');
-        if (quoteElement && !quoteElement.hasAttribute('data-typed-initialized')) {
-            const quoteText = translations[lang]?.quote || translations['fr'].quote;
-            
-            // Créer une nouvelle instance Typed.js avec le texte traduit
-            new Typed(quoteElement, {
-                strings: [quoteText],
-                typeSpeed: 40,
-                backSpeed: 0,
-                startDelay: 500,
-                loop: false,
-                showCursor: false,
-                autoInsertCss: true
-            });
-            
-            quoteElement.setAttribute('data-typed-initialized', 'true');
+        if (quoteElement) {
+            quoteElement.removeAttribute('data-typed-initialized');
+            quoteElement.innerHTML = '';
         }
     };
     
