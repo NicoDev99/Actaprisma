@@ -39,6 +39,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // Ajouter un défilement fluide pour tous les liens qui pointent vers la section contact (sauf ceux de la navigation)
+    document.querySelectorAll('a[href="#contact"]:not(.nav-link)').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetSection = document.querySelector('#contact');
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
     // Mettre à jour la classe active lors du défilement
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {

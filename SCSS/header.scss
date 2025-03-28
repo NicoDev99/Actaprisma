@@ -427,6 +427,7 @@ div.nav-header {
     div.nav-header {
         nav {
             padding: 20px 30px;
+            margin: 0 50px;
             
             &.fixed {
                 padding: 15px 30px;
@@ -437,6 +438,10 @@ div.nav-header {
                     right: 20px;
                 }
             }
+        }
+
+        hr {
+            margin: 0 50px;
         }
     }
 } 

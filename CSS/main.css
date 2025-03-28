@@ -371,12 +371,16 @@ div.nav-header div.center-button {
 @media (max-width: 768px) {
   div.nav-header nav {
     padding: 20px 30px;
+    margin: 0 50px;
   }
   div.nav-header nav.fixed {
     padding: 15px 30px;
   }
   div.nav-header nav .hamburger-menu.active {
     right: 20px;
+  }
+  div.nav-header hr {
+    margin: 0 50px;
   }
 }
 /* Section Vision */

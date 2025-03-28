@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 section#contact {
     width: 100%;
     display: flex;
@@ -137,7 +139,7 @@ section#contact {
                 transition: background-color 0.3s ease;
                 
                 &:hover {
-                    background-color: darken(#48C5D5, 10%);
+                    background-color: color.scale(#48C5D5, $lightness: -17.8947368421%);
                 }
                 
                 &:disabled {
