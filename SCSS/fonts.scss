@@ -1,16 +1,24 @@
 // Fonts
 @font-face {
     font-family: 'Gotham';
-    src: url('../FONTS/Gotham-Bold.otf') format("opentype");
+    src: url('../FONTS/Gotham-Bold.otf') format('opentype'),
+         url('../FONTS/Gotham-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
     font-family: 'Gotham';
-    src: url('../FONTS/Gotham-Light.otf') format("opentype");
+    src: url('../FONTS/Gotham-Light.otf') format('opentype'),
+         url('../FONTS/Gotham-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -18,4 +26,7 @@
     src: url("../FONTS/Dune_Rise.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
