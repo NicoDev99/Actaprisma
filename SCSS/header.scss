@@ -5,11 +5,15 @@ div.nav-header {
     position: relative;
     
     nav {
+        display: -webkit-flex;
         display: flex;
+        -webkit-justify-content: space-between;
         justify-content: space-between;
-        flex-wrap: wrap;
+        -webkit-align-items: center;
         align-items: center;
+        flex-wrap: wrap;
         margin: 0 100px;
+        -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
         padding: 25px 0;
         
@@ -38,14 +42,19 @@ div.nav-header {
 
         /* Hamburger menu styles */
         .hamburger-menu {
-            display: none;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
             flex-direction: column;
+            -webkit-justify-content: space-between;
             justify-content: space-between;
             width: 30px;
             height: 21px;
             cursor: pointer;
             z-index: 100;
             position: relative;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
 
             span {
                 display: block;
@@ -119,6 +128,7 @@ div.nav-header {
                         cursor: pointer;
                         padding: 5px;
                         border: none;
+                        -webkit-transition: transform 0.2s ease;
                         transition: transform 0.2s ease;
                         opacity: 0.5;
 
@@ -145,6 +155,7 @@ div.nav-header {
                         cursor: pointer;
                         padding: 5px;
                         border: none;
+                        -webkit-transition: transform 0.2s ease;
                         transition: transform 0.2s ease;
                         opacity: 0.5;
 
