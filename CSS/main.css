@@ -1,21 +1,30 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Gotham";
-  src: url("../FONTS/Gotham-Bold.ttf") format("truetype");
+  src: url("../FONTS/Gotham-Bold.otf") format("opentype"), url("../FONTS/Gotham-Bold.ttf") format("truetype"), url("../FONTS/Gotham-Light.woff") format("woff"), url("../FONTS/Gotham-Light.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 @font-face {
   font-family: "Gotham";
-  src: url("../FONTS/Gotham-Light.ttf") format("truetype");
+  src: url("../FONTS/Gotham-Light.otf") format("opentype"), url("../FONTS/Gotham-Light.ttf") format("truetype"), url("../FONTS/Gotham-Light.woff") format("woff"), url("../FONTS/Gotham-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 @font-face {
   font-family: "Dune";
   src: url("../FONTS/Dune_Rise.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 /* Header styles */
 div.nav-header {
@@ -24,11 +33,15 @@ div.nav-header {
   position: relative;
 }
 div.nav-header nav {
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-align-items: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 100px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   padding: 25px 0;
   /* Hamburger menu styles */
@@ -52,14 +65,19 @@ div.nav-header nav.fixed div img {
   height: 90px;
 }
 div.nav-header nav .hamburger-menu {
-  display: none;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   width: 30px;
   height: 21px;
   cursor: pointer;
   z-index: 100;
   position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 div.nav-header nav .hamburger-menu span {
   display: block;
@@ -121,6 +139,7 @@ div.nav-header nav ul li.lang-buttons button.lang-toggle {
   cursor: pointer;
   padding: 5px;
   border: none;
+  -webkit-transition: transform 0.2s ease;
   transition: transform 0.2s ease;
   opacity: 0.5;
 }
@@ -142,6 +161,7 @@ div.nav-header nav ul li.lang-dropdown button.lang-toggle {
   cursor: pointer;
   padding: 5px;
   border: none;
+  -webkit-transition: transform 0.2s ease;
   transition: transform 0.2s ease;
   opacity: 0.5;
 }
@@ -389,8 +409,11 @@ section#vision {
   /* Content */
 }
 section#vision div.explanations {
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-around;
   justify-content: space-around;
+  -webkit-align-items: center;
   align-items: center;
   gap: 250px;
   margin: 0 100px;
@@ -429,9 +452,11 @@ section#vision div.explanations .text .highlight.animated-highlight {
   background-image: linear-gradient(to right, #0063A1 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: right bottom;
+  -webkit-animation: none;
   animation: none;
 }
 section#vision div.explanations .text .highlight.animated-highlight.aos-animate {
+  -webkit-animation: highlightSlide 0.8s ease-out forwards;
   animation: highlightSlide 0.8s ease-out forwards;
 }
 section#vision div.explanations .logo {
@@ -1812,6 +1837,15 @@ body {
 /* Body style when menu is open */
 body.menu-open {
   overflow: hidden;
+}
+
+/* Font fallbacks for better Safari compatibility */
+.gotham-font {
+  font-family: "Gotham", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.dune-font {
+  font-family: "Dune", Georgia, "Times New Roman", serif;
 }
 
 /*# sourceMappingURL=main.css.map */
