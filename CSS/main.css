@@ -779,6 +779,9 @@ section#vision .vision-container .content-container .button-container {
     left: -120%;
     width: 200%;
   }
+  section#vision .cta-button {
+    margin: 0 20px;
+  }
 }
 /* Highlight animation */
 @keyframes highlightSlide {

@@ -30,8 +30,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 
                 const targetSection = document.querySelector(href);
                 if (targetSection) {
+                    // Calculer un décalage pour afficher le titre correctement
+                    // Tenir compte de la hauteur du header fixe + un espace supplémentaire
+                    const headerHeight = navElement.offsetHeight;
+                    const offset = headerHeight + 50; // 50px d'espace supplémentaire
+                    
                     window.scrollTo({
-                        top: targetSection.offsetTop,
+                        top: targetSection.offsetTop - offset,
                         behavior: 'smooth'
                     });
                 }
@@ -46,8 +51,12 @@ document.addEventListener("DOMContentLoaded", function () {
             
             const targetSection = document.querySelector('#contact');
             if (targetSection) {
+                // Calculer un décalage pour afficher le titre correctement
+                const headerHeight = navElement.offsetHeight;
+                const offset = headerHeight + 50; // 50px d'espace supplémentaire
+                
                 window.scrollTo({
-                    top: targetSection.offsetTop,
+                    top: targetSection.offsetTop - offset,
                     behavior: 'smooth'
                 });
             }
