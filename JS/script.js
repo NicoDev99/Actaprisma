@@ -550,7 +550,7 @@ document.addEventListener("DOMContentLoaded", function () {
             };
             
             // Envoyer le formulaire via EmailJS
-            emailjs.send('service_lg8fbh9', 'template_czs3jtk', formData)
+            emailjs.send('service_auqmn2q', 'template_qlp9omd', formData)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     
