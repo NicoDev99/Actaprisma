@@ -297,114 +297,114 @@ const translations = {
         "copyright_extended": "ACTAPRISMA® is a registered trademark. © 2025. All rights reserved.",
 
         // Terms (CGV) page
-        "terms_title": "TERMS AND CONDITIONS OF SALE",
+        "terms_title": "GENERAL TERMS AND CONDITIONS OF SALE (T&Cs)",
         "return_home": "Back to home",
-        "terms_section_1": "1. Presentation",
-        "terms_section_2": "2. Products and Services",
-        "terms_section_3": "3. Orders and Payment",
+        "terms_section_1": "1. Introduction",
+        "terms_section_2": "2. Products and Services Offered",
+        "terms_section_3": "3. Ordering and Payment",
         "terms_section_4": "4. No Right of Withdrawal",
         "terms_section_5": "5. Refund Policy",
         "terms_section_6": "6. Intellectual Property and Specific Terms of Use",
         "terms_section_7": "7. Liability",
-        "terms_section_8": "8. Data Protection",
-        "terms_section_9": "9. Applicable Law and Disputes",
-        "terms_section_10": "10. Promotions and Price Evolution",
+        "terms_section_8": "8. Personal Data Protection",
+        "terms_section_9": "9. Governing Law and Disputes",
+        "terms_section_10": "10. Promotions and Price Changes",
         
-        "terms_content_1": "These Terms and Conditions of Sale govern the sales of digital products offered by ACTAPRISMA, a sole proprietorship registered under SIRET number 90409160000026, with its registered office at 6 chemin des petits plans, 06800 Cagnes-sur-Mer, France.",
-        "terms_email": "Contact email: ",
+        "terms_content_1": "These General Terms and Conditions of Sale (T&Cs) govern the sales of digital products offered by ACTAPRISMA, a sole proprietorship registered under SIRET 90409160000026, with its registered office at 6 chemin des petits plans, 06800 Cagnes-sur-Mer, France.",
+        "terms_email": "Contact email: hello@actaprisma.com",
         
         "terms_content_2": "ACTAPRISMA offers digital resources in the form of PDF files, online training, and exclusive content, including the \"Startup Authority System\" program, which includes:",
         "terms_content_2_item1": "A strategic resource kit for startups.",
         "terms_content_2_item2": "Exclusive webinars.",
-        "terms_content_2_item3": "One hour of free consulting.",
-        "terms_content_2_item4": "A LIVE workshop \"The Two Sentences Formula\".",
+        "terms_content_2_item3": "One-hour free consulting session.",
+        "terms_content_2_item4": "LIVE workshop \"The Two Sentences Formula \".",
         
-        "terms_content_3_item1": "Orders are placed directly on the actaprisma.com website.",
-        "terms_content_3_item2": "Payments are secure and can be made via Stripe, PayPal, and credit card.",
-        "terms_content_3_item3": "Once payment is validated, the buyer receives immediate access to the digital resources.",
+        "terms_content_3_item1": "Orders are placed directly on the website actaprisma.com.",
+        "terms_content_3_item2": "Payments are secure and can be made via Stripe, PayPal, or credit card.",
+        "terms_content_3_item3": "Once payment is confirmed, the buyer receives immediate access to the digital resources.",
         
-        "terms_content_4": "In accordance with Article L221-28 of the French Consumer Code, the right of withdrawal does not apply to digital content provided immediately after purchase and without physical support. By validating the purchase, the customer expressly waives their right of withdrawal.",
+        "terms_content_4": "In accordance with Article L221-28 of the French Consumer Code, the right of withdrawal does not apply to digital content provided immediately after purchase and without a physical medium. By confirming the purchase, the client expressly waives their right of withdrawal.",
         
-        "terms_content_5": "No refund will be made after the purchase of digital products, as they are considered consumed as soon as they are accessed.",
+        "terms_content_5": "No refunds will be granted after the purchase of digital products, as they are considered consumed upon access.",
         
-        "terms_content_6": "Todos los contenidos ofrecidos por ACTAPRISMA están protegidos por derechos de autor y permanecen la propiedad exclusiva del editor. Cualquier reproducción, modificación, venta, compartimiento, distribución, difusión pública, adaptación o explotación comercial, bajo cualquier forma, está estrictamente prohibido sin autorización escrita prévia de ACTAPRISMA. Cualquier violación será objeto de acciones judiciales.",
+        "terms_content_6": "All content provided by ACTAPRISMA is protected by copyright and remains the exclusive property of the publisher. Any reproduction, modification, resale, sharing, distribution, public dissemination, adaptation, or commercial exploitation, in any form, is strictly prohibited without prior written authorization from ACTAPRISMA. Any violation will result in legal action.",
         
-        "terms_content_7": "ACTAPRISMA no puede ser responsable de daños eventuales relacionados con el uso de los productos digitales, especialmente en caso de malentendido o falla en la aplicación de las estrategias recomendadas.",
+        "terms_content_7": "ACTAPRISMA shall not be held liable for any damages related to the use of digital products, particularly in cases of misinterpretation or failure in the application of the recommended strategies.",
         
-        "terms_content_8": "Las informaciones recopiladas en el momento de la compra se procesan de acuerdo con la Política de Confidencialidad disponible en el sitio.",
+        "terms_content_8": "The information collected during the purchase is processed in accordance with the Privacy Policy available on the website.",
         
-        "terms_content_9": "These Terms and Conditions are governed by French law. In case of dispute, an amicable solution will be preferred. Failing agreement, the competent courts will be those of Nice.",
+        "terms_content_9": "These T&Cs are governed by French law. In the event of a dispute, an amicable solution will be sought first. If no agreement is reached, the competent courts will be those of Nice, France.",
         
-        "terms_content_10": "The promotional rate of 97 euros is a limited-time offer. If the buyer does not take advantage of the offer immediately, the product price will increase progressively in successive steps of +30%: 126 euros, then 163 euros, 212 euros, 276 euros, and finally 358 euros. Each increase will be announced by email to potential buyers. ACTAPRISMA reserves the right to adjust rates and promotions at its discretion.",
+        "terms_content_10": "The promotional price of 97 euros is a limited-time offer. If the buyer does not take advantage of the offer immediately, the product price will gradually increase in successive increments of +30%: 126 euros, then 163 euros, 212 euros, 276 euros, and finally 358 euros. Each increase will be announced by email to potential buyers. ACTAPRISMA reserves the right to adjust prices and promotions at its discretion.",
 
         // Legal page
         "legal_title": "LEGAL NOTICE",
         "legal_section_1": "1. General Information",
-        "legal_content_1": "The ACTAPRISMA website is published by ACTAPRISMA, a sole proprietorship registered under SIRET number 90409160000026, with its registered office at 6 chemin des petits plans, 06800 Cagnes-sur-Mer, France.",
+        "legal_content_1": "The ACTAPRISMA website is published by ACTAPRISMA, a sole proprietorship registered under SIRET 90409160000026, with its registered office located at: 6 chemin des petits plans, 06800 Cagnes-sur-Mer, France.",
         "legal_director": "Publication Director: ",
         "legal_director_name": "Manon GAZIELLO",
-        "legal_contact": "Contact email: ",
+        "legal_contact": "Contact Email: hello@actaprisma.com",
 
         "legal_section_2": "2. Hosting",
-        "legal_content_2": "The ACTAPRISMA site is hosted by o2switch, a limited liability company (SARL) with a capital of 100,000 euros, registered under SIRET 510 909 80700024, with its registered office at:",
+        "legal_content_2": "The ACTAPRISMA website is hosted by o2switch, a limited liability company (SARL) with a share capital of 100,000 euros, registered under SIRET 510 909 80700024, with its registered office located at:",
         "legal_host_name": "o2switch",
         "legal_host_address": "222 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, France",
-        "legal_host_email": "Email de contact : support@o2switch.fr",
-        "legal_host_phone": "Phone: 04 44 44 60 40",
-        "legal_host_desc": "The host ensures the maintenance and security of the servers necessary for the operation of the ACTAPRISMA site.",
+        "legal_host_email": "Contact Email: support@o2switch.fr",
+        "legal_host_phone": "Phone: +33 4 44 44 60 40",
+        "legal_host_desc": "The hosting provider ensures the maintenance and security of the servers required for the operation of the ACTAPRISMA website.",
 
         "legal_section_3": "3. Intellectual Property",
-        "legal_content_3": "All content on the ACTAPRISMA site, including but not limited to text, graphics, logos, images, videos, and icons, is protected under copyright and intellectual property law. Any reproduction, representation, modification, publication, adaptation of all or part of the site's elements is prohibited without prior written authorization from ACTAPRISMA.",
+        "legal_content_3": "All content available on the ACTAPRISMA website, including but not limited to texts, graphics, logos, images, videos, and icons, is protected under copyright and intellectual property laws. Any reproduction, representation, modification, publication, adaptation, whether in whole or in part, is strictly prohibited without prior written authorization from ACTAPRISMA.",
 
-        "legal_section_4": "4. Responsabilidades",
-        "legal_content_4_1": "ACTAPRISMA se esfuerza por proporcionar información o más precisa posible en su sitio. No obstante, el editor no podrá ser responsable de omisiones, inexactitudes y deficiencias en la actualización.",
-        "legal_content_4_2": "El sitio ACTAPRISMA está accesible 24/7, excepto durante interrupciones para mantenimiento o problemas técnicos. El editor no podrá ser responsable de interrupciones y fallos relacionados con Internet, servicios de alojamiento o cualquier evento fuera de su control.",
+        "legal_section_4": "4. Liability",
+        "legal_content_4_1": "ACTAPRISMA strives to provide the most accurate information possible on its website. However, the publisher cannot be held liable for omissions, inaccuracies, or shortcomings in updates.",
+        "legal_content_4_2": "The ACTAPRISMA website is accessible 24/7, except in cases of maintenance or technical issues. The publisher cannot be held responsible for interruptions or failures related to the Internet, hosting services, or any event beyond its control.",
 
         "legal_section_5": "5. Personal Data and Cookies",
-        "legal_content_5_1": "The ACTAPRISMA site collects certain personal data via:",
-        "legal_content_5_2": "• The contact form (Last Name, First Name, Email, Company Name, Mission/Position, optional phone and message)",
-        "legal_content_5_3": "• Access to free and paid resources (Last Name, First Name, Email, Company Name, Mission/Position)",
-        "legal_content_5_4": "• Analysis and tracking tools (Google Analytics, Microsoft Clarity, Facebook Pixel, and LinkedIn Pixel)",
-        "legal_content_5_5": "The user can consult the Privacy Policy for more details on data use and cookie management.",
+        "legal_content_5_1": "The ACTAPRISMA website collects certain personal data through:",
+        "legal_content_5_2": "• The contact form (Name, First Name, Email, Company Name, Position, Phone, and optional message).",
+        "legal_content_5_3": "• Access to free and paid resources (Name, First Name, Email, Company Name, Position).",
+        "legal_content_5_4": "• Analytics and tracking tools (Google Analytics, Microsoft Clarity, Facebook Pixel, and LinkedIn Pixel).",
+        "legal_content_5_5": "Users can refer to the Privacy Policy for more details on data usage and cookie management.",
 
         "legal_section_6": "6. Hyperlinks",
-        "legal_content_6": "The ACTAPRISMA site may contain links to external sites. The publisher cannot be held responsible for the content of these third-party sites or the consequences of visiting them.",
+        "legal_content_6": "The ACTAPRISMA website may contain links to external websites. The publisher shall not be held liable for the content of such third-party websites or for any consequences arising from their use.",
 
-        "legal_section_7": "7. Applicable Law",
-        "legal_content_7": "Any dispute related to the use of the ACTAPRISMA site is subject to French law. In case of dispute, French courts will have exclusive jurisdiction.",
+        "legal_section_7": "7. Governing Law",
+        "legal_content_7": "Any dispute related to the use of the ACTAPRISMA website shall be governed by French law. In the event of a dispute, French courts shall have exclusive jurisdiction.",
 
         // Privacy Policy page
         "privacy_title": "PRIVACY POLICY & COOKIES",
         "privacy_section_1": "1. Introduction",
-        "privacy_section_2": "2. Data Collection and Purpose",
+        "privacy_section_2": "2. Data Collected and Purpose",
         "privacy_section_3": "3. Legal Basis for Data Processing",
         "privacy_section_4": "4. Data Retention Period",
         "privacy_section_5": "5. User Rights",
-        "privacy_section_6": "6. Sharing Data with Third Parties",
+        "privacy_section_6": "6. Data Sharing with Third Parties",
         "privacy_section_7": "7. Cookies and Tracking",
         "privacy_section_8": "8. Data Security",
         "privacy_section_9": "9. Changes to the Privacy Policy",
-        "privacy_section_10": "10. Contact",
+        "privacy_section_10": "10. Contact Information",
         
-        "privacy_content_1": "This Privacy Policy explains how ACTAPRISMA collects, processes, and protects your personal data when you use our website. By using the ACTAPRISMA site, you accept the terms described in this policy, in accordance with the following regulations: <ul><li>General Data Protection Regulation (GDPR - European Union & United Kingdom - UK GDPR)</li><li>California Consumer Privacy Act (CCPA - United States, including California residents' rights)</li><li>Personal Information Protection and Electronic Documents Act (PIPEDA - Canada)</li><li>Law 25 (Quebec - Canada)</li><li>Lei Geral de Proteção de Dados Pessoais (LGPD - Brazil)</li><li>Privacy Act 1988 & Australian Privacy Principles (APPs - Australia)</li><li>Protection of Personal Information Act (POPIA - South Africa)</li><li>New Federal Data Protection Act (nFDPA - Switzerland)</li><li>Personal Data Protection Law (PDPL - Saudi Arabia)</li><li>Personal Data Protection Law (PDPL - Argentina)</li><li>Personal Data Protection Law (PDPL - Andorra)</li><li>Data Protection Act (DPA - Faroe Islands)</li></ul>If you reside outside these jurisdictions, ACTAPRISMA applies internationally recognized data protection principles.",
+        "privacy_content_1": "This Privacy Policy explains how ACTAPRISMA collects, processes, and protects your personal data when you use our website. By accessing and using the ACTAPRISMA website, you acknowledge and agree to the terms outlined in this policy, in compliance with the following regulations: <ul><li>General Data Protection Regulation (GDPR - European Union & UK GDPR)</li><li>California Consumer Privacy Act (CCPA - United States, including California residents' rights)</li><li>Personal Information Protection and Electronic Documents Act (PIPEDA - Canada)</li><li>Law 25 (Quebec - Canada)</li><li>Lei Geral de Proteção de Dados Pessoais (LGPD - Brazil)</li><li>Privacy Act 1988 & Australian Privacy Principles (APPs - Australia)</li><li>Protection of Personal Information Act (POPIA - South Africa)</li><li>Federal Act on Data Protection (nFADP - Switzerland)</li><li>Personal Data Protection Law (PDPL - Saudi Arabia)</li><li>Personal Data Protection Law (PDPL - Argentina)</li><li>Personal Data Protection Law (PDPL - Andorra)</li><li>Data Protection Act (DPA - Faroe Islands)</li></ul>If you reside outside these jurisdictions, ACTAPRISMA applies internationally recognized data protection principles.",
         
-        "privacy_content_2": "ACTAPRISMA collects and processes your personal data for the following purposes: <ul><li>Responding to requests sent via the contact form.</li><li>Providing access to free and paid digital resources.</li><li>Analyzing and improving the user experience through tracking and analysis tools.</li><li>Managing transactions and delivering purchased digital products.</li></ul>Types of data collected: <ul><li>Via the contact form: Last Name, First Name, Email, Company Name, Mission/Position (required), Telephone and Message (optional).</li><li>Via access to free and paid resources: Last Name, First Name, Email, Company Name, Mission/Position.</li><li>Via tracking tools and cookies: Navigation data, IP address, user behavior (Google Analytics, Microsoft Clarity, Facebook Pixel, LinkedIn Pixel).</li></ul>",
+        "privacy_content_2": "ACTAPRISMA collects and processes personal data for the following purposes: <ul><li>Responding to inquiries submitted through the contact form.</li><li>Providing access to free and paid digital resources.</li><li>Analyzing and improving the user experience through tracking and analytics tools.</li><li>Processing transactions and delivering purchased digital products.</li></ul>Types of data collected: <ul><li>Via the contact form: First Name, Last Name, Email, Company Name, Job Title (mandatory), Phone Number, and Message (optional).</li><li>Via access to free and paid resources: First Name, Last Name, Email, Company Name, Job Title.</li><li>Via tracking tools and cookies: Browsing data, IP address, user behavior (Google Analytics, Microsoft Clarity, Facebook Pixel, LinkedIn Pixel).</li></ul>",
         
-        "privacy_content_3": "ACTAPRISMA processes your personal data on the following legal bases: <ul><li>Your explicit consent, given when submitting forms or accepting cookies.</li><li>The performance of a contract, when you purchase digital products.</li><li>ACTAPRISMA's legitimate interests for service improvement and site security.</li><li>Legal obligations to which ACTAPRISMA is subject.</li></ul>",
+        "privacy_content_3": "ACTAPRISMA processes personal data under the following legal bases: <ul><li>Consent: When users voluntarily provide personal data (e.g., contact forms, newsletter sign-ups, acceptance of cookies).</li><li>Contractual necessity: When data processing is required for managing access to purchased digital products.</li><li>Legal compliance: To retain records of transactions for tax and accounting purposes.</li><li>Legitimate interest: For website performance monitoring and business analytics, provided that users' fundamental rights are not infringed.</li></ul>",
         
-        "privacy_content_4": "ACTAPRISMA retains personal data for the following periods: <ul><li>Contact form data: Retained for 3 years after the last interaction with the user.</li><li>Tracking and analysis data: Retained in accordance with the policy of each third-party provider.</li><li>Commercial transaction records: Retained for the duration required by applicable legal, tax, and accounting obligations, for a minimum of 5 years and up to 10 years depending on the jurisdiction.</li></ul>",
+        "privacy_content_4": "ACTAPRISMA retains personal data for the following periods: <ul><li>Contact form data: Retained for 3 years after the user's last interaction.</li><li>Tracking and analytics data: Retained according to the policies of each third-party provider.</li><li>Commercial transaction records: Retained for the period required by applicable legal, tax, and accounting obligations, for a minimum of 5 years and up to 10 years depending on the jurisdiction.</li></ul>",
         
-        "privacy_content_5": "In accordance with applicable regulations (GDPR, UK GDPR, CCPA, PIPEDA, Law 25, LGPD, APPs, POPIA, nFDPA, PDPL, DPA), you have the following rights: <ul><li>Right to access, rectify, and erase your data.</li><li>Right to restrict and object to processing.</li><li>Right to data portability.</li><li>Right to withdraw your consent at any time.</li><li>Right to object to the sale of your personal data (CCPA - California).</li></ul>To exercise these rights, send an email to privacy@actaprisma.com. We will process your request within 30 days (GDPR, UK GDPR, PIPEDA, APPs, Law 25, LGPD, POPIA, nFDPA, PDPL, DPA) or 45 days (CCPA - California).",
+        "privacy_content_5": "Depending on your jurisdiction, you have the following rights regarding your personal data: <ul><li>Right of access, rectification, and erasure of your data.</li><li>Right to restrict or object to processing.</li><li>Right to data portability (where applicable).</li><li>Right to withdraw consent at any time for processing based on consent.</li><li>Right to opt out of the sale of personal data (CCPA - California).</li></ul>To exercise your rights, contact privacy@actaprisma.com. Your request will be processed within 30 days (GDPR, UK GDPR, PIPEDA, APPs, Law 25, LGPD, POPIA, nFADP, PDPL, DPA) or 45 days (CCPA - California).",
         
-        "privacy_content_6": "ACTAPRISMA does not sell or rent your data. However, certain information may be shared with: <ul><li>Technical service providers (hosting, email service, payment platforms).</li><li>Analysis and marketing tools (Google Analytics, Microsoft Clarity, Facebook Pixel, LinkedIn Pixel) for statistical analysis purposes.</li></ul>These third-party services adhere to high data protection standards.",
+        "privacy_content_6": "ACTAPRISMA does not sell or rent personal data. However, some information may be shared with: <ul><li>Technical service providers (e.g., hosting services, email platforms, payment processors).</li><li>Analytics and marketing tools (e.g., Google Analytics, Microsoft Clarity, Facebook Pixel, LinkedIn Pixel) for statistical analysis.</li></ul>All third-party providers comply with high data protection standards.",
         
-        "privacy_content_7": "During your visit, cookies may be placed on your device to: <ul><li>Improve navigation and personalize your user experience.</li><li>Analyze audience and optimize site performance.</li></ul>You can accept or decline cookies via the consent banner displayed during your first visit.",
+        "privacy_content_7": "When visiting our website, cookies may be stored on your device to: <ul><li>Enhance navigation and personalize the user experience.</li><li>Analyze website traffic and optimize performance.</li></ul>You can accept or reject cookies via the consent banner displayed on your first visit.",
         
-        "privacy_content_8": "ACTAPRISMA implements technical and organizational security measures to protect your data against loss, alteration, or unauthorized access. In the event of a data breach, ACTAPRISMA will inform affected users within the timeframe required by applicable legislation (CCPA, GDPR, UK GDPR, PIPEDA, APPs, Law 25, LGPD, POPIA, nFDPA, PDPL, DPA).",
+        "privacy_content_8": "ACTAPRISMA implements technical and organizational security measures to protect your personal data against unauthorized access, loss, or alteration. In case of a data breach, ACTAPRISMA will notify affected users in accordance with applicable legal requirements (GDPR, UK GDPR, PIPEDA, APPs, Law 25, LGPD, POPIA, nFADP, PDPL, DPA).",
         
-        "privacy_content_9": "This Privacy Policy may be updated at any time. Any changes will be notified on this page.",
+        "privacy_content_9": "This Privacy Policy may be updated at any time. Any modifications will be published on this page.",
         
-        "privacy_content_10": "For any questions regarding this policy, you can contact us at privacy@actaprisma.com."
+        "privacy_content_10": "For any privacy-related inquiries, please contact privacy@actaprisma.com."
     },
     "es": {
         // Navigation
@@ -428,30 +428,38 @@ const translations = {
         "comm_desc_1": "Comunicar es materializar su identidad, su concepto, su visión. Es elegir los canales adecuados y amplificar su mensaje con precisión.",
         "comm_desc_2": "En ACTAPRISMA, le ayudamos a definir y estructurar su imagen para que conserve el control y la exprese con impacto.",
         "comm_desc_3": "Desarrollamos el potencial de su identidad para generar un beneficio emocional en su audiencia, crear un sentimiento de pertenencia e identificación y, al mismo tiempo, delimitar estratégicamente su campo de soberanía y su territorio ideológico.",
-        "comm_desc_4": "No se trata solo de «propuesta de valor», sino de trascenderla. <span class='blue-color'>Nuestro objetivo: maximizar el compromiso de su audiencia y reforzar su legitimidad en el espacio público.</span>",
-        "goal_text_1": "Su ambición es nuestro motor.",
-        "goal_text_2": "Le escuchamos con precisión, analizamos su posicionamiento y le damos respuestas concretas.",
-        "goal_text_3": "Le ayudamos a convertirse en una referencia.",
-        "image_mastery_btn": "¿Quiere gestionar mejor su imagen?",
+        "comm_desc_4": "No se trata solo de una «proposta de valor», sino de transcendê-la. <span class='blue-color'>O nosso objetivo: maximizar el compromiso de su audiencia y reforçar a sua legitimidade no espaço público.</span>",
+        "goal_text_1": "A sua ambição é o nosso motor.",
+        "goal_text_2": "Ouvimo-lo com precisão, analisamos o seu posicionamento e damos-lhe respostas concretas.",
+        "goal_text_3": "Ajudamo-lo a tornar-se uma referência.",
+        "image_mastery_btn": "¿Quer gerir melhor a sua imagem?",
         
         // Section Accompagnement
         "accompaniment_title": "CONSULTORÍA",
-        "accompaniment_intro": "<span class='brand'>ACTAPRISMA</span> es aliado de los <span class='bold'>impulsores del cambio</span>, los innovadores, aquellos que impulsan el progreso con audacia y se convierten en motores de transformación. Hemos desarrollado <span class='bold'>protocolos de acompañamiento</span> diseñados para estos <span class='bold'>actores de impacto</span>:",
+        "accompaniment_intro": "<span class='brand'>ACTAPRISMA</span> es aliado de los <span class='bold'>impulsores del cambio</span>, los innovadores, aquellos que impulsan el progreso con audacia y se convierten en motores de transformación. Hemos desarrollado <span class='bold'>protocolos de acompañamiento</span> diseñados para estos <span class='bold'>actores de impacto</span> como:",
         
         // Cartes de services
         "political_title": "ESFERA POLÍTICA",
-        "political_desc": "Estamos a su disposición para <span class='bold'>analizar su posicionamiento actual, sus áreas de mejora</span> en función de la opinión pública y los mecanismos que le permitirán alcanzar plenamente sus objetivos.",
+        "political_desc": "Estamos a su disposición para <span class='bold'>analisar su posicionamiento actual, sus áreas de mejora</span> en función de la opinión pública y los mecanismos que lhe permitirán alcançar plenamente los seus objetivos.",
         "political_btn": "¡Hablemos!",
         
         "startups_title": "STARTUPS",
-        "startups_desc": "Hemos creado el «<span class='bold'>Startup Authority System</span>»<br>. Impulse el <span class='bold'>valor percibido</span> de su empresa en tiempo récord.<br>. Deje de perder clientes por un <span class='bold'>posicionamiento</span> confuso.<br>. Transforme su imagen en un <span class='bold'>imán para clientes</span>.",
-        "startups_btn": "¡Impulse su proyecto ahora mismo con sus herramientas gratuitas!",
+        "startups_desc": "Hemos creado el «<span class='bold'>Startup Authority System</span>»<br>. Impulse el <span class='bold'>valor percebido</span> de sua empresa em tempo recorde.<br>. Deje de perder clientes devido a um <span class='bold'>posicionamento</span> confuso.<br>. Transforme a sua imagem num <span class='bold'>íman para clientes</span>.",
+        "startups_btn": "¡Impulse su proyecto ahora mesmo com ferramentas gratuitas!",
         
         "sports_title": "ORGANIZACIONES<br />DEPORTIVAS",
-        "sports_desc": "<p class='bold'>¿Quiere convertir su organización en una marca fuerte, capaz de atraer seguidores fieles y socios estratégicos?</p><p>Le acompañamos en el crecimiento exponencial de su entidad y en la consolidación de su liderazgo, potenciando aquello que la convierte en una fuerza de evolución.</p>",
+        "sports_desc": "<p class='bold'>¿Quiere transformar sua organização numa marca forte, capaz de atrair seguidores fiéis e parceiros estratégicos?</p><p>Acompanhamos o crescimento exponencial da sua entidade e a consolidação da sua liderança, potenciando aquilo que a torna uma força de evolução.</p>",
         "sports_btn": "¡Hablemos!",
         
         // Section Défi
+        "challenge_header": "Sea cual sea el momento, le ayudamos a afrontar os<br>seus desafios de <span class='bold'>comunicação</span>:",
+        "proactive_title": "Comunicação proativa",
+        "proactive_list": ["Capte a atenção", "Desperte o interesse", "Gere adesão", "Aumente o envolvimento"],
+        "crisis_title": "Comunicação de crise",
+        "crisis_list": ["Controle a narrativa", "Gerencie os impactos", "Restaure a confiança", "Proteja a sua reputação"],
+        
+        // Section À propos
+        "about_title": "SOBRE NÓS",
         "challenge_header": "Sea cual sea el momento, le ayudamos a afrontar sus<br>desafíos de comunicación :",
         "proactive_title": "Comunicación proactiva",
         "proactive_list": ["Capte la atención", "Despierte el interés", "Genere adhesión", "Aumente el compromiso"],
@@ -490,7 +498,117 @@ const translations = {
         "form_success": "Su mensaje ha sido enviado con éxito. Responderemos lo antes posible.",
         "form_error": "Ocurrió un error al enviar el mensaje. Por favor, inténtelo de nuevo.",
         "field_required": "Este campo es obligatorio",
-        "email_invalid": "Por favor, introduzca una dirección de correo electrónico válida"
+        "email_invalid": "Por favor, introduzca una dirección de correo electrónico válida",
+
+        // Terms (CGV) page
+        "terms_title": "CONDICIONES GENERALES DE VENTA (CGV)",
+        "return_home": "Volver a inicio",
+        "terms_section_1": "1. Presentación",
+        "terms_section_2": "2. Productos y servicios ofrecidos",
+        "terms_section_3": "3. Pedido y pago",
+        "terms_section_4": "4. Ausencia de derecho de desistimiento",
+        "terms_section_5": "5. Política de reembolso",
+        "terms_section_6": "6. Propiedad intelectual y condiciones específicas de uso",
+        "terms_section_7": "7. Responsabilidad",
+        "terms_section_8": "8. Protección de datos personales",
+        "terms_section_9": "9. Ley aplicable y resolución de litigios",
+        "terms_section_10": "10. Promociones y evolución de precios",
+        
+        "terms_content_1": "Las presentes Condiciones Generales de Venta (CGV) rigen las ventas de productos digitales ofrecidos por ACTAPRISMA, una empresa individual registrada bajo el número SIRET 90409160000026, con domicilio social en 6 chemin des petits plans, 06800 Cagnes-sur-Mer, Francia.",
+        "terms_email": "Correo electrónico de contacto: hello@actaprisma.com",
+        
+        "terms_content_2": "ACTAPRISMA ofrece recursos digitales en forma de archivos PDF, formaciones en línea y contenido exclusivo, incluyendo el programa \"Startup Authority System\", que comprende:",
+        "terms_content_2_item1": "Un kit de recursos estratégicos para startups.",
+        "terms_content_2_item2": "Webinarios exclusivos.",
+        "terms_content_2_item3": "Una hora de consultoría gratuita.",
+        "terms_content_2_item4": "Taller EN VIVO \"The Two Sentences Formula \".",
+        
+        "terms_content_3_item1": "Los pedidos se realizan directamente en el sitio web actaprisma.com.",
+        "terms_content_3_item2": "Los pagos son seguros y pueden efectuarse a través de Stripe, PayPal o tarjeta bancaria.",
+        "terms_content_3_item3": "Una vez validado el pago, el comprador recibe acceso inmediato a los recursos digitales.",
+        
+        "terms_content_4": "De conformidad con el artículo L221-28 del Código del Consumidor francés, el derecho de desistimiento no se aplica a los contenidos digitales proporcionados inmediatamente después de la compra y sin soporte físico. Al confirmar la compra, el cliente renuncia expresamente a su derecho de desistimiento.",
+        
+        "terms_content_5": "No se realizarán reembolsos después de la compra de productos digitales, ya que se consideran consumidos desde el momento de su acceso.",
+        
+        "terms_content_6": "Todos los contenidos proporcionados por ACTAPRISMA están protegidos por derechos de autor y siguen siendo propiedad exclusiva del editor. Cualquier reproducción, modificación, reventa, compartición, distribución, difusión pública, adaptación o explotación comercial, en cualquier forma, está estrictamente prohibida sin la autorización previa y por escrito de ACTAPRISMA. Cualquier infracción dará lugar a acciones legales.",
+        
+        "terms_content_7": "ACTAPRISMA no será responsable de los posibles daños relacionados con el uso de los productos digitales, especialmente en caso de error de interpretación o fracaso en la aplicación de las estrategias recomendadas.",
+        
+        "terms_content_8": "La información recopilada durante la compra se trata de conformidad con la Política de Privacidad disponible en el sitio web.",
+        
+        "terms_content_9": "Las presentes CGV se rigen por la legislación francesa. En caso de litigio, se privilegiará una solución amistosa. Si no se llega a un acuerdo, los tribunales competentes serán los de Niza, Francia.",
+        
+        "terms_content_10": "El precio promocional de 97 euros es una oferta por tiempo limitado. Si el comprador no aprovecha la oferta de inmediato, el precio del producto aumentará progresivamente en incrementos sucesivos del +30 %: 126 euros, luego 163 euros, 212 euros, 276 euros y, finalmente, 358 euros. Cada aumento será anunciado por correo electrónico a los compradores potenciales. ACTAPRISMA se reserva el derecho de ajustar los precios y promociones a su discreción.",
+
+        // Legal page
+        "legal_title": "AVISO LEGAL",
+        "legal_section_1": "1. Información General",
+        "legal_content_1": "El sitio web de ACTAPRISMA es publicado por ACTAPRISMA, una empresa individual registrada bajo el SIRET 90409160000026, con domicilio social en: 6 chemin des petits plans, 06800 Cagnes-sur-Mer, Francia.",
+        "legal_director": "Director de publicación: ",
+        "legal_director_name": "Manon GAZIELLO",
+        "legal_contact": "Correo electrónico de contacto: hello@actaprisma.com",
+
+        "legal_section_2": "2. Alojamiento",
+        "legal_content_2": "El sitio web de ACTAPRISMA está alojado por o2switch, una sociedad de responsabilidad limitada (SARL) con un capital social de 100.000 euros, registrada bajo el SIRET 510 909 80700024, con domicilio social en:",
+        "legal_host_name": "o2switch",
+        "legal_host_address": "222 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, Francia",
+        "legal_host_email": "Correo electrónico de contacto: support@o2switch.fr",
+        "legal_host_phone": "Teléfono: +33 4 44 44 60 40",
+        "legal_host_desc": "El proveedor de alojamiento garantiza el mantenimiento y la seguridad de los servidores necesarios para el funcionamiento del sitio web de ACTAPRISMA.",
+
+        "legal_section_3": "3. Propiedad Intelectual",
+        "legal_content_3": "Todo el contenido disponible en el sitio web de ACTAPRISMA, incluyendo, sin limitación, textos, gráficos, logotipos, imágenes, vídeos e iconos, está protegido por derechos de autor y por las leyes de propiedad intelectual. Queda estrictamente prohibida cualquier reproducción, representación, modificación, publicación o adaptación, total o parcial, sin la previa autorización por escrito de ACTAPRISMA.",
+
+        "legal_section_4": "4. Responsabilidad",
+        "legal_content_4_1": "ACTAPRISMA se esfuerza por proporcionar información lo más precisa posible en su sitio web. Sin embargo, el editor no se hace responsable de omisiones, inexactitudes o falta de actualizaciones.",
+        "legal_content_4_2": "El sitio web de ACTAPRISMA está accesible las 24 horas del día, los 7 días de la semana, salvo en caso de mantenimiento o problemas técnicos. El editor no se hace responsable de interrupciones o fallos relacionados con Internet, los servicios de alojamiento o cualquier evento fuera de su control.",
+
+        "legal_section_5": "5. Datos Personales y Cookies",
+        "legal_content_5_1": "El sitio web de ACTAPRISMA recopila ciertos datos personales a través de:",
+        "legal_content_5_2": "• El formulario de contacto (Nombre, Apellidos, Correo electrónico, Nombre de la empresa, Cargo, Teléfono y mensaje opcional).",
+        "legal_content_5_3": "• El acceso a recursos gratuitos y de pago (Nombre, Apellidos, Correo electrónico, Nombre de la empresa, Cargo).",
+        "legal_content_5_4": "• Herramientas de análisis y seguimiento (Google Analytics, Microsoft Clarity, Facebook Pixel y LinkedIn Pixel).",
+        "legal_content_5_5": "El usuario puede consultar la Política de Privacidad para obtener más detalles sobre el uso de los datos y la gestión de cookies.",
+
+        "legal_section_6": "6. Enlaces Hipertextuales",
+        "legal_content_6": "El sitio web de ACTAPRISMA puede contener enlaces a sitios externos. El editor no se hace responsable del contenido de dichos sitios de terceros ni de las consecuencias derivadas de su consulta.",
+
+        "legal_section_7": "7. Legislación Aplicable",
+        "legal_content_7": "Cualquier controversia relacionada con el uso del sitio web de ACTAPRISMA se regirá por el derecho francés. En caso de litigio, los tribunales franceses tendrán competencia exclusiva.",
+
+        // Privacy Policy page
+        "privacy_title": "POLÍTICA DE PRIVACIDAD Y COOKIES",
+        "privacy_section_1": "1. Introducción",
+        "privacy_section_2": "2. Datos recopilados y finalidad",
+        "privacy_section_3": "3. Base legal para el tratamiento de datos",
+        "privacy_section_4": "4. Plazo de conservación de los datos",
+        "privacy_section_5": "5. Derechos de los usuarios",
+        "privacy_section_6": "6. Compartición de datos con terceros",
+        "privacy_section_7": "7. Cookies y seguimiento",
+        "privacy_section_8": "8. Seguridad de los datos",
+        "privacy_section_9": "9. Modificaciones de la Política de Privacidad",
+        "privacy_section_10": "10. Información de contacto",
+        
+        "privacy_content_1": "La presente Política de Privacidad explica cómo ACTAPRISMA recopila, procesa y protege sus datos personales cuando utiliza nuestro sitio web. Al acceder y utilizar el sitio web de ACTAPRISMA, usted acepta los términos descritos en esta política, en conformidad con las siguientes normativas: <ul><li>Reglamento General de Protección de Datos (RGPD - Unión Europea y Reino Unido - UK GDPR)</li><li>Ley de Privacidad del Consumidor de California (CCPA - Estados Unidos, incluyendo los derechos de los residentes de California)</li><li>Ley de Protección de la Información Personal y Documentos Electrónicos (PIPEDA - Canadá)</li><li>Ley 25 (Quebec - Canadá)</li><li>Lei Geral de Proteção de Dados Pessoais (LGPD - Brasil)</li><li>Ley de Privacidad de 1988 y Principios de Privacidad Australianos (APPs - Australia)</li><li>Ley de Protección de Información Personal (POPIA - Sudáfrica)</li><li>Nueva Ley Federal sobre Protección de Datos (nFADP - Suiza)</li><li>Ley de Protección de Datos Personales (PDPL - Arabia Saudita)</li><li>Ley de Protección de Datos Personales (PDPL - Argentina)</li><li>Ley de Protección de Datos Personales (PDPL - Andorra)</li><li>Ley de Protección de Datos (DPA - Islas Feroe)</li></ul>Si usted reside fuera de estas jurisdicciones, ACTAPRISMA aplica principios de protección de datos reconocidos internacionalmente.",
+        
+        "privacy_content_2": "ACTAPRISMA recopila y procesa datos personales con las siguientes finalidades: <ul><li>Responder a consultas enviadas a través del formulario de contacto.</li><li>Proporcionar acceso a recursos digitales gratuitos y de pago.</li><li>Analizar y mejorar la experiencia del usuario mediante herramientas de seguimiento y análisis.</li><li>Gestionar transacciones y entregar productos digitales adquiridos.</li></ul>Tipos de datos recopilados: <ul><li>A través del formulario de contacto: Nombre, Apellidos, Correo electrónico, Nombre de la empresa, Cargo (obligatorio), Teléfono y Mensaje (opcional).</li><li>A través del acceso a recursos gratuitos y de pago: Nombre, Apellidos, Correo electrónico, Nombre de la empresa, Cargo.</li><li>A través de herramientas de seguimiento y cookies: Datos de navegación, dirección IP y comportamiento del usuario (Google Analytics, Microsoft Clarity, Facebook Pixel, LinkedIn Pixel).</li></ul>",
+        
+        "privacy_content_3": "ACTAPRISMA procesa datos personales según las siguientes bases legales: <ul><li>Consentimiento: Cuando los usuarios proporcionan voluntariamente sus datos personales (formularios de contacto, suscripciones, aceptación de cookies).</li><li>Necesidad contractual: Cuando el tratamiento de datos es necesario para gestionar el acceso a productos digitales adquiridos.</li><li>Cumplimiento legal: Para la conservación de registros de transacciones con fines fiscales y contables.</li><li>Interés legítimo: Para el monitoreo del rendimiento del sitio web y análisis empresarial, siempre que no se vulneren los derechos fundamentales de los usuarios.</li></ul>",
+        
+        "privacy_content_4": "ACTAPRISMA retiene los datos personales durante los siguientes períodos: <ul><li>Datos del formulario de contacto: Conservados durante 3 años después de la última interacción del usuario.</li><li>Datos de seguimiento y análisis: Conservados de acuerdo con la política de cada proveedor externo.</li><li>Registros de transacciones comerciales: Conservados por el período requerido por las obligaciones legales, fiscales y contables aplicables, por un mínimo de 5 años y hasta 10 años según la jurisdicción.</li></ul>",
+        
+        "privacy_content_5": "Dependiendo de su jurisdicción, usted tiene los siguientes derechos sobre sus datos personales: <ul><li>Derecho de acceso, rectificación y eliminación de sus datos.</li><li>Derecho a la limitación y oposición al tratamiento.</li><li>Derecho a la portabilidad de los datos (cuando sea aplicable).</li><li>Derecho a retirar el consentimiento en cualquier momento para tratamientos basados en el consentimiento.</li><li>Derecho a optar por no vender sus datos personales (CCPA - California).</li></ul>Para ejercer estos derechos, contacte a privacy@actaprisma.com. Su solicitud será procesada en un plazo de 30 días (RGPD, UK GDPR, PIPEDA, Ley 25, LGPD, APPs, POPIA, nFADP, PDPL, DPA) o 45 días (CCPA - California).",
+        
+        "privacy_content_6": "ACTAPRISMA no vende ni alquila datos personales. Sin embargo, algunos datos pueden compartirse con: <ul><li>Proveedores de servicios técnicos (alojamiento, plataformas de correo electrónico, procesadores de pago).</li><li>Herramientas de análisis y marketing (Google Analytics, Microsoft Clarity, Facebook Pixel, LinkedIn Pixel) para análisis estadísticos.</li></ul>Todos los proveedores externos cumplen con altos estándares de protección de datos.",
+        
+        "privacy_content_7": "Cuando visita nuestro sitio web, se pueden almacenar cookies en su dispositivo para: <ul><li>Mejorar la navegación y personalizar la experiencia del usuario.</li><li>Analizar el tráfico del sitio web y optimizar su rendimiento.</li></ul>Puede aceptar o rechazar las cookies a través del banner de consentimiento mostrado en su primera visita.",
+        
+        "privacy_content_8": "ACTAPRISMA implementa medidas de seguridad técnicas y organizativas para proteger sus datos personales contra accesos no autorizados, pérdidas o alteraciones. En caso de una violación de datos, ACTAPRISMA notificará a los usuarios afectados de acuerdo con los requisitos legales aplicables (RGPD, UK GDPR, CCPA, PIPEDA, Ley 25, LGPD, APPs, POPIA, nFADP, PDPL, DPA).",
+        
+        "privacy_content_9": "Esta Política de Privacidad puede actualizarse en cualquier momento. Cualquier modificación será publicada en esta página.",
+        
+        "privacy_content_10": "Para cualquier consulta relacionada con la privacidad, puede contactarnos en privacy@actaprisma.com."
     },
     "pt": {
         // Navigation
