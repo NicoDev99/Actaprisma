@@ -386,26 +386,27 @@ div.explanations {
                         .burger-lang-options {
                             display: block;
                             width: 100%;
-                            margin-top: 20px;
+                            margin-top: 10px;
                             
                             h3 {
                                 width: 100%;
                                 text-align: center;
-                                margin-bottom: 15px;
+                                margin-bottom: 10px;
                                 font-family: "Gotham", sans-serif;
                                 font-weight: 300;
                                 color: #0f293d;
                                 font-size: 18px;
                                 border-top: 1px solid #eee;
-                                padding-top: 15px;
+                                padding-top: 10px;
                             }
                             
                             .lang-flags {
                                 display: flex;
-                                flex-wrap: wrap;
+                                flex-wrap: nowrap;
                                 justify-content: center;
-                                gap: 20px;
+                                gap: 15px;
                                 padding: 0 20px;
+                                padding-bottom: 20px;
                                 
                                 .lang-flag {
                                     display: flex;
@@ -413,30 +414,35 @@ div.explanations {
                                     align-items: center;
                                     background: none;
                                     border: none;
-                                    padding: 10px;
+                                    padding: 5px 10px;
                                     cursor: pointer;
-                                    transition: transform 0.2s ease;
-                                    width: 80px;
+                                    transition: transform 0.2s ease, opacity 0.3s ease;
+                                    width: auto;
                                     text-align: center;
+                                    opacity: 0.5;
+                                    
+                                    .flag {
+                                        font-size: 28px;
+                                    }
                                     
                                     &:hover {
                                         transform: scale(1.1);
+                                        opacity: 0.8;
                                     }
                                     
                                     &.active {
                                         color: #215ca8;
                                         font-weight: bold;
-                                    }
-                                    
-                                    .flag {
-                                        font-size: 28px;
-                                        margin-bottom: 8px;
+                                        position: relative;
+                                        opacity: 1;
+                                        
+                                        .flag {
+                                            font-size: 28px;
+                                        }
                                     }
                                     
                                     .country {
-                                        font-size: 14px;
-                                        font-family: "Gotham", sans-serif;
-                                        color: #0f293d;
+                                        display: none;
                                     }
                                 }
                             }
@@ -588,5 +594,51 @@ div.explanations {
     }
     100% {
         background-position: left bottom;
+    }
+}
+
+/* Media query pour les très petits écrans */
+@media (max-width: 380px) {
+    div.nav-header nav ul {
+        width: 85vw;
+        right: -85vw;
+        padding-top: 80px;
+        padding-bottom: 60px;
+        
+        li {
+            margin: 3px 0;
+            
+            a {
+                font-size: 14px;
+                padding: 5px 10px;
+            }
+        }
+        
+        .lang-dropdown .burger-lang-options {
+            margin-top: 5px;
+            
+            h3 {
+                margin-bottom: 5px;
+                padding-top: 5px;
+                font-size: 16px;
+            }
+            
+            .lang-flags {
+                gap: 20px; /* Augmente l'espace entre les drapeaux */
+                padding: 0 10px; /* Réduit le padding horizontal */
+                
+                .lang-flag {
+                    padding: 8px; /* Augmente le padding pour une meilleure zone de clic */
+                    
+                    .flag {
+                        font-size: 24px; /* Taille légèrement plus petite mais uniforme pour tous les drapeaux */
+                    }
+                    
+                    &.active .flag {
+                        font-size: 24px; /* Même taille pour le drapeau actif */
+                    }
+                }
+            }
+        }
     }
 }
