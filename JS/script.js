@@ -345,7 +345,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 backSpeed: 0,
                 startDelay: 300,
                 loop: false,
-                showCursor: true,
+                showCursor: false,
                 cursorChar: '|',
                 autoInsertCss: true
             });
