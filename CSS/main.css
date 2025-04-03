@@ -33,15 +33,11 @@ div.nav-header {
   position: relative;
 }
 div.nav-header nav {
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-between;
   justify-content: space-between;
-  -webkit-align-items: center;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   margin: 0 100px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   padding: 25px 0;
   /* Hamburger menu styles */
@@ -65,19 +61,14 @@ div.nav-header nav.fixed div img {
   height: 90px;
 }
 div.nav-header nav .hamburger-menu {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
+  display: none;
   flex-direction: column;
-  -webkit-justify-content: space-between;
   justify-content: space-between;
   width: 30px;
   height: 21px;
   cursor: pointer;
   z-index: 100;
   position: relative;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 div.nav-header nav .hamburger-menu span {
   display: block;
@@ -139,7 +130,6 @@ div.nav-header nav ul li.lang-buttons button.lang-toggle {
   cursor: pointer;
   padding: 5px;
   border: none;
-  -webkit-transition: transform 0.2s ease;
   transition: transform 0.2s ease;
   opacity: 0.5;
 }
@@ -161,7 +151,6 @@ div.nav-header nav ul li.lang-dropdown button.lang-toggle {
   cursor: pointer;
   padding: 5px;
   border: none;
-  -webkit-transition: transform 0.2s ease;
   transition: transform 0.2s ease;
   opacity: 0.5;
 }
@@ -409,11 +398,8 @@ section#vision {
   /* Content */
 }
 section#vision div.explanations {
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-around;
   justify-content: space-around;
-  -webkit-align-items: center;
   align-items: center;
   gap: 250px;
   margin: 0 100px;
@@ -452,11 +438,9 @@ section#vision div.explanations .text .highlight.animated-highlight {
   background-image: linear-gradient(to right, #0063A1 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  -webkit-animation: none;
   animation: none;
 }
 section#vision div.explanations .text .highlight.animated-highlight.aos-animate {
-  -webkit-animation: highlightSlide 0.8s ease-out forwards;
   animation: highlightSlide 0.8s ease-out forwards;
 }
 section#vision div.explanations .logo {

@@ -3,11 +3,8 @@ section#vision {
     position: relative;
 
     div.explanations {
-        display: -webkit-flex;
         display: flex;
-        -webkit-justify-content: space-around;
         justify-content: space-around;
-        -webkit-align-items: center;
         align-items: center;
         gap: 250px;
         margin: 0 100px;
@@ -51,11 +48,9 @@ section#vision {
                     background-size: 200% 100%;
                     background-position: right bottom;
                     
-                    -webkit-animation: none;
                     animation: none;
                     
                     &.aos-animate {
-                        -webkit-animation: highlightSlide 0.8s ease-out forwards;
                         animation: highlightSlide 0.8s ease-out forwards;
                     }
                 }
