@@ -1823,4 +1823,13 @@ body.menu-open {
   overflow: hidden;
 }
 
+/* Font fallbacks for better Safari compatibility */
+.gotham-font {
+  font-family: "Gotham", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.dune-font {
+  font-family: "Dune", Georgia, "Times New Roman", serif;
+}
+
 /*# sourceMappingURL=main.css.map */
