@@ -7,6 +7,9 @@
         url('../FONTS/Gotham.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -17,6 +20,9 @@
         url('../FONTS/Gotham.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -24,4 +30,7 @@
     src: url("../FONTS/Dune_Rise.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
