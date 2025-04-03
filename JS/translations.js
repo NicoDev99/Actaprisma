@@ -357,8 +357,8 @@ const translations = {
         "legal_content_3": "All content on the ACTAPRISMA site, including but not limited to text, graphics, logos, images, videos, and icons, is protected under copyright and intellectual property law. Any reproduction, representation, modification, publication, adaptation of all or part of the site's elements is prohibited without prior written authorization from ACTAPRISMA.",
 
         "legal_section_4": "4. Responsabilidades",
-        "legal_content_4_1": "ACTAPRISMA se esfuerza por proporcionar información o más precisa posible en su sitio. No obstante, el editor no podrá ser responsable de omisiones, imprecisaciones y deficiencias en la actualización.",
-        "legal_content_4_2": "El sitio ACTAPRISMA está accesible 24/7, excepto durante interrupciones para mantenimiento o problemas técnicos. El editor no podrá ser responsable de interrupciones y fallas relacionadas a Internet, servicios de alojamiento o cualquier evento fuera de su control.",
+        "legal_content_4_1": "ACTAPRISMA se esfuerza por proporcionar información o más precisa posible en su sitio. No obstante, el editor no podrá ser responsable de omisiones, inexactitudes y deficiencias en la actualización.",
+        "legal_content_4_2": "El sitio ACTAPRISMA está accesible 24/7, excepto durante interrupciones para mantenimiento o problemas técnicos. El editor no podrá ser responsable de interrupciones y fallos relacionados con Internet, servicios de alojamiento o cualquier evento fuera de su control.",
 
         "legal_section_5": "5. Personal Data and Cookies",
         "legal_content_5_1": "The ACTAPRISMA site collects certain personal data via:",
@@ -416,19 +416,19 @@ const translations = {
         
         // Section Vision
         "main_title": "¿Tiene <br /> un objetivo?",
-        "subtitle_1": "Nosotros también:",
+        "subtitle_1": "Nosotros también.",
         "help_text": "Ayudarle a <span>ser comprendido</span> para impactar a su audiencia: inversores, clientes, votantes, espectadores…",
         "subtitle_2": "¿Cómo lo logramos?",
         "method_text": "Cultivamos su autenticidad y amplificamos la <span>percepción</span> de su valor. Le damos todas las claves para <span>dominar su imagen.</span> <span class='highlight animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>Resultados</span> garantizados.",
         "diagnostic_btn": "¿Quiere un diagnóstico para su proyecto?",
         
         "vision_title": "VISIÓN",
-        "comm_question": "¿Ha oído la frase \"hay que comunicar\"?",
+        "comm_question": "¿Ha oído la frase «hay que comunicar»?",
         "comm_response": "Nosotros también. Pero, ¿para qué?",
         "comm_desc_1": "Comunicar es materializar su identidad, su concepto, su visión. Es elegir los canales adecuados y amplificar su mensaje con precisión.",
         "comm_desc_2": "En ACTAPRISMA, le ayudamos a definir y estructurar su imagen para que conserve el control y la exprese con impacto.",
         "comm_desc_3": "Desarrollamos el potencial de su identidad para generar un beneficio emocional en su audiencia, crear un sentimiento de pertenencia e identificación y, al mismo tiempo, delimitar estratégicamente su campo de soberanía y su territorio ideológico.",
-        "comm_desc_4": "Simplemente, le ayudamos a <span class='blue-color'>ir más allá de una simple \"propuesta de valor\" para maximizar el compromiso de su audiencia y reforzar su legitimidad en el espacio público.</span>",
+        "comm_desc_4": "No se trata solo de «propuesta de valor», sino de trascenderla. <span class='blue-color'>Nuestro objetivo: maximizar el compromiso de su audiencia y reforzar su legitimidad en el espacio público.</span>",
         "goal_text_1": "Su ambición es nuestro motor.",
         "goal_text_2": "Le escuchamos con precisión, analizamos su posicionamiento y le damos respuestas concretas.",
         "goal_text_3": "Le ayudamos a convertirse en una referencia.",
@@ -436,178 +436,61 @@ const translations = {
         
         // Section Accompagnement
         "accompaniment_title": "CONSULTORÍA",
-        "accompaniment_intro": "<span class='brand'>ACTAPRISMA</span> es aliado de los <span class='bold'>impulsores del cambio</span>, los innovadores, aquellos que impulsan el progreso con audacia y se convierten en motores de transformación. Hemos desarrollado <span class='bold'>protocolos de acompañamiento</span> diseñados para estos <span class='bold'>actores de impacto</span> como:",
+        "accompaniment_intro": "<span class='brand'>ACTAPRISMA</span> es aliado de los <span class='bold'>impulsores del cambio</span>, los innovadores, aquellos que impulsan el progreso con audacia y se convierten en motores de transformación. Hemos desarrollado <span class='bold'>protocolos de acompañamiento</span> diseñados para estos <span class='bold'>actores de impacto</span>:",
         
         // Cartes de services
         "political_title": "ESFERA POLÍTICA",
-        "political_desc": "Estamos a su disposición para <span class='bold'>analisar su posicionamiento actual, sus áreas de mejora</span> en función de la opinión pública y los mecanismos que lhe permitirán alcanzar plenamente sus objetivos.",
+        "political_desc": "Estamos a su disposición para <span class='bold'>analizar su posicionamiento actual, sus áreas de mejora</span> en función de la opinión pública y los mecanismos que le permitirán alcanzar plenamente sus objetivos.",
         "political_btn": "¡Hablemos!",
         
         "startups_title": "STARTUPS",
-        "startups_desc": "Hemos creado el «<span class='bold'>Startup Authority System</span>»<br>· Impulse el <span class='bold'>valor percibido</span> de su empresa en tiempo récord.<br>· Deje de perder clientes por un <span class='bold'>posicionamiento</span> confuso.<br>· Transforme su imagen en un <span class='bold'>íman para clientes</span>.",
+        "startups_desc": "Hemos creado el «<span class='bold'>Startup Authority System</span>»<br>. Impulse el <span class='bold'>valor percibido</span> de su empresa en tiempo récord.<br>. Deje de perder clientes por un <span class='bold'>posicionamiento</span> confuso.<br>. Transforme su imagen en un <span class='bold'>imán para clientes</span>.",
         "startups_btn": "¡Impulse su proyecto ahora mismo con sus herramientas gratuitas!",
         
         "sports_title": "ORGANIZACIONES<br />DEPORTIVAS",
-        "sports_desc": "<p class='bold'>¿Quiere transformar su organización en una marca fuerte, capaz de atraer seguidores fieles y socios estratégicos?</p><p>Le acompañamos en el crecimiento exponencial de su entidad y en la consolidación de su liderazgo, potenciando aquello que la convierte en una fuerza de evolución.</p>",
+        "sports_desc": "<p class='bold'>¿Quiere convertir su organización en una marca fuerte, capaz de atraer seguidores fieles y socios estratégicos?</p><p>Le acompañamos en el crecimiento exponencial de su entidad y en la consolidación de su liderazgo, potenciando aquello que la convierte en una fuerza de evolución.</p>",
         "sports_btn": "¡Hablemos!",
         
         // Section Défi
-        "challenge_header": "Sea cual sea el momento, le ayudamos a afrontar sus<br>desafíos de <span class='bold'>comunicação</span>",
+        "challenge_header": "Sea cual sea el momento, le ayudamos a afrontar sus<br>desafíos de comunicación :",
         "proactive_title": "Comunicación proactiva",
-        "proactive_list": ["Capte la atención", "Desperte el interés", "Genere adhesión", "Aumente el compromiso"],
+        "proactive_list": ["Capte la atención", "Despierte el interés", "Genere adhesión", "Aumente el compromiso"],
         "crisis_title": "Comunicación de crisis",
-        "crisis_list": ["Controle la narrativa", "Gestione los impactos", "Restaure la confianza", "Proteja su reputación"],
+        "crisis_list": ["Controle el relato", "Gestione los impactos", "Restaure la confianza", "Proteja su reputación"],
         
         // Section À propos
-        "about_title": "QUIÉNES SOMOS",
+        "about_title": "SOBRE NOSOTROS",
         "intro_title": "¿Qué mejor introducción que el origen de nuestro nombre?",
-        "intro_text": "ACTAPRISMA es la fusión de dos conceptos:",
+        "intro_text": "ACTAPRISMA es la fusión de dos conceptos clave:",
         "concept_1": "<span class='arrow'>►</span> El del prisma de Newton, <span class='highlight blue bold'>prisma</span> en latín, aquel que revela y hace perceptible una verdad, <span class='highlight blue animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>preserva la autenticidad y extrae lo sublime.</span>",
         "with_text": "con",
-        "concept_2": "<span class='arrow'>►</span> La difusión mediática y multicanal, representada por los <span class='highlight blue bold'>acta</span> diurna, el ancestro de los periódicos y la primera fuente de información escrita a gran escala. Una ilustración de <span class='highlight blue animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>cómo la historia retém la suya.</span>",
-        "quote": "Su imagen es un activo—un recurso estratégico que debe aprovechar para alcanzar sus ambiciones.",
+        "concept_2": "<span class='arrow'>►</span> La difusión mediática y multicanal, representada por los <span class='highlight blue bold'>acta</span> diurna, el ancestro de los periódicos y la primera fuente de información escrita a gran escala. Una ilustración de <span class='highlight blue animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>cómo la historia recuerda la suya.</span>",
+        "quote": "«Su imagen es un activo—un recurso estratégico que debe aprovechar para alcanzar sus ambiciones.»",
         "founder": "Manon Gaziello,",
         "founder_title": "fundadora de",
         "about_desc_1": "ACTAPRISMA es una estructura creada para usted y sus proyectos, diseñada para adaptarse a sus desafíos y resolver sus problemáticas de comunicación.",
-        "about_desc_2": "Soy licenciada en Relaciones Públicas y Lobbying, con un certificado en Negociación Internacional (European Legislative and Policy Process) y fui distinguida con el Premio Emmanuele Gazzo por Sciences Po Aix, Francia.",
-        "about_desc_3": "Antes de fundar ACTAPRISMA, fui Directora de Comunicación y Relaciones Públicas en una startup tecnológica emergente y acumulé experiencia en gabinetes políticos, agencias y clubes deportivos profesionales.",
-        "about_desc_4": "En la práctica, esto significa que he estudiado en profundidad las técnicas que <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>posicionan la imagen como un motor esencial de rendimiento e impacto.</span>",
-        "about_desc_5": "Cada stakeholder posee una identidad compleja. ACTAPRISMA ofrece <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>soluciones estratégicas eficaces</span> para destacar los aspectos más valiosos de esa identidad y garantizar su éxito.",
-        "social_text": "Conéctese conmigo en redes sociales: Medium - LinkedIn",
+        "about_desc_2": "Soy licenciada en Relaciones Públicas y Lobbying, con un certificado en Negociación Internacional (\"European Legislative and Policy Process\") y ganadora del Premio Emmanuele Gazzo en Sciences Po Aix, France.",
+        "about_desc_3": "Antes de fundar ACTAPRISMA, fui directora de comunicación y relaciones públicas en una startup emergente del sector tech y trabajé en gabinetes políticos, agencias y clubes deportivos profesionales.",
+        "about_desc_4": "En términos concretos, esto significa que he estudiado en profundidad las estrategias que <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>convierten la imagen en un verdadero motor de rendimiento.</span>",
+        "about_desc_5": "Cada actor posee una identidad única y compleja. ACTAPRISMA le ofrece <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>soluciones estratégicas</span> para dar visibilidad a los aspectos clave de esa identidad y garantizar su éxito.",
+        "social_text": "Ponte en contacto: Medium - LinkedIn",
         
         // Section Contact
         "contact_title": "CONTACTO",
         "project_placeholder": "* Su proyecto es:",
         "organization_placeholder": "* Nombre de la organización:",
-        "role_placeholder": "* Su cargo en la organización:",
+        "role_placeholder": "* Su rol en la organización:",
         "lastname_placeholder": "* Su apellido:",
         "firstname_placeholder": "* Su nombre:",
         "email_placeholder": "* Su correo electrónico:",
         "phone_placeholder": "Su número de teléfono:",
-        "message_placeholder": "* Algún detalle para compartir?",
+        "message_placeholder": "* ¿Algún detalle para compartir?",
         "required_fields": "* Campos obligatorios",
         "submit_button": "Enviar",
         "form_success": "Su mensaje ha sido enviado con éxito. Responderemos lo antes posible.",
         "form_error": "Ocurrió un error al enviar el mensaje. Por favor, inténtelo de nuevo.",
         "field_required": "Este campo es obligatorio",
-        "email_invalid": "Por favor, introduzca una dirección de correo electrónico válida",
-        
-        // Footer
-        "copyright": "© 2025 Actaprisma. Todos los derechos reservados.",
-        "legal_notice": "Aviso legal",
-        "terms_of_sale": "Condiciones Generales de Venta",
-        "privacy_policy": "Política de privacidad",
-        "copyright_extended": "ACTAPRISMA® es una marca registrada. © 2025. Todos los derechos reservados.",
-
-        // Terms (CGV) page
-        "terms_title": "CONDICIONES GENERALES DE VENTA",
-        "return_home": "Volver a la página inicial",
-        "terms_section_1": "1. Presentación",
-        "terms_section_2": "2. Productos y servicios ofrecidos",
-        "terms_section_3": "3. Pedido y pago",
-        "terms_section_4": "4. Ausencia de derecho de retratação",
-        "terms_section_5": "5. Política de reembolso",
-        "terms_section_6": "6. Propiedad intelectual y condiciones específicas de uso",
-        "terms_section_7": "7. Responsabilidade",
-        "terms_section_8": "8. Protección de datos personales",
-        "terms_section_9": "9. Ley aplicável e litígios",
-        "terms_section_10": "10. Promociones y evolución de precios",
-        
-        "terms_content_1": "Las presentes Condiciones Generales de Venta (CGV) rigen las ventas de productos digitales ofrecidos por ACTAPRISMA, empresa individual registrada con el número SIRET 90409160000026, con sede en 6 chemin des petits plans, 06800 Cagnes-sur-Mer, Francia.",
-        "terms_email": "Email de contacto: ",
-        
-        "terms_content_2": "ACTAPRISMA ofrece recursos digitales en la forma de archivos PDF, webinars exclusivos y contenidos exclusivos, incluyendo el programa \"Startup Authority System\" que incluye:",
-        "terms_content_2_item1": "Un kit de recursos estratégicos para startups.",
-        "terms_content_2_item2": "Webinarios exclusivos.",
-        "terms_content_2_item3": "Una hora de consultoria gratuita.",
-        "terms_content_2_item4": "Un taller en vivo \"The Two Sentences Formula\".",
-        
-        "terms_content_3_item1": "Los pedidos se realizan directamente en el sitio web actaprisma.com.",
-        "terms_content_3_item2": "Los pagos son seguros y pueden realizarse a través de Stripe, PayPal y tarjeta de crédito.",
-        "terms_content_3_item3": "Uma vez que o pagamento é validado, o comprador recebe imediatamente acesso aos recursos digitais.",
-        
-        "terms_content_4": "Conformément à l'article L221-28 du Code de la consommation, le droit de rétractation ne s'applique pas aux contenus numériques fournis immédiatement après l'achat et sans support matériel. En validant l'achat, le client renonce expressément à son droit de rétractation.",
-        
-        "terms_content_5": "Aucun remboursement ne sera effectué après l'achat des produits numériques, ceux-ci étant considérés comme consommés dès leur accès.",
-        
-        "terms_content_6": "Tous les contenus proposés par ACTAPRISMA sont protégés par le droit d'auteur et restent la propriété exclusive de l'éditeur. Toute reproduction, modification, revente, partage, distribution, diffusion publique, adaptation ou exploitation commerciale, sous quelque forme que ce soit, est strictement interdite sans autorisation écrite préalable d'ACTAPRISMA. Toute violation fera l'objet de poursuites judiciaires.",
-        
-        "terms_content_7": "ACTAPRISMA ne saurait être tenu responsable des éventuels dommages liés à l'utilisation des produits numériques, notamment en cas d'erreur d'interprétation ou d'échec dans l'application des stratégies conseillées.",
-        
-        "terms_content_8": "Les informations collectées lors de l'achat sont traitées conformément à la Politique de Confidentialité disponible sur le site.",
-        
-        "terms_content_9": "Les présentes CGV sont régies par le droit français. En cas de litige, une solution amiable sera privilégiée. À défaut d'accord, les tribunaux compétents seront ceux de Nice.",
-        
-        "terms_content_10": "Le tarif promotionnel de 97 euros est une offre à durée limitée. Si l'acheteur ne profite pas de l'offre immédiatement, le prix du produit augmentera progressivement par paliers successifs de +30 % : 126 euros, puis 163 euros, 212 euros, 276 euros, et enfin 358 euros. Chaque augmentation sera annoncée par email aux acheteurs potentiels. ACTAPRISMA se réserve le droit d'ajuster les tarifs et promotions à sa discrétion.",
-
-        // Legal page
-        "legal_title": "AVISO LEGAL",
-        "legal_section_1": "1. Informaciones Générales",
-        "legal_content_1": "El sitio web ACTAPRISMA es editado por ACTAPRISMA, empresa individual registrada con el número SIRET 90409160000026, con sede en 6 chemin des petits plans, 06800 Cagnes-sur-Mer, Francia.",
-        "legal_director": "Director de la publicación: ",
-        "legal_director_name": "Manon GAZIELLO",
-        "legal_contact": "Email de contacto: ",
-
-        "legal_section_2": "2. Alojamiento",
-        "legal_content_2": "El sitio ACTAPRISMA está alojado por o2switch, sociedad de responsabilidad limitada (SARL) con un capital de 100.000 euros, registrada bajo el SIRET 510 909 80700024, con sede en:",
-        "legal_host_name": "o2switch",
-        "legal_host_address": "222 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, Francia",
-        "legal_host_email": "Email de contacto: support@o2switch.fr",
-        "legal_host_phone": "Teléfono: 04 44 44 60 40",
-        "legal_host_desc": "El provedor de alojamiento garantiza el mantenimiento y la seguridad de los servidores necesarios para el funcionamiento del sitio ACTAPRISMA.",
-
-        "legal_section_3": "3. Propiedad Intelectual",
-        "legal_content_3": "Todo el contenido presente en el sitio ACTAPRISMA, incluyendo pero no limitado a textos, gráficos, logotipos, imágenes, videos e iconos, está protegido por derechos de autor y propiedad intelectual. Cualquier reproducción, representación, modificación, publicación o adaptación de todo o parte de los elementos del sitio está prohibida sin autorización previa por escrito de ACTAPRISMA.",
-
-        "legal_section_4": "4. Responsabilidades",
-        "legal_content_4_1": "ACTAPRISMA se esfuerza por proporcionar información lo más precisa posible en su sitio web. No obstante, el editor no podrá ser responsable de omisiones, inexactitudes y deficiencias en la actualización.",
-        "legal_content_4_2": "El sitio ACTAPRISMA está accesible las 24 horas del día, los 7 días de la semana, excepto durante interrupciones por mantenimiento o problemas técnicos. El editor no podrá ser responsable de interrupciones y fallos relacionados con Internet, servicios de alojamiento o cualquier evento fuera de su control.",
-
-        "legal_section_5": "5. Datos Personales y Cookies",
-        "legal_content_5_1": "El sitio ACTAPRISMA coleta ciertos datos personales a través de:",
-        "legal_content_5_2": "• El formulario de contacto (Apellido, Nombre, Email, Nombre de la empresa, Misión/Cargo, teléfono y mensaje opcionales)",
-        "legal_content_5_3": "• El acceso a recursos gratuitos y de pago (Apellido, Nombre, Email, Nombre de la empresa, Misión/Cargo)",
-        "legal_content_5_4": "• Herramientas de análisis y seguimiento (Google Analytics, Microsoft Clarity, Facebook Pixel, LinkedIn Pixel)",
-        "legal_content_5_5": "El usuario puede consultar la Política de Privacidad para más detalles sobre el uso de los datos y la gestión de cookies.",
-
-        "legal_section_6": "6. Enlaces de Hipertexto",
-        "legal_content_6": "El sitio ACTAPRISMA puede contener enlaces a sitios externos. El editor no se hace responsable del contenido de estos sitios de terceeros ni de las consecuencias de su consulta.",
-
-        "legal_section_7": "7. Droit applicable",
-        "legal_content_7": "Tout litige en relation avec l'utilisation du site ACTAPRISMA est soumis au droit français. En cas de litige, les tribunaux français seront seuls compétents.",
-
-        // Privacy Policy page
-        "privacy_title": "POLÍTICA DE PRIVACIDAD Y COOKIES",
-        "privacy_section_1": "1. Introducción",
-        "privacy_section_2": "2. Datos recopilados y finalidad",
-        "privacy_section_3": "3. Base legal del tratamiento de datos",
-        "privacy_section_4": "4. Período de conservación de los datos",
-        "privacy_section_5": "5. Derechos de los usuarios",
-        "privacy_section_6": "6. Compartir datos con terceros",
-        "privacy_section_7": "7. Cookies y seguimiento",
-        "privacy_section_8": "8. Seguridad de los datos",
-        "privacy_section_9": "9. Modificaciones de la Política de Privacidad",
-        "privacy_section_10": "10. Contacto",
-        
-        "privacy_content_1": "La presente Política de Privacidad explica cómo ACTAPRISMA recopila, procesa y protege sus datos personales cuando utiliza nuestro sitio web. Al utilizar el sitio ACTAPRISMA, acepta los términos descritos en esta política, de conformidad con las siguientes regulaciones: <ul><li>Reglamento General sobre la Protección de Datos (RGPD - Unión Europea y Reino Unido - UK GDPR)</li><li>California Consumer Privacy Act (CCPA - Estados Unidos, incluidos los derechos de los residentes de California)</li><li>Ley de Protección de Información Personal y Documentos Electrónicos (PIPEDA - Canadá)</li><li>Ley 25 (Quebec - Canadá)</li><li>Lei Geral de Proteção de Dados Pessoais (LGPD - Brasil)</li><li>Privacy Act 1988 y Australian Privacy Principles (APPs - Austrália)</li><li>Protection of Personal Information Act (POPIA - Sudáfrica)</li><li>Nueva Lei Federal de Protección de Datos (nLPD - Suiza)</li><li>Ley de Protección de Datos Personales (PDPL - Arabia Saudita)</li><li>Ley de Protección de Datos Personales (PDPL - Argentina)</li><li>Ley de Protección de Datos Personales (PDPL - Andorra)</li><li>Data Protection Act (DPA - Islas Feroe)</li></ul>Si reside fuera destas jurisdições, a ACTAPRISMA aplica os princípios de proteção de dados internacionalmente reconhecidos.",
-        
-        "privacy_content_2": "ACTAPRISMA recopila y procesa sus datos personales para las siguientes finalidades: <ul><li>Responder a las solicitudes enviadas a través del formulario de contacto.</li><li>Proporcionar acceso a recursos digitales gratuitos y de pago.</li><li>Analizar y mejorar la experiencia del usuario a través de herramientas de seguimiento y análisis.</li><li>Gerir transações e entregar produtos digitais adquiridos.</li></ul>Tipos de dados recolhidos: <ul><li>A través do formulário de contacto: Sobrenome, Nome, Email, Nome da empresa, Missão/Cargo (obrigatórios), Telefone e Mensagem (opcionais).</li><li>A través do acesso a recursos gratuitos e pagos: Sobrenome, Nome, Email, Nome da empresa, Missão/Cargo.</li><li>A través de ferramentas de rastreamento e cookies: Dados de navegação, endereço IP, comportamento do utilizador (Google Analytics, Microsoft Clarity, Facebook Pixel, LinkedIn Pixel).</li></ul>",
-        
-        "privacy_content_3": "ACTAPRISMA processa sus datos personales sobre las siguientes bases legais: <ul><li>O seu consentimento explícito, dado ao submeter formulários ou aceitar cookies.</li><li>A execução de um contrato, quando adquire produtos digitais.</li><li>Os interesses legítimos da ACTAPRISMA para a melhoria dos serviços e segurança do site.</li><li>Obrigações legais às quais a ACTAPRISMA está sujeita.</li></ul>",
-        
-        "privacy_content_4": "ACTAPRISMA conserva os dados pessoais durante os seguintes períodos: <ul><li>Dados do formulário de contacto: Conservados durante 3 anos após a última interação com o utilizador.</li><li>Dados de rastreamento e análise: Conservados de acordo com a política de cada fornecedor terceiro.</li><li>Registos de transações comerciais: Conservados pelo período exigido pelas obrigações legais, fiscais e contabilísticas aplicáveis, por um mínimo de 5 anos e até 10 anos dependendo da jurisdição.</li></ul>",
-        
-        "privacy_content_5": "Em conformidade com os regulamentos em vigor (RGPD, UK GDPR, CCPA, PIPEDA, Lei 25, LGPD, APPs, POPIA, nLPD, PDPL, DPA), você dispõe dos seguintes direitos: <ul><li>Direito de acesso, retificação e apagamento dos seus dados.</li><li>Direito à limitação e oposição ao tratamento.</li><li>Direito à portabilidade dos dados.</li><li>Direito de retirar o seu consentimento a qualquer momento.</li><li>Direito de oposição à venda dos seus dados pessoais (CCPA - Califórnia).</li></ul>Para exercer estes direitos, envie um email para privacy@actaprisma.com. Processaremos o seu pedido dentro de 30 dias (RGPD, UK GDPR, PIPEDA, APPs, Lei 25, LGPD, POPIA, nLPD, PDPL, DPA) ou 45 dias (CCPA - Califórnia).",
-        
-        "privacy_content_6": "A ACTAPRISMA não vende nem aluga os seus dados. No entanto, certas informações podem ser partilhadas com: <ul><li>Prestadores técnicos (alojamento, serviço de email, plataformas de pagamento).</li><li>Ferramentas de análise e marketing (Google Analytics, Microsoft Clarity, Facebook Pixel, LinkedIn Pixel) no âmbito de análises estatísticas.</li></ul>Estes serviços terceiros respeitam padrões elevados de proteção de dados.",
-        
-        "privacy_content_7": "Durante a sua visita, podem ser colocados cookies no seu dispositivo para: <ul><li>Melhorar a navegação e personalizar a sua experiência de utilizador.</li><li>Analisar a audiência e otimizar o desempenho do site.</li></ul>Pode aceitar ou recusar cookies através do banner de consentimento exibido durante a sua primeira visita.",
-        
-        "privacy_content_8": "A ACTAPRISMA implementa medidas de segurança técnicas e organizacionais para proteger os seus dados contra perda, alteração ou acesso não autorizado. Em caso de violação de dados, a ACTAPRISMA informará os utilizadores afetados dentro dos prazos exigidos pela legislação aplicável (CCPA, RGPD, UK GDPR, PIPEDA, APPs, Lei 25, LGPD, POPIA, nLPD, PDPL, DPA).",
-        
-        "privacy_content_9": "Esta Política de Privacidade pode ser atualizada a qualquer momento. Qualquer alteração será notificada nesta página.",
-        
-        "privacy_content_10": "Para qualquer questão sobre esta política, pode contactar-nos em privacy@actaprisma.com."
+        "email_invalid": "Por favor, introduzca una dirección de correo electrónico válida"
     },
     "pt": {
         // Navigation
@@ -619,186 +502,81 @@ const translations = {
         
         // Section Vision
         "main_title": "Tem <br /> um objetivo?",
-        "subtitle_1": "Nós também:",
-        "help_text": "Ajudamo-lo a <span>ser comprendido</span> para impactar a sua audiência: investidores, clientes, eleitores, espectadores…",
+        "subtitle_1": "Nós também.",
+        "help_text": "Ajudamo-lo a <span>ser compreendido</span> para impactar as sua audiência: investidores, clientes, eleitores, espectadores…",
         "subtitle_2": "Como o conseguimos?",
-        "method_text": "Cultivamos a sua autenticidade e amplificamos a <span>percepção</span> do seu valor. Damos-lhe todas as chaves para <span>dominar a sua imagem.</span> <span class='highlight animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>Resultados</span> garantizados.",
+        "method_text": "Cultivamos a sua autenticidade e amplificamos a <span>perceção</span> do seu valor. Damos-lhe todas as chaves para <span>dominar a sua imagem.</span> <span class='highlight animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>Resultados</span> garantidos.",
         "diagnostic_btn": "Quer um diagnóstico para o seu projeto?",
+        
+        "vision_title": "VISÃO",
+        "comm_question": "Já ouviu a expressão «é preciso comunicar»?",
+        "comm_response": "Nós também. Mas... para quê?",
+        "comm_desc_1": "Comunicar é materializar a sua identidade, o seu conceito, a sua visão. É escolher os canais certos e amplificar a sua mensagem com precisão.",
+        "comm_desc_2": "Na ACTAPRISMA, ajudamo-lo a definir e estruturar a sua imagem para que mantenha o controlo e a expresse com impacto.",
+        "comm_desc_3": "Desenvolvemos o potencial da sua identidade para gerar um benefício emocional no seu público, criar um sentimento de pertença e identificação e, ao mesmo tempo, delimitar estrategicamente o seu campo de soberania e o seu território ideológico.",
+        "comm_desc_4": "Não se trata apenas de uma «proposta de valor», mas de transcendê-la. <span class='blue-color'>O nosso objetivo: maximizar o envolvimento do seu público e reforçar a sua legitimidade no espaço público.</span>",
+        "goal_text_1": "A sua ambição é o nosso motor.",
+        "goal_text_2": "Ouvimo-lo com precisão, analisamos o seu posicionamento e damos-lhe respostas concretas.",
+        "goal_text_3": "Ajudamo-lo a tornar-se uma referência.",
+        "image_mastery_btn": "Quer gerir melhor a sua imagem?",
         
         // Section Accompagnement
         "accompaniment_title": "CONSULTORIA",
-        "accompaniment_intro": "<span class='brand'>ACTAPRISMA</span> é o aliado dos <span class='bold'>impulsionadores da mudança</span>, dos inovadores, daqueles que impulsam o progresso com audácia e se convierten em motores de transformação. Hemos desarrollado <span class='bold'>protocolos de acompanhamento</span> adaptados a <span class='bold'>atores de impacto</span> como:",
+        "accompaniment_intro": "<span class='brand'>ACTAPRISMA</span> é o aliado dos <span class='bold'>impulsionadores da mudança</span>, dos inovadores, daqueles que promovem o progresso com audácia e se tornam motores de transformação. Desenvolvemos <span class='bold'>protocolos de acompanhamento</span> adaptados a <span class='bold'>atores de impacto</span> como:",
         
         // Cartes de services
         "political_title": "ESFERA POLÍTICA",
-        "political_desc": "Estamos à sua disposição para <span class='bold'>analisar o seu posicionamento actual, os seus pontos de melhoria</span> em função da opinião pública e os mecanismos que lhe permitirão alcançar plenamente os seus objetivos.",
-        "political_btn": "¡Hablemos!",
+        "political_desc": "Estamos à sua disposição para <span class='bold'>analisar o seu posicionamento atual, os seus pontos de melhoria</span> face à opinião pública e os mecanismos que lhe permitirão alcançar plenamente os seus objetivos.",
+        "political_btn": "Fale connosco!",
         
         "startups_title": "STARTUPS",
-        "startups_desc": "Hemos creado el «<span class='bold'>Startup Authority System</span>»<br>· Impulse el <span class='bold'>valor percibido</span> de sua empresa em tempo recorde.<br>· Deje de perder clientes por um <span class='bold'>posicionamento</span> confuso.<br>· Transforme sua imagem num <span class='bold'>íman para clientes</span>.",
-        "startups_btn": "¡Impulse seu projeto agora mesmo com suas ferramentas gratuitas!",
+        "startups_desc": "Criámos o «<span class='bold'>Startup Authority System</span>»<br>. Aumente o <span class='bold'>valor percebido</span> da sua empresa em tempo recorde.<br>. Pare de perder clientes devido a um <span class='bold'>posicionamento</span> confuso.<br>. Transforme a sua imagem num <span class='bold'>íman para clientes</span>.",
+        "startups_btn": "Impulsione o seu projeto agora mesmo com ferramentas gratuitas!",
         
         "sports_title": "ORGANIZAÇÕES<br />DESPORTIVAS",
-        "sports_desc": "<p class='bold'>Quer transformar sua organização numa marca forte, capaz de atrair seguidores fiéis e parceiros estratégicos?</p><p>Acompanhamos o crescimento exponencial da sua entidade e a consolidação da sua liderança, potenciando aquilo que a torna uma força de evolução.</p>",
-        "sports_btn": "¡Hablemos!",
+        "sports_desc": "<p class='bold'>Quer transformar a sua organização numa marca forte, capaz de atrair seguidores fiéis e parceiros estratégicos?</p><p>Acompanhamos o crescimento exponencial da sua entidade e a consolidação da sua liderança, potenciando aquilo que a torna uma força de evolução.</p>",
+        "sports_btn": "Fale connosco!",
         
         // Section Défi
-        "challenge_header": "Independentemente do momento, ajudamo-lo a afrontar seus<br>desafíos de <span class='bold'>comunicação</span>",
-        "proactive_title": "Comunicação proactiva",
-        "proactive_list": ["Capte a atenção", "Desperte o interesse", "Gere adesão", "Aumente o compromiso"],
+        "challenge_header": "Independentemente do momento, ajudamo-lo a enfrentar os<br>seus desafios de <span class='bold'>comunicação</span>:",
+        "proactive_title": "Comunicação proativa",
+        "proactive_list": ["Capte a atenção", "Desperte o interesse", "Gere adesão", "Aumente o envolvimento"],
         "crisis_title": "Comunicação de crise",
-        "crisis_list": ["Controle a narrativa", "Gerencie os impactos", "Restaure a confiança", "Proteja sua reputação"],
+        "crisis_list": ["Controle a narrativa", "Gerencie os impactos", "Restaure a confiança", "Proteja a sua reputação"],
         
         // Section À propos
         "about_title": "SOBRE NÓS",
-        "intro_title": "Qué melhor introdução que a origem do nosso nome?",
+        "intro_title": "Que melhor introdução do que a origem do nosso nome?",
         "intro_text": "ACTAPRISMA é a fusão de dois conceitos:",
-        "concept_1": "<span class='arrow'>►</span> El del prisma de Newton, <span class='highlight blue bold'>prisma</span> em latín, aquele que revela e torna uma verdade perceptível, <span class='highlight blue animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>preserva a autenticidade e extrai lo sublime.</span>",
-        "with_text": "con",
-        "concept_2": "<span class='arrow'>►</span> La difusión mediática y multicanal, representada por los <span class='highlight blue bold'>acta</span> diurna, el ancestro de los periódicos y la primera fuente de información escrita a gran escala. Una ilustración de <span class='highlight blue animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>cómo la historia retém la suya.</span>",
-        "quote": "Su imagen es un activo—un recurso que deve potenciar para alcanzar sus ambições.",
+        "concept_1": "<span class='arrow'>►</span> O prisma de Newton, <span class='highlight blue bold'>prisma</span> em latim, aquele que revela e torna uma verdade perceptível, <span class='highlight blue animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>preserva a autenticidade e extrai o sublime.</span>",
+        "with_text": "Com",
+        "concept_2": "<span class='arrow'>►</span> O relé mediático e a distribuição multicanal, simbolizados pelo <span class='highlight blue bold'>Acta</span> Diurna, o antecessor dos nossos jornais e a primeira fonte escrita de informação em grande escala. Uma ilustração <span class='highlight blue animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>do que a história retém da sua.</span>",
+        "quote": "A sua imagem é um ativo—um recurso que deve potenciar para alcançar as suas ambições.",
         "founder": "Manon Gaziello,",
         "founder_title": "fundadora de",
-        "about_desc_1": "ACTAPRISMA é uma estrutura criada para usted e para os seus projetos, concebida para se adaptar aos seus desafios e resolver as suas problemáticas de comunicação.",
-        "about_desc_2": "Soy licenciada en Relaciones Públicas y Lobbying, con un certificado en Negociación Internacional (European Legislative and Policy Process) y fui distinguida con el Premio Emmanuele Gazzo por Sciences Po Aix, Francia.",
-        "about_desc_3": "Antes de fundar ACTAPRISMA, fui Directora de Comunicación y Relaciones Públicas en una startup tecnológica emergente y acumulé experiencia en gabinetes políticos, agencias y clubes deportivos profesionales.",
-        "about_desc_4": "En la práctica, esto significa que he estudiado en profundidad las técnicas que <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>posicionan la imagen como un motor esencial de rendimiento e impacto.</span>",
-        "about_desc_5": "Cada stakeholder posee una identidad compleja. ACTAPRISMA ofrece <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>soluciones estratégicas eficaces</span> para destacar los aspectos más valiosos de esa identidad y garantizar su éxito.",
-        "social_text": "Conéctese conmigo en redes sociales: Medium - LinkedIn",
+        "about_desc_1": "ACTAPRISMA é uma estrutura criada para si e para os seus projetos, concebida para se adaptar aos seus desafios e resolver as suas problemáticas de comunicação.",
+        "about_desc_2": "Sou licenciada em Relações Públicas e Lobbying, com um certificado em Negociação Internacional (European Legislative and Policy Process) e fui distinguida com o Prémio Emmanuele Gazzo pelo Sciences Po Aix, França.",
+        "about_desc_3": "Antes de fundar a ACTAPRISMA, fui Diretora de Comunicação e Relações Públicas numa startup tecnológica emergente e acumulei experiência em gabinetes políticos, agências e clubes desportivos profissionais.",
+        "about_desc_4": "Na prática, isto significa que aprofundadamente estudei as técnicas que <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>posicionam a imagem como um motor essencial de desempenho e impacto.</span>",
+        "about_desc_5": "Cada stakeholder possui uma identidade complexa. A ACTAPRISMA oferece <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>soluções estratégicas eficazes</span> para destacar os aspetos mais valiosos dessa identidade e garantir o seu sucesso.",
+        "social_text": "Conecte-se comigo nas redes sociais: Medium - LinkedIn",
         
         // Section Contact
-        "contact_title": "CONTACTO",
-        "project_placeholder": "* Su proyecto es:",
-        "organization_placeholder": "* Nombre de la organización:",
-        "role_placeholder": "* Su cargo en la organización:",
-        "lastname_placeholder": "* Su apellido:",
-        "firstname_placeholder": "* Su nombre:",
-        "email_placeholder": "* Su correo electrónico:",
-        "phone_placeholder": "Su número de teléfono:",
-        "message_placeholder": "* ¿Algún detalle para compartir?",
-        "required_fields": "* Campos obligatorios",
+        "contact_title": "CONTATO",
+        "project_placeholder": "* O seu projeto é:",
+        "organization_placeholder": "* Nome da organização:",
+        "role_placeholder": "* O seu cargo na organização:",
+        "lastname_placeholder": "* O seu sobrenome:",
+        "firstname_placeholder": "* O seu nome:",
+        "email_placeholder": "* O seu e-mail:",
+        "phone_placeholder": "O seu número de telefone:",
+        "message_placeholder": "* Algum detalhe para compartilhar?",
+        "required_fields": "* Campos obrigatórios",
         "submit_button": "Enviar",
         "form_success": "Su mensaje ha sido enviado con éxito. Responderemos lo antes posible.",
         "form_error": "Ocurrió un error al enviar el mensaje. Por favor, inténtelo de nuevo.",
         "field_required": "Este campo es obligatorio",
-        "email_invalid": "Por favor, introduzca una dirección de correo electrónico válida",
-        
-        // Footer
-        "copyright": "© 2025 Actaprisma. Todos los derechos reservados.",
-        "legal_notice": "Aviso legal",
-        "terms_of_sale": "Condiciones Generales de Venta",
-        "privacy_policy": "Política de privacidad",
-        "copyright_extended": "ACTAPRISMA® es una marca registrada. © 2025. Todos los derechos reservados.",
-
-        // Terms (CGV) page
-        "terms_title": "CONDICIONES GENERALES DE VENTA",
-        "return_home": "Volver a la página inicial",
-        "terms_section_1": "1. Presentación",
-        "terms_section_2": "2. Productos y servicios ofrecidos",
-        "terms_section_3": "3. Pedido y pago",
-        "terms_section_4": "4. Ausencia de derecho de retratação",
-        "terms_section_5": "5. Política de reembolso",
-        "terms_section_6": "6. Propiedad intelectual y condiciones específicas de uso",
-        "terms_section_7": "7. Responsabilidade",
-        "terms_section_8": "8. Protección de datos personales",
-        "terms_section_9": "9. Ley aplicável e litígios",
-        "terms_section_10": "10. Promociones y evolución de precios",
-        
-        "terms_content_1": "Las presentes Condiciones Generales de Venta (CGV) rigen las ventas de productos digitales ofrecidos por ACTAPRISMA, empresa individual registrada con el número SIRET 90409160000026, con sede en 6 chemin des petits plans, 06800 Cagnes-sur-Mer, Francia.",
-        "terms_email": "Email de contacto: ",
-        
-        "terms_content_2": "ACTAPRISMA ofrece recursos digitales en la forma de archivos PDF, webinars exclusivos y contenidos exclusivos, incluyendo el programa \"Startup Authority System\" que incluye:",
-        "terms_content_2_item1": "Un kit de recursos estratégicos para startups.",
-        "terms_content_2_item2": "Webinarios exclusivos.",
-        "terms_content_2_item3": "Una hora de consultoria gratuita.",
-        "terms_content_2_item4": "Un taller en vivo \"The Two Sentences Formula\".",
-        
-        "terms_content_3_item1": "Los pedidos se realizan directamente en el sitio web actaprisma.com.",
-        "terms_content_3_item2": "Los pagos son seguros y pueden realizarse a través de Stripe, PayPal y tarjeta de crédito.",
-        "terms_content_3_item3": "Uma vez que o pagamento é validado, o comprador recebe imediatamente acesso aos recursos digitais.",
-        
-        "terms_content_4": "De acuerdo con el artículo L221-28 del Código de Consumo, el derecho de retratação não se aplica a conteúdos digitais fornecidos imediatamente após a compra e sem suporte material. Ao validar a compra, o cliente renuncia expressamente ao seu direito de retratação.",
-        
-        "terms_content_5": "No se concederá ningún reembolso tras a compra de produtos digitais, eles sendo considerados consumidos no momento do acesso.",
-        
-        "terms_content_6": "Todos os contenidos ofrecidos por ACTAPRISMA estão protegidos por direitos de autor e permanecem a propriedade exclusiva do editor. Cualquier reprodução, modificação, venda, compartición, distribuição, difusão pública, adaptação ou explotación comercial, sob qualquer forma, é estritamente proibida sem autorização escrita prévia de ACTAPRISMA. Cualquier violação será objeto de acciones judiciais.",
-        
-        "terms_content_7": "ACTAPRISMA no puede ser responsable de eventuales daños relacionados con el uso de los productos digitales, especialmente en caso de error de interpretación o falla en la aplicación de las estrategias recomendadas.",
-        
-        "terms_content_8": "La información recopilada en el momento de la compra se procesa de acuerdo con la Política de Confidencialidad disponible en el sitio.",
-        
-        "terms_content_9": "Las presentes CGV se rigen por la ley francesa. En caso de litigio, se preferirá una solución amistosa. En caso de desacuerdo, los tribunales competentes serán los de Niza.",
-        
-        "terms_content_10": "Le tarif promotionnel de 97 euros es una oferta de tiempo limitado. Si el comprador no se beneficiar de la oferta inmediatamente, el precio del producto aumentará progresivamente por etapas sucesivas de +30 % : 126 euros, depois 163 euros, 212 euros, 276 euros, e finalmente 358 euros. Cada aumento será anunciado por e-mail aos potenciais compradores. ACTAPRISMA se reserva el derecho de ajustar los precios y promociones a su discreción.",
-
-        // Legal page
-        "legal_title": "AVISO LEGAL",
-        "legal_section_1": "1. Informaciones Générales",
-        "legal_content_1": "El sitio web ACTAPRISMA es editado por ACTAPRISMA, empresa individual registrada con el número SIRET 90409160000026, con sede en 6 chemin des petits plans, 06800 Cagnes-sur-Mer, Francia.",
-        "legal_director": "Director de publicación: ",
-        "legal_director_name": "Manon GAZIELLO",
-        "legal_contact": "Email de contacto: ",
-
-        "legal_section_2": "2. Alojamiento",
-        "legal_content_2": "El sitio ACTAPRISMA está alojado por o2switch, sociedad de responsabilidad limitada (SARL) con un capital de 100.000 euros, registrada bajo el SIRET 510 909 80700024, con sede en:",
-        "legal_host_name": "o2switch",
-        "legal_host_address": "222 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, Francia",
-        "legal_host_email": "Email de contacto: support@o2switch.fr",
-        "legal_host_phone": "Teléfono: 04 44 44 60 40",
-        "legal_host_desc": "El provedor de alojamiento garantiza el mantenimiento y la seguridad de los servidores necesarios para el funcionamiento del sitio ACTAPRISMA.",
-
-        "legal_section_3": "3. Propiedad Intelectual",
-        "legal_content_3": "Todo el contenido presente en el sitio ACTAPRISMA, incluyendo pero no limitado a textos, gráficos, logotipos, imágenes, videos e iconos, está protegido por derechos de autor y propiedad intelectual. Cualquier reproducción, representación, modificación, publicación o adaptación de todo o parte de los elementos del sitio está prohibida sin autorización previa por escrito de ACTAPRISMA.",
-
-        "legal_section_4": "4. Responsabilidades",
-        "legal_content_4_1": "ACTAPRISMA se esfuerza por proporcionar información lo más precisa posible en su sitio web. Sin embargo, el editor no podrá ser responsable de omisiones, inexactitudes y deficiencias en la actualización.",
-        "legal_content_4_2": "El sitio ACTAPRISMA está accesible las 24 horas del día, los 7 días de la semana, excepto durante interrupciones por mantenimiento o problemas técnicos. El editor no podrá ser responsable de interrupciones y fallos relacionados con Internet, servicios de alojamiento o cualquier evento fuera de su control.",
-
-        "legal_section_5": "5. Datos Personales y Cookies",
-        "legal_content_5_1": "El sitio ACTAPRISMA coleta ciertos datos personales a través de:",
-        "legal_content_5_2": "• El formulario de contacto (Apellido, Nombre, Email, Nombre de la empresa, Misión/Cargo, teléfono y mensaje opcionales)",
-        "legal_content_5_3": "• El acceso a recursos gratuitos y de pago (Apellido, Nombre, Email, Nombre de la empresa, Misión/Cargo)",
-        "legal_content_5_4": "• Herramientas de análisis y rastreamento (Google Analytics, Microsoft Clarity, Facebook Pixel, LinkedIn Pixel)",
-        "legal_content_5_5": "El usuario puede consultar la Política de Privacidad para más detalles sobre el uso de los datos y la gestión de cookies.",
-
-        "legal_section_6": "6. Enlaces de Hipertexto",
-        "legal_content_6": "El sitio ACTAPRISMA puede contener enlaces a sitios externos. El editor no se hace responsable del contenido de estos sitios de terceeros ni de las consecuencias de su consulta.",
-
-        "legal_section_7": "7. Droit applicable",
-        "legal_content_7": "Cualquier litigio relacionado con el uso del sitio ACTAPRISMA está sujeto a la legislación francesa. En caso de litigio, los tribunales franceses serán los únicos competentes.",
-
-        // Privacy Policy page
-        "privacy_title": "POLÍTICA DE PRIVACIDADE & COOKIES",
-        "privacy_section_1": "1. Introdução",
-        "privacy_section_2": "2. Dados coletados e finalidade",
-        "privacy_section_3": "3. Base legal do tratamento de dados",
-        "privacy_section_4": "4. Período de conservação dos dados",
-        "privacy_section_5": "5. Direitos dos utilizadores",
-        "privacy_section_6": "6. Partilha de dados com terceiros",
-        "privacy_section_7": "7. Cookies e rastreamento",
-        "privacy_section_8": "8. Segurança dos dados",
-        "privacy_section_9": "9. Alterações à Política de Privacidade",
-        "privacy_section_10": "10. Contacto",
-        
-        "privacy_content_1": "Esta Política de Privacidade explica como a ACTAPRISMA recolhe, processa e protege os seus dados pessoais quando utiliza o nosso site. Ao utilizar o site ACTAPRISMA, aceita os termos descritos nesta política, em conformidade com os seguintes regulamentos: <ul><li>Regulamento Geral sobre a Proteção de Dados (RGPD - União Europeia & Reino Unido - UK GDPR)</li><li>California Consumer Privacy Act (CCPA - Estados Unidos, incluindo os direitos dos residentes da Califórnia)</li><li>Lei de Proteção de Informações Pessoais e Documentos Eletrónicos (PIPEDA - Canadá)</li><li>Lei 25 (Quebec - Canadá)</li><li>Lei Geral de Proteção de Dados Pessoais (LGPD - Brasil)</li><li>Privacy Act 1988 & Australian Privacy Principles (APPs - Austrália)</li><li>Protection of Personal Information Act (POPIA - África do Sul)</li><li>Nova Lei Federal de Proteção de Dados (nLPD - Suíça)</li><li>Lei de Proteção de Dados Pessoais (PDPL - Arábia Saudita)</li><li>Lei de Proteção de Dados Pessoais (PDPL - Argentina)</li><li>Lei de Proteção de Dados Pessoais (PDPL - Andorra)</li><li>Data Protection Act (DPA - Ilhas Faroé)</li></ul>Se reside fora destas jurisdições, a ACTAPRISMA aplica os princípios de proteção de dados internacionalmente reconhecidos.",
-        
-        "privacy_content_2": "A ACTAPRISMA recolhe e processa os seus dados pessoais para as seguintes finalidades: <ul><li>Responder a solicitações enviadas através do formulário de contacto.</li><li>Fornecer acesso a recursos digitais gratuitos e pagos.</li><li>Analisar e melhorar a experiência do utilizador através de ferramentas de rastreamento e análise.</li><li>Gerir transações e entregar produtos digitais adquiridos.</li></ul>Tipos de dados recolhidos: <ul><li>A través do formulário de contacto: Sobrenome, Nome, Email, Nome da empresa, Missão/Cargo (obrigatórios), Telefone e Mensagem (opcionais).</li><li>A través do acesso a recursos gratuitos e pagos: Sobrenome, Nome, Email, Nome da empresa, Missão/Cargo.</li><li>A través de ferramentas de rastreamento e cookies: Dados de navegação, endereço IP, comportamento do utilizador (Google Analytics, Microsoft Clarity, Facebook Pixel, LinkedIn Pixel).</li></ul>",
-        
-        "privacy_content_3": "A ACTAPRISMA processa os seus dados pessoais com base nas seguintes bases legais: <ul><li>O seu consentimento explícito, dado ao submeter formulários ou aceitar cookies.</li><li>A execução de um contrato, quando adquire produtos digitais.</li><li>Os interesses legítimos da ACTAPRISMA para a melhoria dos serviços e segurança do site.</li><li>Obrigações legais às quais a ACTAPRISMA está sujeita.</li></ul>",
-        
-        "privacy_content_4": "A ACTAPRISMA conserva os dados pessoais durante os seguintes períodos: <ul><li>Dados do formulário de contacto: Conservados durante 3 anos após a última interação com o utilizador.</li><li>Dados de rastreamento e análise: Conservados de acordo com a política de cada fornecedor terceiro.</li><li>Registos de transações comerciais: Conservados pelo período exigido pelas obrigações legais, fiscais e contabilísticas aplicáveis, por um mínimo de 5 anos e até 10 anos dependendo da jurisdição.</li></ul>",
-        
-        "privacy_content_5": "Em conformidade com os regulamentos em vigor (RGPD, UK GDPR, CCPA, PIPEDA, Lei 25, LGPD, APPs, POPIA, nLPD, PDPL, DPA), você dispõe dos seguintes direitos: <ul><li>Direito de acesso, retificação e apagamento dos seus dados.</li><li>Direito à limitação e oposição ao tratamento.</li><li>Direito à portabilidade dos dados.</li><li>Direito de retirar o seu consentimento a qualquer momento.</li><li>Direito de oposição à venda dos seus dados pessoais (CCPA - Califórnia).</li></ul>Para exercer estes direitos, envie um email para privacy@actaprisma.com. Processaremos o seu pedido dentro de 30 dias (RGPD, UK GDPR, PIPEDA, APPs, Lei 25, LGPD, POPIA, nLPD, PDPL, DPA) ou 45 dias (CCPA - Califórnia).",
-        
-        "privacy_content_6": "A ACTAPRISMA não vende nem aluga os seus dados. No entanto, certas informações podem ser partilhadas com: <ul><li>Prestadores técnicos (alojamento, serviço de email, plataformas de pagamento).</li><li>Ferramentas de análise e marketing (Google Analytics, Microsoft Clarity, Facebook Pixel, LinkedIn Pixel) para análises estatísticas.</li></ul>Estes serviços terceiros respeitam padrões elevados de proteção de dados.",
-        
-        "privacy_content_7": "Durante a sua visita, podem ser colocados cookies no seu dispositivo para: <ul><li>Melhorar a navegação e personalizar a sua experiência de utilizador.</li><li>Analisar a audiência e otimizar o desempenho do site.</li></ul>Pode aceitar ou recusar cookies através do banner de consentimento exibido durante a sua primeira visita.",
-        
-        "privacy_content_8": "A ACTAPRISMA implementa medidas de segurança técnicas e organizacionais para proteger os seus dados contra perda, alteração ou acesso não autorizado. Em caso de violação de dados, a ACTAPRISMA informará os utilizadores afetados dentro dos prazos exigidos pela legislação aplicável (CCPA, RGPD, UK GDPR, PIPEDA, APPs, Lei 25, LGPD, POPIA, nLPD, PDPL, DPA).",
-        
-        "privacy_content_9": "Esta Política de Privacidade pode ser atualizada a qualquer momento. Qualquer alteração será notificada nesta página.",
-        
-        "privacy_content_10": "Para qualquer questão sobre esta política, pode contactar-nos em privacy@actaprisma.com."
+        "email_invalid": "Por favor, introduzca una dirección de correo electrónico válida"
     }
 };
 
