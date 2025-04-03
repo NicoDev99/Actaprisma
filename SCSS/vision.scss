@@ -2,69 +2,6 @@
 section#vision {
     position: relative;
 
-    div.explanations {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 250px;
-        margin: 0 100px;
-        margin-top: 50px;
-
-        .text {
-            flex: 2;
-
-            h1 {
-                font-size: 70px;
-                font-family: "Gotham", sans-serif;
-                font-weight: 300;
-                margin-bottom: 50px;
-            }
-
-            h2 {
-                font-size: 33px;
-                font-family: "Gotham", sans-serif;
-                font-weight: 300;
-                margin-top: 25px;
-            }
-
-            h3 {
-                font-size: 22px;
-                font-family: "Gotham", sans-serif;
-                font-weight: 300;
-
-                span {
-                    font-weight: bold;
-                }
-            }
-
-            .highlight {
-                background-color: #0063A1;
-                color: white;
-                padding: 2px 5px;
-
-                &.animated-highlight {
-                    background-color: transparent;
-                    background-image: linear-gradient(to right, #0063A1 50%, transparent 50%);
-                    background-size: 200% 100%;
-                    background-position: right bottom;
-                    
-                    animation: none;
-                    
-                    &.aos-animate {
-                        animation: highlightSlide 0.8s ease-out forwards;
-                    }
-                }
-            }
-        }
-
-        .logo {
-            width: 450px;
-            height: 450px;
-            position: relative;
-            margin-top: 50px;
-        }
-    }
-
     /* Content */
     .vision-container {
         position: relative;
@@ -164,8 +101,6 @@ section#vision {
             }
         }
     }
-
-    // Menu overlay et CTA button déplacés dans header.scss
 }
 
 /* Media Queries */
@@ -179,48 +114,9 @@ section#vision {
     }
 }
 
-@media screen and (max-width: 1600px) {
-    section#vision {
-        div.explanations {
-            gap: 50px;
-        }
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    section#vision {
-        div.explanations {
-            .logo {
-                width: 400px;
-                height: 400px;
-                
-                img.logo_without_text {
-                    width: 400px;
-                    height: 400px;
-                }
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 1300px) {
     section#vision {
-        div.explanations {
-            .logo {
-                width: 300px;
-                height: 300px;
-        
-                img.logo_without_text {
-                    width: 300px;
-                    height: 300px;
-                }
-            }
-            
-            .text::not(:first-child) {
-                text-align: justify;
-            }
-        }
-        
+       
         .vision-container {
             margin: 0 100px;
             
@@ -281,28 +177,8 @@ section#vision {
     }
 }
 
-@media screen and (max-width: 1050px) {
-    section#vision {
-        div.explanations {
-            .logo {
-                display: none;
-            }
-        }
-
-        div.explanations {
-            .text > *:not(:first-child) {
-                text-align: justify;
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 768px) {
     section#vision {
-        div.explanations {
-            margin: 0 50px;
-            margin-top: 50px;
-        }
 
         .vision-container {
             padding: 50px 0px;
@@ -373,23 +249,7 @@ section#vision {
 }
 
 @media screen and (max-width: 600px) {
-    section#vision {
-        div.explanations {
-            .text {
-                h1 {
-                    font-size: 45px;
-                }
-    
-                h2 {
-                    font-size: 30px;
-                }
-    
-                h3 {
-                    font-size: 17px;
-                }
-            }
-        }
-        
+    section#vision {       
         .vision-container {
             .content-container {
                 .vision-title {
@@ -443,19 +303,5 @@ section#vision {
                 width: 200%;
             }
         }
-
-        .cta-button {
-            margin: 0 20px;
-        }
-    }
-}
-
-/* Highlight animation */
-@keyframes highlightSlide {
-    0% {
-        background-position: right bottom;
-    }
-    100% {
-        background-position: left bottom;
     }
 }

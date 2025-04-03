@@ -213,6 +213,69 @@ div.nav-header {
     }
 }
 
+div.explanations {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 250px;
+    margin: 0 100px;
+    margin-top: 50px;
+
+    .text {
+        flex: 2;
+
+        h1 {
+            font-size: 70px;
+            font-family: "Gotham", sans-serif;
+            font-weight: 300;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 33px;
+            font-family: "Gotham", sans-serif;
+            font-weight: 300;
+            margin-top: 25px;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-family: "Gotham", sans-serif;
+            font-weight: 300;
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        .highlight {
+            background-color: #0063A1;
+            color: white;
+            padding: 2px 5px;
+
+            &.animated-highlight {
+                background-color: transparent;
+                background-image: linear-gradient(to right, #0063A1 50%, transparent 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                
+                animation: none;
+                
+                &.aos-animate {
+                    animation: highlightSlide 0.8s ease-out forwards;
+                }
+            }
+        }
+    }
+
+    .logo {
+        width: 450px;
+        height: 450px;
+        position: relative;
+        margin-top: 50px;
+    }
+}
+
 /* Menu overlay styles */
 .menu-overlay {
     display: none;
@@ -257,10 +320,28 @@ div.nav-header {
 }
 
 /* Media Queries */
+@media screen and (max-width: 1600px) {
+    div.explanations {
+        gap: 50px;
+    }
+}
+
 @media screen and (max-width: 1400px) {
     div.nav-header {
         .center-button {
             margin-top: 50px;
+        }
+    }
+
+    div.explanations {
+        .logo {
+            width: 400px;
+            height: 400px;
+            
+            img.logo_without_text {
+                width: 400px;
+                height: 400px;
+            }
         }
     }
 }
@@ -287,24 +368,6 @@ div.nav-header {
                 transition: right 0.3s ease-in-out;
                 box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
                 z-index: 90;
-                overflow-y: auto;
-                -webkit-overflow-scrolling: touch;
-                padding-bottom: 30px;
-                scrollbar-width: thin;
-                scrollbar-color: #215ca8 #f1f1f1;
-                
-                &::-webkit-scrollbar {
-                    width: 5px;
-                }
-                
-                &::-webkit-scrollbar-track {
-                    background: #f1f1f1;
-                }
-                
-                &::-webkit-scrollbar-thumb {
-                    background-color: #215ca8;
-                    border-radius: 10px;
-                }
 
                 img {
                     display: block;
@@ -312,49 +375,37 @@ div.nav-header {
 
                 &.active {
                     right: 0;
-                    max-height: 100vh;
-                    overflow-y: auto;
-                    
-                    &::after {
-                        content: "";
-                        display: block;
-                        height: 20px;
-                        width: 100%;
-                        background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.8));
-                        position: sticky;
-                        bottom: 0;
-                        pointer-events: none;
-                    }
                     
                     .lang-dropdown {
+                        // Cacher le bouton de langue normal et le menu déroulant
                         .lang-toggle, .lang-menu {
                             display: none !important;
                         }
                         
+                        // Afficher les options de langue du burger menu
                         .burger-lang-options {
                             display: block;
                             width: 100%;
-                            margin-top: 10px;
+                            margin-top: 20px;
                             
                             h3 {
                                 width: 100%;
                                 text-align: center;
-                                margin-bottom: 10px;
+                                margin-bottom: 15px;
                                 font-family: "Gotham", sans-serif;
                                 font-weight: 300;
                                 color: #0f293d;
                                 font-size: 18px;
                                 border-top: 1px solid #eee;
-                                padding-top: 10px;
+                                padding-top: 15px;
                             }
                             
                             .lang-flags {
                                 display: flex;
                                 flex-wrap: wrap;
                                 justify-content: center;
-                                gap: 15px;
+                                gap: 20px;
                                 padding: 0 20px;
-                                padding-bottom: 20px;
                                 
                                 .lang-flag {
                                     display: flex;
@@ -408,6 +459,38 @@ div.nav-header {
     }
 }
 
+@media screen and (max-width: 1300px) {
+    div.explanations {
+        .logo {
+            width: 300px;
+            height: 300px;
+
+            img.logo_without_text {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    
+        .text::not(:first-child) {
+            text-align: justify;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    div.explanations {
+        .logo {
+            display: none;
+        }
+    }
+
+    div.explanations {
+        .text > *:not(:first-child) {
+            text-align: justify;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     div.nav-header {
         margin: 50px;
@@ -426,6 +509,11 @@ div.nav-header {
         font-size: 15px;
         padding: 10px 20px;
     }
+
+    div.explanations {
+        margin: 0 50px;
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -433,12 +521,29 @@ div.nav-header {
         font-size: 13px;
         padding: 8px 16px;
     }
+
+    div.explanations {
+        .text {
+            h1 {
+                font-size: 45px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 17px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
     .cta-button {
         font-size: 13px;
         padding: 8px 16px;
+        margin: 020px;
     }
 }
 
@@ -474,51 +579,14 @@ div.nav-header {
             margin: 0 50px;
         }
     }
-}
-
-/* Media query pour les très petits écrans */
-@media (max-width: 380px) {
-    div.nav-header nav ul {
-        width: 85vw;
-        right: -85vw;
-        padding-top: 80px;
-        padding-bottom: 60px;
-        
-        li {
-            margin: 3px 0;
-            
-            a {
-                font-size: 14px;
-                padding: 5px 10px;
-            }
-        }
-        
-        .lang-dropdown .burger-lang-options {
-            margin-top: 5px;
-            
-            h3 {
-                margin-bottom: 5px;
-                padding-top: 5px;
-                font-size: 16px;
-            }
-            
-            .lang-flags {
-                gap: 5px;
-                
-                .lang-flag {
-                    width: 60px;
-                    padding: 5px;
-                    
-                    .flag {
-                        font-size: 20px;
-                        margin-bottom: 5px;
-                    }
-                    
-                    .country {
-                        font-size: 11px;
-                    }
-                }
-            }
-        }
-    }
 } 
+
+/* Highlight animation */
+@keyframes highlightSlide {
+    0% {
+        background-position: right bottom;
+    }
+    100% {
+        background-position: left bottom;
+    }
+}
