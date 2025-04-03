@@ -440,11 +440,14 @@ document.addEventListener("DOMContentLoaded", function () {
             // Here you would add code to change the website content based on the selected language
             console.log(`Language changed to: ${currentLang} (from burger menu)`);
             
-            // Fermer le menu burger
-            hamburgerMenu.classList.remove('active');
-            navMenu.classList.remove('active');
-            menuOverlay.classList.remove('active');
-            document.body.classList.remove('menu-open');
+            // Ne pas fermer le menu burger si on change pour le français
+            if (selectedLang !== 'fr') {
+                // Fermer le menu burger
+                hamburgerMenu.classList.remove('active');
+                navMenu.classList.remove('active');
+                menuOverlay.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
         });
     });
 
