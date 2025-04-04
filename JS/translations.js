@@ -714,23 +714,23 @@ const translations = {
         "terms_content_2_item3": "Uma hora de consultoria gratuita.",
         "terms_content_2_item4": "Workshop AO VIVO \"The Two Sentences Formula\".",
         
-        "terms_content_3_item1": "Os pedidos são realizados diretamente no site actaprisma.com.",
-        "terms_content_3_item2": "Os pagamentos são seguros e podem ser efetuados através do Stripe, PayPal ou cartão bancário.",
-        "terms_content_3_item3": "Uma vez validado o pagamento, o comprador recebe acesso imediato aos recursos digitais.",
+        "terms_content_3_item1": "As encomendas são feitas diretamente no site actaprisma.com",
+        "terms_content_3_item2": "Os pagamentos são seguros e podem ser efetuados através de Stripe, PayPal ou cartão bancário.",
+        "terms_content_3_item3": "Após a validação do pagamento, o comprador recebe acesso imediato aos recursos digitais.",
         
-        "terms_content_4": "De acordo com o artigo L221-28 do Código do Consumidor francês, o direito de retratação não se aplica aos conteúdos digitais fornecidos imediatamente após a compra e sem suporte físico. Ao confirmar a compra, o cliente renuncia expressamente ao seu direito de retratação.",
+        "terms_content_4": "De acordo com o artigo L221-28 do Código do Consumidor francês, o direito de desistência não se aplica a conteúdos digitais fornecidos imediatamente após a compra e sem suporte físico. Ao confirmar a compra, o cliente renuncia expressamente ao seu direito de desistência.",
         
-        "terms_content_5": "Não serão efetuados reembolsos após a compra de produtos digitais, uma vez que estes são considerados consumidos a partir do momento do seu acesso.",
+        "terms_content_5": "Não serão efetuados reembolsos após a compra de produtos digitais, uma vez que estes são considerados consumidos assim que o acesso é concedido.",
         
-        "terms_content_6": "Todos os conteúdos fornecidos pela ACTAPRISMA estão protegidos por direitos de autor e continuam a ser propriedade exclusiva do editor. Qualquer reprodução, modificação, revenda, partilha, distribuição, difusão pública, adaptação ou exploração comercial, sob qualquer forma, é estritamente proibida sem a autorização prévia por escrito da ACTAPRISMA. Qualquer infração dará origem a ações legais.",
+        "terms_content_6": "Todos os conteúdos fornecidos pela ACTAPRISMA estão protegidos por direitos de autor e permanecem propriedade exclusiva do editor. Qualquer reprodução, modificação, revenda, partilha, distribuição, difusão pública, adaptação ou exploração comercial, sob qualquer forma, é estritamente proibida sem autorização prévia e por escrito da ACTAPRISMA. Qualquer violação será sujeita a ações judiciais.",
         
-        "terms_content_7": "A ACTAPRISMA não será responsável por quaisquer danos relacionados com a utilização dos produtos digitais, especialmente em caso de erro de interpretação ou falha na aplicação das estratégias recomendadas.",
+        "terms_content_7": "A ACTAPRISMA não poderá ser responsabilizada por quaisquer danos decorrentes do uso dos produtos digitais, em particular em caso de erro de interpretação ou falha na aplicação das estratégias recomendadas.",
         
-        "terms_content_8": "As informações recolhidas durante a compra são tratadas de acordo com a Política de Privacidade disponível no site.",
+        "terms_content_8": "As informações recolhidas durante a compra são tratadas de acordo com a Política de Privacidade disponível no site",
         
-        "terms_content_9": "As presentes CGV são regidas pela legislação francesa. Em caso de litígio, será privilegiada uma solução amistosa. Se não for alcançado um acordo, os tribunais competentes serão os de Nice, França.",
+        "terms_content_9": "As presentes CGV são regidas pela legislação francesa. Em caso de litígio, será dada prioridade a uma solução amigável. Se não for possível chegar a um acordo, os tribunais competentes serão os de Nice, França.",
         
-        "terms_content_10": "O preço promocional de 97 euros é uma oferta por tempo limitado. Se o comprador não aproveitar a oferta de imediato, o preço do produto aumentará progressivamente em incrementos sucessivos de +30%: 126 euros, seguidos de 163 euros, 212 euros, 276 euros e, finalmente, 358 euros. Cada aumento será anunciado por e-mail aos potenciais compradores. A ACTAPRISMA reserva-se o direito de ajustar os preços e promoções ao seu critério.",
+        "terms_content_10": "O preço promocional de 97 euros é uma oferta por tempo limitado. Se o comprador não aproveitar a oferta imediatamente, o preço do produto aumentará progressivamente em incrementos sucessivos de +30%: 126 euros, depois 163 euros, 212 euros, 276 euros e, finalmente, 358 euros. Cada aumento será anunciado por e-mail aos potenciais compradores. A ACTAPRISMA reserva-se o direito de ajustar os preços e promoções a seu critério.",
         
         // Legal page
         "legal_title": "AVISO LEGAL",
