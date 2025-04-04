@@ -143,8 +143,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     const quoteText = translations[currentLang]?.quote || translations['fr'].quote;
                     // Update the strings in the options
                     quoteTypingOptions.strings = [quoteText];
-                    // Start the typing animation for the quote
-                    new Typed(quoteElement, quoteTypingOptions);
+                    // Start the typing animation for the quote and store the instance
+                    quoteElement._typed = new Typed(quoteElement, quoteTypingOptions);
                     // Mark the element as initialized to prevent re-initialization
                     quoteElement.setAttribute('data-typed-initialized', 'true');
                 }
@@ -312,17 +312,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
         
-        // Mettre à jour le titre de la page
-        if (lang === 'en') {
-            document.title = "Actaprisma - Your image, your success";
-        } else if (lang === 'es') {
-            document.title = "Actaprisma - Su imagen, su éxito";
-        } else if (lang === 'pt') {
-            document.title = "Actaprisma - A sua imagem, o seu sucesso";
-        } else {
-            document.title = "Actaprisma";
-        }
-        
         // Mettre à jour l'animation Typed.js pour le titre principal
         if (typingElement) {
             const typingText = translations[lang]?.main_title || translations['fr'].main_title;
@@ -354,8 +343,43 @@ document.addEventListener("DOMContentLoaded", function () {
         // Reset the quote initialization flag when language changes
         const quoteElement = document.querySelector('.quote-text');
         if (quoteElement) {
+            // Si une animation Typed.js est en cours pour la citation, on la détruit proprement
+            if (quoteElement._typed) {
+                quoteElement._typed.destroy();
+            }
+            
             quoteElement.removeAttribute('data-typed-initialized');
             quoteElement.innerHTML = '';
+            
+            // Réinitialiser l'animation de la citation si la section about est visible
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+                // Vérifier si la section about est actuellement visible à l'écran
+                const rect = aboutSection.getBoundingClientRect();
+                const isVisible = 
+                    rect.top < window.innerHeight && 
+                    rect.bottom > 0;
+                
+                if (isVisible) {
+                    // Obtenir le texte de la citation dans la langue actuelle
+                    const quoteText = translations[lang]?.quote || translations['fr'].quote;
+                    // Mettre à jour les chaînes dans les options
+                    const quoteTypingOptions = {
+                        strings: [quoteText],
+                        typeSpeed: 30,
+                        backSpeed: 30,
+                        startDelay: 100,
+                        backDelay: 1500,
+                        loop: false,
+                        showCursor: false,
+                        autoInsertCss: true
+                    };
+                    // Démarrer l'animation de la citation et stocker l'instance pour pouvoir la détruire si nécessaire
+                    quoteElement._typed = new Typed(quoteElement, quoteTypingOptions);
+                    // Marquer l'élément comme initialisé
+                    quoteElement.setAttribute('data-typed-initialized', 'true');
+                }
+            }
         }
     };
     
