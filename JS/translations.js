@@ -419,7 +419,7 @@ const translations = {
         "subtitle_1": "Nosotros también.",
         "help_text": "Ayudarle a <span>ser comprendido</span> para impactar a su audiencia: inversores, clientes, votantes, espectadores…",
         "subtitle_2": "¿Cómo lo logramos?",
-        "method_text": "Cultivamos su autenticidad y amplificamos la <span>percepción</span> de su valor. Le damos todas las claves para <span>dominar su imagen.</span> <span class='highlight animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>Resultados</span> garantizados.",
+        "method_text": "Cultivamos su autenticidad y amplificamos la <span>percepción</span> de su valor. Le damos todas las claves para <span>dominar su imagen.</span>",
         "diagnostic_btn": "¿Quiere un diagnóstico para su proyecto?",
         
         "vision_title": "VISIÓN",
@@ -499,6 +499,14 @@ const translations = {
         "form_error": "Ocurrió un error al enviar el mensaje. Por favor, inténtelo de nuevo.",
         "field_required": "Este campo es obligatorio",
         "email_invalid": "Por favor, introduzca una dirección de correo electrónico válida",
+
+        // Footer
+        "copyright": "© 2025 Actaprisma. Todos los derechos reservados.",
+        "legal_notice": "Aviso Legal",
+        "terms_of_sale": "Condiciones Generales de Venta",
+        "privacy_policy": "Política de Privacidad",
+        "copyright_extended": "ACTAPRISMA® es una marca registrada. © 2025. Todos los derechos reservados.",
+                
 
         // Terms (CGV) page
         "terms_title": "CONDICIONES GENERALES DE VENTA (CGV)",
@@ -621,9 +629,9 @@ const translations = {
         // Section Vision
         "main_title": "Tem <br /> um objetivo?",
         "subtitle_1": "Nós também.",
-        "help_text": "Ajudamo-lo a <span>ser compreendido</span> para impactar as sua audiência: investidores, clientes, eleitores, espectadores…",
+        "help_text": "Ajudamo-lo a <span>ser compreendido</span> para impactar a sua audiência: investidores, clientes, eleitores, espetadores…",
         "subtitle_2": "Como o conseguimos?",
-        "method_text": "Cultivamos a sua autenticidade e amplificamos a <span>perceção</span> do seu valor. Damos-lhe todas as chaves para <span>dominar a sua imagem.</span> <span class='highlight animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>Resultados</span> garantidos.",
+        "method_text": "Cultivamos a sua autenticidade e amplificamos a <span>perceção</span> do seu valor. Damos-lhe todas as chaves para <span>dominar a sua imagem.</span>",
         "diagnostic_btn": "Quer um diagnóstico para o seu projeto?",
         
         "vision_title": "VISION",
@@ -672,7 +680,7 @@ const translations = {
         "quote": "A sua imagem é um ativo—um recurso que deve potenciar para alcançar as suas ambições.",
         "founder": "Manon Gaziello,",
         "founder_title": "fundadora de",
-        "about_desc_1": "ACTAPRISMA é uma estrutura criada para si e para os seus projetos, concebida para se adaptar aos seus desafios e resolver as suas problemáticas de comunicação.",
+        "about_desc_1": "ACTAPRISMA é uma estrutura criada para si e para os seus projetos, concebida para se adaptar aos seus desafios e resolver as complexidades da comunicação.",
         "about_desc_2": "Sou licenciada em Relações Públicas e Lobbying, com um certificado em Negociação Internacional (European Legislative and Policy Process) e fui distinguida com o Prémio Emmanuele Gazzo pelo Sciences Po Aix, França.",
         "about_desc_3": "Antes de fundar a ACTAPRISMA, fui Diretora de Comunicação e Relações Públicas numa startup tecnológica emergente e acumulei experiência em gabinetes políticos, agências e clubes desportivos profissionais.",
         "about_desc_4": "Na prática, isto significa que aprofundadamente estudei as técnicas que <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>posicionam a imagem como um motor essencial de desempenho e impacto.</span>",
