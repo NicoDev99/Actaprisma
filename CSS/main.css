@@ -1530,6 +1530,11 @@ section#about .bold {
     padding: 10px 30px;
   }
 }
+@media (max-width: 480px) {
+  section#about .quote .quote-end {
+    top: 80px;
+  }
+}
 section#contact {
   width: 100%;
   display: flex;

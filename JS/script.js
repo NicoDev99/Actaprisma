@@ -165,9 +165,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const langOptions = document.querySelectorAll('.lang-option');
     const langFlags = document.querySelectorAll('.lang-flag');
     
-    // Détecter la langue du navigateur
+    // Détecter la langue du navigateur ou utiliser la langue enregistrée
     const getBrowserLanguage = () => {
-        // Vérifier d'abord l'URL pour détecter la langue
+        // Vérifier d'abord si une langue est enregistrée dans le localStorage
+        const savedLang = localStorage.getItem('preferredLanguage');
+        if (savedLang) {
+            return savedLang;
+        }
+        
+        // Vérifier ensuite l'URL pour détecter la langue
         const path = window.location.pathname;
         if (path.endsWith('/EN')) {
             return 'en';
@@ -187,8 +193,13 @@ document.addEventListener("DOMContentLoaded", function () {
         return supportedLangs.includes(langCode) ? langCode : 'fr';
     };
     
-    // Définir la langue par défaut en fonction de la langue du navigateur
+    // Définir la langue par défaut en fonction de la langue du navigateur ou la langue enregistrée
     let currentLang = getBrowserLanguage();
+    
+    // Fonction pour sauvegarder la langue préférée dans le localStorage
+    const savePreferredLanguage = (lang) => {
+        localStorage.setItem('preferredLanguage', lang);
+    };
     
     // Mettre à jour l'interface pour refléter la langue par défaut
     const updateUIForLanguage = (lang) => {
@@ -425,6 +436,9 @@ document.addEventListener("DOMContentLoaded", function () {
             // Update current language
             currentLang = selectedLang;
             
+            // Sauvegarder la langue sélectionnée comme préférence
+            savePreferredLanguage(currentLang);
+            
             // Mettre à jour l'interface
             updateUIForLanguage(currentLang);
             
@@ -457,6 +471,9 @@ document.addEventListener("DOMContentLoaded", function () {
             
             // Update current language
             currentLang = selectedLang;
+            
+            // Sauvegarder la langue sélectionnée comme préférence
+            savePreferredLanguage(currentLang);
             
             // Mettre à jour l'interface
             updateUIForLanguage(currentLang);

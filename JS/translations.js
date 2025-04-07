@@ -475,7 +475,7 @@ const translations = {
         "concept_2": "<span class='arrow'>►</span> La difusión mediática y multicanal, representada por los <span class='highlight blue bold'>acta</span> diurna, el ancestro de los periódicos y la primera fuente de información escrita a gran escala. Una ilustración <span class='highlight blue animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>cómo la historia recuerda la suya.</span>",
         "quote": "«Su imagen es un activo—un recurso estratégico que debe aprovechar para alcanzar sus ambiciones.»",
         "founder": "Manon Gaziello,",
-        "founder_title": "fundadora de",
+        "founder_title": "fundadora",
         "about_desc_1": "ACTAPRISMA es una estructura creada para usted y sus proyectos, diseñada para adaptarse a sus desafíos y resolver sus problemáticas de comunicación.",
         "about_desc_2": "Soy licenciada en Relaciones Públicas y Lobbying, con un certificado en Negociación Internacional (\"European Legislative and Policy Process\") y ganadora del Premio Emmanuele Gazzo en Sciences Po Aix, France.",
         "about_desc_3": "Antes de fundar ACTAPRISMA, fui directora de comunicación y relaciones públicas en una startup emergente del sector tech y trabajé en gabinetes políticos, agencias y clubes deportivos profesionales.",
