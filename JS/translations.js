@@ -415,18 +415,18 @@ const translations = {
         "nav_contact": "CONTACTO",
         
         // Section Vision
-        "main_title": "¿Tiene <br /> un objetivo?",
+        "main_title": "¿Tienes <br /> un objetivo?",
         "subtitle_1": "Nosotros también.",
-        "help_text": "Ayudarle a <span>ser comprendido</span> para impactar a su audiencia: inversores, clientes, votantes, espectadores…",
+        "help_text": "Ayudarte a <span>ser comprendido</span> para impactar a tu audiencia: inversores, clientes, votantes, espectadores…",
         "subtitle_2": "¿Cómo lo logramos?",
-        "method_text": "Cultivamos su autenticidad y amplificamos la <span>percepción</span> de su valor. Le damos todas las claves para <span>dominar su imagen.</span>",
-        "diagnostic_btn": "¿Quiere un diagnóstico para su proyecto?",
+        "method_text": "Cultivamos su autenticidad y amplificamos la <span>percepción</span> de su valor. Te damos todas las claves para <span>dominar tu imagen.</span>",
+        "diagnostic_btn": "¿Quieres un diagnóstico para tu proyecto?",
         
         "vision_title": "VISIÓN",
-        "comm_question": "¿Ha oído la frase «hay que comunicar»?",
+        "comm_question": "¿Has oído la frase «hay que comunicar»?",
         "comm_response": "Nosotros también. Pero, ¿para qué?",
         "comm_desc_1": "Comunicar es materializar su identidad, su concepto, su visión. Es elegir los canales adecuados y amplificar su mensaje con precisión.",
-        "comm_desc_2": "En ACTAPRISMA, le ayudamos a definir y estructurar su imagen para que conserve el control y la exprese con impacto.",
+        "comm_desc_2": "En ACTAPRISMA, te ayudamos a definir y estructurar tu imagen para que conserve el control y la exprese con impacto.",
         "comm_desc_3": "Desarrollamos el potencial de su identidad para generar un beneficio emocional en su audiencia, crear un sentimiento de pertenencia e identificación y, al mismo tiempo, delimitar estratégicamente su campo de soberanía y su territorio ideológico.",
         "comm_desc_4": "No se trata solo de una «proposta de valor», sino de transcendê-la. <span class='blue-color'>O nosso objetivo: maximizar el compromiso de su audiencia y reforçar a sua legitimidade no espaço público.</span>",
         "goal_text_1": "A sua ambição é o nosso motor.",
@@ -436,19 +436,19 @@ const translations = {
         
         // Section Accompagnement
         "accompaniment_title": "CONSULTORÍA",
-        "accompaniment_intro": "<span class='brand'>ACTAPRISMA</span> es aliado de los <span class='bold'>impulsores del cambio</span>, los innovadores, aquellos que impulsan el progreso con audacia y se convierten en motores de transformación. Hemos desarrollado <span class='bold'>protocolos de acompañamiento</span> diseñados para estos <span class='bold'>actores de impacto</span> como:",
+        "accompaniment_intro": "<span class='brand'>ACTAPRISMA</span> es aliado de quienes <span class='bold'>impulsan del cambio</span>, los innovadores, aquellos que impulsan el progreso con audacia y se convierten en motores de transformación. Hemos desarrollado <span class='bold'>protocolos de acompañamiento</span> diseñados para estos <span class='bold'>actores de impacto</span> como:",
         
         // Cartes de services
         "political_title": "ESFERA POLÍTICA",
-        "political_desc": "Estamos a su disposición para <span class='bold'>analisar su posicionamiento actual, sus áreas de mejora</span> en función de la opinión pública y los mecanismos que lhe permitirán alcançar plenamente los seus objetivos.",
+        "political_desc": "Estamos a tu disposición para <span class='bold'>analizar tu posicionamiento actual, sus áreas de mejora</span> en función de la opinión pública y los mecanismos que te permitirán alcanzar plenamente tus objetivos.",
         "political_btn": "¡Hablemos!",
         
         "startups_title": "STARTUPS",
-        "startups_desc": "Hemos creado el «<span class='bold'>Startup Authority System</span>»<br>. Impulse el <span class='bold'>valor percebido</span> de sua empresa em tempo recorde.<br>. Deje de perder clientes devido a um <span class='bold'>posicionamento</span> confuso.<br>. Transforme a sua imagem num <span class='bold'>íman para clientes</span>.",
-        "startups_btn": "¡Impulse su proyecto ahora mesmo com ferramentas gratuitas!",
+        "startups_desc": "Hemos creado el «<span class='bold'>Startup Authority System</span>»<br>. Impulse el <span class='bold'>valor percebido</span> de tu empresa en tiempo récord.<br>. Deje de perder clientes por un <span class='bold'>posicionamento</span> confuso.<br>. Transforme a sua imagem num <span class='bold'>íman para clientes</span>.",
+        "startups_btn": "¡Impulse tu proyecto ahora mismo con tus herramientas gratuitas!",
         
         "sports_title": "ORGANIZACIONES<br />DEPORTIVAS",
-        "sports_desc": "<p class='bold'>¿Quiere transformar sua organização numa marca forte, capaz de atrair seguidores fiéis e parceiros estratégicos?</p><p>Acompanhamos o crescimento exponencial da sua entidade e a consolidação da sua liderança, potenciando aquilo que a torna uma força de evolução.</p>",
+        "sports_desc": "<p class='bold'>¿Quiere transformar tu organização en una marca forte, capaz de atrair seguidores fiéis e parceiros estratégicos?</p><p>Te acompanamos o crescimento exponencial de tu entidad e a consolidação da sua liderança, potenciando aquilo que a torna uma força de evolução.</p>",
         "sports_btn": "¡Hablemos!",
         
         // Section Défi
@@ -476,22 +476,22 @@ const translations = {
         "quote": "«Su imagen es un activo—un recurso estratégico que debe aprovechar para alcanzar sus ambiciones.»",
         "founder": "Manon Gaziello,",
         "founder_title": "fundadora",
-        "about_desc_1": "ACTAPRISMA es una estructura creada para usted y sus proyectos, diseñada para adaptarse a sus desafíos y resolver sus problemáticas de comunicación.",
+        "about_desc_1": "ACTAPRISMA es una estructura creada para ti y tus proyectos, diseñada para adaptarse a tus desafíos y resolver tus problemáticas de comunicación.",
         "about_desc_2": "Soy licenciada en Relaciones Públicas y Lobbying, con un certificado en Negociación Internacional (\"European Legislative and Policy Process\") y ganadora del Premio Emmanuele Gazzo en Sciences Po Aix, France.",
         "about_desc_3": "Antes de fundar ACTAPRISMA, fui directora de comunicación y relaciones públicas en una startup emergente del sector tech y trabajé en gabinetes políticos, agencias y clubes deportivos profesionales.",
         "about_desc_4": "En términos concretos, esto significa que he estudiado en profundidad las estrategias que <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>convierten la imagen en un verdadero motor de rendimiento.</span>",
-        "about_desc_5": "Cada actor posee una identidad única y compleja. ACTAPRISMA le ofrece <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>soluciones estratégicas</span> para dar visibilidad a los aspectos clave de esa identidad y garantizar su éxito.",
+        "about_desc_5": "Cada actor posee una identidad única y compleja. ACTAPRISMA te ofrece <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>soluciones estratégicas</span> para dar visibilidad a los aspectos clave de esa identidad y garantizar tu éxito.",
         "social_text": "Ponte en contacto: <a href='https://medium.com/@manongaziello' target='_blank' class='social-link'>Medium</a> - <a href='https://www.linkedin.com/in/manon-gaziello/' target='_blank' class='social-link'>LinkedIn</a>",
         
         // Section Contact
         "contact_title": "CONTACTO",
-        "project_placeholder": "* Su proyecto es:",
+        "project_placeholder": "* Tu proyecto es:",
         "organization_placeholder": "* Nombre de la organización:",
-        "role_placeholder": "* Su rol en la organización:",
-        "lastname_placeholder": "* Su apellido:",
-        "firstname_placeholder": "* Su nombre:",
-        "email_placeholder": "* Su correo electrónico:",
-        "phone_placeholder": "Su número de teléfono:",
+        "role_placeholder": "* Tu rol en la organización:",
+        "lastname_placeholder": "* Tu apellido:",
+        "firstname_placeholder": "* Tu nombre:",
+        "email_placeholder": "* Tu correo electrónico:",
+        "phone_placeholder": "Tu número de teléfono:",
         "message_placeholder": "¿Algún detalle para compartir?",
         "required_fields": "* Campos obligatorios",
         "submit_button": "Enviar",
@@ -656,11 +656,11 @@ const translations = {
         "political_btn": "Fale connosco!",
         
         "startups_title": "STARTUPS",
-        "startups_desc": "Criámos o «<span class='bold'>Startup Authority System</span>»<br>. Aumente o <span class='bold'>valor percebido</span> da sua empresa em tempo recorde.<br>. Pare de perder clientes devido a um <span class='bold'>posicionamento</span> confuso.<br>. Transforme a sua imagem num <span class='bold'>íman para clientes</span>.",
+        "startups_desc": "Criámos o «<span class='bold'>Startup Authority System</span>»<br>. Aumente o <span class='bold'>valor percebido</span> da sua empresa em tempo recorde.<br>. Pare de perder clientes devido a um <span class='bold'>posicionamento</span> confuso.<br>. Transforma tua imagen en un <span class='bold'>íman para clientes</span>.",
         "startups_btn": "Impulsione o seu projeto agora mesmo com ferramentas gratuitas!",
         
         "sports_title": "ORGANIZAÇÕES<br />DESPORTIVAS",
-        "sports_desc": "<p class='bold'>Quer transformar a sua organização numa marca forte, capaz de atrair seguidores fiéis e parceiros estratégicos?</p><p>Acompanhamos o crescimento exponencial da sua entidade e a consolidação da sua liderança, potenciando aquilo que a torna uma força de evolução.</p>",
+        "sports_desc": "<p class='bold'>Quer transformar a sua organização numa marca forte, capaz de atrair seguidores fiéis e parceiros estratégicos?</p><p>Te acompanamos o crescimento exponencial de tu entidad e a consolidação da tu liderazo, potenciando aquilo que a torna uma força de evolução.</p>",
         "sports_btn": "Fale connosco!",
         
         // Section Défi
