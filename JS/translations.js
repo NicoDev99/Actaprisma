@@ -419,19 +419,19 @@ const translations = {
         "subtitle_1": "Nosotros también.",
         "help_text": "Ayudarte a <span>ser comprendido</span> para impactar a tu audiencia: inversores, clientes, votantes, espectadores…",
         "subtitle_2": "¿Cómo lo logramos?",
-        "method_text": "Cultivamos su autenticidad y amplificamos la <span>percepción</span> de su valor. Te damos todas las claves para <span>dominar tu imagen.</span>",
+        "method_text": "Cultivamos tu autenticidad y amplificamos la <span>percepción</span> de tu valor. Te damos todas las claves para <span>dominar tu imagen.</span>",
         "diagnostic_btn": "¿Quieres un diagnóstico para tu proyecto?",
         
         "vision_title": "VISIÓN",
         "comm_question": "¿Has oído la frase «hay que comunicar»?",
         "comm_response": "Nosotros también. Pero, ¿para qué?",
-        "comm_desc_1": "Comunicar es materializar su identidad, su concepto, su visión. Es elegir los canales adecuados y amplificar su mensaje con precisión.",
-        "comm_desc_2": "En ACTAPRISMA, te ayudamos a definir y estructurar tu imagen para que conserve el control y la exprese con impacto.",
-        "comm_desc_3": "Desarrollamos el potencial de su identidad para generar un beneficio emocional en su audiencia, crear un sentimiento de pertenencia e identificación y, al mismo tiempo, delimitar estratégicamente su campo de soberanía y su territorio ideológico.",
-        "comm_desc_4": "No se trata solo de una «proposta de valor», sino de transcendê-la. <span class='blue-color'>O nosso objetivo: maximizar el compromiso de su audiencia y reforçar a sua legitimidade no espaço público.</span>",
-        "goal_text_1": "A sua ambição é o nosso motor.",
-        "goal_text_2": "Le escuchamos con precisión, analizamos su posicionamiento y le damos respuestas concretas.",
-        "goal_text_3": "Le ayudamos a convertirse en una referencia.",
+        "comm_desc_1": "Comunicar es materializar tu identidad, tu concepto, tu visión. Es elegir los canales adecuados y amplificar tu mensaje con precisión.",
+        "comm_desc_2": "En ACTAPRISMA, te ayudamos a definir y estructurar tu imagen para que conserves el control y la expreses con impacto.",
+        "comm_desc_3": "Desarrollamos el potencial de tu identidad para generar un beneficio emocional en tu audiencia, crear un sentimiento de pertenencia e identificación y, al mismo tiempo, delimitar estratégicamente tu campo de soberanía y tu territorio ideológico.",
+        "comm_desc_4": "No se trata solo de una propuesta de valor», sino de trascenderla. <span class='blue-color'>O nuestro objetivo: maximizar el compromiso de tu audiencia y reforzar tu legitimidad no espaço público.</span>",
+        "goal_text_1": "Tu ambición es nuestro motor.",
+        "goal_text_2": "Le escuchamos con precisión, analizamos tu posicionamiento y te damos respuestas concretas.",
+        "goal_text_3": "Te ayudamos a convertirse en una referencia.",
         "image_mastery_btn": "¿Quieres gestionar mejor tu imagen?",
         
         // Section Accompagnement
@@ -452,7 +452,7 @@ const translations = {
         "sports_btn": "¡Hablemos!",
         
         // Section Défi
-        "challenge_header": "Sea cual sea el momento, le ayudamos a afrontar os<br>seus desafios de <span class='bold'>comunicação</span>:",
+        "challenge_header": "Sea cual sea el momento, te ayudamos a afrontar os<br>seus desafios de <span class='bold'>comunicação</span>:",
         "proactive_title": "Comunicação proativa",
         "proactive_list": ["Capte a atenção", "Desperte o interesse", "Gere adesão", "Aumente o envolvimento"],
         "crisis_title": "Comunicação de crise",
@@ -460,7 +460,7 @@ const translations = {
         
         // Section À propos
         "about_title": "SOBRE NÓS",
-        "challenge_header": "Sea cual sea el momento, le ayudamos a afrontar sus<br>desafíos de comunicación :",
+        "challenge_header": "Sea cual sea el momento, te ayudamos a afrontar tus<br>desafíos de comunicación :",
         "proactive_title": "Comunicación proactiva",
         "proactive_list": ["Capte la atención", "Despierte el interés", "Genere adhesión", "Aumente el compromiso"],
         "crisis_title": "Comunicación de crisis",
@@ -641,9 +641,9 @@ const translations = {
         "comm_desc_2": "É escolher os canais certos e amplificar a sua mensagem com precisão.",
         "comm_desc_3": "Na ACTAPRISMA, ajudamo-lo a definir e estruturar a sua imagem para que mantenha o controlo e a expresse com impacto.",
         "comm_desc_4": "Desenvolvemos o potencial da sua identidade para gerar um benefício emocional no seu público, criar um sentimento de pertença e identificação e, ao mesmo tempo, delimitar estrategicamente o seu campo de soberania e o seu território ideológico.",
-        "goal_text_1": "Não se trata apenas de uma «propuesta de valor», sino de transcenderla.",
-        "goal_text_2": "Nuestro objetivo: maximizar o envolvimento do seu público e reforzar tu legitimidad no espaço público.",
-        "goal_text_3": "Tu ambicion es nuestro motor. Ouvimo-lo com precisão, analisamos o seu posicionamento e damos-lhe respostas concretas. Ajudamo-lo a tornar-se uma referência.",
+        "goal_text_1": "Não se trata apenas de uma «proposta de valor», sino de transcendê-la.",
+        "goal_text_2": "O nosso objetivo: maximizar o envolvimento do seu público e reforzar tu legitimidad no espaço público.",
+        "goal_text_3": "A sua ambiçãо é o nosso motor. Ouvimo-lo com precisão, analisamos o seu posicionamento e damos-lhe respostas concretas. Ajudamo-lo a tornar-se uma referência.",
         "image_mastery_btn": "Quer gerir melhor a sua imagem?",
         
         // Section Accompagnement
