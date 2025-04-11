@@ -430,9 +430,9 @@ const translations = {
         "comm_desc_3": "Desarrollamos el potencial de su identidad para generar un beneficio emocional en su audiencia, crear un sentimiento de pertenencia e identificación y, al mismo tiempo, delimitar estratégicamente su campo de soberanía y su territorio ideológico.",
         "comm_desc_4": "No se trata solo de una «proposta de valor», sino de transcendê-la. <span class='blue-color'>O nosso objetivo: maximizar el compromiso de su audiencia y reforçar a sua legitimidade no espaço público.</span>",
         "goal_text_1": "A sua ambição é o nosso motor.",
-        "goal_text_2": "Ouvimo-lo com precisão, analisamos o seu posicionamento e damos-lhe respostas concretas.",
-        "goal_text_3": "Ajudamo-lo a tornar-se uma referência.",
-        "image_mastery_btn": "¿Quer gerir melhor a sua imagem?",
+        "goal_text_2": "Le escuchamos con precisión, analizamos su posicionamiento y le damos respuestas concretas.",
+        "goal_text_3": "Le ayudamos a convertirse en una referencia.",
+        "image_mastery_btn": "¿Quieres gestionar mejor tu imagen?",
         
         // Section Accompagnement
         "accompaniment_title": "CONSULTORÍA",
@@ -444,11 +444,11 @@ const translations = {
         "political_btn": "¡Hablemos!",
         
         "startups_title": "STARTUPS",
-        "startups_desc": "Hemos creado el «<span class='bold'>Startup Authority System</span>»<br>. Impulse el <span class='bold'>valor percebido</span> de tu empresa en tiempo récord.<br>. Deje de perder clientes por un <span class='bold'>posicionamento</span> confuso.<br>. Transforme a sua imagem num <span class='bold'>íman para clientes</span>.",
+        "startups_desc": "Hemos creado el «<span class='bold'>Startup Authority System</span>»<br>. Impulse el <span class='bold'>valor percibido</span> de tu empresa en tiempo récord.<br>. Deje de perder clientes por un <span class='bold'>posicionamento</span> confuso.<br>. Transforme tu imagen en un <span class='bold'>íman para clientes</span>.",
         "startups_btn": "¡Impulse tu proyecto ahora mismo con tus herramientas gratuitas!",
         
         "sports_title": "ORGANIZACIONES<br />DEPORTIVAS",
-        "sports_desc": "<p class='bold'>¿Quiere transformar tu organização en una marca forte, capaz de atrair seguidores fiéis e parceiros estratégicos?</p><p>Te acompanamos o crescimento exponencial de tu entidad e a consolidação da sua liderança, potenciando aquilo que a torna uma força de evolução.</p>",
+        "sports_desc": "<p class='bold'>¿Quiere convertir tu organizaçion en una marca fuerte, capaz de atrair seguidores fiéis e parceiros estratégicos?</p><p>Te acompanamos en el crecimento exponencial de tu entidad e a la consolidacion da tu liderazgo, potenciando aquello que la converte e una fuerza de evolucion.</p>",
         "sports_btn": "¡Hablemos!",
         
         // Section Défi
@@ -641,9 +641,9 @@ const translations = {
         "comm_desc_2": "É escolher os canais certos e amplificar a sua mensagem com precisão.",
         "comm_desc_3": "Na ACTAPRISMA, ajudamo-lo a definir e estruturar a sua imagem para que mantenha o controlo e a expresse com impacto.",
         "comm_desc_4": "Desenvolvemos o potencial da sua identidade para gerar um benefício emocional no seu público, criar um sentimento de pertença e identificação e, ao mesmo tempo, delimitar estrategicamente o seu campo de soberania e o seu território ideológico.",
-        "goal_text_1": "Não se trata apenas de uma «proposta de valor», mas de transcendê-la.",
-        "goal_text_2": "O nosso objetivo: maximizar o envolvimento do seu público e reforçar a sua legitimidade no espaço público.",
-        "goal_text_3": "A sua ambição é o nosso motor. Ouvimo-lo com precisão, analisamos o seu posicionamento e damos-lhe respostas concretas. Ajudamo-lo a tornar-se uma referência.",
+        "goal_text_1": "Não se trata apenas de uma «propuesta de valor», sino de transcenderla.",
+        "goal_text_2": "Nuestro objetivo: maximizar o envolvimento do seu público e reforzar tu legitimidad no espaço público.",
+        "goal_text_3": "Tu ambicion es nuestro motor. Ouvimo-lo com precisão, analisamos o seu posicionamento e damos-lhe respostas concretas. Ajudamo-lo a tornar-se uma referência.",
         "image_mastery_btn": "Quer gerir melhor a sua imagem?",
         
         // Section Accompagnement
@@ -660,7 +660,7 @@ const translations = {
         "startups_btn": "Impulsione o seu projeto agora mesmo com ferramentas gratuitas!",
         
         "sports_title": "ORGANIZAÇÕES<br />DESPORTIVAS",
-        "sports_desc": "<p class='bold'>Quer transformar a sua organização numa marca forte, capaz de atrair seguidores fiéis e parceiros estratégicos?</p><p>Te acompanamos o crescimento exponencial de tu entidad e a consolidação da tu liderazo, potenciando aquilo que a torna uma força de evolução.</p>",
+        "sports_desc": "<p class='bold'>Quer transformar a sua organização numa marca forte, capaz de atraer seguidores fiedeles y socios estratégicos?</p><p>Te acompanamos o crescimento exponencial de tu entidad e a consolidação da tu liderazo, potenciando aquilo que a torna uma força de evolução.</p>",
         "sports_btn": "Fale connosco!",
         
         // Section Défi
