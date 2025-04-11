@@ -252,8 +252,6 @@ div.explanations .text .highlight.animated-highlight.aos-animate {
   animation: highlightSlide 0.8s ease-out forwards;
 }
 div.explanations .logo {
-  width: 450px;
-  height: 450px;
   position: relative;
   margin-top: 50px;
 }
@@ -308,14 +306,6 @@ div.explanations .logo {
 @media screen and (max-width: 1400px) {
   div.nav-header .center-button {
     margin-top: 50px;
-  }
-  div.explanations .logo {
-    width: 400px;
-    height: 400px;
-  }
-  div.explanations .logo img.logo_without_text {
-    width: 400px;
-    height: 400px;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -1342,6 +1332,9 @@ section#about .text_container .right-section .content .social {
   color: #666;
   margin: 40px 0;
 }
+section#about .text_container .right-section .content .social .social-link {
+  color: #666;
+}
 section#about .text_container .right-section .content .cta-button {
   border: 1px solid #ccc;
   border-radius: 30px;
@@ -1658,7 +1651,7 @@ section#contact .form-container form .submit-button:disabled {
 }
 section#contact .triangle {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   right: -500px;
 }
 section#contact .triangle img {
@@ -1713,8 +1706,6 @@ footer {
   align-items: center;
   font-family: "Gotham", sans-serif;
   font-weight: 300;
-  margin-top: 100px;
-  border-top: 1px solid black;
   background-color: #0F283D;
   padding: 25px;
   color: white;
@@ -1740,18 +1731,26 @@ footer .legal-container a {
   text-decoration: none;
   color: white;
   flex: 1;
+  font-size: 12px;
 }
 footer .legal-container p {
-  flex: 1;
+  flex: 1.5;
+  font-size: 12px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+  footer {
+    justify-content: space-around;
+  }
+  footer .logo-container {
+    flex: 0;
+  }
   footer .legal-container {
     flex-direction: column;
     gap: 10px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   footer {
     flex-direction: column;
     gap: 20px;

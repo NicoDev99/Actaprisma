@@ -67,7 +67,7 @@ const translations = {
         "about_desc_3": "Avant ACTAPRISMA, j'ai exercé comme directrice de la communication et des relations publiques d'une startup montante de la tech et travaillé en cabinets politiques, en agence, et auprès de clubs sportifs professionnels.",
         "about_desc_4": "Concrètement, cela signifie que j'ai étudié en profondeur les techniques permettant <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>de placer l'image comme un levier de performance.</span>",
         "about_desc_5": "Chaque acteur possédant une identité complexe, ACTAPRISMA vous apporte des <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>réponses efficaces</span> pour offrir un écrin de visibilité aux points stratégiques de cette identité et garantir votre succès.",
-        "social_text": "Retrouvez-moi sur les réseaux sociaux Medium - LinkedIn",
+        "social_text": "Retrouvez-moi sur les réseaux sociaux <a href='https://medium.com/@manongaziello' target='_blank' class='social-link'>Medium</a> - <a href='https://www.linkedin.com/in/manon-gaziello/' target='_blank' class='social-link'>LinkedIn</a>",
         
         // Section Contact
         "contact_title": "CONTACT",
@@ -270,7 +270,7 @@ const translations = {
         "about_desc_3": "Before founding ACTAPRISMA, I worked as Director of Communications and Public Relations for a rising tech startup and gained experience in political advisory offices, agencies, and professional sports clubs.",
         "about_desc_4": "In concrete terms, this means I have extensively studied the techniques that <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>position image as a key driver of performance.</span>",
         "about_desc_5": "As each stakeholder has a complex identity, ACTAPRISMA provides <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>effective solutions</span> to strategically highlight the most valuable aspects of that identity and ensure your success.",
-        "social_text": "Find me on social media: Medium - LinkedIn",
+        "social_text": "Find me on social media: <a href='https://medium.com/@manongaziello' target='_blank' class='social-link'>Medium</a> - <a href='https://www.linkedin.com/in/manon-gaziello/' target='_blank' class='social-link'>LinkedIn</a>",
         
         // Section Contact
         "contact_title": "CONTACT",
@@ -481,7 +481,7 @@ const translations = {
         "about_desc_3": "Antes de fundar ACTAPRISMA, fui directora de comunicación y relaciones públicas en una startup emergente del sector tech y trabajé en gabinetes políticos, agencias y clubes deportivos profesionales.",
         "about_desc_4": "En términos concretos, esto significa que he estudiado en profundidad las estrategias que <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>convierten la imagen en un verdadero motor de rendimiento.</span>",
         "about_desc_5": "Cada actor posee una identidad única y compleja. ACTAPRISMA le ofrece <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>soluciones estratégicas</span> para dar visibilidad a los aspectos clave de esa identidad y garantizar su éxito.",
-        "social_text": "Ponte en contacto: Medium - LinkedIn",
+        "social_text": "Ponte en contacto: <a href='https://medium.com/@manongaziello' target='_blank' class='social-link'>Medium</a> - <a href='https://www.linkedin.com/in/manon-gaziello/' target='_blank' class='social-link'>LinkedIn</a>",
         
         // Section Contact
         "contact_title": "CONTACTO",
@@ -685,7 +685,7 @@ const translations = {
         "about_desc_3": "Antes de fundar a ACTAPRISMA, fui Diretora de Comunicação e Relações Públicas numa startup tecnológica emergente e acumulei experiência em gabinetes políticos, agências e clubes desportivos profissionais.",
         "about_desc_4": "Na prática, isto significa que aprofundadamente estudei as técnicas que <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>posicionam a imagem como um motor essencial de desempenho e impacto.</span>",
         "about_desc_5": "Cada stakeholder possui uma identidade complexa. A ACTAPRISMA oferece <span class='highlight blue bold animated-highlight' data-aos='fade' data-aos-offset='100' data-aos-duration='100'>soluções estratégicas eficazes</span> para destacar os aspetos mais valiosos dessa identidade e garantir o seu sucesso.",
-        "social_text": "Conecte-se comigo nas redes sociais: Medium - LinkedIn",
+        "social_text": "Conecte-se comigo nas redes sociais: <a href='https://medium.com/@manongaziello' target='_blank' class='social-link'>Medium</a> - <a href='https://www.linkedin.com/in/manon-gaziello/' target='_blank' class='social-link'>LinkedIn</a>",
         
         // Section Contact
         "contact_title": "CONTATO",

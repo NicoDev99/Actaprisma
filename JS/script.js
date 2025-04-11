@@ -66,7 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Mettre à jour la classe active lors du défilement
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
+            console.log(entry)
             if (entry.isIntersecting) {
+                console.log(entry);
                 navLinks.forEach(link => {
                     if (link.getAttribute("href") === `#${entry.target.id}`) {
                         // Retirer la classe active de tous les liens de navigation
@@ -79,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.1, rootMargin: "-5% 0px -5% 0px" });
 
     sections.forEach(section => observer.observe(section));
 

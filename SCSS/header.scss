@@ -269,8 +269,6 @@ div.explanations {
     }
 
     .logo {
-        width: 450px;
-        height: 450px;
         position: relative;
         margin-top: 50px;
     }
@@ -330,18 +328,6 @@ div.explanations {
     div.nav-header {
         .center-button {
             margin-top: 50px;
-        }
-    }
-
-    div.explanations {
-        .logo {
-            width: 400px;
-            height: 400px;
-            
-            img.logo_without_text {
-                width: 400px;
-                height: 400px;
-            }
         }
     }
 }
