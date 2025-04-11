@@ -428,15 +428,15 @@ const translations = {
         "comm_desc_1": "Comunicar es materializar tu identidad, tu concepto, tu visión. Es elegir los canales adecuados y amplificar tu mensaje con precisión.",
         "comm_desc_2": "En ACTAPRISMA, te ayudamos a definir y estructurar tu imagen para que conserves el control y la expreses con impacto.",
         "comm_desc_3": "Desarrollamos el potencial de tu identidad para generar un beneficio emocional en tu audiencia, crear un sentimiento de pertenencia e identificación y, al mismo tiempo, delimitar estratégicamente tu campo de soberanía y tu territorio ideológico.",
-        "comm_desc_4": "No se trata solo de una propuesta de valor», sino de trascenderla. <span class='blue-color'>O nuestro objetivo: maximizar el compromiso de tu audiencia y reforzar tu legitimidad no espaço público.</span>",
+        "comm_desc_4": "No se trata solo de «propuesta de valor», sino de trascenderla. <span class='blue-color'>Nuestro objetivo: maximizar el compromiso de tu audiencia y reforzar tu legitimidad no espaço público.</span>",
         "goal_text_1": "Tu ambición es nuestro motor.",
-        "goal_text_2": "Le escuchamos con precisión, analizamos tu posicionamiento y te damos respuestas concretas.",
-        "goal_text_3": "Te ayudamos a convertirse en una referencia.",
+        "goal_text_2": "Te escuchamos con precisión, analizamos tu posicionamiento y te damos respuestas concretas.",
+        "goal_text_3": "Te ayudamos a convertirte en una referencia.",
         "image_mastery_btn": "¿Quieres gestionar mejor tu imagen?",
         
         // Section Accompagnement
         "accompaniment_title": "CONSULTORÍA",
-        "accompaniment_intro": "<span class='brand'>ACTAPRISMA</span> es aliado de quienes <span class='bold'>impulsan del cambio</span>, los innovadores, aquellos que impulsan el progreso con audacia y se convierten en motores de transformación. Hemos desarrollado <span class='bold'>protocolos de acompañamiento</span> diseñados para estos <span class='bold'>actores de impacto</span> como:",
+        "accompaniment_intro": "<span class='brand'>ACTAPRISMA</span> es aliado de quienes <span class='bold'>impulsan el cambio</span>, los innovadores, aquellos que impulsan el progreso con audacia y se convierten en motores de transformación. Hemos desarrollado <span class='bold'>protocolos de acompañamiento</span> diseñados para estos <span class='bold'>actores de impacto</span> como:",
         
         // Cartes de services
         "political_title": "ESFERA POLÍTICA",
@@ -641,8 +641,8 @@ const translations = {
         "comm_desc_2": "É escolher os canais certos e amplificar a sua mensagem com precisão.",
         "comm_desc_3": "Na ACTAPRISMA, ajudamo-lo a definir e estruturar a sua imagem para que mantenha o controlo e a expresse com impacto.",
         "comm_desc_4": "Desenvolvemos o potencial da sua identidade para gerar um benefício emocional no seu público, criar um sentimento de pertença e identificação e, ao mesmo tempo, delimitar estrategicamente o seu campo de soberania e o seu território ideológico.",
-        "goal_text_1": "Não se trata apenas de uma «proposta de valor», sino de transcendê-la.",
-        "goal_text_2": "O nosso objetivo: maximizar o envolvimento do seu público e reforzar tu legitimidad no espaço público.",
+        "goal_text_1": "Não se trata apenas de uma «proposta de valor», mas de transcendê-la.",
+        "goal_text_2": "O nosso objetivo: maximizar o envolvimento do seu público e reforzar a sua legitimidade no espaço público.",
         "goal_text_3": "A sua ambiçãо é o nosso motor. Ouvimo-lo com precisão, analisamos o seu posicionamento e damos-lhe respostas concretas. Ajudamo-lo a tornar-se uma referência.",
         "image_mastery_btn": "Quer gerir melhor a sua imagem?",
         
