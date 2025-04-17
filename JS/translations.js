@@ -428,7 +428,7 @@ const translations = {
         "comm_desc_1": "Comunicar es materializar tu identidad, tu concepto, tu visión. Es elegir los canales adecuados y amplificar tu mensaje con precisión.",
         "comm_desc_2": "En ACTAPRISMA, te ayudamos a definir y estructurar tu imagen para que conserves el control y la expreses con impacto.",
         "comm_desc_3": "Desarrollamos el potencial de tu identidad para generar un beneficio emocional en tu audiencia, crear un sentimiento de pertenencia e identificación y, al mismo tiempo, delimitar estratégicamente tu campo de soberanía y tu territorio ideológico.",
-        "comm_desc_4": "No se trata solo de «propuesta de valor», sino de trascenderla. <span class='blue-color'>Nuestro objetivo: maximizar el compromiso de tu audiencia y reforzar tu legitimidad en el espaço público.</span>",
+        "comm_desc_4": "No se trata solo de «propuesta de valor», sino de trascenderla. <span class='blue-color'>Nuestro objetivo: maximizar el compromiso de tu audiencia y reforzar tu legitimidad en el espacio público.</span>",
         "goal_text_1": "Tu ambición es nuestro motor.",
         "goal_text_2": "Te escuchamos con precisión, analizamos tu posicionamiento y te damos respuestas concretas.",
         "goal_text_3": "Te ayudamos a convertirte en una referencia.",
