@@ -169,13 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Détecter la langue du navigateur ou utiliser la langue enregistrée
     const getBrowserLanguage = () => {
-        // Vérifier d'abord si une langue est enregistrée dans le localStorage
-        const savedLang = localStorage.getItem('preferredLanguage');
-        if (savedLang) {
-            return savedLang;
-        }
-        
-        // Vérifier ensuite l'URL pour détecter la langue
+        // Vérifier d'abord l'URL pour détecter la langue (priorité la plus haute)
         const path = window.location.pathname;
         if (path.endsWith('/EN')) {
             return 'en';
@@ -185,6 +179,13 @@ document.addEventListener("DOMContentLoaded", function () {
             return 'pt';
         }
         
+        // Ensuite vérifier si une langue est enregistrée dans le localStorage
+        const savedLang = localStorage.getItem('preferredLanguage');
+        if (savedLang) {
+            return savedLang;
+        }
+        
+        // En dernier recours, utiliser la langue du navigateur
         const browserLang = navigator.language || navigator.userLanguage;
         console.log(navigator.language);
         // Extraire juste le code de langue principal (avant le tiret s'il y en a un)
@@ -240,8 +241,17 @@ document.addEventListener("DOMContentLoaded", function () {
             basePath = basePath.substring(0, basePath.length - 3);
         }
         
-        // Maintenant ajouter le suffixe approprié pour la langue sélectionnée
-        if (lang === 'en') {
+        // Si c'est le français, utiliser simplement le chemin de base (sans suffixe)
+        if (lang === 'fr') {
+            // Pour le français, on veut simplement '/' ou le chemin de base sans suffixe
+            // Vérifier si on est sur la page d'accueil
+            if (basePath === '' || basePath === '/') {
+                newPath = '/';
+            } else {
+                // Pour les autres pages (si applicable)
+                newPath = basePath;
+            }
+        } else if (lang === 'en') {
             // Si l'URL se termine par un slash, ajouter juste "EN"
             if (basePath.endsWith('/')) {
                 newPath = basePath + 'EN';
@@ -263,7 +273,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 newPath = basePath + '/PT';
             }
         } else {
-            // Pour le français et les autres langues, utiliser le chemin de base
+            // Pour les autres langues non prévues, utiliser le chemin de base
             newPath = basePath;
         }
         
@@ -399,14 +409,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialiser l'interface avec la langue détectée
     updateUIForLanguage(currentLang);
     
-    // Si l'URL a /EN, /ES ou /PT mais currentLang ne correspond pas, mettre à jour l'URL
-    if ((window.location.pathname.endsWith('/EN') && currentLang !== 'en') || 
-        (window.location.pathname.endsWith('/ES') && currentLang !== 'es') ||
-        (window.location.pathname.endsWith('/PT') && currentLang !== 'pt') ||
-        (!window.location.pathname.endsWith('/EN') && 
-         !window.location.pathname.endsWith('/ES') && 
-         !window.location.pathname.endsWith('/PT') && 
-         (currentLang === 'en' || currentLang === 'es' || currentLang === 'pt'))) {
+    // Vérifier si l'URL doit être mise à jour pour correspondre à la langue actuelle
+    const path = window.location.pathname;
+    const urlHasLangSuffix = path.endsWith('/EN') || path.endsWith('/ES') || path.endsWith('/PT');
+    
+    // Si l'URL a un suffixe de langue qui ne correspond pas à la langue actuelle
+    // OU si l'URL n'a pas de suffixe mais que la langue actuelle n'est pas le français
+    if ((urlHasLangSuffix && 
+         ((path.endsWith('/EN') && currentLang !== 'en') || 
+          (path.endsWith('/ES') && currentLang !== 'es') || 
+          (path.endsWith('/PT') && currentLang !== 'pt'))) || 
+        (!urlHasLangSuffix && (currentLang === 'en' || currentLang === 'es' || currentLang === 'pt'))) {
         updateUrlForLanguage(currentLang);
     }
     
@@ -438,14 +451,14 @@ document.addEventListener("DOMContentLoaded", function () {
             // Update current language
             currentLang = selectedLang;
             
+            // Mettre à jour l'URL en fonction de la langue sélectionnée (avant de sauvegarder dans localStorage)
+            updateUrlForLanguage(currentLang);
+            
             // Sauvegarder la langue sélectionnée comme préférence
             savePreferredLanguage(currentLang);
             
             // Mettre à jour l'interface
             updateUIForLanguage(currentLang);
-            
-            // Mettre à jour l'URL en fonction de la langue sélectionnée
-            updateUrlForLanguage(currentLang);
             
             // Update class on body
             document.body.setAttribute('data-lang', currentLang);
@@ -474,14 +487,14 @@ document.addEventListener("DOMContentLoaded", function () {
             // Update current language
             currentLang = selectedLang;
             
+            // Mettre à jour l'URL en fonction de la langue sélectionnée (avant de sauvegarder dans localStorage)
+            updateUrlForLanguage(currentLang);
+            
             // Sauvegarder la langue sélectionnée comme préférence
             savePreferredLanguage(currentLang);
             
             // Mettre à jour l'interface
             updateUIForLanguage(currentLang);
-            
-            // Mettre à jour l'URL en fonction de la langue sélectionnée
-            updateUrlForLanguage(currentLang);
             
             // Update class on body
             document.body.setAttribute('data-lang', currentLang);
