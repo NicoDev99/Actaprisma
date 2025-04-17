@@ -21,7 +21,7 @@ const translations = {
         "comm_response": "Nous aussi.<br /> Mais pourquoi faire ?",
         "comm_desc_1": "Communiquer, c'est matérialiser publiquement son identité / son concept / son idée, choisir les moyens d'expression et d'amplification adaptés à son positionnement.",
         "comm_desc_2": "Chez ACTAPRISMA, nous vous aidons à définir le cadre de votre image pour en conserver le contrôle et pour l'exprimer avec panache.",
-        "comm_desc_3": "Nous développons le potentiel de votre identité pour créer un bénéfice émotionnel chez vos cibles, un sentiment d'appartenance et d'identification, tout en délimitant habilement votre champs de souveraineté et votre territoire idéologique.",
+        "comm_desc_3": "Nous développons le potentiel de votre identité pour créer un bénéfice émotionnel chez vos cibles, un sentiment d'appartenance et d'identification, tout en délimitant habilement votre champ de souveraineté et votre territoire idéologique.",
         "comm_desc_4": "Pour faire simple, nous vous permettons de <span class='blue-color'>transcender votre simple « proposition de valeur » pour augmenter l'engagement de vos cibles et le respect des publics élargis.",
         "goal_text_1": "Votre objectif est notre moteur.",
         "goal_text_2": "Nous sommes à l'écoute de vos besoins et précis dans nos réponses.",
