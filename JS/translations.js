@@ -18,7 +18,7 @@ const translations = {
         
         "vision_title": "VISION",
         "comm_question": "Vous connaissez la phrase « il faut faire de la comm' » ?",
-        "comm_response": "Nous aussi. Mais pourquoi faire ?",
+        "comm_response": "Nous aussi.<br /> Mais pourquoi faire ?",
         "comm_desc_1": "Communiquer, c'est matérialiser publiquement son identité / son concept / son idée, choisir les moyens d'expression et d'amplification adaptés à son positionnement.",
         "comm_desc_2": "Chez ACTAPRISMA, nous vous aidons à définir le cadre de votre image pour en conserver le contrôle et pour l'exprimer avec panache.",
         "comm_desc_3": "Nous développons le potentiel de votre identité pour créer un bénéfice émotionnel chez vos cibles, un sentiment d'appartenance et d'identification, tout en délimitant habilement votre champs de souveraineté et votre territoire idéologique.",
@@ -50,7 +50,7 @@ const translations = {
         "proactive_title": "Communication proactive",
         "proactive_list": ["Retenez l'attention", "Suscitez l'intérêt", "Créez l'adhésion", "Générez de l'engagement"],
         "crisis_title": "Communication de crise",
-        "crisis_list": ["Maîtriser le récit", "Gérez les impacts", "Restaurez la confiance", "réservez votre réputation"],
+        "crisis_list": ["Maîtriser le récit", "Gérez les impacts", "Restaurez la confiance", "Préservez votre réputation"],
         
         // Section À propos
         "about_title": "A PROPOS",
@@ -428,7 +428,7 @@ const translations = {
         "comm_desc_1": "Comunicar es materializar tu identidad, tu concepto, tu visión. Es elegir los canales adecuados y amplificar tu mensaje con precisión.",
         "comm_desc_2": "En ACTAPRISMA, te ayudamos a definir y estructurar tu imagen para que conserves el control y la expreses con impacto.",
         "comm_desc_3": "Desarrollamos el potencial de tu identidad para generar un beneficio emocional en tu audiencia, crear un sentimiento de pertenencia e identificación y, al mismo tiempo, delimitar estratégicamente tu campo de soberanía y tu territorio ideológico.",
-        "comm_desc_4": "No se trata solo de «propuesta de valor», sino de trascenderla. <span class='blue-color'>Nuestro objetivo: maximizar el compromiso de tu audiencia y reforzar tu legitimidad no espaço público.</span>",
+        "comm_desc_4": "No se trata solo de «propuesta de valor», sino de trascenderla. <span class='blue-color'>Nuestro objetivo: maximizar el compromiso de tu audiencia y reforzar tu legitimidad en el espaço público.</span>",
         "goal_text_1": "Tu ambición es nuestro motor.",
         "goal_text_2": "Te escuchamos con precisión, analizamos tu posicionamiento y te damos respuestas concretas.",
         "goal_text_3": "Te ayudamos a convertirte en una referencia.",
@@ -448,7 +448,7 @@ const translations = {
         "startups_btn": "¡Impulse tu proyecto ahora mismo con tus herramientas gratuitas!",
         
         "sports_title": "ORGANIZACIONES<br />DEPORTIVAS",
-        "sports_desc": "<p class='bold'>¿Quiere convertir tu organizaçion en una marca fuerte, capaz de atrair seguidores fiéis e parceiros estratégicos?</p><p>Te acompanamos en el crecimento exponencial de tu entidad e a la consolidacion da tu liderazgo, potenciando aquello que la converte e una fuerza de evolucion.</p>",
+        "sports_desc": "<p class='bold'>¿Quiere convertir su organizaçión en una marca fuerte, capaz de atraer seguidores fieles y socios estratégicos?</p><p>Te acompanamos en el crecimento exponencial de tu entidad e a la consolidacion da tu liderazgo, potenciando aquello que la converte e una fuerza de evolucion.</p>",
         "sports_btn": "¡Hablemos!",
         
         // Section Défi
@@ -656,11 +656,11 @@ const translations = {
         "political_btn": "Fale connosco!",
         
         "startups_title": "STARTUPS",
-        "startups_desc": "Criámos o «<span class='bold'>Startup Authority System</span>»<br>. Aumente o <span class='bold'>valor percebido</span> da sua empresa em tempo recorde.<br>. Pare de perder clientes devido a um <span class='bold'>posicionamento</span> confuso.<br>. Transforma tua imagen en un <span class='bold'>íman para clientes</span>.",
+        "startups_desc": "Criámos o «<span class='bold'>Startup Authority System</span>»<br>. Aumente o <span class='bold'>valor percebido</span> da sua empresa em tempo recorde.<br>. Pare de perder clientes devido a um <span class='bold'>posicionamento</span> confuso.<br>. Transforma a tua imagem num <span class='bold'>íman para clientes</span>.",
         "startups_btn": "Impulsione o seu projeto agora mesmo com ferramentas gratuitas!",
         
         "sports_title": "ORGANIZAÇÕES<br />DESPORTIVAS",
-        "sports_desc": "<p class='bold'>Quer transformar a sua organização numa marca forte, capaz de atraer seguidores fiedeles y socios estratégicos?</p><p>Te acompanamos o crescimento exponencial de tu entidad e a consolidação da tu liderazo, potenciando aquilo que a torna uma força de evolução.</p>",
+        "sports_desc": "<p class='bold'>Quer transformar a sua organização numa marca forte, capaz de atrair seguidores fiéis e parceiros estratégicos? </p><p>Acompanhamos o crescimento exponencial da sua entidade e a consolidação da sua liderança, potenciando aquilo que a torna uma força de evolução.</p>",
         "sports_btn": "Fale connosco!",
         
         // Section Défi

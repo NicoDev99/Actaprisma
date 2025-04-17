@@ -964,7 +964,7 @@ section#accompaniment .challenge .content {
 }
 section#accompaniment .challenge .content .left-column, section#accompaniment .challenge .content .right-column {
   width: 25%;
-  padding: 20px;
+  padding: 10px;
   position: relative;
   font-family: "Gotham", sans-serif;
   font-weight: 300;
