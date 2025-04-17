@@ -18,7 +18,7 @@ const translations = {
         
         "vision_title": "VISION",
         "comm_question": "Vous connaissez la phrase « il faut faire de la comm' » ?",
-        "comm_response": "Nous aussi.<br /> Mais pourquoi faire ?",
+        "comm_response": "Nous aussi.<br /> Mais pour quoi faire ?",
         "comm_desc_1": "Communiquer, c'est matérialiser publiquement son identité / son concept / son idée, choisir les moyens d'expression et d'amplification adaptés à son positionnement.",
         "comm_desc_2": "Chez ACTAPRISMA, nous vous aidons à définir le cadre de votre image pour en conserver le contrôle et pour l'exprimer avec panache.",
         "comm_desc_3": "Nous développons le potentiel de votre identité pour créer un bénéfice émotionnel chez vos cibles, un sentiment d'appartenance et d'identification, tout en délimitant habilement votre champ de souveraineté et votre territoire idéologique.",
